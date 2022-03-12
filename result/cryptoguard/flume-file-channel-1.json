@@ -1,0 +1,31 @@
+{
+  "projectName": "CryptoGuard",
+  "ProjectVersion": "04.05.03_2020-11-25-02-42",
+  "Target": {
+    "RawCommand": "-in jar -o /xxx/PycharmProjects/CryptoDataset/cryptoguard/results/cryptoguard/flume-file-channel-1.json -s /xxx/CryptoAPIDetect/dataset/jar_collections/flume-file-channel-1.9.0.jar",
+    "FullPath": "flume-file-channel-1.9.0.jar/",
+    "Type": "JAR",
+    "TargetSources": [
+      "/xxx/CryptoAPIDetect/dataset/jar_collections/flume-file-channel-1.9.0.jar"
+    ],
+    "_PropertiesFilePath": "gradle.properties",
+    "_ComputerOS": "Linux_5.4.0-67-generic",
+    "_JVMVersion": "1.8.0_282-8u282-b08-0ubuntu1~20.04-b08",
+    "_ProjectName": "flume-file-channel-1"
+  },
+  "Issues": [
+    {
+      "Message": "Found: \"MD5\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "flume-file-channel-1.9.0.jar/org/apache/flume/channel/file/FlumeEventQueue$InflightEventWrapper.class",
+      "_Id": "0"
+    }
+  ],
+  "_SchemaVersion": 3,
+  "_DateTime": "2021-05-17_13:25:41",
+  "_UUID": "09a5b3ef-6840-438f-8a72-70b53c9a4cea"
+}

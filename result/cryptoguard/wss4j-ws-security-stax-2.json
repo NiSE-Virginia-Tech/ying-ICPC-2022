@@ -1,0 +1,71 @@
+{
+  "projectName": "CryptoGuard",
+  "ProjectVersion": "04.05.03_2020-11-25-02-42",
+  "Target": {
+    "RawCommand": "-in jar -o /xxx/PycharmProjects/CryptoDataset/cryptoguard/results/cryptoguard/wss4j-ws-security-stax-2.json -s /xxx/CryptoAPIDetect/dataset/jar_collections/wss4j-ws-security-stax-2.2.4.jar",
+    "FullPath": "wss4j-ws-security-stax-2.2.4.jar/",
+    "Type": "JAR",
+    "TargetSources": [
+      "/xxx/CryptoAPIDetect/dataset/jar_collections/wss4j-ws-security-stax-2.2.4.jar"
+    ],
+    "_PropertiesFilePath": "gradle.properties",
+    "_ComputerOS": "Linux_5.4.0-67-generic",
+    "_JVMVersion": "1.8.0_282-8u282-b08-0ubuntu1~20.04-b08",
+    "_ProjectName": "wss4j-ws-security-stax-2"
+  },
+  "Issues": [
+    {
+      "Message": "Found: \"SHA-1\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "wss4j-ws-security-stax-2.2.4.jar/org/apache/wss4j/stax/utils/WSSUtils.class",
+      "_Id": "0"
+    },
+    {
+      "Message": "Found: \"SHA-1\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "wss4j-ws-security-stax-2.2.4.jar/org/apache/wss4j/stax/utils/WSSUtils.class",
+      "_Id": "1"
+    },
+    {
+      "Message": "Found: \"SHA-1\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "wss4j-ws-security-stax-2.2.4.jar/org/apache/wss4j/stax/utils/WSSUtils.class",
+      "_Id": "2"
+    },
+    {
+      "Message": "Found: \"SHA-1\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "wss4j-ws-security-stax-2.2.4.jar/org/apache/wss4j/stax/impl/securityToken/SecurityTokenFactoryImpl.class",
+      "_Id": "3"
+    },
+    {
+      "Message": "Found: \"SHA-1\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "wss4j-ws-security-stax-2.2.4.jar/org/apache/wss4j/stax/impl/securityToken/SecurityTokenFactoryImpl.class",
+      "_Id": "4"
+    }
+  ],
+  "_SchemaVersion": 3,
+  "_DateTime": "2021-05-17_13:26:02",
+  "_UUID": "4e4da391-8598-4938-9b24-981fc3cd2435"
+}

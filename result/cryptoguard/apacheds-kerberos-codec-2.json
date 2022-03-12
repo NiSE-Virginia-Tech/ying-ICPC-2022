@@ -1,0 +1,461 @@
+{
+  "projectName": "CryptoGuard",
+  "ProjectVersion": "04.05.03_2020-11-25-02-42",
+  "Target": {
+    "RawCommand": "-in jar -o /xxx/PycharmProjects/CryptoDataset/cryptoguard/results/cryptoguard/apacheds-kerberos-codec-2.json -s /xxx/CryptoAPIDetect/dataset/jar_collections/apacheds-kerberos-codec-2.0.0.AM25.jar",
+    "FullPath": "apacheds-kerberos-codec-2.0.0.AM25.jar/",
+    "Type": "JAR",
+    "TargetSources": [
+      "/xxx/CryptoAPIDetect/dataset/jar_collections/apacheds-kerberos-codec-2.0.0.AM25.jar"
+    ],
+    "_PropertiesFilePath": "gradle.properties",
+    "_ComputerOS": "Linux_5.4.0-67-generic",
+    "_JVMVersion": "1.8.0_282-8u282-b08-0ubuntu1~20.04-b08",
+    "_ProjectName": "apacheds-kerberos-codec-2"
+  },
+  "Issues": [
+    {
+      "Message": "Found: \"DES/CBC/NoPadding\"",
+      "Description": "Found broken crypto schemes",
+      "RuleNumber": 1,
+      "RuleDesc": "Found broken crypto schemes",
+      "CWEId": 256,
+      "Severity": "1",
+      "_FullPath": "apacheds-kerberos-codec-2.0.0.AM25.jar/org/apache/directory/server/kerberos/shared/crypto/encryption/DesStringToKey.class",
+      "_Id": "0"
+    },
+    {
+      "Message": "Found: \"DESede/CBC/NoPadding\"",
+      "Description": "Found broken crypto schemes",
+      "RuleNumber": 1,
+      "RuleDesc": "Found broken crypto schemes",
+      "CWEId": 256,
+      "Severity": "1",
+      "_FullPath": "apacheds-kerberos-codec-2.0.0.AM25.jar/org/apache/directory/server/kerberos/shared/crypto/encryption/Des3CbcSha1KdEncryption.class",
+      "_Id": "1"
+    },
+    {
+      "Message": "Found: \"DES/CBC/NoPadding\"",
+      "Description": "Found broken crypto schemes",
+      "RuleNumber": 1,
+      "RuleDesc": "Found broken crypto schemes",
+      "CWEId": 256,
+      "Severity": "1",
+      "_FullPath": "apacheds-kerberos-codec-2.0.0.AM25.jar/org/apache/directory/server/kerberos/shared/crypto/encryption/DesCbcMd5Encryption.class",
+      "_Id": "2"
+    },
+    {
+      "Message": "Found: \"DES/CBC/NoPadding\"",
+      "Description": "Found broken crypto schemes",
+      "RuleNumber": 1,
+      "RuleDesc": "Found broken crypto schemes",
+      "CWEId": 256,
+      "Severity": "1",
+      "_FullPath": "apacheds-kerberos-codec-2.0.0.AM25.jar/org/apache/directory/server/kerberos/shared/crypto/encryption/DesCbcCrcEncryption.class",
+      "_Id": "3"
+    },
+    {
+      "Message": "Found: \"0\"",
+      "Description": "Found constant IV in code",
+      "RuleNumber": 10,
+      "RuleDesc": "Found constant IV in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "apacheds-kerberos-codec-2.0.0.AM25.jar/org/apache/directory/server/kerberos/shared/crypto/encryption/Des3CbcSha1KdEncryption.class",
+      "_Id": "4"
+    },
+    {
+      "Message": "Found: \"0\"",
+      "Description": "Found constant IV in code",
+      "RuleNumber": 10,
+      "RuleDesc": "Found constant IV in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "apacheds-kerberos-codec-2.0.0.AM25.jar/org/apache/directory/server/kerberos/shared/crypto/encryption/AesCtsSha1Encryption.class",
+      "_Id": "5"
+    },
+    {
+      "Message": "Found: \"0\"",
+      "Description": "Found constant IV in code",
+      "RuleNumber": 10,
+      "RuleDesc": "Found constant IV in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "apacheds-kerberos-codec-2.0.0.AM25.jar/org/apache/directory/server/kerberos/shared/crypto/encryption/AesCtsSha1Encryption.class",
+      "_Id": "6"
+    },
+    {
+      "Message": "Found: \"0\"",
+      "Description": "Found constant IV in code",
+      "RuleNumber": 10,
+      "RuleDesc": "Found constant IV in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "apacheds-kerberos-codec-2.0.0.AM25.jar/org/apache/directory/server/kerberos/shared/crypto/encryption/DesCbcCrcEncryption.class",
+      "_Id": "7"
+    },
+    {
+      "Message": "Found: \"0\"",
+      "Description": "Found constant IV in code",
+      "RuleNumber": 10,
+      "RuleDesc": "Found constant IV in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "apacheds-kerberos-codec-2.0.0.AM25.jar/org/apache/directory/server/kerberos/shared/crypto/encryption/DesCbcMd5Encryption.class",
+      "_Id": "8"
+    },
+    {
+      "Message": "Found: \"0\"",
+      "Description": "Found constant IV in code",
+      "RuleNumber": 10,
+      "RuleDesc": "Found constant IV in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "apacheds-kerberos-codec-2.0.0.AM25.jar/org/apache/directory/server/kerberos/shared/crypto/encryption/AesCtsSha1Encryption.class",
+      "_Id": "9"
+    },
+    {
+      "Message": "Found: \"0\"",
+      "Description": "Found constant IV in code",
+      "RuleNumber": 10,
+      "RuleDesc": "Found constant IV in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "apacheds-kerberos-codec-2.0.0.AM25.jar/org/apache/directory/server/kerberos/shared/crypto/encryption/DesCbcCrcEncryption.class",
+      "_Id": "10"
+    },
+    {
+      "Message": "Found: \"0\"",
+      "Description": "Found constant IV in code",
+      "RuleNumber": 10,
+      "RuleDesc": "Found constant IV in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "apacheds-kerberos-codec-2.0.0.AM25.jar/org/apache/directory/server/kerberos/shared/crypto/encryption/DesCbcMd5Encryption.class",
+      "_Id": "11"
+    },
+    {
+      "Message": "Found: \"0\"",
+      "Description": "Found constant IV in code",
+      "RuleNumber": 10,
+      "RuleDesc": "Found constant IV in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "apacheds-kerberos-codec-2.0.0.AM25.jar/org/apache/directory/server/kerberos/shared/crypto/encryption/AesCtsSha1Encryption.class",
+      "_Id": "12"
+    },
+    {
+      "Message": "Found: \"0\"",
+      "Description": "Found constant IV in code",
+      "RuleNumber": 10,
+      "RuleDesc": "Found constant IV in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "apacheds-kerberos-codec-2.0.0.AM25.jar/org/apache/directory/server/kerberos/shared/crypto/encryption/DesCbcCrcEncryption.class",
+      "_Id": "13"
+    },
+    {
+      "Message": "Found: \"0\"",
+      "Description": "Found constant IV in code",
+      "RuleNumber": 10,
+      "RuleDesc": "Found constant IV in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "apacheds-kerberos-codec-2.0.0.AM25.jar/org/apache/directory/server/kerberos/shared/crypto/encryption/AesCtsSha1Encryption.class",
+      "_Id": "14"
+    },
+    {
+      "Message": "Found: \"0\"",
+      "Description": "Found constant IV in code",
+      "RuleNumber": 10,
+      "RuleDesc": "Found constant IV in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "apacheds-kerberos-codec-2.0.0.AM25.jar/org/apache/directory/server/kerberos/shared/crypto/encryption/DesCbcMd5Encryption.class",
+      "_Id": "15"
+    },
+    {
+      "Message": "Found: \"0\"",
+      "Description": "Found constant IV in code",
+      "RuleNumber": 10,
+      "RuleDesc": "Found constant IV in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "apacheds-kerberos-codec-2.0.0.AM25.jar/org/apache/directory/server/kerberos/shared/crypto/encryption/AesCtsSha1Encryption.class",
+      "_Id": "16"
+    },
+    {
+      "Message": "Found: \"0\"",
+      "Description": "Found constant IV in code",
+      "RuleNumber": 10,
+      "RuleDesc": "Found constant IV in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "apacheds-kerberos-codec-2.0.0.AM25.jar/org/apache/directory/server/kerberos/shared/crypto/encryption/Des3CbcSha1KdEncryption.class",
+      "_Id": "17"
+    },
+    {
+      "Message": "Found: \"0\"",
+      "Description": "Found constant IV in code",
+      "RuleNumber": 10,
+      "RuleDesc": "Found constant IV in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "apacheds-kerberos-codec-2.0.0.AM25.jar/org/apache/directory/server/kerberos/shared/crypto/encryption/Des3CbcSha1KdEncryption.class",
+      "_Id": "18"
+    },
+    {
+      "Message": "Found: \"0\"",
+      "Description": "Found constant IV in code",
+      "RuleNumber": 10,
+      "RuleDesc": "Found constant IV in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "apacheds-kerberos-codec-2.0.0.AM25.jar/org/apache/directory/server/kerberos/shared/crypto/encryption/DesCbcCrcEncryption.class",
+      "_Id": "19"
+    },
+    {
+      "Message": "Found: \"0\"",
+      "Description": "Found constant IV in code",
+      "RuleNumber": 10,
+      "RuleDesc": "Found constant IV in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "apacheds-kerberos-codec-2.0.0.AM25.jar/org/apache/directory/server/kerberos/shared/crypto/encryption/AesCtsSha1Encryption.class",
+      "_Id": "20"
+    },
+    {
+      "Message": "Found: \"0\"",
+      "Description": "Found constant IV in code",
+      "RuleNumber": 10,
+      "RuleDesc": "Found constant IV in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "apacheds-kerberos-codec-2.0.0.AM25.jar/org/apache/directory/server/kerberos/shared/crypto/encryption/Des3CbcSha1KdEncryption.class",
+      "_Id": "21"
+    },
+    {
+      "Message": "Found: \"0\"",
+      "Description": "Found constant IV in code",
+      "RuleNumber": 10,
+      "RuleDesc": "Found constant IV in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "apacheds-kerberos-codec-2.0.0.AM25.jar/org/apache/directory/server/kerberos/shared/crypto/encryption/Des3CbcSha1KdEncryption.class",
+      "_Id": "22"
+    },
+    {
+      "Message": "Found: \"0\"",
+      "Description": "Found constant IV in code",
+      "RuleNumber": 10,
+      "RuleDesc": "Found constant IV in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "apacheds-kerberos-codec-2.0.0.AM25.jar/org/apache/directory/server/kerberos/shared/crypto/encryption/DesCbcMd5Encryption.class",
+      "_Id": "23"
+    },
+    {
+      "Message": "Found: \"0\"",
+      "Description": "Found constant IV in code",
+      "RuleNumber": 10,
+      "RuleDesc": "Found constant IV in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "apacheds-kerberos-codec-2.0.0.AM25.jar/org/apache/directory/server/kerberos/shared/crypto/encryption/AesCtsSha1Encryption.class",
+      "_Id": "24"
+    },
+    {
+      "Message": "Found: \"0\"",
+      "Description": "Found constant IV in code",
+      "RuleNumber": 10,
+      "RuleDesc": "Found constant IV in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "apacheds-kerberos-codec-2.0.0.AM25.jar/org/apache/directory/server/kerberos/shared/crypto/encryption/Des3CbcSha1KdEncryption.class",
+      "_Id": "25"
+    },
+    {
+      "Message": "Found: \"0\"",
+      "Description": "Found constant IV in code",
+      "RuleNumber": 10,
+      "RuleDesc": "Found constant IV in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "apacheds-kerberos-codec-2.0.0.AM25.jar/org/apache/directory/server/kerberos/shared/crypto/encryption/DesCbcCrcEncryption.class",
+      "_Id": "26"
+    },
+    {
+      "Message": "Found: \"0\"",
+      "Description": "Found constant IV in code",
+      "RuleNumber": 10,
+      "RuleDesc": "Found constant IV in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "apacheds-kerberos-codec-2.0.0.AM25.jar/org/apache/directory/server/kerberos/shared/crypto/encryption/AesCtsSha1Encryption.class",
+      "_Id": "27"
+    },
+    {
+      "Message": "Found: \"0\"",
+      "Description": "Found constant IV in code",
+      "RuleNumber": 10,
+      "RuleDesc": "Found constant IV in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "apacheds-kerberos-codec-2.0.0.AM25.jar/org/apache/directory/server/kerberos/shared/crypto/encryption/AesCtsSha1Encryption.class",
+      "_Id": "28"
+    },
+    {
+      "Message": "Found: \"0\"",
+      "Description": "Found constant IV in code",
+      "RuleNumber": 10,
+      "RuleDesc": "Found constant IV in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "apacheds-kerberos-codec-2.0.0.AM25.jar/org/apache/directory/server/kerberos/shared/crypto/encryption/DesCbcMd5Encryption.class",
+      "_Id": "29"
+    },
+    {
+      "Message": "Found: \"0\"",
+      "Description": "Found constant IV in code",
+      "RuleNumber": 10,
+      "RuleDesc": "Found constant IV in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "apacheds-kerberos-codec-2.0.0.AM25.jar/org/apache/directory/server/kerberos/shared/crypto/encryption/AesCtsSha1Encryption.class",
+      "_Id": "30"
+    },
+    {
+      "Message": "Found: \"0\"",
+      "Description": "Found constant IV in code",
+      "RuleNumber": 10,
+      "RuleDesc": "Found constant IV in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "apacheds-kerberos-codec-2.0.0.AM25.jar/org/apache/directory/server/kerberos/shared/crypto/encryption/Des3CbcSha1KdEncryption.class",
+      "_Id": "31"
+    },
+    {
+      "Message": "Found: \"0\"",
+      "Description": "Found constant IV in code",
+      "RuleNumber": 10,
+      "RuleDesc": "Found constant IV in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "apacheds-kerberos-codec-2.0.0.AM25.jar/org/apache/directory/server/kerberos/shared/crypto/encryption/Des3CbcSha1KdEncryption.class",
+      "_Id": "32"
+    },
+    {
+      "Message": "Found: \"0\"",
+      "Description": "Found constant IV in code",
+      "RuleNumber": 10,
+      "RuleDesc": "Found constant IV in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "apacheds-kerberos-codec-2.0.0.AM25.jar/org/apache/directory/server/kerberos/shared/crypto/encryption/DesCbcMd5Encryption.class",
+      "_Id": "33"
+    },
+    {
+      "Message": "Found: \"0\"",
+      "Description": "Found constant IV in code",
+      "RuleNumber": 10,
+      "RuleDesc": "Found constant IV in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "apacheds-kerberos-codec-2.0.0.AM25.jar/org/apache/directory/server/kerberos/shared/crypto/encryption/AesCtsSha1Encryption.class",
+      "_Id": "34"
+    },
+    {
+      "Message": "Found: \"0\"",
+      "Description": "Found constant IV in code",
+      "RuleNumber": 10,
+      "RuleDesc": "Found constant IV in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "apacheds-kerberos-codec-2.0.0.AM25.jar/org/apache/directory/server/kerberos/shared/crypto/encryption/DesCbcMd5Encryption.class",
+      "_Id": "35"
+    },
+    {
+      "Message": "Found: \"0\"",
+      "Description": "Found constant IV in code",
+      "RuleNumber": 10,
+      "RuleDesc": "Found constant IV in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "apacheds-kerberos-codec-2.0.0.AM25.jar/org/apache/directory/server/kerberos/shared/crypto/encryption/AesCtsSha1Encryption.class",
+      "_Id": "36"
+    },
+    {
+      "Message": "Found: \"0\"",
+      "Description": "Found constant IV in code",
+      "RuleNumber": 10,
+      "RuleDesc": "Found constant IV in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "apacheds-kerberos-codec-2.0.0.AM25.jar/org/apache/directory/server/kerberos/shared/crypto/encryption/AesCtsSha1Encryption.class",
+      "_Id": "37"
+    },
+    {
+      "Message": "Found: \"0\"",
+      "Description": "Found constant IV in code",
+      "RuleNumber": 10,
+      "RuleDesc": "Found constant IV in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "apacheds-kerberos-codec-2.0.0.AM25.jar/org/apache/directory/server/kerberos/shared/crypto/encryption/DesCbcMd5Encryption.class",
+      "_Id": "38"
+    },
+    {
+      "Message": "Found: \"0\"",
+      "Description": "Found constant IV in code",
+      "RuleNumber": 10,
+      "RuleDesc": "Found constant IV in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "apacheds-kerberos-codec-2.0.0.AM25.jar/org/apache/directory/server/kerberos/shared/crypto/encryption/DesCbcCrcEncryption.class",
+      "_Id": "39"
+    },
+    {
+      "Message": "Found: \"0\"",
+      "Description": "Found constant IV in code",
+      "RuleNumber": 10,
+      "RuleDesc": "Found constant IV in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "apacheds-kerberos-codec-2.0.0.AM25.jar/org/apache/directory/server/kerberos/shared/crypto/encryption/AesCtsSha1Encryption.class",
+      "_Id": "40"
+    },
+    {
+      "Message": "Found: \"0\"",
+      "Description": "Found constant IV in code",
+      "RuleNumber": 10,
+      "RuleDesc": "Found constant IV in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "apacheds-kerberos-codec-2.0.0.AM25.jar/org/apache/directory/server/kerberos/shared/crypto/encryption/AesCtsSha1Encryption.class",
+      "_Id": "41"
+    },
+    {
+      "Message": "Found: \"0\"",
+      "Description": "Found constant IV in code",
+      "RuleNumber": 10,
+      "RuleDesc": "Found constant IV in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "apacheds-kerberos-codec-2.0.0.AM25.jar/org/apache/directory/server/kerberos/shared/crypto/encryption/DesCbcCrcEncryption.class",
+      "_Id": "42"
+    },
+    {
+      "Message": "Found: \"0\"",
+      "Description": "Found constant IV in code",
+      "RuleNumber": 10,
+      "RuleDesc": "Found constant IV in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "apacheds-kerberos-codec-2.0.0.AM25.jar/org/apache/directory/server/kerberos/shared/crypto/encryption/DesCbcCrcEncryption.class",
+      "_Id": "43"
+    }
+  ],
+  "_SchemaVersion": 3,
+  "_DateTime": "2021-05-17_13:25:26",
+  "_UUID": "fb84b52b-fdc9-4a77-8568-2ca9e109c8fe"
+}

@@ -1,0 +1,17 @@
+public void checkClientTrusted(X509Certificate[] $v_0$, String $v_1$) throws CertificateException {
+    KeyStore ts = KeyStore.getInstance("JKS");
+    ts.load(new FileInputStream(path), password); // load your local cert path and specify your password
+    TrustManagerFactory tmf = TrustManagerFactory.getInstance("SunX509"); // choose the algrithm to match your cert
+    tmf.init(ts);
+    TrustManager[] trustManagers = tmf.getTrustManagers(); // refer to https://lightbend.github.io/ssl-config/WSQuickStart.html for detailed steps
+    for (final X509TrustManager trustManager : trustManagers) {
+        try {
+                trustManager.checkClientTrusted($v_0$, $v_1$);
+                return;
+            } catch (final CertificateException e) {
+                //LOGGER.debug(e.getMessage(), e);
+               }
+    }
+            throw new CertificateException("None of the TrustManagers trust this certificate chain");
+
+}

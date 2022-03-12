@@ -1,0 +1,24 @@
+ INFO | 2021-05-17 21:39:55.125 | Interface.ArgumentsCheck (ArgumentsCheck.java:148) | Displaying info level logs
+ INFO | 2021-05-17 21:39:55.217 | Interface.ArgumentsCheck (ArgumentsCheck.java:176) | Using the output: Default
+ INFO | 2021-05-17 21:39:55.222 | parameterChecks.Core (Core.java:145) | Scanning 1 source file(s).
+ INFO | 2021-05-17 21:39:55.239 | routing.EnvironmentInformation (EnvironmentInformation.java:376) | Building the Package Root Dir based on type
+ INFO | 2021-05-17 21:39:55.241 | routing.EnvironmentInformation (EnvironmentInformation.java:410) | Building the Root Directory
+ INFO | 2021-05-17 21:39:55.245 | Interface.SubRunner (SubRunner.java:57) | Starting the scanning process
+ INFO | 2021-05-17 21:39:55.250 | engine.JarEntry (JarEntry.java:25) | Checking the rule: InsecureAssymCryptoFinder
+ INFO | 2021-05-17 21:39:58.084 | engine.JarEntry (JarEntry.java:25) | Checking the rule: BrokenCryptoFinder
+ INFO | 2021-05-17 21:39:58.186 | engine.JarEntry (JarEntry.java:25) | Checking the rule: UntrustedPrngFinder
+ INFO | 2021-05-17 21:39:58.280 | engine.JarEntry (JarEntry.java:25) | Checking the rule: SSLSocketFactoryFinder
+ INFO | 2021-05-17 21:39:58.481 | engine.JarEntry (JarEntry.java:25) | Checking the rule: CustomTrustManagerFinder
+ INFO | 2021-05-17 21:39:58.488 | engine.JarEntry (JarEntry.java:25) | Checking the rule: HostNameVerifierFinder
+ INFO | 2021-05-17 21:39:58.495 | engine.JarEntry (JarEntry.java:25) | Checking the rule: BrokenHashFinder
+ INFO | 2021-05-17 21:39:58.628 | engine.JarEntry (JarEntry.java:25) | Checking the rule: ConstantKeyFinder
+ INFO | 2021-05-17 21:39:58.877 | engine.JarEntry (JarEntry.java:25) | Checking the rule: PredictableIVFinder
+ INFO | 2021-05-17 21:39:58.950 | engine.JarEntry (JarEntry.java:25) | Checking the rule: PBESaltFinder
+ INFO | 2021-05-17 21:39:59.067 | engine.JarEntry (JarEntry.java:25) | Checking the rule: PBEInterationCountFinder
+ INFO | 2021-05-17 21:39:59.148 | engine.JarEntry (JarEntry.java:25) | Checking the rule: PredictableSeedFinder
+ INFO | 2021-05-17 21:39:59.173 | engine.JarEntry (JarEntry.java:25) | Checking the rule: PredictableKeyStorePasswordFinder
+ INFO | 2021-05-17 21:39:59.204 | engine.JarEntry (JarEntry.java:25) | Checking the rule: HttpUrlFinder
+ INFO | 2021-05-17 21:39:59.240 | Interface.SubRunner (SubRunner.java:59) | Stopped the scanning process
+ INFO | 2021-05-17 21:39:59.241 | block.Default (Default.java:68) | Marshalling the Report from the Env. Info.
+ INFO | 2021-05-17 21:39:59.286 | Interface.SubRunner (SubRunner.java:62) | Writing the output to the file: /xxx/PycharmProjects/CryptoDataset/cryptoguard/results/cryptoguard/mcf-core-2.json
+/xxx/PycharmProjects/CryptoDataset/cryptoguard/results/cryptoguard/mcf-core-2.json

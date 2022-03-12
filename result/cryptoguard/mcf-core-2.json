@@ -1,0 +1,71 @@
+{
+  "projectName": "CryptoGuard",
+  "ProjectVersion": "04.05.03_2020-11-25-02-42",
+  "Target": {
+    "RawCommand": "-in jar -o /xxx/PycharmProjects/CryptoDataset/cryptoguard/results/cryptoguard/mcf-core-2.json -s /xxx/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/mcf-core-2.9-SNAPSHOT.jar",
+    "FullPath": "mcf-core-2.9-SNAPSHOT.jar/",
+    "Type": "JAR",
+    "TargetSources": [
+      "/xxx/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/mcf-core-2.9-SNAPSHOT.jar"
+    ],
+    "_PropertiesFilePath": "gradle.properties",
+    "_ComputerOS": "Linux_5.4.0-67-generic",
+    "_JVMVersion": "1.8.0_282-8u282-b08-0ubuntu1~20.04-b08",
+    "_ProjectName": "mcf-core-2"
+  },
+  "Issues": [
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "mcf-core-2.9-SNAPSHOT.jar/org/apache/manifoldcf/core/connectorpool/ConnectorPool.class",
+      "_Id": "0"
+    },
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "mcf-core-2.9-SNAPSHOT.jar/org/apache/manifoldcf/core/database/Database.class",
+      "_Id": "1"
+    },
+    {
+      "Message": "Found: \"SHA\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "mcf-core-2.9-SNAPSHOT.jar/org/apache/manifoldcf/core/system/ManifoldCF.class",
+      "_Id": "2"
+    },
+    {
+      "Message": "Found: Constant \"NowIsTheTime\"",
+      "Description": "Used constant keys in code",
+      "RuleNumber": 3,
+      "RuleDesc": "Used constant keys in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "mcf-core-2.9-SNAPSHOT.jar/org/apache/manifoldcf/core/system/ManifoldCF.class",
+      "_Id": "3"
+    },
+    {
+      "Message": "Found: \"Salty\"",
+      "Description": "Found constant salts in code",
+      "RuleNumber": 9,
+      "RuleDesc": "Found constant salts in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "mcf-core-2.9-SNAPSHOT.jar/org/apache/manifoldcf/core/system/ManifoldCF.class",
+      "_Id": "4"
+    }
+  ],
+  "_SchemaVersion": 3,
+  "_DateTime": "2021-05-17_21:39:55",
+  "_UUID": "c105e3a8-be0b-4063-811c-c4073ceaed81"
+}

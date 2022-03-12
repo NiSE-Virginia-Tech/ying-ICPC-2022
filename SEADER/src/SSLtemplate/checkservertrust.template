@@ -1,0 +1,34 @@
+public void checkServerTrusted(X509Certificate[] $v_0$, String $v_1$) throws CertificateException{
+    if ($v_0$ == null) {
+        throw new IllegalArgumentException("checkServerTrusted:x509Certificate array isnull");
+    }
+
+    if (!($v_0$.length > 0)) {
+        throw new IllegalArgumentException("checkServerTrusted: X509Certificate is empty");
+    }
+
+    if (!(null != $v_1$ && $v_1$.equalsIgnoreCase("RSA"))) {
+        throw new CertificateException("checkServerTrusted: $v_1$ is not RSA");
+    }
+
+
+    try {
+        TrustManagerFactory tmf = TrustManagerFactory.getInstance("X509"); // choose algorithm to match your code
+        tmf.init((KeyStore) null);
+        for (TrustManager trustManager : tmf.getTrustManagers()) {
+                        ((X509TrustManager) trustManager).checkServerTrusted($v_0$, $v_1$);
+        }
+    } catch (Exception e) {
+        throw new CertificateException(e);
+    }
+
+
+    RSAPublicKey pubkey = (RSAPublicKey) $v_0$[0].getPublicKey();
+    String encoded = new BigInteger(1 , pubkey.getEncoded()).toString(16);
+    final boolean expected = PUB_KEY.equalsIgnoreCase(encoded);
+
+    if (!expected) {
+        throw new CertificateException("checkServerTrusted: Expected public key: "
+                                                    + PUB_KEY + ", got public key:" + encoded);
+    }
+}

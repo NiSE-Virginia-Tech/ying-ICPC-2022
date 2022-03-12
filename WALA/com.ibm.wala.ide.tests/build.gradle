@@ -1,0 +1,37 @@
+plugins {
+	id 'com.diffplug.gradle.eclipse.mavencentral'
+	id 'com.github.hauner.jarTest'
+	id 'eclipse'
+}
+
+eclipse.project.natures 'org.eclipse.pde.PluginNature'
+
+sourceSets.test.java.srcDirs = ['src']
+
+eclipseMavenCentral {
+	release eclipseVersion, {
+		[
+				'org.eclipse.core.commands',
+				'org.eclipse.core.jobs',
+				'org.eclipse.core.resources',
+				'org.eclipse.core.runtime',
+				'org.eclipse.equinox.common',
+				'org.eclipse.jface',
+				'org.eclipse.osgi',
+				'org.eclipse.ui.ide',
+				'org.eclipse.ui.workbench',
+		].each { dep 'testImplementation', it }
+		useNativesForRunningPlatform()
+	}
+}
+
+dependencies {
+	testImplementation(
+			'org.osgi:org.osgi.core:4.2.0',
+			project(':com.ibm.wala.core'),
+			project(':com.ibm.wala.ide'),
+			project(':com.ibm.wala.util'),
+			project(configuration: 'testArchives', path: ':com.ibm.wala.core.tests'),
+	)
+	testRuntimeOnly project(':com.ibm.wala.ide.jdt')
+}

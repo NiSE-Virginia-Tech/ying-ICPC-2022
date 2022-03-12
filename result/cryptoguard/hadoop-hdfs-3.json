@@ -1,0 +1,71 @@
+{
+  "projectName": "CryptoGuard",
+  "ProjectVersion": "04.05.03_2020-11-25-02-42",
+  "Target": {
+    "RawCommand": "-in jar -o /xxx/PycharmProjects/CryptoDataset/cryptoguard/results/cryptoguard/hadoop-hdfs-3.json -s /xxx/CryptoAPIDetect/dataset/jar_collections/hadoop-hdfs-3.2.1.jar",
+    "FullPath": "hadoop-hdfs-3.2.1.jar/",
+    "Type": "JAR",
+    "TargetSources": [
+      "/xxx/CryptoAPIDetect/dataset/jar_collections/hadoop-hdfs-3.2.1.jar"
+    ],
+    "_PropertiesFilePath": "gradle.properties",
+    "_ComputerOS": "Linux_5.4.0-67-generic",
+    "_JVMVersion": "1.8.0_282-8u282-b08-0ubuntu1~20.04-b08",
+    "_ProjectName": "hadoop-hdfs-3"
+  },
+  "Issues": [
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "hadoop-hdfs-3.2.1.jar/org/apache/hadoop/hdfs/net/DFSNetworkTopology.class",
+      "_Id": "0"
+    },
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "hadoop-hdfs-3.2.1.jar/org/apache/hadoop/hdfs/server/blockmanagement/ProvidedStorageMap$ProvidedDescriptor.class",
+      "_Id": "1"
+    },
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "hadoop-hdfs-3.2.1.jar/org/apache/hadoop/hdfs/server/datanode/fsdataset/AvailableSpaceVolumeChoosingPolicy.class",
+      "_Id": "2"
+    },
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "hadoop-hdfs-3.2.1.jar/org/apache/hadoop/hdfs/server/blockmanagement/CacheReplicationMonitor.class",
+      "_Id": "3"
+    },
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "hadoop-hdfs-3.2.1.jar/org/apache/hadoop/hdfs/server/blockmanagement/AvailableSpaceBlockPlacementPolicy.class",
+      "_Id": "4"
+    }
+  ],
+  "_SchemaVersion": 3,
+  "_DateTime": "2021-05-17_13:49:34",
+  "_UUID": "7702af74-36c7-4c26-b387-d303246348a5"
+}

@@ -1,0 +1,3 @@
+#!/bin/sh -eux
+
+mvn clean verify -DskipTests=true -B -q

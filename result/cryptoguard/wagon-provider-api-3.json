@@ -1,0 +1,31 @@
+{
+  "projectName": "CryptoGuard",
+  "ProjectVersion": "04.05.03_2020-11-25-02-42",
+  "Target": {
+    "RawCommand": "-in jar -o /xxx/PycharmProjects/CryptoDataset/cryptoguard/results/cryptoguard/wagon-provider-api-3.json -s /xxx/CryptoAPIDetect/dataset/jar_collections/wagon-provider-api-3.3.4.jar",
+    "FullPath": "wagon-provider-api-3.3.4.jar/",
+    "Type": "JAR",
+    "TargetSources": [
+      "/xxx/CryptoAPIDetect/dataset/jar_collections/wagon-provider-api-3.3.4.jar"
+    ],
+    "_PropertiesFilePath": "gradle.properties",
+    "_ComputerOS": "Linux_5.4.0-67-generic",
+    "_JVMVersion": "1.8.0_282-8u282-b08-0ubuntu1~20.04-b08",
+    "_ProjectName": "wagon-provider-api-3"
+  },
+  "Issues": [
+    {
+      "Message": "Found: \"MD5\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "wagon-provider-api-3.3.4.jar/org/apache/maven/wagon/observers/ChecksumObserver.class",
+      "_Id": "0"
+    }
+  ],
+  "_SchemaVersion": 3,
+  "_DateTime": "2021-05-17_13:25:54",
+  "_UUID": "d9576567-f3e2-4959-962f-1a00e54656cd"
+}

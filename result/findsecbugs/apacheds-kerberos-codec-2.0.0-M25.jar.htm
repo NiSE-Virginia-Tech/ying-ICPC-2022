@@ -1,0 +1,516 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>SpotBugs Report</title>
+<style type="text/css">
+		.tablerow0 {
+			background: #EEEEEE;
+		}
+
+		.tablerow1 {
+			background: white;
+		}
+
+		.detailrow0 {
+			background: #EEEEEE;
+		}
+
+		.detailrow1 {
+			background: white;
+		}
+
+		.tableheader {
+			background: #b9b9fe;
+			font-size: larger;
+		}
+
+		.tablerow0:hover, .tablerow1:hover {
+			background: #aaffaa;
+		}
+
+		.priority-1 {
+		    color: red;
+		    font-weight: bold;
+		}
+		.priority-2 {
+		    color: orange;
+		    font-weight: bold;
+		}
+		.priority-3 {
+		    color: green;
+		    font-weight: bold;
+		}
+		.priority-4 {
+		    color: blue;
+		    font-weight: bold;
+		}
+		</style>
+<script type="text/javascript">
+			function toggleRow(elid) {
+				if (document.getElementById) {
+					element = document.getElementById(elid);
+					if (element) {
+						if (element.style.display == 'none') {
+							element.style.display = 'block';
+							//window.status = 'Toggle on!';
+						} else {
+							element.style.display = 'none';
+							//window.status = 'Toggle off!';
+						}
+					}
+				}
+			}
+		</script>
+</head>
+<body>
+<h1>
+<a href="https://spotbugs.github.io/">SpotBugs</a> Report</h1>
+<h2>Project Information</h2>
+<p>Project: 
+		</p>
+<p>SpotBugs version: 3.1.12</p>
+<p>Code analyzed:</p>
+<ul>
+<li>/xxx/CryptoAPIDetect/dataset/group/jackrabbit-oak.git/apacheds-kerberos-codec-2.0.0-M25.jar</li>
+</ul>
+<p>
+<br/>
+<br/>
+</p>
+<h2>Metrics</h2>
+<p>15238 lines of code analyzed,
+	in 478 classes, 
+	in 109 packages.</p>
+<table width="500" cellpadding="5" cellspacing="2">
+<tr class="tableheader">
+<th align="left">Metric</th>
+<th align="right">Total</th>
+<th align="right">Density*</th>
+</tr>
+<tr class="tablerow0">
+<td>High Priority Warnings</td>
+<td align="right">6</td>
+<td align="right">0.39</td>
+</tr>
+<tr class="tablerow1">
+<td>Medium Priority Warnings</td>
+<td align="right">9</td>
+<td align="right">0.59</td>
+</tr>
+<tr class="$totalClass">
+<td>
+<b>Total Warnings</b>
+</td>
+<td align="right">
+<b>15</b>
+</td>
+<td align="right">
+<b>0.98</b>
+</td>
+</tr>
+</table>
+<p>
+<i>(* Defects per Thousand lines of non-commenting source statements)</i>
+</p>
+<p>
+<br/>
+<br/>
+</p>
+<h2>Contents</h2>
+<ul>
+<li>
+<a href="#Warnings_SECURITY">Security Warnings</a>
+</li>
+<li>
+<a href="#Details">Details</a>
+</li>
+</ul>
+<h1>Summary</h1>
+<table width="500" cellpadding="5" cellspacing="2">
+<tr class="tableheader">
+<th align="left">Warning Type</th>
+<th align="right">Number</th>
+</tr>
+<tr class="tablerow0">
+<td>
+<a href="#Warnings_SECURITY">Security Warnings</a>
+</td>
+<td align="right">15</td>
+</tr>
+<tr class="tablerow1">
+<td>
+<b>Total</b>
+</td>
+<td align="right">
+<b>15</b>
+</td>
+</tr>
+</table>
+<h1>Warnings</h1>
+<p>Click on a warning row to see full context information.</p>
+<h2>
+<a name="Warnings_SECURITY">Security Warnings</a>
+</h2>
+<table class="warningtable" width="100%" cellspacing="0">
+<tr class="tableheader">
+<th align="left">Code</th>
+<th align="left">Warning</th>
+</tr>
+<tr class="tablerow1" onclick="toggleRow('N65551');">
+<td>
+<span class="priority-1">CIPINT</span>
+</td>
+<td>The cipher does not provide data integrity</td>
+</tr>
+<tr class="detailrow1">
+<td/>
+<td>
+<p id="N65551" style="display: none;">
+<a href="#CIPHER_INTEGRITY">Bug type CIPHER_INTEGRITY (click for details)</a>
+<br/>In class org.apache.directory.server.kerberos.shared.crypto.encryption.AesCtsSha1Encryption<br/>In method org.apache.directory.server.kerberos.shared.crypto.encryption.AesCtsSha1Encryption.processCipher(boolean, byte[], byte[])<br/>At AesCtsSha1Encryption.java:[line 175]</p>
+</td>
+</tr>
+<tr class="tablerow0" onclick="toggleRow('N65659');">
+<td>
+<span class="priority-1">CIPINT</span>
+</td>
+<td>The cipher does not provide data integrity</td>
+</tr>
+<tr class="detailrow0">
+<td/>
+<td>
+<p id="N65659" style="display: none;">
+<a href="#CIPHER_INTEGRITY">Bug type CIPHER_INTEGRITY (click for details)</a>
+<br/>In class org.apache.directory.server.kerberos.shared.crypto.encryption.ArcFourHmacMd5Encryption<br/>In method org.apache.directory.server.kerberos.shared.crypto.encryption.ArcFourHmacMd5Encryption.processCipher(boolean, byte[], byte[])<br/>At ArcFourHmacMd5Encryption.java:[line 102]</p>
+</td>
+</tr>
+<tr class="tablerow1" onclick="toggleRow('N65713');">
+<td>
+<span class="priority-1">CIPINT</span>
+</td>
+<td>The cipher does not provide data integrity</td>
+</tr>
+<tr class="detailrow1">
+<td/>
+<td>
+<p id="N65713" style="display: none;">
+<a href="#CIPHER_INTEGRITY">Bug type CIPHER_INTEGRITY (click for details)</a>
+<br/>In class org.apache.directory.server.kerberos.shared.crypto.encryption.Des3CbcSha1KdEncryption<br/>In method org.apache.directory.server.kerberos.shared.crypto.encryption.Des3CbcSha1KdEncryption.processCipher(boolean, byte[], byte[])<br/>At Des3CbcSha1KdEncryption.java:[line 267]</p>
+</td>
+</tr>
+<tr class="tablerow0" onclick="toggleRow('N65821');">
+<td>
+<span class="priority-1">CIPINT</span>
+</td>
+<td>The cipher does not provide data integrity</td>
+</tr>
+<tr class="detailrow0">
+<td/>
+<td>
+<p id="N65821" style="display: none;">
+<a href="#CIPHER_INTEGRITY">Bug type CIPHER_INTEGRITY (click for details)</a>
+<br/>In class org.apache.directory.server.kerberos.shared.crypto.encryption.DesCbcCrcEncryption<br/>In method org.apache.directory.server.kerberos.shared.crypto.encryption.DesCbcCrcEncryption.processCipher(boolean, byte[], byte[])<br/>At DesCbcCrcEncryption.java:[line 158]</p>
+</td>
+</tr>
+<tr class="tablerow1" onclick="toggleRow('N65993');">
+<td>
+<span class="priority-1">CIPINT</span>
+</td>
+<td>The cipher does not provide data integrity</td>
+</tr>
+<tr class="detailrow1">
+<td/>
+<td>
+<p id="N65993" style="display: none;">
+<a href="#CIPHER_INTEGRITY">Bug type CIPHER_INTEGRITY (click for details)</a>
+<br/>In class org.apache.directory.server.kerberos.shared.crypto.encryption.DesCbcMd5Encryption<br/>In method org.apache.directory.server.kerberos.shared.crypto.encryption.DesCbcMd5Encryption.processCipher(boolean, byte[], byte[])<br/>At DesCbcMd5Encryption.java:[line 158]</p>
+</td>
+</tr>
+<tr class="tablerow0" onclick="toggleRow('N66165');">
+<td>
+<span class="priority-1">CIPINT</span>
+</td>
+<td>The cipher does not provide data integrity</td>
+</tr>
+<tr class="detailrow0">
+<td/>
+<td>
+<p id="N66165" style="display: none;">
+<a href="#CIPHER_INTEGRITY">Bug type CIPHER_INTEGRITY (click for details)</a>
+<br/>In class org.apache.directory.server.kerberos.shared.crypto.encryption.DesStringToKey<br/>In method org.apache.directory.server.kerberos.shared.crypto.encryption.DesStringToKey.calculateChecksum(byte[], byte[])<br/>At DesStringToKey.java:[line 267]</p>
+</td>
+</tr>
+<tr class="tablerow1" onclick="toggleRow('N65875');">
+<td>
+<span class="priority-2">SECDU</span>
+</td>
+<td>DES should be replaced with AES</td>
+</tr>
+<tr class="detailrow1">
+<td/>
+<td>
+<p id="N65875" style="display: none;">
+<a href="#DES_USAGE">Bug type DES_USAGE (click for details)</a>
+<br/>In class org.apache.directory.server.kerberos.shared.crypto.encryption.DesCbcCrcEncryption<br/>In method org.apache.directory.server.kerberos.shared.crypto.encryption.DesCbcCrcEncryption.processCipher(boolean, byte[], byte[])<br/>At DesCbcCrcEncryption.java:[line 158]<br/>Sink method javax/crypto/Cipher.getInstance(Ljava/lang/String;)Ljavax/crypto/Cipher;<br/>Sink parameter 0</p>
+</td>
+</tr>
+<tr class="tablerow0" onclick="toggleRow('N66047');">
+<td>
+<span class="priority-2">SECDU</span>
+</td>
+<td>DES should be replaced with AES</td>
+</tr>
+<tr class="detailrow0">
+<td/>
+<td>
+<p id="N66047" style="display: none;">
+<a href="#DES_USAGE">Bug type DES_USAGE (click for details)</a>
+<br/>In class org.apache.directory.server.kerberos.shared.crypto.encryption.DesCbcMd5Encryption<br/>In method org.apache.directory.server.kerberos.shared.crypto.encryption.DesCbcMd5Encryption.processCipher(boolean, byte[], byte[])<br/>At DesCbcMd5Encryption.java:[line 158]<br/>Sink method javax/crypto/Cipher.getInstance(Ljava/lang/String;)Ljavax/crypto/Cipher;<br/>Sink parameter 0</p>
+</td>
+</tr>
+<tr class="tablerow1" onclick="toggleRow('N66219');">
+<td>
+<span class="priority-2">SECDU</span>
+</td>
+<td>DES should be replaced with AES</td>
+</tr>
+<tr class="detailrow1">
+<td/>
+<td>
+<p id="N66219" style="display: none;">
+<a href="#DES_USAGE">Bug type DES_USAGE (click for details)</a>
+<br/>In class org.apache.directory.server.kerberos.shared.crypto.encryption.DesStringToKey<br/>In method org.apache.directory.server.kerberos.shared.crypto.encryption.DesStringToKey.calculateChecksum(byte[], byte[])<br/>At DesStringToKey.java:[line 267]<br/>Sink method javax/crypto/Cipher.getInstance(Ljava/lang/String;)Ljavax/crypto/Cipher;<br/>Sink parameter 0</p>
+</td>
+</tr>
+<tr class="tablerow0" onclick="toggleRow('N66337');">
+<td>
+<span class="priority-2">SECHCK</span>
+</td>
+<td>Hard coded cryptographic key found</td>
+</tr>
+<tr class="detailrow0">
+<td/>
+<td>
+<p id="N66337" style="display: none;">
+<a href="#HARD_CODE_KEY">Bug type HARD_CODE_KEY (click for details)</a>
+<br/>In class org.apache.directory.server.kerberos.shared.keytab.Keytab<br/>Value is hard coded in field org.apache.directory.server.kerberos.shared.keytab.Keytab.keytabVersion[B with suspicious name<br/>At Keytab.java:[lines 74-282]</p>
+</td>
+</tr>
+<tr class="tablerow1" onclick="toggleRow('N65605');">
+<td>
+<span class="priority-2">STAIV</span>
+</td>
+<td>The initialization vector (IV) is not properly generated</td>
+</tr>
+<tr class="detailrow1">
+<td/>
+<td>
+<p id="N65605" style="display: none;">
+<a href="#STATIC_IV">Bug type STATIC_IV (click for details)</a>
+<br/>In class org.apache.directory.server.kerberos.shared.crypto.encryption.AesCtsSha1Encryption<br/>In method org.apache.directory.server.kerberos.shared.crypto.encryption.AesCtsSha1Encryption.processCipher(boolean, byte[], byte[])<br/>At AesCtsSha1Encryption.java:[line 178]</p>
+</td>
+</tr>
+<tr class="tablerow0" onclick="toggleRow('N65767');">
+<td>
+<span class="priority-2">STAIV</span>
+</td>
+<td>The initialization vector (IV) is not properly generated</td>
+</tr>
+<tr class="detailrow0">
+<td/>
+<td>
+<p id="N65767" style="display: none;">
+<a href="#STATIC_IV">Bug type STATIC_IV (click for details)</a>
+<br/>In class org.apache.directory.server.kerberos.shared.crypto.encryption.Des3CbcSha1KdEncryption<br/>In method org.apache.directory.server.kerberos.shared.crypto.encryption.Des3CbcSha1KdEncryption.processCipher(boolean, byte[], byte[])<br/>At Des3CbcSha1KdEncryption.java:[line 270]</p>
+</td>
+</tr>
+<tr class="tablerow1" onclick="toggleRow('N65939');">
+<td>
+<span class="priority-2">STAIV</span>
+</td>
+<td>The initialization vector (IV) is not properly generated</td>
+</tr>
+<tr class="detailrow1">
+<td/>
+<td>
+<p id="N65939" style="display: none;">
+<a href="#STATIC_IV">Bug type STATIC_IV (click for details)</a>
+<br/>In class org.apache.directory.server.kerberos.shared.crypto.encryption.DesCbcCrcEncryption<br/>In method org.apache.directory.server.kerberos.shared.crypto.encryption.DesCbcCrcEncryption.processCipher(boolean, byte[], byte[])<br/>At DesCbcCrcEncryption.java:[line 161]</p>
+</td>
+</tr>
+<tr class="tablerow0" onclick="toggleRow('N66111');">
+<td>
+<span class="priority-2">STAIV</span>
+</td>
+<td>The initialization vector (IV) is not properly generated</td>
+</tr>
+<tr class="detailrow0">
+<td/>
+<td>
+<p id="N66111" style="display: none;">
+<a href="#STATIC_IV">Bug type STATIC_IV (click for details)</a>
+<br/>In class org.apache.directory.server.kerberos.shared.crypto.encryption.DesCbcMd5Encryption<br/>In method org.apache.directory.server.kerberos.shared.crypto.encryption.DesCbcMd5Encryption.processCipher(boolean, byte[], byte[])<br/>At DesCbcMd5Encryption.java:[line 161]</p>
+</td>
+</tr>
+<tr class="tablerow1" onclick="toggleRow('N66283');">
+<td>
+<span class="priority-2">STAIV</span>
+</td>
+<td>The initialization vector (IV) is not properly generated</td>
+</tr>
+<tr class="detailrow1">
+<td/>
+<td>
+<p id="N66283" style="display: none;">
+<a href="#STATIC_IV">Bug type STATIC_IV (click for details)</a>
+<br/>In class org.apache.directory.server.kerberos.shared.crypto.encryption.DesStringToKey<br/>In method org.apache.directory.server.kerberos.shared.crypto.encryption.DesStringToKey.calculateChecksum(byte[], byte[])<br/>At DesStringToKey.java:[line 270]</p>
+</td>
+</tr>
+</table>
+<h1>
+<a name="Details">Details</a>
+</h1>
+<h2>
+<a name="CIPHER_INTEGRITY">CIPHER_INTEGRITY: Cipher with no integrity</a>
+</h2>
+            
+<p>
+    The ciphertext produced is susceptible to alteration by an adversary. This mean that the cipher provides no way to detect that the
+    data has been tampered with. If the ciphertext can be controlled by an attacker, it could be altered without detection.
+</p>
+<p>
+    The solution is to use a cipher that includes a Hash based Message Authentication Code (HMAC) to sign the data. Combining a HMAC function to the
+    existing cipher is prone to error <sup><a href="https://moxie.org/blog/the-cryptographic-doom-principle/">[1]</a></sup>. Specifically,
+    it is always recommended that you be able to verify the HMAC first, and only if the data is unmodified, do you then perform any cryptographic
+    functions on the data.
+</p>
+<p>The following modes are vulnerable because they don't provide a HMAC:<br/>
+    - CBC<br/>
+    - OFB<br/>
+    - CTR<br/>
+    - ECB<br/><br/>
+    The following snippets code are some examples of vulnerable code.<br/><br/>
+    <b>Code at risk:</b><br/>
+    <i>AES in CBC mode</i><br/>
+
+    <pre>Cipher c = Cipher.getInstance("AES/CBC/PKCS5Padding");
+c.init(Cipher.ENCRYPT_MODE, k, iv);
+byte[] cipherText = c.doFinal(plainText);</pre>
+    <br/>
+    <i>Triple DES with ECB mode</i><br/>
+
+<pre>Cipher c = Cipher.getInstance("DESede/ECB/PKCS5Padding");
+c.init(Cipher.ENCRYPT_MODE, k, iv);
+byte[] cipherText = c.doFinal(plainText);</pre>
+</p>
+<p>
+    <b>Solution:</b>
+    <pre>Cipher c = Cipher.getInstance("AES/GCM/NoPadding");
+c.init(Cipher.ENCRYPT_MODE, k, iv);
+byte[] cipherText = c.doFinal(plainText);</pre>
+</p>
+<p>
+In the example solution above, the GCM mode introduces an HMAC into the resulting encrypted data, providing integrity of the result.
+</p>
+<br/>
+<p>
+    <b>References</b><br/>
+    <a href="https://en.wikipedia.org/wiki/Authenticated_encryption">Wikipedia: Authenticated encryption</a><br/>
+    <a href="https://csrc.nist.gov/projects/block-cipher-techniques/bcm/modes-develoment#01">NIST: Authenticated Encryption Modes</a><br/>
+    <a href="https://moxie.org/blog/the-cryptographic-doom-principle/">Moxie Marlinspike's blog: The Cryptographic Doom Principle</a><br/>
+    <a href="https://cwe.mitre.org/data/definitions/353.html">CWE-353: Missing Support for Integrity Check</a>
+</p>
+
+        
+<h2>
+<a name="DES_USAGE">DES_USAGE: DES is insecure</a>
+</h2>
+            
+<p>
+DES is considered strong ciphers for modern applications. Currently, NIST recommends the
+usage of AES block ciphers instead of DES.
+</p>
+<p>
+    <b>Example weak code:</b>
+<pre>Cipher c = Cipher.getInstance("DES/ECB/PKCS5Padding");
+c.init(Cipher.ENCRYPT_MODE, k, iv);
+byte[] cipherText = c.doFinal(plainText);</pre>
+</p>
+<p>
+    <b>Example solution:</b>
+    <pre>Cipher c = Cipher.getInstance("AES/GCM/NoPadding");
+c.init(Cipher.ENCRYPT_MODE, k, iv);
+byte[] cipherText = c.doFinal(plainText);</pre>
+</p>
+<br/>
+<p>
+<b>References</b><br/>
+<a href="https://www.nist.gov/news-events/news/2005/06/nist-withdraws-outdated-data-encryption-standard">NIST Withdraws Outdated Data Encryption Standard</a><br/>
+<a href="https://cwe.mitre.org/data/definitions/326.html">CWE-326: Inadequate Encryption Strength</a>
+</p>
+
+        
+<h2>
+<a name="HARD_CODE_KEY">HARD_CODE_KEY: Hard coded key</a>
+</h2>
+            
+<p>
+Cryptographic keys should not be kept in the source code. The source code can be widely shared in an enterprise environment, and is
+certainly shared in open source. To be managed safely, passwords and secret keys should be stored in separate configuration files or keystores.
+(Hard coded passwords are reported separately by the <i>Hard coded password</i> pattern)
+</p>
+<p>
+<p><b>Vulnerable Code:</b><br/>
+
+<pre>byte[] key = {1, 2, 3, 4, 5, 6, 7, 8};
+SecretKeySpec spec = new SecretKeySpec(key, "AES");
+Cipher aes = Cipher.getInstance("AES");
+aes.init(Cipher.ENCRYPT_MODE, spec);
+return aesCipher.doFinal(secretData);</pre>
+</p>
+<br/>
+<p>
+<b>References</b><br/>
+<a href="https://cwe.mitre.org/data/definitions/321.html">CWE-321: Use of Hard-coded Cryptographic Key</a><br/>
+</p>
+
+        
+<h2>
+<a name="STATIC_IV">STATIC_IV: Static IV</a>
+</h2>
+            
+<p>
+    Initialization vector must be regenerated for each message to be encrypted.
+</p>
+<p><b>Vulnerable Code:</b></p>
+<p>
+<pre>
+private static byte[] IV = new byte[16] {(byte)0,(byte)1,(byte)2,[...]};
+
+public void encrypt(String message) throws Exception {
+
+    IvParameterSpec ivSpec = new IvParameterSpec(IV);
+[...]
+</pre>
+<p><b>Solution:</b></p>
+<p>
+<pre>
+public void encrypt(String message) throws Exception {
+
+    byte[] iv = new byte[16];
+    new SecureRandom().nextBytes(iv);
+
+    IvParameterSpec ivSpec = new IvParameterSpec(iv);
+[...]
+</pre>
+</p>
+<br/>
+<p>
+<b>References</b><br/>
+<a href="https://en.wikipedia.org/wiki/Initialization_vector">Wikipedia: Initialization vector</a><br/>
+<a href="https://cwe.mitre.org/data/definitions/329.html">CWE-329: Not Using a Random IV with CBC Mode</a><br/>
+<a href="https://defuse.ca/cbcmodeiv.htm">Encryption - CBC Mode IV: Secret or Not?</a>
+</p>
+            
+        </body>
+</html>

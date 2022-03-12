@@ -1,0 +1,271 @@
+{
+  "projectName": "CryptoGuard",
+  "ProjectVersion": "04.05.03_2020-11-25-02-42",
+  "Target": {
+    "RawCommand": "-in jar -o /xxx/PycharmProjects/CryptoDataset/cryptoguard/results/cryptoguard/meecrowave-core-1.json -s /xxx/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/meecrowave-core-1.2.0-SNAPSHOT.jar",
+    "FullPath": "meecrowave-core-1.2.0-SNAPSHOT.jar/",
+    "Type": "JAR",
+    "TargetSources": [
+      "/xxx/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/meecrowave-core-1.2.0-SNAPSHOT.jar"
+    ],
+    "_PropertiesFilePath": "gradle.properties",
+    "_ComputerOS": "Linux_5.4.0-67-generic",
+    "_JVMVersion": "1.8.0_282-8u282-b08-0ubuntu1~20.04-b08",
+    "_ProjectName": "meecrowave-core-1"
+  },
+  "Issues": [
+    {
+      "Message": "Found: \"DESede\"",
+      "Description": "Found broken crypto schemes",
+      "RuleNumber": 1,
+      "RuleDesc": "Found broken crypto schemes",
+      "CWEId": 256,
+      "Severity": "1",
+      "_FullPath": "meecrowave-core-1.2.0-SNAPSHOT.jar/org/apache/meecrowave/Meecrowave$ValueTransformers$1.class",
+      "_Id": "0"
+    },
+    {
+      "Message": "Found: Constant \"-126\"",
+      "Description": "Used constant keys in code",
+      "RuleNumber": 3,
+      "RuleDesc": "Used constant keys in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "meecrowave-core-1.2.0-SNAPSHOT.jar/org/apache/meecrowave/Meecrowave$ValueTransformers$1.class",
+      "_Id": "1"
+    },
+    {
+      "Message": "Found: Constant \"-93\"",
+      "Description": "Used constant keys in code",
+      "RuleNumber": 3,
+      "RuleDesc": "Used constant keys in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "meecrowave-core-1.2.0-SNAPSHOT.jar/org/apache/meecrowave/Meecrowave$ValueTransformers$1.class",
+      "_Id": "2"
+    },
+    {
+      "Message": "Found: Constant \"-2\"",
+      "Description": "Used constant keys in code",
+      "RuleNumber": 3,
+      "RuleDesc": "Used constant keys in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "meecrowave-core-1.2.0-SNAPSHOT.jar/org/apache/meecrowave/Meecrowave$ValueTransformers$1.class",
+      "_Id": "3"
+    },
+    {
+      "Message": "Found: Constant \"13\"",
+      "Description": "Used constant keys in code",
+      "RuleNumber": 3,
+      "RuleDesc": "Used constant keys in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "meecrowave-core-1.2.0-SNAPSHOT.jar/org/apache/meecrowave/Meecrowave$ValueTransformers$1.class",
+      "_Id": "4"
+    },
+    {
+      "Message": "Found: Constant \"-70\"",
+      "Description": "Used constant keys in code",
+      "RuleNumber": 3,
+      "RuleDesc": "Used constant keys in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "meecrowave-core-1.2.0-SNAPSHOT.jar/org/apache/meecrowave/Meecrowave$ValueTransformers$1.class",
+      "_Id": "5"
+    },
+    {
+      "Message": "Found: Constant \"23\"",
+      "Description": "Used constant keys in code",
+      "RuleNumber": 3,
+      "RuleDesc": "Used constant keys in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "meecrowave-core-1.2.0-SNAPSHOT.jar/org/apache/meecrowave/Meecrowave$ValueTransformers$1.class",
+      "_Id": "6"
+    },
+    {
+      "Message": "Found: Constant \"25\"",
+      "Description": "Used constant keys in code",
+      "RuleNumber": 3,
+      "RuleDesc": "Used constant keys in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "meecrowave-core-1.2.0-SNAPSHOT.jar/org/apache/meecrowave/Meecrowave$ValueTransformers$1.class",
+      "_Id": "7"
+    },
+    {
+      "Message": "Found: Constant \"57\"",
+      "Description": "Used constant keys in code",
+      "RuleNumber": 3,
+      "RuleDesc": "Used constant keys in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "meecrowave-core-1.2.0-SNAPSHOT.jar/org/apache/meecrowave/Meecrowave$ValueTransformers$1.class",
+      "_Id": "8"
+    },
+    {
+      "Message": "Found: Constant \"111\"",
+      "Description": "Used constant keys in code",
+      "RuleNumber": 3,
+      "RuleDesc": "Used constant keys in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "meecrowave-core-1.2.0-SNAPSHOT.jar/org/apache/meecrowave/Meecrowave$ValueTransformers$1.class",
+      "_Id": "9"
+    },
+    {
+      "Message": "Found: Constant \"52\"",
+      "Description": "Used constant keys in code",
+      "RuleNumber": 3,
+      "RuleDesc": "Used constant keys in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "meecrowave-core-1.2.0-SNAPSHOT.jar/org/apache/meecrowave/Meecrowave$ValueTransformers$1.class",
+      "_Id": "10"
+    },
+    {
+      "Message": "Found: Constant \"118\"",
+      "Description": "Used constant keys in code",
+      "RuleNumber": 3,
+      "RuleDesc": "Used constant keys in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "meecrowave-core-1.2.0-SNAPSHOT.jar/org/apache/meecrowave/Meecrowave$ValueTransformers$1.class",
+      "_Id": "11"
+    },
+    {
+      "Message": "Found: Constant \"-84\"",
+      "Description": "Used constant keys in code",
+      "RuleNumber": 3,
+      "RuleDesc": "Used constant keys in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "meecrowave-core-1.2.0-SNAPSHOT.jar/org/apache/meecrowave/Meecrowave$ValueTransformers$1.class",
+      "_Id": "12"
+    },
+    {
+      "Message": "Found: Constant \"47\"",
+      "Description": "Used constant keys in code",
+      "RuleNumber": 3,
+      "RuleDesc": "Used constant keys in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "meecrowave-core-1.2.0-SNAPSHOT.jar/org/apache/meecrowave/Meecrowave$ValueTransformers$1.class",
+      "_Id": "13"
+    },
+    {
+      "Message": "Found: Constant \"57\"",
+      "Description": "Used constant keys in code",
+      "RuleNumber": 3,
+      "RuleDesc": "Used constant keys in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "meecrowave-core-1.2.0-SNAPSHOT.jar/org/apache/meecrowave/Meecrowave$ValueTransformers$1.class",
+      "_Id": "14"
+    },
+    {
+      "Message": "Found: Constant \"85\"",
+      "Description": "Used constant keys in code",
+      "RuleNumber": 3,
+      "RuleDesc": "Used constant keys in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "meecrowave-core-1.2.0-SNAPSHOT.jar/org/apache/meecrowave/Meecrowave$ValueTransformers$1.class",
+      "_Id": "15"
+    },
+    {
+      "Message": "Found: Constant \"-112\"",
+      "Description": "Used constant keys in code",
+      "RuleNumber": 3,
+      "RuleDesc": "Used constant keys in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "meecrowave-core-1.2.0-SNAPSHOT.jar/org/apache/meecrowave/Meecrowave$ValueTransformers$1.class",
+      "_Id": "16"
+    },
+    {
+      "Message": "Found: Constant \"49\"",
+      "Description": "Used constant keys in code",
+      "RuleNumber": 3,
+      "RuleDesc": "Used constant keys in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "meecrowave-core-1.2.0-SNAPSHOT.jar/org/apache/meecrowave/Meecrowave$ValueTransformers$1.class",
+      "_Id": "17"
+    },
+    {
+      "Message": "Found: Constant \"101\"",
+      "Description": "Used constant keys in code",
+      "RuleNumber": 3,
+      "RuleDesc": "Used constant keys in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "meecrowave-core-1.2.0-SNAPSHOT.jar/org/apache/meecrowave/Meecrowave$ValueTransformers$1.class",
+      "_Id": "18"
+    },
+    {
+      "Message": "Found: Constant \"18\"",
+      "Description": "Used constant keys in code",
+      "RuleNumber": 3,
+      "RuleDesc": "Used constant keys in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "meecrowave-core-1.2.0-SNAPSHOT.jar/org/apache/meecrowave/Meecrowave$ValueTransformers$1.class",
+      "_Id": "19"
+    },
+    {
+      "Message": "Found: Constant \"19\"",
+      "Description": "Used constant keys in code",
+      "RuleNumber": 3,
+      "RuleDesc": "Used constant keys in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "meecrowave-core-1.2.0-SNAPSHOT.jar/org/apache/meecrowave/Meecrowave$ValueTransformers$1.class",
+      "_Id": "20"
+    },
+    {
+      "Message": "Found: Constant \"97\"",
+      "Description": "Used constant keys in code",
+      "RuleNumber": 3,
+      "RuleDesc": "Used constant keys in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "meecrowave-core-1.2.0-SNAPSHOT.jar/org/apache/meecrowave/Meecrowave$ValueTransformers$1.class",
+      "_Id": "21"
+    },
+    {
+      "Message": "Found: Constant \"85\"",
+      "Description": "Used constant keys in code",
+      "RuleNumber": 3,
+      "RuleDesc": "Used constant keys in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "meecrowave-core-1.2.0-SNAPSHOT.jar/org/apache/meecrowave/Meecrowave$ValueTransformers$1.class",
+      "_Id": "22"
+    },
+    {
+      "Message": "Found: Constant \"119\"",
+      "Description": "Used constant keys in code",
+      "RuleNumber": 3,
+      "RuleDesc": "Used constant keys in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "meecrowave-core-1.2.0-SNAPSHOT.jar/org/apache/meecrowave/Meecrowave$ValueTransformers$1.class",
+      "_Id": "23"
+    },
+    {
+      "Message": "Found: Constant \"74\"",
+      "Description": "Used constant keys in code",
+      "RuleNumber": 3,
+      "RuleDesc": "Used constant keys in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "meecrowave-core-1.2.0-SNAPSHOT.jar/org/apache/meecrowave/Meecrowave$ValueTransformers$1.class",
+      "_Id": "24"
+    }
+  ],
+  "_SchemaVersion": 3,
+  "_DateTime": "2021-05-17_21:39:24",
+  "_UUID": "9b13d25b-1e63-4ae0-b4d8-2656e7f3011d"
+}

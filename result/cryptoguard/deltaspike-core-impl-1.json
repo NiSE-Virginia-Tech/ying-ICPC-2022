@@ -1,0 +1,41 @@
+{
+  "projectName": "CryptoGuard",
+  "ProjectVersion": "04.05.03_2020-11-25-02-42",
+  "Target": {
+    "RawCommand": "-in jar -o /xxx/PycharmProjects/CryptoDataset/cryptoguard/results/cryptoguard/deltaspike-core-impl-1.json -s /xxx/CryptoAPIDetect/dataset/jar_collections/deltaspike-core-impl-1.9.2.jar",
+    "FullPath": "deltaspike-core-impl-1.9.2.jar/",
+    "Type": "JAR",
+    "TargetSources": [
+      "/xxx/CryptoAPIDetect/dataset/jar_collections/deltaspike-core-impl-1.9.2.jar"
+    ],
+    "_PropertiesFilePath": "gradle.properties",
+    "_ComputerOS": "Linux_5.4.0-67-generic",
+    "_JVMVersion": "1.8.0_282-8u282-b08-0ubuntu1~20.04-b08",
+    "_ProjectName": "deltaspike-core-impl-1"
+  },
+  "Issues": [
+    {
+      "Message": "Found: \"AES\"",
+      "Description": "Found broken crypto schemes",
+      "RuleNumber": 1,
+      "RuleDesc": "Found broken crypto schemes",
+      "CWEId": 256,
+      "Severity": "1",
+      "_FullPath": "deltaspike-core-impl-1.9.2.jar/org/apache/deltaspike/core/impl/crypto/DefaultCipherService.class",
+      "_Id": "0"
+    },
+    {
+      "Message": "Found: \"AES\"",
+      "Description": "Found broken crypto schemes",
+      "RuleNumber": 1,
+      "RuleDesc": "Found broken crypto schemes",
+      "CWEId": 256,
+      "Severity": "1",
+      "_FullPath": "deltaspike-core-impl-1.9.2.jar/org/apache/deltaspike/core/impl/crypto/DefaultCipherService.class",
+      "_Id": "1"
+    }
+  ],
+  "_SchemaVersion": 3,
+  "_DateTime": "2021-05-17_13:25:38",
+  "_UUID": "d9aa93d8-497f-4570-a36b-54272ba151dc"
+}

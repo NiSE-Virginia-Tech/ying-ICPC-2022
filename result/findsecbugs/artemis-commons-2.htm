@@ -1,0 +1,895 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>SpotBugs Report</title>
+<style type="text/css">
+		.tablerow0 {
+			background: #EEEEEE;
+		}
+
+		.tablerow1 {
+			background: white;
+		}
+
+		.detailrow0 {
+			background: #EEEEEE;
+		}
+
+		.detailrow1 {
+			background: white;
+		}
+
+		.tableheader {
+			background: #b9b9fe;
+			font-size: larger;
+		}
+
+		.tablerow0:hover, .tablerow1:hover {
+			background: #aaffaa;
+		}
+
+		.priority-1 {
+		    color: red;
+		    font-weight: bold;
+		}
+		.priority-2 {
+		    color: orange;
+		    font-weight: bold;
+		}
+		.priority-3 {
+		    color: green;
+		    font-weight: bold;
+		}
+		.priority-4 {
+		    color: blue;
+		    font-weight: bold;
+		}
+		</style>
+<script type="text/javascript">
+			function toggleRow(elid) {
+				if (document.getElementById) {
+					element = document.getElementById(elid);
+					if (element) {
+						if (element.style.display == 'none') {
+							element.style.display = 'block';
+							//window.status = 'Toggle on!';
+						} else {
+							element.style.display = 'none';
+							//window.status = 'Toggle off!';
+						}
+					}
+				}
+			}
+		</script>
+</head>
+<body>
+<h1>
+<a href="https://spotbugs.github.io/">SpotBugs</a> Report</h1>
+<h2>Project Information</h2>
+<p>Project: 
+		</p>
+<p>SpotBugs version: 3.1.12</p>
+<p>Code analyzed:</p>
+<ul>
+<li>/xxx/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/artemis-commons-2.5.0-SNAPSHOT.jar</li>
+</ul>
+<p>
+<br/>
+<br/>
+</p>
+<h2>Metrics</h2>
+<p>6510 lines of code analyzed,
+	in 210 classes, 
+	in 11 packages.</p>
+<table width="500" cellpadding="5" cellspacing="2">
+<tr class="tableheader">
+<th align="left">Metric</th>
+<th align="right">Total</th>
+<th align="right">Density*</th>
+</tr>
+<tr class="tablerow0">
+<td>High Priority Warnings</td>
+<td align="right">9</td>
+<td align="right">1.38</td>
+</tr>
+<tr class="tablerow1">
+<td>Medium Priority Warnings</td>
+<td align="right">13</td>
+<td align="right">2.00</td>
+</tr>
+<tr class="$totalClass">
+<td>
+<b>Total Warnings</b>
+</td>
+<td align="right">
+<b>22</b>
+</td>
+<td align="right">
+<b>3.38</b>
+</td>
+</tr>
+</table>
+<p>
+<i>(* Defects per Thousand lines of non-commenting source statements)</i>
+</p>
+<p>
+<br/>
+<br/>
+</p>
+<h2>Contents</h2>
+<ul>
+<li>
+<a href="#Warnings_SECURITY">Security Warnings</a>
+</li>
+<li>
+<a href="#Details">Details</a>
+</li>
+</ul>
+<h1>Summary</h1>
+<table width="500" cellpadding="5" cellspacing="2">
+<tr class="tableheader">
+<th align="left">Warning Type</th>
+<th align="right">Number</th>
+</tr>
+<tr class="tablerow0">
+<td>
+<a href="#Warnings_SECURITY">Security Warnings</a>
+</td>
+<td align="right">21</td>
+</tr>
+<tr class="tablerow1">
+<td>
+<b>Total</b>
+</td>
+<td align="right">
+<b>21</b>
+</td>
+</tr>
+</table>
+<h1>Warnings</h1>
+<p>Click on a warning row to see full context information.</p>
+<h2>
+<a name="Warnings_SECURITY">Security Warnings</a>
+</h2>
+<table class="warningtable" width="100%" cellspacing="0">
+<tr class="tableheader">
+<th align="left">Code</th>
+<th align="left">Warning</th>
+</tr>
+<tr class="tablerow1" onclick="toggleRow('N66475');">
+<td>
+<span class="priority-1">CIPINT</span>
+</td>
+<td>The cipher does not provide data integrity</td>
+</tr>
+<tr class="detailrow1">
+<td/>
+<td>
+<p id="N66475" style="display: none;">
+<a href="#CIPHER_INTEGRITY">Bug type CIPHER_INTEGRITY (click for details)</a>
+<br/>In class org.apache.activemq.artemis.utils.DefaultSensitiveStringCodec$BlowfishAlgorithm<br/>In method org.apache.activemq.artemis.utils.DefaultSensitiveStringCodec$BlowfishAlgorithm.decode(String)<br/>At DefaultSensitiveStringCodec.java:[line 166]</p>
+</td>
+</tr>
+<tr class="tablerow0" onclick="toggleRow('N66529');">
+<td>
+<span class="priority-1">CIPINT</span>
+</td>
+<td>The cipher does not provide data integrity</td>
+</tr>
+<tr class="detailrow0">
+<td/>
+<td>
+<p id="N66529" style="display: none;">
+<a href="#CIPHER_INTEGRITY">Bug type CIPHER_INTEGRITY (click for details)</a>
+<br/>In class org.apache.activemq.artemis.utils.DefaultSensitiveStringCodec$BlowfishAlgorithm<br/>In method org.apache.activemq.artemis.utils.DefaultSensitiveStringCodec$BlowfishAlgorithm.encode(String)<br/>At DefaultSensitiveStringCodec.java:[line 177]</p>
+</td>
+</tr>
+<tr class="tablerow1" onclick="toggleRow('N67022');">
+<td>
+<span class="priority-2">SECBPI</span>
+</td>
+<td>JavaBeans property name populated with user controlled parameters</td>
+</tr>
+<tr class="detailrow1">
+<td/>
+<td>
+<p id="N67022" style="display: none;">
+<a href="#BEAN_PROPERTY_INJECTION">Bug type BEAN_PROPERTY_INJECTION (click for details)</a>
+<br/>In class org.apache.activemq.artemis.utils.uri.BeanSupport<br/>In method org.apache.activemq.artemis.utils.uri.BeanSupport.setData(Object, Map)<br/>At BeanSupport.java:[line 67]<br/>Sink method org/apache/commons/beanutils/BeanUtilsBean.populate(Ljava/lang/Object;Ljava/util/Map;)V<br/>Sink parameter 0<br/>Unknown source org/apache/activemq/artemis/utils/uri/BeanSupport.setData(Ljava/lang/Object;Ljava/util/Map;)Ljava/lang/Object; parameter 0<br/>Method usage not detected</p>
+</td>
+</tr>
+<tr class="tablerow0" onclick="toggleRow('N67095');">
+<td>
+<span class="priority-2">SECBPI</span>
+</td>
+<td>JavaBeans property name populated with user controlled parameters</td>
+</tr>
+<tr class="detailrow0">
+<td/>
+<td>
+<p id="N67095" style="display: none;">
+<a href="#BEAN_PROPERTY_INJECTION">Bug type BEAN_PROPERTY_INJECTION (click for details)</a>
+<br/>In class org.apache.activemq.artemis.utils.uri.BeanSupport<br/>In method org.apache.activemq.artemis.utils.uri.BeanSupport.setData(URI, Object, Map)<br/>At BeanSupport.java:[line 60]<br/>Sink method org/apache/commons/beanutils/BeanUtilsBean.populate(Ljava/lang/Object;Ljava/util/Map;)V<br/>Sink parameter 0<br/>Unknown source org/apache/activemq/artemis/utils/uri/BeanSupport.setData(Ljava/net/URI;Ljava/lang/Object;Ljava/util/Map;)Ljava/lang/Object; parameter 0<br/>Method usage not detected<br/>At BeanSupport.java:[line 139]<br/>At URISchema.java:[line 34]<br/>At URISchema.java:[line 107]<br/>At URISchema.java:[line 111]<br/>At URISchema.java:[line 112]<br/>At URISchema.java:[line 113]<br/>At URISchema.java:[line 116]<br/>At URISchema.java:[line 123]<br/>At URISchema.java:[line 124]</p>
+</td>
+</tr>
+<tr class="tablerow1" onclick="toggleRow('N65551');">
+<td>
+<span class="priority-2">SECCI</span>
+</td>
+<td>This usage of java/lang/ProcessBuilder.&lt;init&gt;([Ljava/lang/String;)V can be vulnerable to Command Injection</td>
+</tr>
+<tr class="detailrow1">
+<td/>
+<td>
+<p id="N65551" style="display: none;">
+<a href="#COMMAND_INJECTION">Bug type COMMAND_INJECTION (click for details)</a>
+<br/>In class org.apache.activemq.artemis.core.server.NetworkHealthCheck<br/>In method org.apache.activemq.artemis.core.server.NetworkHealthCheck.buildProcess(String, long, String)<br/>At NetworkHealthCheck.java:[line 370]<br/>Sink method java/lang/ProcessBuilder.&lt;init&gt;([Ljava/lang/String;)V<br/>Sink parameter 0<br/>Unknown source org/apache/activemq/artemis/core/server/NetworkHealthCheck.buildProcess(Ljava/lang/String;JLjava/lang/String;)Ljava/lang/ProcessBuilder; parameter 0<br/>At NetworkHealthCheck.java:[line 349]<br/>At NetworkHealthCheck.java:[line 351]<br/>At NetworkHealthCheck.java:[line 364]<br/>At NetworkHealthCheck.java:[line 367]<br/>At NetworkHealthCheck.java:[line 370]</p>
+</td>
+</tr>
+<tr class="tablerow0" onclick="toggleRow('N66583');">
+<td>
+<span class="priority-1">SECHCK</span>
+</td>
+<td>Hard coded cryptographic key found</td>
+</tr>
+<tr class="detailrow0">
+<td/>
+<td>
+<p id="N66583" style="display: none;">
+<a href="#HARD_CODE_KEY">Bug type HARD_CODE_KEY (click for details)</a>
+<br/>In class org.apache.activemq.artemis.utils.DefaultSensitiveStringCodec$BlowfishAlgorithm<br/>In method org.apache.activemq.artemis.utils.DefaultSensitiveStringCodec$BlowfishAlgorithm.decode(String)<br/>At DefaultSensitiveStringCodec.java:[line 145]<br/>Called method new javax.crypto.spec.SecretKeySpec(byte[], String)<br/>Hard coded parameter number (in reverse order) is 2<br/>Value loaded from field org.apache.activemq.artemis.utils.DefaultSensitiveStringCodec$BlowfishAlgorithm.internalKey</p>
+</td>
+</tr>
+<tr class="tablerow1" onclick="toggleRow('N66673');">
+<td>
+<span class="priority-1">SECHCK</span>
+</td>
+<td>Hard coded cryptographic key found</td>
+</tr>
+<tr class="detailrow1">
+<td/>
+<td>
+<p id="N66673" style="display: none;">
+<a href="#HARD_CODE_KEY">Bug type HARD_CODE_KEY (click for details)</a>
+<br/>In class org.apache.activemq.artemis.utils.DefaultSensitiveStringCodec$BlowfishAlgorithm<br/>In method org.apache.activemq.artemis.utils.DefaultSensitiveStringCodec$BlowfishAlgorithm.encode(String)<br/>At DefaultSensitiveStringCodec.java:[line 175]<br/>Called method new javax.crypto.spec.SecretKeySpec(byte[], String)<br/>Hard coded parameter number (in reverse order) is 2<br/>Value loaded from field org.apache.activemq.artemis.utils.DefaultSensitiveStringCodec$BlowfishAlgorithm.internalKey</p>
+</td>
+</tr>
+<tr class="tablerow0" onclick="toggleRow('N65789');">
+<td>
+<span class="priority-1">SECOBDES</span>
+</td>
+<td>Object deserialization is used in org.apache.activemq.artemis.utils.Base64.decodeToObject(String)</td>
+</tr>
+<tr class="detailrow0">
+<td/>
+<td>
+<p id="N65789" style="display: none;">
+<a href="#OBJECT_DESERIALIZATION">Bug type OBJECT_DESERIALIZATION (click for details)</a>
+<br/>In class org.apache.activemq.artemis.utils.Base64<br/>In method org.apache.activemq.artemis.utils.Base64.decodeToObject(String)<br/>At Base64.java:[line 952]</p>
+</td>
+</tr>
+<tr class="tablerow1" onclick="toggleRow('N66842');">
+<td>
+<span class="priority-2">SECOPFP</span>
+</td>
+<td>Overly permissive file permission can lead to privilege escalation or information leakage.</td>
+</tr>
+<tr class="detailrow1">
+<td/>
+<td>
+<p id="N66842" style="display: none;">
+<a href="#OVERLY_PERMISSIVE_FILE_PERMISSION">Bug type OVERLY_PERMISSIVE_FILE_PERMISSION (click for details)</a>
+<br/>In class org.apache.activemq.artemis.utils.FileUtil<br/>In method org.apache.activemq.artemis.utils.FileUtil.makeExec(File)<br/>At FileUtil.java:[line 41]</p>
+</td>
+</tr>
+<tr class="tablerow0" onclick="toggleRow('N66964');">
+<td>
+<span class="priority-2">SECPR</span>
+</td>
+<td>This random generator (java.util.Random) is predictable</td>
+</tr>
+<tr class="detailrow0">
+<td/>
+<td>
+<p id="N66964" style="display: none;">
+<a href="#PREDICTABLE_RANDOM">Bug type PREDICTABLE_RANDOM (click for details)</a>
+<br/>In class org.apache.activemq.artemis.utils.RandomUtil<br/>In method org.apache.activemq.artemis.utils.RandomUtil.&lt;static initializer for RandomUtil&gt;()<br/>At RandomUtil.java:[line 29]<br/>Value java.util.Random</p>
+</td>
+</tr>
+<tr class="tablerow1" onclick="toggleRow('N65843');">
+<td>
+<span class="priority-1">SECPTI</span>
+</td>
+<td>This API (java/io/FileInputStream.&lt;init&gt;(Ljava/lang/String;)V) reads a file whose location might be specified by user input</td>
+</tr>
+<tr class="detailrow1">
+<td/>
+<td>
+<p id="N65843" style="display: none;">
+<a href="#PATH_TRAVERSAL_IN">Bug type PATH_TRAVERSAL_IN (click for details)</a>
+<br/>In class org.apache.activemq.artemis.utils.Base64<br/>In method org.apache.activemq.artemis.utils.Base64.decodeFileToFile(String, String)<br/>At Base64.java:[line 1168]<br/>Sink method java/io/FileInputStream.&lt;init&gt;(Ljava/lang/String;)V<br/>Sink parameter 0<br/>Unknown source org/apache/activemq/artemis/utils/Base64.decodeFileToFile(Ljava/lang/String;Ljava/lang/String;)Z parameter 1<br/>Method usage with tainted arguments detected<br/>At Base64.java:[line 369]</p>
+</td>
+</tr>
+<tr class="tablerow0" onclick="toggleRow('N65927');">
+<td>
+<span class="priority-1">SECPTI</span>
+</td>
+<td>This API (java/io/FileInputStream.&lt;init&gt;(Ljava/lang/String;)V) reads a file whose location might be specified by user input</td>
+</tr>
+<tr class="detailrow0">
+<td/>
+<td>
+<p id="N65927" style="display: none;">
+<a href="#PATH_TRAVERSAL_IN">Bug type PATH_TRAVERSAL_IN (click for details)</a>
+<br/>In class org.apache.activemq.artemis.utils.Base64<br/>In method org.apache.activemq.artemis.utils.Base64.encodeFileToFile(String, String)<br/>At Base64.java:[line 1131]<br/>Sink method java/io/FileInputStream.&lt;init&gt;(Ljava/lang/String;)V<br/>Sink parameter 0<br/>Unknown source org/apache/activemq/artemis/utils/Base64.encodeFileToFile(Ljava/lang/String;Ljava/lang/String;)Z parameter 1<br/>Method usage with tainted arguments detected<br/>At Base64.java:[line 367]</p>
+</td>
+</tr>
+<tr class="tablerow1" onclick="toggleRow('N66011');">
+<td>
+<span class="priority-2">SECPTI</span>
+</td>
+<td>This API (java/io/File.&lt;init&gt;(Ljava/lang/String;)V) reads a file whose location might be specified by user input</td>
+</tr>
+<tr class="detailrow1">
+<td/>
+<td>
+<p id="N66011" style="display: none;">
+<a href="#PATH_TRAVERSAL_IN">Bug type PATH_TRAVERSAL_IN (click for details)</a>
+<br/>In class org.apache.activemq.artemis.utils.Base64<br/>In method org.apache.activemq.artemis.utils.Base64.decodeFromFile(String)<br/>At Base64.java:[line 1038]<br/>Sink method java/io/File.&lt;init&gt;(Ljava/lang/String;)V<br/>Sink parameter 0<br/>Unknown source org/apache/activemq/artemis/utils/Base64.decodeFromFile(Ljava/lang/String;)[B parameter 0<br/>Method usage not detected</p>
+</td>
+</tr>
+<tr class="tablerow0" onclick="toggleRow('N66085');">
+<td>
+<span class="priority-2">SECPTI</span>
+</td>
+<td>This API (java/io/File.&lt;init&gt;(Ljava/lang/String;)V) reads a file whose location might be specified by user input</td>
+</tr>
+<tr class="detailrow0">
+<td/>
+<td>
+<p id="N66085" style="display: none;">
+<a href="#PATH_TRAVERSAL_IN">Bug type PATH_TRAVERSAL_IN (click for details)</a>
+<br/>In class org.apache.activemq.artemis.utils.Base64<br/>In method org.apache.activemq.artemis.utils.Base64.encodeFromFile(String)<br/>At Base64.java:[line 1089]<br/>Sink method java/io/File.&lt;init&gt;(Ljava/lang/String;)V<br/>Sink parameter 0<br/>Unknown source org/apache/activemq/artemis/utils/Base64.encodeFromFile(Ljava/lang/String;)Ljava/lang/String; parameter 0<br/>Method usage not detected</p>
+</td>
+</tr>
+<tr class="tablerow1" onclick="toggleRow('N66895');">
+<td>
+<span class="priority-2">SECPTI</span>
+</td>
+<td>This API (java/io/File.&lt;init&gt;(Ljava/io/File;Ljava/lang/String;)V) reads a file whose location might be specified by user input</td>
+</tr>
+<tr class="detailrow1">
+<td/>
+<td>
+<p id="N66895" style="display: none;">
+<a href="#PATH_TRAVERSAL_IN">Bug type PATH_TRAVERSAL_IN (click for details)</a>
+<br/>In class org.apache.activemq.artemis.utils.FileUtil<br/>In method org.apache.activemq.artemis.utils.FileUtil.deleteDirectory(File)<br/>At FileUtil.java:[line 65]<br/>Sink method java/io/File.&lt;init&gt;(Ljava/io/File;Ljava/lang/String;)V<br/>Sink parameter 0<br/>Unknown source java/io/File.list()[Ljava/lang/String;</p>
+</td>
+</tr>
+<tr class="tablerow0" onclick="toggleRow('N66159');">
+<td>
+<span class="priority-1">SECPTO</span>
+</td>
+<td>This API (java/io/FileOutputStream.&lt;init&gt;(Ljava/lang/String;)V) writes to a file whose location might be specified by user input</td>
+</tr>
+<tr class="detailrow0">
+<td/>
+<td>
+<p id="N66159" style="display: none;">
+<a href="#PATH_TRAVERSAL_OUT">Bug type PATH_TRAVERSAL_OUT (click for details)</a>
+<br/>In class org.apache.activemq.artemis.utils.Base64<br/>In method org.apache.activemq.artemis.utils.Base64.decodeFileToFile(String, String)<br/>At Base64.java:[line 1169]<br/>Sink method java/io/FileOutputStream.&lt;init&gt;(Ljava/lang/String;)V<br/>Sink parameter 0<br/>Unknown source org/apache/activemq/artemis/utils/Base64.decodeFileToFile(Ljava/lang/String;Ljava/lang/String;)Z parameter 0<br/>Method usage with tainted arguments detected<br/>At Base64.java:[line 369]</p>
+</td>
+</tr>
+<tr class="tablerow1" onclick="toggleRow('N66243');">
+<td>
+<span class="priority-1">SECPTO</span>
+</td>
+<td>This API (java/io/FileOutputStream.&lt;init&gt;(Ljava/lang/String;)V) writes to a file whose location might be specified by user input</td>
+</tr>
+<tr class="detailrow1">
+<td/>
+<td>
+<p id="N66243" style="display: none;">
+<a href="#PATH_TRAVERSAL_OUT">Bug type PATH_TRAVERSAL_OUT (click for details)</a>
+<br/>In class org.apache.activemq.artemis.utils.Base64<br/>In method org.apache.activemq.artemis.utils.Base64.encodeFileToFile(String, String)<br/>At Base64.java:[line 1132]<br/>Sink method java/io/FileOutputStream.&lt;init&gt;(Ljava/lang/String;)V<br/>Sink parameter 0<br/>Unknown source org/apache/activemq/artemis/utils/Base64.encodeFileToFile(Ljava/lang/String;Ljava/lang/String;)Z parameter 0<br/>Method usage with tainted arguments detected<br/>At Base64.java:[line 367]</p>
+</td>
+</tr>
+<tr class="tablerow0" onclick="toggleRow('N66327');">
+<td>
+<span class="priority-2">SECPTO</span>
+</td>
+<td>This API (java/io/FileOutputStream.&lt;init&gt;(Ljava/lang/String;)V) writes to a file whose location might be specified by user input</td>
+</tr>
+<tr class="detailrow0">
+<td/>
+<td>
+<p id="N66327" style="display: none;">
+<a href="#PATH_TRAVERSAL_OUT">Bug type PATH_TRAVERSAL_OUT (click for details)</a>
+<br/>In class org.apache.activemq.artemis.utils.Base64<br/>In method org.apache.activemq.artemis.utils.Base64.decodeToFile(String, String)<br/>At Base64.java:[line 1010]<br/>Sink method java/io/FileOutputStream.&lt;init&gt;(Ljava/lang/String;)V<br/>Sink parameter 0<br/>Unknown source org/apache/activemq/artemis/utils/Base64.decodeToFile(Ljava/lang/String;Ljava/lang/String;)Z parameter 0<br/>Method usage not detected</p>
+</td>
+</tr>
+<tr class="tablerow1" onclick="toggleRow('N66401');">
+<td>
+<span class="priority-2">SECPTO</span>
+</td>
+<td>This API (java/io/FileOutputStream.&lt;init&gt;(Ljava/lang/String;)V) writes to a file whose location might be specified by user input</td>
+</tr>
+<tr class="detailrow1">
+<td/>
+<td>
+<p id="N66401" style="display: none;">
+<a href="#PATH_TRAVERSAL_OUT">Bug type PATH_TRAVERSAL_OUT (click for details)</a>
+<br/>In class org.apache.activemq.artemis.utils.Base64<br/>In method org.apache.activemq.artemis.utils.Base64.encodeToFile(byte[], String)<br/>At Base64.java:[line 982]<br/>Sink method java/io/FileOutputStream.&lt;init&gt;(Ljava/lang/String;)V<br/>Sink parameter 0<br/>Unknown source org/apache/activemq/artemis/utils/Base64.encodeToFile([BLjava/lang/String;)Z parameter 0<br/>Method usage not detected</p>
+</td>
+</tr>
+<tr class="tablerow0" onclick="toggleRow('N65670');">
+<td>
+<span class="priority-2">SECSSSRFUC</span>
+</td>
+<td>This web server request could be used by an attacker to expose internal services and filesystem.</td>
+</tr>
+<tr class="detailrow0">
+<td/>
+<td>
+<p id="N65670" style="display: none;">
+<a href="#URLCONNECTION_SSRF_FD">Bug type URLCONNECTION_SSRF_FD (click for details)</a>
+<br/>In class org.apache.activemq.artemis.core.server.NetworkHealthCheck<br/>In method org.apache.activemq.artemis.core.server.NetworkHealthCheck.check(URL)<br/>At NetworkHealthCheck.java:[line 392]<br/>Sink method java/net/URL.openConnection()Ljava/net/URLConnection;<br/>Sink parameter 0<br/>Unknown source org/apache/activemq/artemis/core/server/NetworkHealthCheck.check(Ljava/net/URL;)Z parameter 0<br/>At NetworkHealthCheck.java:[line 140]<br/>At NetworkHealthCheck.java:[line 145]<br/>At NetworkHealthCheck.java:[line 229]<br/>At NetworkHealthCheck.java:[line 315]<br/>At NetworkHealthCheck.java:[line 316]</p>
+</td>
+</tr>
+<tr class="tablerow1" onclick="toggleRow('N66763');">
+<td>
+<span class="priority-2">SECUHE</span>
+</td>
+<td>Unsafe comparison of hash that are susceptible to timing attack</td>
+</tr>
+<tr class="detailrow1">
+<td/>
+<td>
+<p id="N66763" style="display: none;">
+<a href="#UNSAFE_HASH_EQUALS">Bug type UNSAFE_HASH_EQUALS (click for details)</a>
+<br/>In class org.apache.activemq.artemis.utils.DefaultSensitiveStringCodec$PBKDF2Algorithm<br/>In method org.apache.activemq.artemis.utils.DefaultSensitiveStringCodec$PBKDF2Algorithm.verify(char[], String)<br/>At DefaultSensitiveStringCodec.java:[line 242]<br/>Sink method java/util/Arrays.equals([B[B)Z<br/>Sink parameter 0<br/>Unknown source org/apache/activemq/artemis/utils/ByteUtil.hexToBytes(Ljava/lang/String;)[B<br/>At DefaultSensitiveStringCodec.java:[line 231]</p>
+</td>
+</tr>
+</table>
+<h1>
+<a name="Details">Details</a>
+</h1>
+<h2>
+<a name="CIPHER_INTEGRITY">CIPHER_INTEGRITY: Cipher with no integrity</a>
+</h2>
+            
+<p>
+    The ciphertext produced is susceptible to alteration by an adversary. This mean that the cipher provides no way to detect that the
+    data has been tampered with. If the ciphertext can be controlled by an attacker, it could be altered without detection.
+</p>
+<p>
+    The solution is to use a cipher that includes a Hash based Message Authentication Code (HMAC) to sign the data. Combining a HMAC function to the
+    existing cipher is prone to error <sup><a href="https://moxie.org/blog/the-cryptographic-doom-principle/">[1]</a></sup>. Specifically,
+    it is always recommended that you be able to verify the HMAC first, and only if the data is unmodified, do you then perform any cryptographic
+    functions on the data.
+</p>
+<p>The following modes are vulnerable because they don't provide a HMAC:<br/>
+    - CBC<br/>
+    - OFB<br/>
+    - CTR<br/>
+    - ECB<br/><br/>
+    The following snippets code are some examples of vulnerable code.<br/><br/>
+    <b>Code at risk:</b><br/>
+    <i>AES in CBC mode</i><br/>
+
+    <pre>Cipher c = Cipher.getInstance("AES/CBC/PKCS5Padding");
+c.init(Cipher.ENCRYPT_MODE, k, iv);
+byte[] cipherText = c.doFinal(plainText);</pre>
+    <br/>
+    <i>Triple DES with ECB mode</i><br/>
+
+<pre>Cipher c = Cipher.getInstance("DESede/ECB/PKCS5Padding");
+c.init(Cipher.ENCRYPT_MODE, k, iv);
+byte[] cipherText = c.doFinal(plainText);</pre>
+</p>
+<p>
+    <b>Solution:</b>
+    <pre>Cipher c = Cipher.getInstance("AES/GCM/NoPadding");
+c.init(Cipher.ENCRYPT_MODE, k, iv);
+byte[] cipherText = c.doFinal(plainText);</pre>
+</p>
+<p>
+In the example solution above, the GCM mode introduces an HMAC into the resulting encrypted data, providing integrity of the result.
+</p>
+<br/>
+<p>
+    <b>References</b><br/>
+    <a href="https://en.wikipedia.org/wiki/Authenticated_encryption">Wikipedia: Authenticated encryption</a><br/>
+    <a href="https://csrc.nist.gov/projects/block-cipher-techniques/bcm/modes-develoment#01">NIST: Authenticated Encryption Modes</a><br/>
+    <a href="https://moxie.org/blog/the-cryptographic-doom-principle/">Moxie Marlinspike's blog: The Cryptographic Doom Principle</a><br/>
+    <a href="https://cwe.mitre.org/data/definitions/353.html">CWE-353: Missing Support for Integrity Check</a>
+</p>
+
+        
+<h2>
+<a name="BEAN_PROPERTY_INJECTION">BEAN_PROPERTY_INJECTION: JavaBeans Property Injection</a>
+</h2>
+            
+<p>
+An attacker can set arbitrary bean properties that can compromise system integrity.
+Bean population functions allow to set a bean property or a nested property.
+An attacker can leverage this functionality to access special bean properties like <code>class.classLoader</code> that will allow him to override system properties and potentially execute arbitrary code.
+</p>
+<p>
+    <b>Vulnerable Code:</b><br/>
+<pre>MyBean bean = ...;
+HashMap map = new HashMap();
+Enumeration names = request.getParameterNames();
+while (names.hasMoreElements()) {
+    String name = (String) names.nextElement();
+    map.put(name, request.getParameterValues(name));
+}
+BeanUtils.populate(bean, map);</pre>
+</p>
+<p>
+    <b>Solution:</b><br/>
+Avoid using user controlled values to populate Bean property names.
+</p>
+<br/>
+<p>
+<b>References</b><br/>
+<a href="https://cwe.mitre.org/data/definitions/15.html">CWE-15: External Control of System or Configuration Setting</a><br/>
+</p>
+            
+        
+<h2>
+<a name="COMMAND_INJECTION">COMMAND_INJECTION: Potential Command Injection</a>
+</h2>
+            
+<p>The highlighted API is used to execute a system command. If unfiltered input is passed to this API, it can lead to arbitrary command execution.</p>
+<br/>
+<p>
+    <b>Vulnerable Code:</b><br/>
+<pre>import java.lang.Runtime;
+
+Runtime r = Runtime.getRuntime();
+r.exec("/bin/sh -c some_tool" + input);</pre>
+</p>
+<p>
+<b>References</b><br/>
+<a href="https://www.owasp.org/index.php/Command_Injection">OWASP: Command Injection</a><br/>
+<a href="https://www.owasp.org/index.php/Top_10_2013-A1-Injection">OWASP: Top 10 2013-A1-Injection</a><br/>
+<a href="https://cwe.mitre.org/data/definitions/78.html">CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')</a>
+</p>
+
+        
+<h2>
+<a name="HARD_CODE_KEY">HARD_CODE_KEY: Hard coded key</a>
+</h2>
+            
+<p>
+Cryptographic keys should not be kept in the source code. The source code can be widely shared in an enterprise environment, and is
+certainly shared in open source. To be managed safely, passwords and secret keys should be stored in separate configuration files or keystores.
+(Hard coded passwords are reported separately by the <i>Hard coded password</i> pattern)
+</p>
+<p>
+<p><b>Vulnerable Code:</b><br/>
+
+<pre>byte[] key = {1, 2, 3, 4, 5, 6, 7, 8};
+SecretKeySpec spec = new SecretKeySpec(key, "AES");
+Cipher aes = Cipher.getInstance("AES");
+aes.init(Cipher.ENCRYPT_MODE, spec);
+return aesCipher.doFinal(secretData);</pre>
+</p>
+<br/>
+<p>
+<b>References</b><br/>
+<a href="https://cwe.mitre.org/data/definitions/321.html">CWE-321: Use of Hard-coded Cryptographic Key</a><br/>
+</p>
+
+        
+<h2>
+<a name="OBJECT_DESERIALIZATION">OBJECT_DESERIALIZATION: Object deserialization is used in {1}</a>
+</h2>
+            
+<p>
+    Object deserialization of untrusted data can lead to remote code execution, if there is a class in classpath that allows
+    the trigger of malicious operation.
+</p>
+<p>
+    Libraries developers tend to fix class that provided potential malicious trigger. There are still classes that are
+    known to trigger Denial of Service<sup>[1]</sup>.
+</p>
+<p>
+    Deserialization is a sensible operation that has a great history of vulnerabilities. The web application might
+    become vulnerable as soon as a new vulnerability is found in the Java Virtual Machine<sup>[2] [3]</sup>.
+</p>
+
+<p>
+<b>Code at risk:</b><br/>
+<pre>
+public UserData deserializeObject(InputStream receivedFile) throws IOException, ClassNotFoundException {
+
+    try (ObjectInputStream in = new ObjectInputStream(receivedFile)) {
+        return (UserData) in.readObject();
+    }
+}
+</pre>
+</p>
+
+<p>
+<b>Solutions:</b><br/>
+<p>
+Avoid deserializing object provided by remote users.
+</p>
+<br/>
+<p>
+<b>References</b><br/>
+<a href="https://cwe.mitre.org/data/definitions/502.html">CWE-502: Deserialization of Untrusted Data</a><br/>
+<a href="https://www.owasp.org/index.php/Deserialization_of_untrusted_data">Deserialization of untrusted data</a><br/>
+<a href="https://www.oracle.com/technetwork/java/seccodeguide-139067.html#8">Serialization and Deserialization </a><br/>
+<a href="https://github.com/frohoff/ysoserial">A tool for generating payloads that exploit unsafe Java object deserialization</a><br/>
+[1] <a href="https://gist.github.com/coekie/a27cc406fc9f3dc7a70d">Example of Denial of Service using the class <code>java.util.HashSet</code></a><br/>
+[2] <a href="https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2015-2590">OpenJDK: Deserialization issue in ObjectInputStream.readSerialData() (CVE-2015-2590)</a><br/>
+[3] <a href="https://www.rapid7.com/db/modules/exploit/multi/browser/java_calendar_deserialize">Rapid7: Sun Java Calendar Deserialization Privilege Escalation (CVE-2008-5353)</a>
+</p>
+
+        
+<h2>
+<a name="OVERLY_PERMISSIVE_FILE_PERMISSION">OVERLY_PERMISSIVE_FILE_PERMISSION: Overly permissive file permission</a>
+</h2>
+            
+<p>
+It is generally a bad practices to set overly permissive file permission such as read+write+exec for all users.
+If the file affected is a configuration, a binary, a script or sensitive data, it can lead to privilege escalation or information leakage.
+</p>
+<p>
+It is possible that another service, running on the same host as your application, gets compromised.
+Services typically run under a different user. A compromised service account could be use to read your configuration, add execution instruction to scripts or alter the data file.
+To limite the damage from other services or local users, you should limited to permission of your application files.
+</p>
+
+<p>
+<b>Vulnerable Code 1 (symbolic notation):</b><br/>
+<pre>
+Files.setPosixFilePermissions(configPath, PosixFilePermissions.fromString("rw-rw-rw-"));
+</pre>
+</p>
+
+<p>
+<b>Solution 1 (symbolic notation):</b><br/>
+<pre>
+Files.setPosixFilePermissions(configPath, PosixFilePermissions.fromString("rw-rw----"));
+</pre>
+</p>
+
+
+<p>
+<b>Vulnerable Code 2 (Object-oriented implementation):</b><br/>
+<pre>
+Set&lt;PosixFilePermission&gt; perms = new HashSet&lt;&gt;();
+perms.add(PosixFilePermission.OWNER_READ);
+perms.add(PosixFilePermission.OWNER_WRITE);
+perms.add(PosixFilePermission.OWNER_EXECUTE);
+
+perms.add(PosixFilePermission.GROUP_READ);
+perms.add(PosixFilePermission.GROUP_WRITE);
+perms.add(PosixFilePermission.GROUP_EXECUTE);
+
+perms.add(PosixFilePermission.OTHERS_READ);
+perms.add(PosixFilePermission.OTHERS_WRITE);
+perms.add(PosixFilePermission.OTHERS_EXECUTE);
+</pre>
+</p>
+
+<p>
+<b>Solution 2 (Object-oriented implementation):</b><br/>
+<pre>
+Set&lt;PosixFilePermission&gt; perms = new HashSet&lt;&gt;();
+perms.add(PosixFilePermission.OWNER_READ);
+perms.add(PosixFilePermission.OWNER_WRITE);
+perms.add(PosixFilePermission.OWNER_EXECUTE);
+
+perms.add(PosixFilePermission.GROUP_READ);
+perms.add(PosixFilePermission.GROUP_WRITE);
+perms.add(PosixFilePermission.GROUP_EXECUTE);
+</pre>
+</p>
+
+<p>
+<b>References</b><br/>
+<a href="https://cwe.mitre.org/data/definitions/732.html">CWE-732: Incorrect Permission Assignment for Critical Resource</a><br/>
+<a href="https://payatu.com/guide-linux-privilege-escalation/">A guide to Linux Privilege Escalation</a><br/>
+<a href="https://en.wikipedia.org/wiki/File_system_permissions">File system permissions</a><br/>
+</p>
+
+            
+        
+<h2>
+<a name="PREDICTABLE_RANDOM">PREDICTABLE_RANDOM: Predictable pseudorandom number generator</a>
+</h2>
+            
+<p>The use of a predictable random value can lead to vulnerabilities when used in certain security critical contexts. For example, when the value is used as:</p>
+<ul>
+<li>a CSRF token: a predictable token can lead to a CSRF attack as an attacker will know the value of the token</li>
+<li>a password reset token (sent by email): a predictable password token can lead to an account takeover, since an attacker will guess the URL of the "change password" form</li>
+<li>any other secret value</li>
+</ul>
+<p>
+A quick fix could be to replace the use of <code>java.util.Random</code> with something stronger, such as <code>java.security.SecureRandom</code>.
+</p>
+<p>
+<b>Vulnerable Code:</b><br/>
+<pre>String generateSecretToken() {
+    Random r = new Random();
+    return Long.toHexString(r.nextLong());
+}</pre>
+</p>
+<p>
+<b>Solution:</b>
+<pre>import org.apache.commons.codec.binary.Hex;
+
+String generateSecretToken() {
+    SecureRandom secRandom = new SecureRandom();
+
+    byte[] result = new byte[32];
+    secRandom.nextBytes(result);
+    return Hex.encodeHexString(result);
+}</pre>
+</p>
+<br/>
+<p>
+<b>References</b><br/>
+<a href="https://jazzy.id.au/2010/09/20/cracking_random_number_generators_part_1.html">Cracking Random Number Generators - Part 1 (https://jazzy.id.au)</a><br/>
+<a href="https://www.securecoding.cert.org/confluence/display/java/MSC02-J.+Generate+strong+random+numbers">CERT: MSC02-J. Generate strong random numbers</a><br/>
+<a href="https://cwe.mitre.org/data/definitions/330.html">CWE-330: Use of Insufficiently Random Values</a><br/>
+<a href="https://blog.h3xstream.com/2014/12/predicting-struts-csrf-token-cve-2014.html">Predicting Struts CSRF Token (Example of real-life vulnerability and exploitation)</a>
+</p>
+
+        
+<h2>
+<a name="PATH_TRAVERSAL_IN">PATH_TRAVERSAL_IN: Potential Path Traversal (file read)</a>
+</h2>
+            
+<p>A file is opened to read its content. The filename comes from an <b>input</b> parameter.
+If an unfiltered parameter is passed to this file API, files from an arbitrary filesystem location could be read.</p>
+<p>This rule identifies <b>potential</b> path traversal vulnerabilities. In many cases, the constructed file path cannot be controlled
+by the user. If that is the case, the reported instance is a false positive.</p>
+<br/>
+
+<p>
+    <b>Vulnerable Code:</b><br/>
+<pre>@GET
+@Path("/images/{image}")
+@Produces("images/*")
+public Response getImage(@javax.ws.rs.PathParam("image") String image) {
+    File file = new File("resources/images/", image); //Weak point
+
+    if (!file.exists()) {
+        return Response.status(Status.NOT_FOUND).build();
+    }
+
+    return Response.ok().entity(new FileInputStream(file)).build();
+}</pre>
+</p>
+<br/>
+
+<p>
+    <b>Solution:</b><br/>
+<pre>import org.apache.commons.io.FilenameUtils;
+
+@GET
+@Path("/images/{image}")
+@Produces("images/*")
+public Response getImage(@javax.ws.rs.PathParam("image") String image) {
+    File file = new File("resources/images/", FilenameUtils.getName(image)); //Fix
+
+    if (!file.exists()) {
+        return Response.status(Status.NOT_FOUND).build();
+    }
+
+    return Response.ok().entity(new FileInputStream(file)).build();
+}</pre>
+</p>
+<br/>
+<p>
+<b>References</b><br/>
+<a href="http://projects.webappsec.org/w/page/13246952/Path%20Traversal">WASC: Path Traversal</a><br/>
+<a href="https://www.owasp.org/index.php/Path_Traversal">OWASP: Path Traversal</a><br/>
+<a href="https://capec.mitre.org/data/definitions/126.html">CAPEC-126: Path Traversal</a><br/>
+<a href="https://cwe.mitre.org/data/definitions/22.html">CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')</a>
+</p>
+
+        
+<h2>
+<a name="PATH_TRAVERSAL_OUT">PATH_TRAVERSAL_OUT: Potential Path Traversal (file write)</a>
+</h2>
+            
+<p>A file is opened to write to its contents. The filename comes from an <b>input</b> parameter.
+If an unfiltered parameter is passed to this file API, files at an arbitrary filesystem location could be modified.</p>
+<p>This rule identifies <b>potential</b> path traversal vulnerabilities. In many cases, the constructed file path cannot be controlled
+by the user. If that is the case, the reported instance is a false positive.</p>
+<br/>
+<p>
+<b>References</b><br/>
+<a href="http://projects.webappsec.org/w/page/13246952/Path%20Traversal">WASC-33: Path Traversal</a><br/>
+<a href="https://www.owasp.org/index.php/Path_Traversal">OWASP: Path Traversal</a><br/>
+<a href="https://capec.mitre.org/data/definitions/126.html">CAPEC-126: Path Traversal</a><br/>
+<a href="https://cwe.mitre.org/data/definitions/22.html">CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')</a>
+</p>
+
+        
+<h2>
+<a name="URLCONNECTION_SSRF_FD">URLCONNECTION_SSRF_FD: URLConnection Server-Side Request Forgery (SSRF) and File Disclosure</a>
+</h2>
+            
+<p>
+    Server-Side Request Forgery occur when a web server executes a request to a user supplied destination
+    parameter that is not validated. Such vulnerabilities could allow an attacker to access internal services
+    or to launch attacks from your web server.
+</p>
+<p>
+    URLConnection can be used with file:// protocol or other protocols to access local filesystem and potentially other services.
+<p>
+    <b>Vulnerable Code:</b>
+<pre>
+new URL(String url).openConnection()
+</pre>
+
+<pre>
+new URL(String url).openStream()
+</pre>
+
+<pre>
+new URL(String url).getContent()
+</pre>
+</p>
+<p>
+    <b>Solution/Countermeasures:</b><br/>
+    <ul>
+        <li>Don't accept URL destinations from users</li>
+        <li>Accept a destination key, and use it to look up the target destination associate with the key</li>
+        <li>White list URLs (if possible)</li>
+        <li>Validate that the beginning of the URL is part of a white list</li>
+    </ul>
+</p>
+<br/>
+<p>
+<b>References</b><br/>
+<a href="https://cwe.mitre.org/data/definitions/918.html">CWE-918: Server-Side Request Forgery (SSRF)</a><br/>
+<a href="https://www.bishopfox.com/blog/2015/04/vulnerable-by-design-understanding-server-side-request-forgery/">Understanding Server-Side Request Forgery</a><br/>
+<a href="https://cwe.mitre.org/data/definitions/73.html">CWE-73: External Control of File Name or Path</a><br/>
+<a href="https://www.pwntester.com/blog/2013/11/28/abusing-jar-downloads/">Abusing jar:// downloads</a><br />
+</p>
+            
+<h2>
+<a name="UNSAFE_HASH_EQUALS">UNSAFE_HASH_EQUALS: Unsafe hash equals</a>
+</h2>
+            
+<p>
+An attacker might be able to detect the value of the secret hash due to the exposure of comparison timing. When the
+functions <code>Arrays.equals()</code> or <code>String.equals()</code> are called, they will exit earlier if fewer
+bytes are matched.
+</p>
+<p>
+<p><b>Vulnerable Code:</b><br/>
+
+<pre>
+String actualHash = ...
+
+if(userInput.equals(actualHash)) {
+    ...
+}</pre>
+</p>
+<p><b>Solution:</b><br/>
+
+<pre>
+String actualHash = ...
+
+if(MessageDigest.isEqual(userInput.getBytes(),actualHash.getBytes())) {
+    ...
+}</pre>
+</p>
+<br/>
+<p>
+<b>References</b><br/>
+<a href="https://cwe.mitre.org/data/definitions/203.html">CWE-203: Information Exposure Through DiscrepancyKey</a><br/>
+</p>
+
+        </body>
+</html>

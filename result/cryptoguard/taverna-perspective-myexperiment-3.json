@@ -1,0 +1,61 @@
+{
+  "projectName": "CryptoGuard",
+  "ProjectVersion": "04.05.03_2020-11-25-02-42",
+  "Target": {
+    "RawCommand": "-in jar -o /xxx/PycharmProjects/CryptoDataset/cryptoguard/results/cryptoguard/taverna-perspective-myexperiment-3.json -s /xxx/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/taverna-perspective-myexperiment-3.1.0-incubating-SNAPSHOT.jar",
+    "FullPath": "taverna-perspective-myexperiment-3.1.0-incubating-SNAPSHOT.jar/",
+    "Type": "JAR",
+    "TargetSources": [
+      "/xxx/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/taverna-perspective-myexperiment-3.1.0-incubating-SNAPSHOT.jar"
+    ],
+    "_PropertiesFilePath": "gradle.properties",
+    "_ComputerOS": "Linux_5.4.0-67-generic",
+    "_JVMVersion": "1.8.0_282-8u282-b08-0ubuntu1~20.04-b08",
+    "_ProjectName": "taverna-perspective-myexperiment-3"
+  },
+  "Issues": [
+    {
+      "Message": "Found: \"PBEWithMD5AndDES\"",
+      "Description": "Found broken crypto schemes",
+      "RuleNumber": 1,
+      "RuleDesc": "Found broken crypto schemes",
+      "CWEId": 256,
+      "Severity": "1",
+      "_FullPath": "taverna-perspective-myexperiment-3.1.0-incubating-SNAPSHOT.jar/org/apache/taverna/ui/perspectives/myexperiment/model/Util.class",
+      "_Id": "0"
+    },
+    {
+      "Message": "Found: \"MD5\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "taverna-perspective-myexperiment-3.1.0-incubating-SNAPSHOT.jar/org/apache/taverna/ui/perspectives/myexperiment/model/Util.class",
+      "_Id": "1"
+    },
+    {
+      "Message": "Found: \"20\"",
+      "Description": "Used < 1000 iteration for PBE",
+      "RuleNumber": 8,
+      "RuleDesc": "Used < 1000 iteration for PBE",
+      "CWEId": 326,
+      "Severity": "1",
+      "_FullPath": "taverna-perspective-myexperiment-3.1.0-incubating-SNAPSHOT.jar/org/apache/taverna/ui/perspectives/myexperiment/model/Util.class",
+      "_Id": "2"
+    },
+    {
+      "Message": "Found: \"http://www.myexperiment.org\"",
+      "Description": "Used HTTP Protocol",
+      "RuleNumber": 7,
+      "RuleDesc": "Used HTTP Protocol",
+      "CWEId": 650,
+      "Severity": "1",
+      "_FullPath": "taverna-perspective-myexperiment-3.1.0-incubating-SNAPSHOT.jar/org/apache/taverna/ui/perspectives/myexperiment/model/MyExperimentClient.class",
+      "_Id": "3"
+    }
+  ],
+  "_SchemaVersion": 3,
+  "_DateTime": "2021-05-17_21:39:36",
+  "_UUID": "80a2f68c-7164-490c-a49d-fdb58d1bcbd7"
+}

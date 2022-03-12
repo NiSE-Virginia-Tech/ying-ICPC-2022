@@ -1,0 +1,20 @@
+{
+  "projectName": "CryptoGuard",
+  "ProjectVersion": "04.05.03_2020-11-25-02-42",
+  "Target": {
+    "RawCommand": "-in jar -o /xxx/PycharmProjects/CryptoDataset/cryptoguard/results/cryptoguard/shiro-crypto-cipher-1.json -s /xxx/CryptoAPIDetect/dataset/jar_collections/shiro-crypto-cipher-1.5.0.jar",
+    "FullPath": "shiro-crypto-cipher-1.5.0.jar/",
+    "Type": "JAR",
+    "TargetSources": [
+      "/xxx/CryptoAPIDetect/dataset/jar_collections/shiro-crypto-cipher-1.5.0.jar"
+    ],
+    "_PropertiesFilePath": "gradle.properties",
+    "_ComputerOS": "Linux_5.4.0-67-generic",
+    "_JVMVersion": "1.8.0_282-8u282-b08-0ubuntu1~20.04-b08",
+    "_ProjectName": "shiro-crypto-cipher-1"
+  },
+  "Issues": [],
+  "_SchemaVersion": 3,
+  "_DateTime": "2021-05-17_13:25:53",
+  "_UUID": "bb200963-4073-4b65-9149-74b421caeac3"
+}

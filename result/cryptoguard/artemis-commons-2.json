@@ -1,0 +1,61 @@
+{
+  "projectName": "CryptoGuard",
+  "ProjectVersion": "04.05.03_2020-11-25-02-42",
+  "Target": {
+    "RawCommand": "-in jar -o /xxx/PycharmProjects/CryptoDataset/cryptoguard/results/cryptoguard/artemis-commons-2.json -s /xxx/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/artemis-commons-2.5.0-SNAPSHOT.jar",
+    "FullPath": "artemis-commons-2.5.0-SNAPSHOT.jar/",
+    "Type": "JAR",
+    "TargetSources": [
+      "/xxx/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/artemis-commons-2.5.0-SNAPSHOT.jar"
+    ],
+    "_PropertiesFilePath": "gradle.properties",
+    "_ComputerOS": "Linux_5.4.0-67-generic",
+    "_JVMVersion": "1.8.0_282-8u282-b08-0ubuntu1~20.04-b08",
+    "_ProjectName": "artemis-commons-2"
+  },
+  "Issues": [
+    {
+      "Message": "Found: \"Blowfish\"",
+      "Description": "Found broken crypto schemes",
+      "RuleNumber": 1,
+      "RuleDesc": "Found broken crypto schemes",
+      "CWEId": 256,
+      "Severity": "1",
+      "_FullPath": "artemis-commons-2.5.0-SNAPSHOT.jar/org/apache/activemq/artemis/utils/DefaultSensitiveStringCodec$BlowfishAlgorithm.class",
+      "_Id": "0"
+    },
+    {
+      "Message": "Found: \"Blowfish\"",
+      "Description": "Found broken crypto schemes",
+      "RuleNumber": 1,
+      "RuleDesc": "Found broken crypto schemes",
+      "CWEId": 256,
+      "Severity": "1",
+      "_FullPath": "artemis-commons-2.5.0-SNAPSHOT.jar/org/apache/activemq/artemis/utils/DefaultSensitiveStringCodec$BlowfishAlgorithm.class",
+      "_Id": "1"
+    },
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "artemis-commons-2.5.0-SNAPSHOT.jar/org/apache/activemq/artemis/utils/RandomUtil.class",
+      "_Id": "2"
+    },
+    {
+      "Message": "Found: Constant \"clusterpassword\"",
+      "Description": "Used constant keys in code",
+      "RuleNumber": 3,
+      "RuleDesc": "Used constant keys in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "artemis-commons-2.5.0-SNAPSHOT.jar/org/apache/activemq/artemis/utils/DefaultSensitiveStringCodec$BlowfishAlgorithm.class",
+      "_Id": "3"
+    }
+  ],
+  "_SchemaVersion": 3,
+  "_DateTime": "2021-05-17_21:38:42",
+  "_UUID": "5754c76f-6d28-4efc-92bd-d8b1fa4b26b7"
+}
