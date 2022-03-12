@@ -14,4 +14,6 @@ The argument should contains jar, the source file location.
 
 to run it, you need to import the wala and changedistiller as submodule, and set changedistiller_test/lib as the lib directory.
 
-The dataset can be found at in dataset folder.
+`dataset` folder contains the jar file we used to run.
+
+`result` folder contains the running result for tools we listed on the paper.
