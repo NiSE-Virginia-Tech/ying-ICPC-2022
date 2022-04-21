@@ -1,7 +1,12 @@
 
-Current Proejct: /xxx/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/mcf-core-2.9-SNAPSHOT.jar
+Current Proejct: /home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/mcf-core-2.9-SNAPSHOT.jar
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$2 (file:/home/ying/CryptoAPIDetect/CogniCrypt/CryptoAnalysis-2.7.1-SNAPSHOT-jar-with-dependencies.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
+WARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$2
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
 [main] INFO crypto.HeadlessCryptoScanner - Using call graph algorithm CHA
-[main] INFO crypto.HeadlessCryptoScanner - Analysis soot setup done in 437.7 ms 
+[main] INFO crypto.HeadlessCryptoScanner - Analysis soot setup done in 673.4 ms 
 [main] INFO crypto.analysis.CryptoScanner - Searching fo Seeds for analysis!
 [main] INFO crypto.analysis.CryptoScanner - Discovered 9 analysis seeds within 0 seconds!
 [main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 1 of 10
@@ -86,83 +91,6 @@ Ruleset:
 
 Analyzed Objects: 
 	Object:
-		Variable: r20
-		Type: javax.crypto.CipherOutputStream
-		Statement: specialinvoke r20.<javax.crypto.CipherOutputStream: void <init>(java.io.OutputStream,javax.crypto.Cipher)>(r17, r4)
-		Method: <org.apache.manifoldcf.core.system.ManifoldCF: java.lang.String encrypt(java.lang.String,java.lang.String,java.lang.String)>
-		SHA-256: 9dac9b14e36a227ee6845dc2e7a10fa18e554c48c865aacc69963669e8ca6a35
-		Secure: false
-	Object:
-		Variable: r1
-		Type: byte[]
-		Statement: virtualinvoke r0.<java.security.SecureRandom: void nextBytes(byte[])>(r1)
-		Method: <org.apache.manifoldcf.core.system.ManifoldCF: byte[] getSecureRandom()>
-		SHA-256: 5d95018a15f9c29fc61034ebbcb500de8366551707cb6981d4dd3e11cb255260
-		Secure: true
-	Object:
-		Variable: r26
-		Type: javax.crypto.spec.IvParameterSpec
-		Statement: specialinvoke r26.<javax.crypto.spec.IvParameterSpec: void <init>(byte[])>(r2)
-		Method: <org.apache.manifoldcf.core.system.ManifoldCF: javax.crypto.Cipher getCipher(java.lang.String,int,java.lang.String,byte[])>
-		SHA-256: e7a92ae4c949cc8c9ce642865027ef3df44613accf9fdc3e826757f6b3e2a5a1
-		Secure: true
-	Object:
-		Variable: varReplacer948
-		Type: int
-		Statement: specialinvoke r24.<javax.crypto.spec.PBEKeySpec: void <init>(char[],byte[],int,int)>($r9, $r11, varReplacer947, varReplacer948)
-		Method: <org.apache.manifoldcf.core.system.ManifoldCF: javax.crypto.Cipher getCipher(java.lang.String,int,java.lang.String,byte[])>
-		SHA-256: 9d889a37f45e53634f3e6ccacbb56f0f9df26a23bb56f424b038851c822c10a2
-		Secure: false
-	Object:
-		Variable: r13
-		Type: byte[]
-		Statement: r13 = virtualinvoke r0.<java.security.MessageDigest: byte[] digest()>()
-		Method: <org.apache.manifoldcf.core.system.ManifoldCF: java.lang.String getHashValue(java.security.MessageDigest)>
-		SHA-256: 7ab0b8d4927e7e73045d80aa7de2446f7c9202b5f26b627a76ef58010c707ed
-		Secure: false
-	Object:
-		Variable: r4
-		Type: javax.crypto.SecretKey
-		Statement: r4 = virtualinvoke r22.<javax.crypto.SecretKeyFactory: javax.crypto.SecretKey generateSecret(java.security.spec.KeySpec)>(r3)
-		Method: <org.apache.manifoldcf.core.system.ManifoldCF: javax.crypto.Cipher getCipher(java.lang.String,int,java.lang.String,byte[])>
-		SHA-256: 334727502255e7ea29e6a568ae12c313685c72a0e5a00d5589c2837bf30f8059
-		Secure: false
-	Object:
-		Variable: $r1
-		Type: java.security.MessageDigest
-		Statement: $r1 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer937)
-		Method: <org.apache.manifoldcf.core.system.ManifoldCF: java.security.MessageDigest startHash()>
-		SHA-256: 19b4498f87d43bcc6747ccc4b5dcdbfcf9211fdc00454aea19c2946aedd748d5
-		Secure: false
-	Object:
-		Variable: r24
-		Type: javax.crypto.spec.PBEKeySpec
-		Statement: specialinvoke r24.<javax.crypto.spec.PBEKeySpec: void <init>(char[],byte[],int,int)>($r9, $r11, varReplacer947, varReplacer948)
-		Method: <org.apache.manifoldcf.core.system.ManifoldCF: javax.crypto.Cipher getCipher(java.lang.String,int,java.lang.String,byte[])>
-		SHA-256: 17c4226c621440bf00b7aaa46bd48bcafef78cf8692952850614b48f06f21428
-		Secure: false
-	Object:
-		Variable: r27
-		Type: javax.crypto.CipherInputStream
-		Statement: specialinvoke r27.<javax.crypto.CipherInputStream: void <init>(java.io.InputStream,javax.crypto.Cipher)>(r21, r22)
-		Method: <org.apache.manifoldcf.core.system.ManifoldCF: java.lang.String decrypt(java.lang.String,java.lang.String,java.lang.String)>
-		SHA-256: 6978c440a310afca7767210a40d0fb94750a3226965a1a27e2a4ba878ff03f0f
-		Secure: false
-	Object:
-		Variable: r22
-		Type: javax.crypto.SecretKeyFactory
-		Statement: r22 = staticinvoke <javax.crypto.SecretKeyFactory: javax.crypto.SecretKeyFactory getInstance(java.lang.String)>(varReplacer950)
-		Method: <org.apache.manifoldcf.core.system.ManifoldCF: javax.crypto.Cipher getCipher(java.lang.String,int,java.lang.String,byte[])>
-		SHA-256: 7b20a61f91761deb4172b583191037687e0fa8af29e22b07147391f0e4a7c83f
-		Secure: false
-	Object:
-		Variable: varReplacer949
-		Type: java.lang.String
-		Statement: specialinvoke r25.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r13, varReplacer949)
-		Method: <org.apache.manifoldcf.core.system.ManifoldCF: javax.crypto.Cipher getCipher(java.lang.String,int,java.lang.String,byte[])>
-		SHA-256: 26a9a0f25e7c8e339b9a20d6598badbbd940cd32714d1f5c6a87dead12b505e4
-		Secure: false
-	Object:
 		Variable: r5
 		Type: javax.crypto.Cipher
 		Statement: r5 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer946)
@@ -172,9 +100,58 @@ Analyzed Objects:
 	Object:
 		Variable: r25
 		Type: javax.crypto.spec.SecretKeySpec
-		Statement: specialinvoke r25.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r13, varReplacer949)
+		Statement: specialinvoke r25.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r13, varReplacer945)
 		Method: <org.apache.manifoldcf.core.system.ManifoldCF: javax.crypto.Cipher getCipher(java.lang.String,int,java.lang.String,byte[])>
-		SHA-256: be2e2f3f873e9484b5f96a07dae87765559e28b09f1f5f9aebf8691947071c33
+		SHA-256: 772693ac00bf3500ee26c9c62da9ff61316eb60758dd249265678f89a39d11f7
+		Secure: false
+	Object:
+		Variable: varReplacer948
+		Type: int
+		Statement: specialinvoke r24.<javax.crypto.spec.PBEKeySpec: void <init>(char[],byte[],int,int)>($r9, $r11, varReplacer947, varReplacer948)
+		Method: <org.apache.manifoldcf.core.system.ManifoldCF: javax.crypto.Cipher getCipher(java.lang.String,int,java.lang.String,byte[])>
+		SHA-256: 9d889a37f45e53634f3e6ccacbb56f0f9df26a23bb56f424b038851c822c10a2
+		Secure: false
+	Object:
+		Variable: r27
+		Type: javax.crypto.CipherInputStream
+		Statement: specialinvoke r27.<javax.crypto.CipherInputStream: void <init>(java.io.InputStream,javax.crypto.Cipher)>(r21, r22)
+		Method: <org.apache.manifoldcf.core.system.ManifoldCF: java.lang.String decrypt(java.lang.String,java.lang.String,java.lang.String)>
+		SHA-256: 6978c440a310afca7767210a40d0fb94750a3226965a1a27e2a4ba878ff03f0f
+		Secure: false
+	Object:
+		Variable: r20
+		Type: javax.crypto.CipherOutputStream
+		Statement: specialinvoke r20.<javax.crypto.CipherOutputStream: void <init>(java.io.OutputStream,javax.crypto.Cipher)>(r17, r4)
+		Method: <org.apache.manifoldcf.core.system.ManifoldCF: java.lang.String encrypt(java.lang.String,java.lang.String,java.lang.String)>
+		SHA-256: 9dac9b14e36a227ee6845dc2e7a10fa18e554c48c865aacc69963669e8ca6a35
+		Secure: false
+	Object:
+		Variable: r22
+		Type: javax.crypto.SecretKeyFactory
+		Statement: r22 = staticinvoke <javax.crypto.SecretKeyFactory: javax.crypto.SecretKeyFactory getInstance(java.lang.String)>(varReplacer949)
+		Method: <org.apache.manifoldcf.core.system.ManifoldCF: javax.crypto.Cipher getCipher(java.lang.String,int,java.lang.String,byte[])>
+		SHA-256: 6bb5660901c8dcccdf36ae5305dd38ed029190838754eac96cbf23d7d8fd5ec9
+		Secure: false
+	Object:
+		Variable: r1
+		Type: byte[]
+		Statement: virtualinvoke r0.<java.security.SecureRandom: void nextBytes(byte[])>(r1)
+		Method: <org.apache.manifoldcf.core.system.ManifoldCF: byte[] getSecureRandom()>
+		SHA-256: 5d95018a15f9c29fc61034ebbcb500de8366551707cb6981d4dd3e11cb255260
+		Secure: true
+	Object:
+		Variable: r13
+		Type: byte[]
+		Statement: r13 = virtualinvoke r0.<java.security.MessageDigest: byte[] digest()>()
+		Method: <org.apache.manifoldcf.core.system.ManifoldCF: java.lang.String getHashValue(java.security.MessageDigest)>
+		SHA-256: 7ab0b8d4927e7e73045d80aa7de2446f7c9202b5f26b627a76ef58010c707ed
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: java.security.MessageDigest
+		Statement: $r1 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer938)
+		Method: <org.apache.manifoldcf.core.system.ManifoldCF: java.security.MessageDigest startHash()>
+		SHA-256: 9acfc5736a257dedde5d00139a12a85d9971f11572d0c35e11d4ee0abd901919
 		Secure: false
 	Object:
 		Variable: $r2
@@ -183,17 +160,45 @@ Analyzed Objects:
 		Method: <org.apache.manifoldcf.core.system.ManifoldCF: byte[] getSecureRandom()>
 		SHA-256: 59be58b0e60919871c7d91af7dd88016ed9d36455e4302426623ef0d424b8b4f
 		Secure: true
+	Object:
+		Variable: r24
+		Type: javax.crypto.spec.PBEKeySpec
+		Statement: specialinvoke r24.<javax.crypto.spec.PBEKeySpec: void <init>(char[],byte[],int,int)>($r9, $r11, varReplacer947, varReplacer948)
+		Method: <org.apache.manifoldcf.core.system.ManifoldCF: javax.crypto.Cipher getCipher(java.lang.String,int,java.lang.String,byte[])>
+		SHA-256: 17c4226c621440bf00b7aaa46bd48bcafef78cf8692952850614b48f06f21428
+		Secure: false
+	Object:
+		Variable: r26
+		Type: javax.crypto.spec.IvParameterSpec
+		Statement: specialinvoke r26.<javax.crypto.spec.IvParameterSpec: void <init>(byte[])>(r2)
+		Method: <org.apache.manifoldcf.core.system.ManifoldCF: javax.crypto.Cipher getCipher(java.lang.String,int,java.lang.String,byte[])>
+		SHA-256: e7a92ae4c949cc8c9ce642865027ef3df44613accf9fdc3e826757f6b3e2a5a1
+		Secure: true
+	Object:
+		Variable: varReplacer945
+		Type: java.lang.String
+		Statement: specialinvoke r25.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r13, varReplacer945)
+		Method: <org.apache.manifoldcf.core.system.ManifoldCF: javax.crypto.Cipher getCipher(java.lang.String,int,java.lang.String,byte[])>
+		SHA-256: 90cd754e6b724229a5e0cb936145312b6069081e3e72a9519054b24903ccaf1b
+		Secure: false
+	Object:
+		Variable: r4
+		Type: javax.crypto.SecretKey
+		Statement: r4 = virtualinvoke r22.<javax.crypto.SecretKeyFactory: javax.crypto.SecretKey generateSecret(java.security.spec.KeySpec)>(r3)
+		Method: <org.apache.manifoldcf.core.system.ManifoldCF: javax.crypto.Cipher getCipher(java.lang.String,int,java.lang.String,byte[])>
+		SHA-256: 334727502255e7ea29e6a568ae12c313685c72a0e5a00d5589c2837bf30f8059
+		Secure: false
 
 Findings in Java Class: org.apache.manifoldcf.core.system.ManifoldCF
 
 	 in Method: java.security.MessageDigest startHash()
-		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #19b4498f87d43bcc6747ccc4b5dcdbfcf9211fdc00454aea19c2946aedd748d5)
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #9acfc5736a257dedde5d00139a12a85d9971f11572d0c35e11d4ee0abd901919)
 			First parameter (with value "SHA") should be any of {SHA-256, SHA-384, SHA-512}
-			at statement: $r1 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer937)
+			at statement: $r1 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer938)
 
 
 	 in Method: java.lang.String getHashValue(java.security.MessageDigest)
-		TypestateError violating CrySL rule for java.security.MessageDigest (on Object #19b4498f87d43bcc6747ccc4b5dcdbfcf9211fdc00454aea19c2946aedd748d5)
+		TypestateError violating CrySL rule for java.security.MessageDigest (on Object #9acfc5736a257dedde5d00139a12a85d9971f11572d0c35e11d4ee0abd901919)
 			Unexpected call to method <java.security.MessageDigest: byte[] digest()> on object of type java.security.MessageDigest. Expect a call to one of the following methods java.security.MessageDigest: void update(byte[],int,int),java.security.MessageDigest: void update(java.nio.ByteBuffer),java.security.MessageDigest: byte[] digest(byte[]),java.security.MessageDigest: void update(byte[]),java.security.MessageDigest: void update(byte)
 			at statement: r13 = virtualinvoke r0.<java.security.MessageDigest: byte[] digest()>()
 
@@ -201,7 +206,7 @@ Findings in Java Class: org.apache.manifoldcf.core.system.ManifoldCF
 	 in Method: javax.crypto.Cipher getCipher(java.lang.String,int,java.lang.String,byte[])
 		RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec
 			First parameter was not properly generated as prepared Key Material
-			at statement: specialinvoke r25.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r13, varReplacer949)
+			at statement: specialinvoke r25.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r13, varReplacer945)
 
 		ConstraintError violating CrySL rule for javax.crypto.spec.PBEKeySpec (on Object #17c4226c621440bf00b7aaa46bd48bcafef78cf8692952850614b48f06f21428)
 			Third parameter (with value 1024)Variable iterationCountmust be  at least 10000
@@ -211,13 +216,9 @@ Findings in Java Class: org.apache.manifoldcf.core.system.ManifoldCF
 			Second parameter was not properly generated as randomized
 			at statement: specialinvoke r24.<javax.crypto.spec.PBEKeySpec: void <init>(char[],byte[],int,int)>($r9, $r11, varReplacer947, varReplacer948)
 
-		ConstraintError violating CrySL rule for javax.crypto.SecretKeyFactory (on Object #7b20a61f91761deb4172b583191037687e0fa8af29e22b07147391f0e4a7c83f)
+		ConstraintError violating CrySL rule for javax.crypto.SecretKeyFactory (on Object #6bb5660901c8dcccdf36ae5305dd38ed029190838754eac96cbf23d7d8fd5ec9)
 			First parameter (with value "PBKDF2WithHmacSHA1") should be any of {PBKDF2WithHmacSHA512, PBKDF2WithHmacSHA384, PBKDF2WithHmacSHA256, PBKDF2WithHmacSHA224, PBEWithHmacSHA512AndAES_128, PBEWithHmacSHA384AndAES_128, PBEWithHmacSHA384AndAES_128, PBEWithHmacSHA224AndAES_128, PBEWithHmacSHA256AndAES_128, PBEWithHmacSHA224AndAES_256, PBEWithHmacSHA256AndAES_256, PBEWithHmacSHA384AndAES_256, PBEWithHmacSHA512AndAES_256}
-			at statement: r22 = staticinvoke <javax.crypto.SecretKeyFactory: javax.crypto.SecretKeyFactory getInstance(java.lang.String)>(varReplacer950)
-
-		NeverTypeOfError violating CrySL rule for javax.crypto.spec.PBEKeySpec (on Object #17c4226c621440bf00b7aaa46bd48bcafef78cf8692952850614b48f06f21428)
-			First parameter should never be of type java.lang.String.
-			at statement: specialinvoke r24.<javax.crypto.spec.PBEKeySpec: void <init>(char[],byte[],int,int)>($r9, $r11, varReplacer947, varReplacer948)
+			at statement: r22 = staticinvoke <javax.crypto.SecretKeyFactory: javax.crypto.SecretKeyFactory getInstance(java.lang.String)>(varReplacer949)
 
 		RequiredPredicateError violating CrySL rule for javax.crypto.SecretKeyFactory
 			First parameter was not properly generated as specced Key
@@ -227,15 +228,9 @@ Findings in Java Class: org.apache.manifoldcf.core.system.ManifoldCF
 			Operation on object of type javax.crypto.spec.PBEKeySpec object not completed. Expected call to clearPassword
 			at statement: r4 = virtualinvoke r22.<javax.crypto.SecretKeyFactory: javax.crypto.SecretKey generateSecret(java.security.spec.KeySpec)>(r3)
 
-
-	 in Method: java.lang.String encrypt(java.lang.String,java.lang.String,java.lang.String)
-		TypestateError violating CrySL rule for javax.crypto.CipherOutputStream (on Object #9dac9b14e36a227ee6845dc2e7a10fa18e554c48c865aacc69963669e8ca6a35)
-			Unexpected call to method close on object of type javax.crypto.CipherOutputStream. Expect a call to one of the following methods write
-			at statement: virtualinvoke r5.<javax.crypto.CipherOutputStream: void close()>()
-
-		IncompleteOperationError violating CrySL rule for javax.crypto.Cipher (on Object #706dec50f4fac2133dada15bbde0aa59ed84bd4d9a8cb77746dd259f02e50802)
-			Operation on object of type javax.crypto.Cipher object not completed. Expected call to update, wrap, doFinal
-			at statement: specialinvoke r20.<javax.crypto.CipherOutputStream: void <init>(java.io.OutputStream,javax.crypto.Cipher)>(r17, r4)
+		NeverTypeOfError violating CrySL rule for javax.crypto.spec.PBEKeySpec (on Object #17c4226c621440bf00b7aaa46bd48bcafef78cf8692952850614b48f06f21428)
+			First parameter should never be of type java.lang.String.
+			at statement: specialinvoke r24.<javax.crypto.spec.PBEKeySpec: void <init>(char[],byte[],int,int)>($r9, $r11, varReplacer947, varReplacer948)
 
 
 	 in Method: javax.crypto.Cipher getCipher(org.apache.manifoldcf.core.interfaces.IThreadContext,int,java.lang.String,byte[])
@@ -254,16 +249,26 @@ Findings in Java Class: org.apache.manifoldcf.core.system.ManifoldCF
 			at statement: specialinvoke r28.<java.io.InputStreamReader: void <init>(java.io.InputStream,java.nio.charset.Charset)>(r4, $r13)
 
 
+	 in Method: java.lang.String encrypt(java.lang.String,java.lang.String,java.lang.String)
+		TypestateError violating CrySL rule for javax.crypto.CipherOutputStream (on Object #9dac9b14e36a227ee6845dc2e7a10fa18e554c48c865aacc69963669e8ca6a35)
+			Unexpected call to method close on object of type javax.crypto.CipherOutputStream. Expect a call to one of the following methods write
+			at statement: virtualinvoke r5.<javax.crypto.CipherOutputStream: void close()>()
+
+		IncompleteOperationError violating CrySL rule for javax.crypto.Cipher (on Object #706dec50f4fac2133dada15bbde0aa59ed84bd4d9a8cb77746dd259f02e50802)
+			Operation on object of type javax.crypto.Cipher object not completed. Expected call to update, wrap, doFinal
+			at statement: specialinvoke r20.<javax.crypto.CipherOutputStream: void <init>(java.io.OutputStream,javax.crypto.Cipher)>(r17, r4)
+
+
 ======================= CogniCrypt Summary ==========================
 	Number of CrySL rules: 39
 	Number of Objects Analyzed: 14
 
 	CogniCrypt found the following violations. For details see description above.
-	IncompleteOperationError: 5
-	ConstraintError: 3
 	TypestateError: 2
 	RequiredPredicateError: 3
 	NeverTypeOfError: 1
+	ConstraintError: 3
+	IncompleteOperationError: 5
 =====================================================================
 [main] INFO crypto.analysis.CryptoScanner - Static Analysis took 0 seconds!
-[main] INFO crypto.HeadlessCryptoScanner - Analysis finished in 2.579 s
+[main] INFO crypto.HeadlessCryptoScanner - Analysis finished in 3.338 s
