@@ -1,7 +1,12 @@
 
-Current Proejct: /xxx/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/taverna-perspective-myexperiment-3.1.0-incubating-SNAPSHOT.jar
+Current Proejct: /home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/taverna-perspective-myexperiment-3.1.0-incubating-SNAPSHOT.jar
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$2 (file:/home/ying/CryptoAPIDetect/CogniCrypt/CryptoAnalysis-2.7.1-SNAPSHOT-jar-with-dependencies.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
+WARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$2
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
 [main] INFO crypto.HeadlessCryptoScanner - Using call graph algorithm CHA
-[main] INFO crypto.HeadlessCryptoScanner - Analysis soot setup done in 517.1 ms 
+[main] INFO crypto.HeadlessCryptoScanner - Analysis soot setup done in 852.4 ms 
 [main] INFO crypto.analysis.CryptoScanner - Searching fo Seeds for analysis!
 [main] INFO crypto.analysis.CryptoScanner - Discovered 4 analysis seeds within 0 seconds!
 [main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 1 of 4
@@ -68,20 +73,6 @@ Ruleset:
 
 Analyzed Objects: 
 	Object:
-		Variable: $r14
-		Type: byte[]
-		Statement: r7 = virtualinvoke r6.<javax.crypto.Cipher: byte[] doFinal(byte[])>($r14)
-		Method: <org.apache.taverna.ui.perspectives.myexperiment.model.Util: byte[] doEncryption(java.lang.String,int)>
-		SHA-256: 13d73904498f07cef04cbf5d2a546a0ba1c0d7132b29de6eedc9694a102ab0de
-		Secure: false
-	Object:
-		Variable: r4
-		Type: byte[]
-		Statement: r4 = virtualinvoke r3.<java.security.MessageDigest: byte[] digest()>()
-		Method: <org.apache.taverna.ui.perspectives.myexperiment.model.Util: byte[] doEncryption(java.lang.String,int)>
-		SHA-256: 36d1fb7ce072dfede88678821b19b7a25daeed465634144f21690e9fe9b7d41b
-		Secure: false
-	Object:
 		Variable: r6
 		Type: javax.crypto.Cipher
 		Statement: r6 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer2779)
@@ -89,11 +80,18 @@ Analyzed Objects:
 		SHA-256: e422a9b7508a6a6c7dbf3a7628ce1cae429bd98698921d4f4d104129baecc432
 		Secure: false
 	Object:
-		Variable: r2
-		Type: javax.crypto.SecretKey
-		Statement: r2 = virtualinvoke r26.<javax.crypto.SecretKeyFactory: javax.crypto.SecretKey generateSecret(java.security.spec.KeySpec)>(r1)
+		Variable: $r14
+		Type: byte[]
+		Statement: r7 = virtualinvoke r6.<javax.crypto.Cipher: byte[] doFinal(byte[])>($r14)
 		Method: <org.apache.taverna.ui.perspectives.myexperiment.model.Util: byte[] doEncryption(java.lang.String,int)>
-		SHA-256: b96460e0234406b603cb8a5d1ffb3c48c2e7788a03a9531b0b9651fd8988a708
+		SHA-256: 13d73904498f07cef04cbf5d2a546a0ba1c0d7132b29de6eedc9694a102ab0de
+		Secure: false
+	Object:
+		Variable: r3
+		Type: java.security.MessageDigest
+		Statement: r3 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer2781)
+		Method: <org.apache.taverna.ui.perspectives.myexperiment.model.Util: byte[] doEncryption(java.lang.String,int)>
+		SHA-256: 368ab9ea2a4574f66b6239ba816623aa4a6d006dbb45b849ffa0c160c54ee4e5
 		Secure: false
 	Object:
 		Variable: r7
@@ -103,18 +101,18 @@ Analyzed Objects:
 		SHA-256: 84e930632df9664b107228b6280e0c9ed6ba6e426e75a7d270b9f5e74faf7f88
 		Secure: false
 	Object:
-		Variable: r26
-		Type: javax.crypto.SecretKeyFactory
-		Statement: r26 = staticinvoke <javax.crypto.SecretKeyFactory: javax.crypto.SecretKeyFactory getInstance(java.lang.String)>(varReplacer2776)
+		Variable: r2
+		Type: javax.crypto.SecretKey
+		Statement: r2 = virtualinvoke r26.<javax.crypto.SecretKeyFactory: javax.crypto.SecretKey generateSecret(java.security.spec.KeySpec)>(r1)
 		Method: <org.apache.taverna.ui.perspectives.myexperiment.model.Util: byte[] doEncryption(java.lang.String,int)>
-		SHA-256: 8912ec4cf733ebe02ec55ba6bbd106d0e65cd3f85ca22a0dac41278cee6463da
+		SHA-256: b96460e0234406b603cb8a5d1ffb3c48c2e7788a03a9531b0b9651fd8988a708
 		Secure: false
 	Object:
-		Variable: r3
-		Type: java.security.MessageDigest
-		Statement: r3 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer2778)
+		Variable: r26
+		Type: javax.crypto.SecretKeyFactory
+		Statement: r26 = staticinvoke <javax.crypto.SecretKeyFactory: javax.crypto.SecretKeyFactory getInstance(java.lang.String)>(varReplacer2780)
 		Method: <org.apache.taverna.ui.perspectives.myexperiment.model.Util: byte[] doEncryption(java.lang.String,int)>
-		SHA-256: 28b650034a76857a31fea0e4c6b1d3f846490dd63b77191c8da6d527c08f4811
+		SHA-256: e6319ba3f0f5824307666d711085bbca69778d730861dca3249d78b48207d049
 		Secure: false
 	Object:
 		Variable: $r13
@@ -123,13 +121,20 @@ Analyzed Objects:
 		Method: <org.apache.taverna.ui.perspectives.myexperiment.model.Util: byte[] doEncryption(java.lang.String,int)>
 		SHA-256: 18c2a7d1ec69a17cc39038d88ef86c175555d2f5dd3a7c661146979d03de69d
 		Secure: false
+	Object:
+		Variable: r4
+		Type: byte[]
+		Statement: r4 = virtualinvoke r3.<java.security.MessageDigest: byte[] digest()>()
+		Method: <org.apache.taverna.ui.perspectives.myexperiment.model.Util: byte[] doEncryption(java.lang.String,int)>
+		SHA-256: 36d1fb7ce072dfede88678821b19b7a25daeed465634144f21690e9fe9b7d41b
+		Secure: false
 
 Findings in Java Class: org.apache.taverna.ui.perspectives.myexperiment.model.Util
 
 	 in Method: byte[] doEncryption(java.lang.String,int)
-		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #28b650034a76857a31fea0e4c6b1d3f846490dd63b77191c8da6d527c08f4811)
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #368ab9ea2a4574f66b6239ba816623aa4a6d006dbb45b849ffa0c160c54ee4e5)
 			First parameter (with value "MD5") should be any of {SHA-256, SHA-384, SHA-512}
-			at statement: r3 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer2778)
+			at statement: r3 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer2781)
 
 		ForbiddenMethodError violating CrySL rule for javax.crypto.spec.PBEKeySpec
 			Detected call to forbidden method void <init>(char[]) of class javax.crypto.spec.PBEKeySpec. Instead, call method <javax.crypto.spec.PBEKeySpec: void <init>(char[],byte[],int,int)>.
@@ -143,9 +148,9 @@ Findings in Java Class: org.apache.taverna.ui.perspectives.myexperiment.model.Ut
 			First parameter (with value "PBEWithMD5AndDES") should be any of {AES, PBEWithHmacSHA224AndAES_128, PBEWithHmacSHA256AndAES_128, PBEWithHmacSHA384AndAES_128, PBEWithHmacSHA512AndAES_128, PBEWithHmacSHA224AndAES_256, PBEWithHmacSHA256AndAES_256, PBEWithHmacSHA384AndAES_256, PBEWithHmacSHA512AndAES_256}
 			at statement: r6 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer2779)
 
-		ConstraintError violating CrySL rule for javax.crypto.SecretKeyFactory (on Object #8912ec4cf733ebe02ec55ba6bbd106d0e65cd3f85ca22a0dac41278cee6463da)
+		ConstraintError violating CrySL rule for javax.crypto.SecretKeyFactory (on Object #e6319ba3f0f5824307666d711085bbca69778d730861dca3249d78b48207d049)
 			First parameter (with value "PBEWithMD5AndDES") should be any of {PBKDF2WithHmacSHA512, PBKDF2WithHmacSHA384, PBKDF2WithHmacSHA256, PBKDF2WithHmacSHA224, PBEWithHmacSHA512AndAES_128, PBEWithHmacSHA384AndAES_128, PBEWithHmacSHA384AndAES_128, PBEWithHmacSHA224AndAES_128, PBEWithHmacSHA256AndAES_128, PBEWithHmacSHA224AndAES_256, PBEWithHmacSHA256AndAES_256, PBEWithHmacSHA384AndAES_256, PBEWithHmacSHA512AndAES_256}
-			at statement: r26 = staticinvoke <javax.crypto.SecretKeyFactory: javax.crypto.SecretKeyFactory getInstance(java.lang.String)>(varReplacer2776)
+			at statement: r26 = staticinvoke <javax.crypto.SecretKeyFactory: javax.crypto.SecretKeyFactory getInstance(java.lang.String)>(varReplacer2780)
 
 		ConstraintError violating CrySL rule for javax.crypto.spec.PBEParameterSpec (on Object #18c2a7d1ec69a17cc39038d88ef86c175555d2f5dd3a7c661146979d03de69d)
 			Second parameter (with value 20)Variable iterationCountmust be  at least 10000
@@ -165,9 +170,9 @@ Findings in Java Class: org.apache.taverna.ui.perspectives.myexperiment.model.Ut
 	Number of Objects Analyzed: 8
 
 	CogniCrypt found the following violations. For details see description above.
-	ConstraintError: 4
-	RequiredPredicateError: 3
 	ForbiddenMethodError: 1
+	RequiredPredicateError: 3
+	ConstraintError: 4
 =====================================================================
 [main] INFO crypto.analysis.CryptoScanner - Static Analysis took 0 seconds!
-[main] INFO crypto.HeadlessCryptoScanner - Analysis finished in 2.259 s
+[main] INFO crypto.HeadlessCryptoScanner - Analysis finished in 3.234 s

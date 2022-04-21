@@ -1,0 +1,199 @@
+
+Current Proejct: /home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/deltaspike-core-impl-1.8.1-SNAPSHOT.jar
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$2 (file:/home/ying/CryptoAPIDetect/CogniCrypt/CryptoAnalysis-2.7.1-SNAPSHOT-jar-with-dependencies.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
+WARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$2
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[main] INFO crypto.HeadlessCryptoScanner - Using call graph algorithm CHA
+[main] INFO crypto.HeadlessCryptoScanner - Analysis soot setup done in 752.2 ms 
+[main] INFO crypto.analysis.CryptoScanner - Searching fo Seeds for analysis!
+[main] INFO crypto.analysis.CryptoScanner - Discovered 4 analysis seeds within 0 seconds!
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 1 of 6
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.17
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 2 of 8
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.25
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 3 of 10
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.3
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 4 of 11
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.36
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 5 of 11
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.45
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 6 of 11
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.55
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 7 of 11
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.64
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 8 of 11
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.73
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 9 of 11
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.82
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 10 of 11
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.91
+
+Ruleset: 
+	java.security.AlgorithmParameters
+	javax.net.ssl.SSLParameters
+	java.security.DigestOutputStream
+	java.security.spec.RSAKeyGenParameterSpec
+	javax.net.ssl.CertPathTrustManagerParameters
+	javax.net.ssl.SSLEngine
+	java.security.cert.PKIXParameters
+	javax.net.ssl.TrustManagerFactory
+	javax.net.ssl.KeyStoreBuilderParameters
+	javax.crypto.spec.DHGenParameterSpec
+	javax.crypto.spec.PBEParameterSpec
+	javax.crypto.SecretKeyFactory
+	javax.crypto.CipherOutputStream
+	java.security.cert.PKIXBuilderParameters
+	javax.crypto.spec.GCMParameterSpec
+	java.security.KeyStore
+	javax.net.ssl.KeyManagerFactory
+	javax.net.ssl.SSLContext
+	java.security.spec.DSAGenParameterSpec
+	javax.crypto.KeyGenerator
+	javax.crypto.spec.IvParameterSpec
+	java.security.spec.DSAParameterSpec
+	javax.crypto.Cipher
+	java.security.cert.TrustAnchor
+	java.security.SecureRandom
+	javax.crypto.CipherInputStream
+	java.security.Key
+	javax.crypto.spec.PBEKeySpec
+	javax.crypto.Mac
+	void
+	javax.crypto.SecretKey
+	java.security.Signature
+	javax.xml.crypto.dsig.spec.HMACParameterSpec
+	java.security.KeyPairGenerator
+	java.security.DigestInputStream
+	java.security.MessageDigest
+	java.security.KeyPair
+	javax.crypto.spec.SecretKeySpec
+	javax.crypto.spec.DHParameterSpec
+
+Analyzed Objects: 
+	Object:
+		Variable: $r4
+		Type: byte[]
+		Statement: $r4 = virtualinvoke r7.<java.security.MessageDigest: byte[] digest(byte[])>($r3)
+		Method: <org.apache.deltaspike.core.impl.crypto.DefaultCipherService: byte[] secureHash(java.lang.String)>
+		SHA-256: 4595c5620245a20782b6014498eabb32b4393c9abf94d29e93df9613870268ba
+		Secure: true
+	Object:
+		Variable: r1
+		Type: byte[]
+		Statement: $r5 = virtualinvoke r3.<javax.crypto.Cipher: byte[] doFinal(byte[])>(r1)
+		Method: <org.apache.deltaspike.core.impl.crypto.DefaultCipherService: java.lang.String aesDecrypt(byte[],java.lang.String)>
+		SHA-256: b468176250e675042ec939a4c4bb4ac42b0bd724273ac38130714b9072d8731
+		Secure: false
+	Object:
+		Variable: r3
+		Type: javax.crypto.Cipher
+		Statement: r3 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer92)
+		Method: <org.apache.deltaspike.core.impl.crypto.DefaultCipherService: byte[] aesEncrypt(java.lang.String,java.lang.String)>
+		SHA-256: c8f27010d5b42defa20fe1ead31a2d7777547c1c73c56263be9fda21b277e418
+		Secure: false
+	Object:
+		Variable: $r5
+		Type: byte[]
+		Statement: $r6 = virtualinvoke r3.<javax.crypto.Cipher: byte[] doFinal(byte[])>($r5)
+		Method: <org.apache.deltaspike.core.impl.crypto.DefaultCipherService: byte[] aesEncrypt(java.lang.String,java.lang.String)>
+		SHA-256: 63bc638db72d0332aecb02709ac5e1455cd3e0bc94947268064d3bd6de6533e2
+		Secure: false
+	Object:
+		Variable: varReplacer97
+		Type: java.lang.String
+		Statement: specialinvoke $r4.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>(r3, varReplacer97)
+		Method: <org.apache.deltaspike.core.impl.crypto.DefaultCipherService: javax.crypto.spec.SecretKeySpec getSecretKeySpec(java.lang.String)>
+		SHA-256: 50daa17189f7d25cb742eb0db3334cf6a33c8bfb1ad6378d620fdaf11fa090d0
+		Secure: false
+	Object:
+		Variable: $r6
+		Type: byte[]
+		Statement: $r6 = virtualinvoke r3.<javax.crypto.Cipher: byte[] doFinal(byte[])>($r5)
+		Method: <org.apache.deltaspike.core.impl.crypto.DefaultCipherService: byte[] aesEncrypt(java.lang.String,java.lang.String)>
+		SHA-256: ca2461489f035c9a3980eb3a6f53cef87221200923d678741471862d35a2f8bf
+		Secure: false
+	Object:
+		Variable: $r5
+		Type: byte[]
+		Statement: $r5 = virtualinvoke r3.<javax.crypto.Cipher: byte[] doFinal(byte[])>(r1)
+		Method: <org.apache.deltaspike.core.impl.crypto.DefaultCipherService: java.lang.String aesDecrypt(byte[],java.lang.String)>
+		SHA-256: 690ebfe40ad976f85aa17a50c2d3706db9afb99318cf877322831217c140be03
+		Secure: false
+	Object:
+		Variable: $r4
+		Type: javax.crypto.spec.SecretKeySpec
+		Statement: specialinvoke $r4.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>(r3, varReplacer97)
+		Method: <org.apache.deltaspike.core.impl.crypto.DefaultCipherService: javax.crypto.spec.SecretKeySpec getSecretKeySpec(java.lang.String)>
+		SHA-256: 58c55c2928aeafeb0356686698d97cb0fd3aa2d5f34813f1235db9f3602a68aa
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: byte[]
+		Statement: $r4 = virtualinvoke r7.<java.security.MessageDigest: byte[] digest(byte[])>($r3)
+		Method: <org.apache.deltaspike.core.impl.crypto.DefaultCipherService: byte[] secureHash(java.lang.String)>
+		SHA-256: 303824adbce793a6f725af38b71f377fbe87ec26fee06c8d0fc1eb24320c32ed
+		Secure: true
+	Object:
+		Variable: r3
+		Type: javax.crypto.Cipher
+		Statement: r3 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer95)
+		Method: <org.apache.deltaspike.core.impl.crypto.DefaultCipherService: java.lang.String aesDecrypt(byte[],java.lang.String)>
+		SHA-256: 66b5e597e13bf54fd1733c0f0019a0b0f03fe5032667bd8d87ce86a13daa0f25
+		Secure: false
+	Object:
+		Variable: r7
+		Type: java.security.MessageDigest
+		Statement: r7 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer91)
+		Method: <org.apache.deltaspike.core.impl.crypto.DefaultCipherService: byte[] secureHash(java.lang.String)>
+		SHA-256: 849a9464163021d3b057c9d0dbc7649548b7ec7642fb216fac10da164d619645
+		Secure: true
+
+Findings in Java Class: org.apache.deltaspike.core.impl.crypto.DefaultCipherService
+
+	 in Method: byte[] aesEncrypt(java.lang.String,java.lang.String)
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Second parameter was not properly generated as generated Key
+			at statement: virtualinvoke r3.<javax.crypto.Cipher: void init(int,java.security.Key)>(varReplacer93, r9)
+
+		ConstraintError violating CrySL rule for javax.crypto.Cipher (on Object #c8f27010d5b42defa20fe1ead31a2d7777547c1c73c56263be9fda21b277e418)
+			First parameter (with value "AES") should be any of AES/{CBC, GCM, PCBC, CTR, CTS, CFB, OFB}
+			at statement: r3 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer92)
+
+
+	 in Method: java.lang.String aesDecrypt(byte[],java.lang.String)
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Second parameter was not properly generated as generated Key
+			at statement: virtualinvoke r3.<javax.crypto.Cipher: void init(int,java.security.Key)>(varReplacer94, r9)
+
+		ConstraintError violating CrySL rule for javax.crypto.Cipher (on Object #66b5e597e13bf54fd1733c0f0019a0b0f03fe5032667bd8d87ce86a13daa0f25)
+			First parameter (with value "AES") should be any of AES/{CBC, GCM, PCBC, CTR, CTS, CFB, OFB}
+			at statement: r3 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer95)
+
+
+	 in Method: javax.crypto.spec.SecretKeySpec getSecretKeySpec(java.lang.String)
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec
+			First parameter was not properly generated as prepared Key Material
+			at statement: specialinvoke $r4.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>(r3, varReplacer97)
+
+
+======================= CogniCrypt Summary ==========================
+	Number of CrySL rules: 39
+	Number of Objects Analyzed: 11
+
+	CogniCrypt found the following violations. For details see description above.
+	ConstraintError: 2
+	RequiredPredicateError: 3
+=====================================================================
+[main] INFO crypto.analysis.CryptoScanner - Static Analysis took 0 seconds!
+[main] INFO crypto.HeadlessCryptoScanner - Analysis finished in 2.507 s

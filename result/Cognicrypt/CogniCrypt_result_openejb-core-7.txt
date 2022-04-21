@@ -1,18 +1,25 @@
+
+Current Proejct: /home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/openejb-core-7.0.5-SNAPSHOT.jar
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$2 (file:/home/ying/CryptoAPIDetect/CogniCrypt/CryptoAnalysis-2.7.1-SNAPSHOT-jar-with-dependencies.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
+WARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$2
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
 [main] INFO crypto.HeadlessCryptoScanner - Using call graph algorithm CHA
-[main] INFO crypto.HeadlessCryptoScanner - Analysis soot setup done in 1.253 s 
+[main] INFO crypto.HeadlessCryptoScanner - Analysis soot setup done in 2.304 s 
 [main] INFO crypto.analysis.CryptoScanner - Searching fo Seeds for analysis!
 [main] INFO crypto.analysis.CryptoScanner - Discovered 5 analysis seeds within 2 seconds!
 [main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 1 of 7
 [main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.14
 
-[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 2 of 7
-[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.29
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 2 of 9
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.22
 
-[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 3 of 9
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 3 of 10
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.3
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 4 of 12
 [main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.33
-
-[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 4 of 11
-[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.36
 
 [main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 5 of 12
 [main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.42
@@ -78,18 +85,18 @@ Ruleset:
 
 Analyzed Objects: 
 	Object:
-		Variable: r44
-		Type: java.security.SecureRandom
-		Statement: specialinvoke r44.<java.security.SecureRandom: void <init>()>()
-		Method: <org.apache.openejb.assembler.DeployerEjb: void <clinit>()>
-		SHA-256: ea8257a2094df5c0a3aed15fa8d6df9afdf297fc85fa06cf71014c251491a706
-		Secure: true
-	Object:
 		Variable: r2
-		Type: javax.crypto.Cipher
-		Statement: r2 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer13353)
+		Type: byte[]
+		Statement: r3 = virtualinvoke r11.<javax.crypto.Cipher: byte[] doFinal(byte[])>(r2)
+		Method: <org.apache.openejb.cipher.StaticDESPasswordCipher: char[] encrypt(java.lang.String)>
+		SHA-256: 9db9e019b34011f602eacf23d71360c8337f0baf58d6892a9b91fc509a6e1d11
+		Secure: false
+	Object:
+		Variable: $r8
+		Type: byte[]
+		Statement: $r8 = virtualinvoke r2.<javax.crypto.Cipher: byte[] doFinal(byte[])>(r11)
 		Method: <org.apache.openejb.cipher.StaticDESPasswordCipher: java.lang.String decrypt(char[])>
-		SHA-256: 676bda816e601f79bcb22441d570c83ab6baa9c08dd28654dabba88b991f19c
+		SHA-256: 8d2185b2560338c6bbbacd9d36648bcc961396379fb9ae4018742f74e7b6b86b
 		Secure: false
 	Object:
 		Variable: r18
@@ -99,18 +106,39 @@ Analyzed Objects:
 		SHA-256: 7c39af5b2f9802c7e542762063e4a1e8d5f08eb413fca23179d1bc32c1290ae6
 		Secure: true
 	Object:
-		Variable: varReplacer13356
+		Variable: r44
+		Type: java.security.SecureRandom
+		Statement: specialinvoke r44.<java.security.SecureRandom: void <init>()>()
+		Method: <org.apache.openejb.assembler.DeployerEjb: void <clinit>()>
+		SHA-256: ea8257a2094df5c0a3aed15fa8d6df9afdf297fc85fa06cf71014c251491a706
+		Secure: true
+	Object:
+		Variable: varReplacer4001
 		Type: java.lang.String
-		Statement: specialinvoke $r1.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer13356)
+		Statement: specialinvoke $r1.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer4001)
 		Method: <org.apache.openejb.cipher.StaticDESPasswordCipher: void <clinit>()>
-		SHA-256: cda157a45af2896e3b1aa3adb98a7bb6800071abdca6fd7267992c05895a77cc
+		SHA-256: 92c7401881758abdc9db49a04d13547d01b436155e2a60bea4bf9fd7a3cc2f4c
 		Secure: false
 	Object:
 		Variable: $r1
 		Type: javax.crypto.spec.SecretKeySpec
-		Statement: specialinvoke $r1.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer13356)
+		Statement: specialinvoke $r1.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer4001)
 		Method: <org.apache.openejb.cipher.StaticDESPasswordCipher: void <clinit>()>
-		SHA-256: e2af84ed5e7ef2aeb2cd2992b4470f38e898ea9cd9d4a77a0baacd9f15b5cb56
+		SHA-256: f9b6e79e6436b7166c2ac91d2a565ae568e45ff52185cae80ec4edaa75b81688
+		Secure: false
+	Object:
+		Variable: r3
+		Type: byte[]
+		Statement: r3 = virtualinvoke r11.<javax.crypto.Cipher: byte[] doFinal(byte[])>(r2)
+		Method: <org.apache.openejb.cipher.StaticDESPasswordCipher: char[] encrypt(java.lang.String)>
+		SHA-256: 9cefefa844b2941c35ad0ca14e1029c1c6cff6bb0d3e2c44dd8823156577e78e
+		Secure: false
+	Object:
+		Variable: r11
+		Type: javax.crypto.Cipher
+		Statement: r11 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer3996)
+		Method: <org.apache.openejb.cipher.StaticDESPasswordCipher: char[] encrypt(java.lang.String)>
+		SHA-256: 61998c49ca83240a24ea16f900cc80e6ce84aa9af2eb01d48426636bbf4994ef
 		Secure: false
 	Object:
 		Variable: $r6
@@ -121,24 +149,10 @@ Analyzed Objects:
 		Secure: true
 	Object:
 		Variable: r11
-		Type: javax.crypto.Cipher
-		Statement: r11 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer13350)
-		Method: <org.apache.openejb.cipher.StaticDESPasswordCipher: char[] encrypt(java.lang.String)>
-		SHA-256: da0266041721db0bdc4976ebd75d80a8bbca5b7d774d0456f3456e1e6703dcb4
-		Secure: false
-	Object:
-		Variable: r3
 		Type: byte[]
-		Statement: r3 = virtualinvoke r11.<javax.crypto.Cipher: byte[] doFinal(byte[])>(r2)
-		Method: <org.apache.openejb.cipher.StaticDESPasswordCipher: char[] encrypt(java.lang.String)>
-		SHA-256: 9cefefa844b2941c35ad0ca14e1029c1c6cff6bb0d3e2c44dd8823156577e78e
-		Secure: false
-	Object:
-		Variable: r2
-		Type: byte[]
-		Statement: r3 = virtualinvoke r11.<javax.crypto.Cipher: byte[] doFinal(byte[])>(r2)
-		Method: <org.apache.openejb.cipher.StaticDESPasswordCipher: char[] encrypt(java.lang.String)>
-		SHA-256: 9db9e019b34011f602eacf23d71360c8337f0baf58d6892a9b91fc509a6e1d11
+		Statement: $r8 = virtualinvoke r2.<javax.crypto.Cipher: byte[] doFinal(byte[])>(r11)
+		Method: <org.apache.openejb.cipher.StaticDESPasswordCipher: java.lang.String decrypt(char[])>
+		SHA-256: 5bfe4d233c50827cd7e154bbe34756e06eaed73ab2e3915b1270e2fba4b2087c
 		Secure: false
 	Object:
 		Variable: r3
@@ -148,50 +162,43 @@ Analyzed Objects:
 		SHA-256: 18f079ac154551fd963177a5bf2b04860b7ddb552c8cafa280831e708f4b89bb
 		Secure: true
 	Object:
-		Variable: r11
-		Type: byte[]
-		Statement: $r8 = virtualinvoke r2.<javax.crypto.Cipher: byte[] doFinal(byte[])>(r11)
+		Variable: r2
+		Type: javax.crypto.Cipher
+		Statement: r2 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer3999)
 		Method: <org.apache.openejb.cipher.StaticDESPasswordCipher: java.lang.String decrypt(char[])>
-		SHA-256: 5bfe4d233c50827cd7e154bbe34756e06eaed73ab2e3915b1270e2fba4b2087c
-		Secure: false
-	Object:
-		Variable: $r8
-		Type: byte[]
-		Statement: $r8 = virtualinvoke r2.<javax.crypto.Cipher: byte[] doFinal(byte[])>(r11)
-		Method: <org.apache.openejb.cipher.StaticDESPasswordCipher: java.lang.String decrypt(char[])>
-		SHA-256: 8d2185b2560338c6bbbacd9d36648bcc961396379fb9ae4018742f74e7b6b86b
+		SHA-256: 4f0dbe59872bf0836d77e4fffc84657e95f214cb67bf65b5af70c0baf31fdb74
 		Secure: false
 
 Findings in Java Class: org.apache.openejb.cipher.StaticDESPasswordCipher
 
 	 in Method: char[] encrypt(java.lang.String)
-		ConstraintError violating CrySL rule for javax.crypto.Cipher (on Object #da0266041721db0bdc4976ebd75d80a8bbca5b7d774d0456f3456e1e6703dcb4)
+		ConstraintError violating CrySL rule for javax.crypto.Cipher (on Object #61998c49ca83240a24ea16f900cc80e6ce84aa9af2eb01d48426636bbf4994ef)
 			First parameter (with value "DESede") should be any of {AES, PBEWithHmacSHA224AndAES_128, PBEWithHmacSHA256AndAES_128, PBEWithHmacSHA384AndAES_128, PBEWithHmacSHA512AndAES_128, PBEWithHmacSHA224AndAES_256, PBEWithHmacSHA256AndAES_256, PBEWithHmacSHA384AndAES_256, PBEWithHmacSHA512AndAES_256}
-			at statement: r11 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer13350)
+			at statement: r11 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer3996)
 
 		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
 			Second parameter was not properly generated as generated Key
-			at statement: virtualinvoke r11.<javax.crypto.Cipher: void init(int,java.security.Key)>(varReplacer13352, $r5)
+			at statement: virtualinvoke r11.<javax.crypto.Cipher: void init(int,java.security.Key)>(varReplacer3995, $r5)
 
 
 	 in Method: java.lang.String decrypt(char[])
 		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
 			Second parameter was not properly generated as generated Key
-			at statement: virtualinvoke r2.<javax.crypto.Cipher: void init(int,java.security.Key)>(varReplacer13355, $r6)
+			at statement: virtualinvoke r2.<javax.crypto.Cipher: void init(int,java.security.Key)>(varReplacer4000, $r6)
 
-		ConstraintError violating CrySL rule for javax.crypto.Cipher (on Object #676bda816e601f79bcb22441d570c83ab6baa9c08dd28654dabba88b991f19c)
+		ConstraintError violating CrySL rule for javax.crypto.Cipher (on Object #4f0dbe59872bf0836d77e4fffc84657e95f214cb67bf65b5af70c0baf31fdb74)
 			First parameter (with value "DESede") should be any of {AES, PBEWithHmacSHA224AndAES_128, PBEWithHmacSHA256AndAES_128, PBEWithHmacSHA384AndAES_128, PBEWithHmacSHA512AndAES_128, PBEWithHmacSHA224AndAES_256, PBEWithHmacSHA256AndAES_256, PBEWithHmacSHA384AndAES_256, PBEWithHmacSHA512AndAES_256}
-			at statement: r2 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer13353)
+			at statement: r2 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer3999)
 
 
 	 in Method: void <clinit>()
 		RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec
 			First parameter was not properly generated as prepared Key Material
-			at statement: specialinvoke $r1.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer13356)
+			at statement: specialinvoke $r1.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer4001)
 
-		ConstraintError violating CrySL rule for javax.crypto.spec.SecretKeySpec (on Object #e2af84ed5e7ef2aeb2cd2992b4470f38e898ea9cd9d4a77a0baacd9f15b5cb56)
+		ConstraintError violating CrySL rule for javax.crypto.spec.SecretKeySpec (on Object #f9b6e79e6436b7166c2ac91d2a565ae568e45ff52185cae80ec4edaa75b81688)
 			Second parameter (with value "DESede") should be any of {AES, HmacSHA224, HmacSHA256, HmacSHA384, HmacSHA512}
-			at statement: specialinvoke $r1.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer13356)
+			at statement: specialinvoke $r1.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r2, varReplacer4001)
 
 
 ======================= CogniCrypt Summary ==========================
@@ -199,9 +206,8 @@ Findings in Java Class: org.apache.openejb.cipher.StaticDESPasswordCipher
 	Number of Objects Analyzed: 12
 
 	CogniCrypt found the following violations. For details see description above.
-	ConstraintError: 3
 	RequiredPredicateError: 3
+	ConstraintError: 3
 =====================================================================
-[main] INFO crypto.analysis.CryptoScanner - Static Analysis took 18 seconds!
-[main] INFO crypto.HeadlessCryptoScanner - Analysis finished in 28.77 s
-
+[main] INFO crypto.analysis.CryptoScanner - Static Analysis took 17 seconds!
+[main] INFO crypto.HeadlessCryptoScanner - Analysis finished in 26.47 s

@@ -1,0 +1,843 @@
+
+Current Proejct: /home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/spark-core_2.11-2.4.0-SNAPSHOT.jar
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$2 (file:/home/ying/CryptoAPIDetect/CogniCrypt/CryptoAnalysis-2.7.1-SNAPSHOT-jar-with-dependencies.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
+WARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$2
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[main] INFO crypto.HeadlessCryptoScanner - Using call graph algorithm CHA
+[main] INFO crypto.HeadlessCryptoScanner - Analysis soot setup done in 13.48 s 
+[main] INFO crypto.analysis.CryptoScanner - Searching fo Seeds for analysis!
+[main] INFO crypto.analysis.CryptoScanner - Discovered 33 analysis seeds within 7 seconds!
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 1 of 33
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.03
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 2 of 33
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.06
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 3 of 33
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.09
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 4 of 33
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.12
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 5 of 33
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.15
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 6 of 34
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.18
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 7 of 35
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.2
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 8 of 35
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.23
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 9 of 35
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.26
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 10 of 35
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.29
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 11 of 36
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.31
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 12 of 37
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.32
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 13 of 37
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.35
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 14 of 37
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.38
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 15 of 40
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.38
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 16 of 40
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.4
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 17 of 40
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.43
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 18 of 40
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.45
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 19 of 40
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.48
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 20 of 40
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.5
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 21 of 40
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.53
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 22 of 40
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.55
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 23 of 40
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.58
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 24 of 41
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.59
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 25 of 41
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.61
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 26 of 42
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.62
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 27 of 43
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.63
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 28 of 43
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.65
+
+[main] ERROR boomerang.callgraph.ObservableDynamicICFG - Did not find method <javax.servlet.http.HttpServletRequest: java.lang.String getMethod()> for class org.spark_project.jetty.servlets.MultiPartFilter$Wrapper
+[main] ERROR boomerang.callgraph.ObservableDynamicICFG - Did not find method <javax.servlet.http.HttpServletRequest: java.lang.String getMethod()> for class org.spark_project.jetty.servlets.MultiPartFilter$Wrapper
+[main] ERROR boomerang.callgraph.ObservableDynamicICFG - Did not find method <javax.servlet.http.HttpServletRequest: java.lang.String getMethod()> for class org.spark_project.jetty.servlets.MultiPartFilter$Wrapper
+[main] ERROR boomerang.callgraph.ObservableDynamicICFG - Did not find method <javax.servlet.http.HttpServletRequest: java.lang.String getRequestURI()> for class org.spark_project.jetty.servlets.MultiPartFilter$Wrapper
+[main] ERROR boomerang.callgraph.ObservableDynamicICFG - Did not find method <javax.servlet.http.HttpServletRequest: java.lang.String getQueryString()> for class org.spark_project.jetty.servlets.MultiPartFilter$Wrapper
+[main] ERROR boomerang.callgraph.ObservableDynamicICFG - Did not find method <javax.servlet.http.HttpServletRequest: boolean isSecure()> for class org.spark_project.jetty.servlets.MultiPartFilter$Wrapper
+[main] ERROR boomerang.callgraph.ObservableDynamicICFG - Did not find method <javax.servlet.http.HttpServletRequest: java.lang.String getServerName()> for class org.spark_project.jetty.servlets.MultiPartFilter$Wrapper
+[main] ERROR boomerang.callgraph.ObservableDynamicICFG - Did not find method <javax.servlet.http.HttpServletRequest: int getServerPort()> for class org.spark_project.jetty.servlets.MultiPartFilter$Wrapper
+[main] ERROR boomerang.callgraph.ObservableDynamicICFG - Did not find method <javax.servlet.http.HttpServletRequest: java.lang.String getMethod()> for class org.spark_project.jetty.servlets.MultiPartFilter$Wrapper
+[main] ERROR boomerang.callgraph.ObservableDynamicICFG - Did not find method <javax.servlet.http.HttpServletRequest: javax.servlet.ServletContext getServletContext()> for class org.spark_project.jetty.servlets.MultiPartFilter$Wrapper
+[main] ERROR boomerang.callgraph.ObservableDynamicICFG - Did not find method <javax.servlet.ServletRequest: void setAttribute(java.lang.String,java.lang.Object)> for class org.spark_project.jetty.servlets.MultiPartFilter$Wrapper
+[main] ERROR boomerang.callgraph.ObservableDynamicICFG - Did not find method <javax.servlet.ServletRequest: void setAttribute(java.lang.String,java.lang.Object)> for class org.spark_project.jetty.servlets.MultiPartFilter$Wrapper
+[main] ERROR boomerang.callgraph.ObservableDynamicICFG - Did not find method <javax.servlet.http.HttpServletRequest: java.lang.String getContentType()> for class org.spark_project.jetty.servlets.MultiPartFilter$Wrapper
+[main] ERROR boomerang.callgraph.ObservableDynamicICFG - Did not find method <javax.servlet.http.HttpServletRequest: java.lang.String getContentType()> for class org.spark_project.jetty.servlets.MultiPartFilter$Wrapper
+[main] ERROR boomerang.callgraph.ObservableDynamicICFG - Did not find method <javax.servlet.http.HttpServletRequest: java.lang.String getContentType()> for class org.spark_project.jetty.servlets.MultiPartFilter$Wrapper
+[main] ERROR boomerang.callgraph.ObservableDynamicICFG - Did not find method <javax.servlet.http.HttpServletRequest: java.lang.String getRequestURI()> for class org.spark_project.jetty.servlets.MultiPartFilter$Wrapper
+[main] ERROR boomerang.callgraph.ObservableDynamicICFG - Did not find method <javax.servlet.http.HttpServletRequest: java.lang.String getMethod()> for class org.spark_project.jetty.servlets.MultiPartFilter$Wrapper
+[main] ERROR boomerang.callgraph.ObservableDynamicICFG - Did not find method <javax.servlet.http.HttpServletRequest: java.lang.String getQueryString()> for class org.spark_project.jetty.servlets.MultiPartFilter$Wrapper
+[main] ERROR boomerang.callgraph.ObservableDynamicICFG - Did not find method <javax.servlet.ServletRequest: void setAttribute(java.lang.String,java.lang.Object)> for class org.spark_project.jetty.servlets.MultiPartFilter$Wrapper
+[main] ERROR boomerang.callgraph.ObservableDynamicICFG - Did not find method <javax.servlet.ServletRequest: void setAttribute(java.lang.String,java.lang.Object)> for class org.spark_project.jetty.servlets.MultiPartFilter$Wrapper
+[main] ERROR boomerang.callgraph.ObservableDynamicICFG - Did not find method <javax.servlet.ServletRequest: void setAttribute(java.lang.String,java.lang.Object)> for class org.spark_project.jetty.servlets.MultiPartFilter$Wrapper
+[main] ERROR boomerang.callgraph.ObservableDynamicICFG - Did not find method <javax.servlet.ServletRequest: void setAttribute(java.lang.String,java.lang.Object)> for class org.spark_project.jetty.servlets.MultiPartFilter$Wrapper
+[main] ERROR boomerang.callgraph.ObservableDynamicICFG - Did not find method <javax.servlet.ServletRequest: void setAttribute(java.lang.String,java.lang.Object)> for class org.spark_project.jetty.servlets.MultiPartFilter$Wrapper
+[main] ERROR boomerang.callgraph.ObservableDynamicICFG - Did not find method <javax.servlet.ServletRequestWrapper: javax.servlet.ServletRequest getRequest()> for class org.spark_project.jetty.servlets.MultiPartFilter$Wrapper
+[main] ERROR boomerang.callgraph.ObservableDynamicICFG - Did not find method <javax.servlet.http.HttpServletRequest: java.lang.String getRemoteAddr()> for class org.spark_project.jetty.servlets.MultiPartFilter$Wrapper
+[main] ERROR boomerang.callgraph.ObservableDynamicICFG - Did not find method <javax.servlet.http.HttpServletRequest: java.lang.String getRequestedSessionId()> for class org.spark_project.jetty.servlets.MultiPartFilter$Wrapper
+[main] ERROR boomerang.callgraph.ObservableDynamicICFG - Did not find method <javax.servlet.http.HttpServletRequest: java.security.Principal getUserPrincipal()> for class org.spark_project.jetty.servlets.MultiPartFilter$Wrapper
+[main] ERROR boomerang.callgraph.ObservableDynamicICFG - Did not find method <javax.servlet.http.HttpServletRequest: java.lang.String getRemoteAddr()> for class org.spark_project.jetty.servlets.MultiPartFilter$Wrapper
+[main] ERROR boomerang.callgraph.ObservableDynamicICFG - Did not find method <javax.servlet.http.HttpServletRequest: java.lang.String getRequestedSessionId()> for class org.spark_project.jetty.servlets.MultiPartFilter$Wrapper
+[main] ERROR boomerang.callgraph.ObservableDynamicICFG - Did not find method <javax.servlet.http.HttpServletRequest: java.security.Principal getUserPrincipal()> for class org.spark_project.jetty.servlets.MultiPartFilter$Wrapper
+[main] ERROR boomerang.callgraph.ObservableDynamicICFG - Did not find method <javax.servlet.http.HttpServletRequest: void setAttribute(java.lang.String,java.lang.Object)> for class org.spark_project.jetty.servlets.MultiPartFilter$Wrapper
+[main] ERROR boomerang.callgraph.ObservableDynamicICFG - Did not find method <javax.servlet.http.HttpServletRequest: java.lang.String getRemoteAddr()> for class org.spark_project.jetty.servlets.MultiPartFilter$Wrapper
+[main] ERROR boomerang.callgraph.ObservableDynamicICFG - Did not find method <javax.servlet.http.HttpServletRequest: java.lang.String getRequestedSessionId()> for class org.spark_project.jetty.servlets.MultiPartFilter$Wrapper
+[main] ERROR boomerang.callgraph.ObservableDynamicICFG - Did not find method <javax.servlet.http.HttpServletRequest: java.security.Principal getUserPrincipal()> for class org.spark_project.jetty.servlets.MultiPartFilter$Wrapper
+[main] ERROR boomerang.callgraph.ObservableDynamicICFG - Did not find method <javax.servlet.http.HttpServletRequest: void setAttribute(java.lang.String,java.lang.Object)> for class org.spark_project.jetty.servlets.MultiPartFilter$Wrapper
+[main] ERROR boomerang.callgraph.ObservableDynamicICFG - Did not find method <javax.servlet.http.HttpServletRequest: javax.servlet.AsyncContext startAsync()> for class org.spark_project.jetty.servlets.MultiPartFilter$Wrapper
+[main] ERROR boomerang.callgraph.ObservableDynamicICFG - Did not find method <javax.servlet.http.HttpServletRequest: boolean isAsyncStarted()> for class org.spark_project.jetty.servlets.MultiPartFilter$Wrapper
+[main] ERROR boomerang.callgraph.ObservableDynamicICFG - Did not find method <javax.servlet.http.HttpServletRequest: java.lang.String getRequestURI()> for class org.spark_project.jetty.servlets.MultiPartFilter$Wrapper
+[main] ERROR boomerang.callgraph.ObservableDynamicICFG - Did not find method <javax.servlet.http.HttpServletRequest: boolean isAsyncStarted()> for class org.spark_project.jetty.servlets.MultiPartFilter$Wrapper
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 29 of 43
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.67
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 30 of 43
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.7
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 31 of 43
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.72
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 32 of 43
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.74
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 33 of 51
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.65
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 34 of 51
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.67
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 35 of 51
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.69
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 36 of 51
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.71
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 37 of 51
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.73
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 38 of 51
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.75
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 39 of 51
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.76
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 40 of 51
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.78
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 41 of 51
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.8
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 42 of 51
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.82
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 43 of 51
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.84
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 44 of 51
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.86
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 45 of 51
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.88
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 46 of 51
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.9
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 47 of 51
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.92
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 48 of 51
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.94
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 49 of 51
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.96
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 50 of 51
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.98
+
+Ruleset: 
+	java.security.AlgorithmParameters
+	javax.net.ssl.SSLParameters
+	java.security.DigestOutputStream
+	java.security.spec.RSAKeyGenParameterSpec
+	javax.net.ssl.CertPathTrustManagerParameters
+	javax.net.ssl.SSLEngine
+	java.security.cert.PKIXParameters
+	javax.net.ssl.TrustManagerFactory
+	javax.net.ssl.KeyStoreBuilderParameters
+	javax.crypto.spec.DHGenParameterSpec
+	javax.crypto.spec.PBEParameterSpec
+	javax.crypto.SecretKeyFactory
+	javax.crypto.CipherOutputStream
+	java.security.cert.PKIXBuilderParameters
+	javax.crypto.spec.GCMParameterSpec
+	java.security.KeyStore
+	javax.net.ssl.KeyManagerFactory
+	javax.net.ssl.SSLContext
+	java.security.spec.DSAGenParameterSpec
+	javax.crypto.KeyGenerator
+	javax.crypto.spec.IvParameterSpec
+	java.security.spec.DSAParameterSpec
+	javax.crypto.Cipher
+	java.security.cert.TrustAnchor
+	java.security.SecureRandom
+	javax.crypto.CipherInputStream
+	java.security.Key
+	javax.crypto.spec.PBEKeySpec
+	javax.crypto.Mac
+	void
+	javax.crypto.SecretKey
+	java.security.Signature
+	javax.xml.crypto.dsig.spec.HMACParameterSpec
+	java.security.KeyPairGenerator
+	java.security.DigestInputStream
+	java.security.MessageDigest
+	java.security.KeyPair
+	javax.crypto.spec.SecretKeySpec
+	javax.crypto.spec.DHParameterSpec
+
+Analyzed Objects: 
+	Object:
+		Variable: r3
+		Type: javax.crypto.KeyGenerator
+		Statement: r3 = staticinvoke <javax.crypto.KeyGenerator: javax.crypto.KeyGenerator getInstance(java.lang.String)>(r2)
+		Method: <org.apache.spark.security.CryptoStreamUtils$: byte[] createKey(org.apache.spark.SparkConf)>
+		SHA-256: 69fb660a6fd2a5b9ad18595b5ff4d7f4574b5c16e3d88c562aa1c6f019247a6f
+		Secure: true
+	Object:
+		Variable: r14
+		Type: java.security.KeyStore
+		Statement: r14 = staticinvoke <java.security.KeyStore: java.security.KeyStore getInstance(java.lang.String,java.lang.String)>(r1, r2)
+		Method: <org.spark_project.jetty.util.security.CertificateUtils: java.security.KeyStore getKeyStore(org.spark_project.jetty.util.resource.Resource,java.lang.String,java.lang.String,java.lang.String)>
+		SHA-256: 28b034aa442210540cdaeb52ba378fee62ce6ac9477d5ea9886ed885dd72325f
+		Secure: false
+	Object:
+		Variable: $r42
+		Type: byte[]
+		Statement: $r43 = virtualinvoke r2.<java.security.MessageDigest: byte[] digest(byte[])>($r42)
+		Method: <org.spark_project.jetty.client.util.DigestAuthentication$DigestResult: void apply(org.spark_project.jetty.client.api.Request)>
+		SHA-256: ddfa1a92d7d189ff2af9547dd1b8b6d45ce5fc22eef7895b589e51d8753e26aa
+		Secure: false
+	Object:
+		Variable: $r6
+		Type: java.security.SecureRandom
+		Statement: specialinvoke $r6.<java.security.SecureRandom: void <init>()>()
+		Method: <org.spark_project.jetty.server.session.AbstractSessionIdManager: void initRandom()>
+		SHA-256: 1aaa44537763663a7ae27dfda1c04c968b11d0000befc2d48bb411e0f16ce7ec
+		Secure: true
+	Object:
+		Variable: r5
+		Type: javax.net.ssl.SSLContext
+		Statement: r5 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String)>(varReplacer7471)
+		Method: <org.apache.spark.TestUtils$: int httpResponseCode(java.net.URL,java.lang.String,scala.collection.Seq)>
+		SHA-256: d77c7de6307651f8337f2b4b353d107cbaf3aa984c00dd2360addb10773132e7
+		Secure: false
+	Object:
+		Variable: r2
+		Type: javax.net.ssl.KeyManagerFactory
+		Statement: r2 = staticinvoke <javax.net.ssl.KeyManagerFactory: javax.net.ssl.KeyManagerFactory getInstance(java.lang.String)>($r6)
+		Method: <org.spark_project.jetty.util.ssl.SslContextFactory: javax.net.ssl.KeyManager[] getKeyManagers(java.security.KeyStore)>
+		SHA-256: ac6288f7d07c3c4bd8f37dc47c2e774a357a3dfd6ec09130c7514023e329c0df
+		Secure: false
+	Object:
+		Variable: $r10
+		Type: javax.crypto.SecretKey
+		Statement: $r10 = virtualinvoke r3.<javax.crypto.KeyGenerator: javax.crypto.SecretKey generateKey()>()
+		Method: <org.apache.spark.security.CryptoStreamUtils$: byte[] createKey(org.apache.spark.SparkConf)>
+		SHA-256: cd67ec7d0e1af217cc05df08d89e267ef8133f5c3f948fc2032cf6e0317d174
+		Secure: true
+	Object:
+		Variable: r49
+		Type: byte[]
+		Statement: r49 = virtualinvoke r48.<java.security.MessageDigest: byte[] digest()>()
+		Method: <org.spark_project.jetty.security.authentication.DigestAuthenticator$Digest: boolean check(java.lang.Object)>
+		SHA-256: e80ac34e449ea992a599c4c331a4f5a5886df97bc091b252d0046a0b9a998756
+		Secure: false
+	Object:
+		Variable: $r67
+		Type: javax.net.ssl.SSLContext
+		Statement: $r67 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String,java.lang.String)>($r55, $r54)
+		Method: <org.spark_project.jetty.util.ssl.SslContextFactory: void load()>
+		SHA-256: 4ccb6619797954c16fd1fe9cdb8a32720327bf73ed126119f16779acb4e5111
+		Secure: false
+	Object:
+		Variable: r48
+		Type: java.security.MessageDigest
+		Statement: r48 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer16046)
+		Method: <org.spark_project.jetty.security.authentication.DigestAuthenticator$Digest: boolean check(java.lang.Object)>
+		SHA-256: 1e5c07807b73b797d91eb5e2bd125060d1953de879b819b09f7523134d2f819
+		Secure: false
+	Object:
+		Variable: $r3
+		Type: javax.crypto.spec.SecretKeySpec
+		Statement: specialinvoke $r3.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>(r1, varReplacer10036)
+		Method: <org.apache.spark.security.CryptoStreamUtils$CryptoParams: void <init>(byte[],org.apache.spark.SparkConf)>
+		SHA-256: 68e65accd42290e043d3eafea0d74d643d80f14f2f890102c015ccded76ce17d
+		Secure: false
+	Object:
+		Variable: varReplacer10036
+		Type: java.lang.String
+		Statement: specialinvoke $r3.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>(r1, varReplacer10036)
+		Method: <org.apache.spark.security.CryptoStreamUtils$CryptoParams: void <init>(byte[],org.apache.spark.SparkConf)>
+		SHA-256: 92bfe4b847982a11103bea4d1834e566340563d4eebd09895583d4278e68dc6b
+		Secure: false
+	Object:
+		Variable: r14
+		Type: javax.net.ssl.TrustManager[]
+		Statement: r14 = virtualinvoke r18.<javax.net.ssl.TrustManagerFactory: javax.net.ssl.TrustManager[] getTrustManagers()>()
+		Method: <org.spark_project.jetty.util.ssl.SslContextFactory: javax.net.ssl.TrustManager[] getTrustManagers(java.security.KeyStore,java.util.Collection)>
+		SHA-256: 82f319b951d4fc9fc56ad94e5c72e001aa1332e23275e5c97141e0a995b82647
+		Secure: false
+	Object:
+		Variable: $r67
+		Type: javax.net.ssl.SSLContext
+		Statement: $r67 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String)>($r56)
+		Method: <org.spark_project.jetty.util.ssl.SslContextFactory: void load()>
+		SHA-256: f6b32063af12a35b712d1984d3516b0c591a7897c71ac98db50ab03b6b82a890
+		Secure: false
+	Object:
+		Variable: $r1
+		Type: java.security.SecureRandom
+		Statement: specialinvoke $r1.<java.security.SecureRandom: void <init>()>()
+		Method: <org.spark_project.jetty.security.authentication.DigestAuthenticator: void <init>()>
+		SHA-256: 95059cf4222e57e85834dbd0d3e457f82f076a0e500943c289c606c3707feaf0
+		Secure: true
+	Object:
+		Variable: $r12
+		Type: java.security.MessageDigest
+		Statement: $r12 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer16380)
+		Method: <org.spark_project.jetty.util.security.Credential$MD5: boolean check(java.lang.Object)>
+		SHA-256: f50edcc82be335a426c34dff461a35e0b51e85a5ed3c9a68ea4d6f009987abe4
+		Secure: false
+	Object:
+		Variable: $r31
+		Type: byte[]
+		Statement: $r32 = virtualinvoke r2.<java.security.MessageDigest: byte[] digest(byte[])>($r31)
+		Method: <org.spark_project.jetty.client.util.DigestAuthentication$DigestResult: void apply(org.spark_project.jetty.client.api.Request)>
+		SHA-256: 2e66eb6d4f8ea35bd9ae5294ee6b70617c0679b8e76abfd8d59d1f69f37303f3
+		Secure: false
+	Object:
+		Variable: r42
+		Type: java.security.cert.PKIXBuilderParameters
+		Statement: specialinvoke r42.<java.security.cert.PKIXBuilderParameters: void <init>(java.security.KeyStore,java.security.cert.CertSelector)>($r8, r34)
+		Method: <org.spark_project.jetty.util.security.CertificateValidator: void validate(java.security.cert.Certificate[])>
+		SHA-256: d542c10b479e0344518ad7923016bd042f68ba48f85d2b416dfafdfdfde57636
+		Secure: false
+	Object:
+		Variable: r22
+		Type: java.security.SecureRandom
+		Statement: specialinvoke r22.<java.security.SecureRandom: void <init>()>()
+		Method: <org.apache.spark.SecurityManager: void initializeAuth()>
+		SHA-256: 8acc80211dd92d5f7b1fa809aff518c90e742487bddbbc63cd3cdf4e22270d45
+		Secure: true
+	Object:
+		Variable: $r3
+		Type: java.security.MessageDigest
+		Statement: $r3 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(r1)
+		Method: <org.spark_project.jetty.client.util.DigestAuthentication: java.security.MessageDigest getMessageDigest(java.lang.String)>
+		SHA-256: 94a464b000a963018e8822d520e6388dbedb9f2ce9bba93e395dac9cc93c0746
+		Secure: false
+	Object:
+		Variable: $r21
+		Type: byte[]
+		Statement: $r22 = virtualinvoke r2.<java.security.MessageDigest: byte[] digest(byte[])>($r21)
+		Method: <org.spark_project.jetty.client.util.DigestAuthentication$DigestResult: void apply(org.spark_project.jetty.client.api.Request)>
+		SHA-256: 4dc7fb0e5fd3a3c026750c247dbf5fc05183f1f5415f5adf1502f1dad990dea9
+		Secure: false
+	Object:
+		Variable: r2
+		Type: byte[]
+		Statement: r2 = virtualinvoke r48.<java.security.MessageDigest: byte[] digest()>()
+		Method: <org.spark_project.jetty.security.authentication.DigestAuthenticator$Digest: boolean check(java.lang.Object)>
+		SHA-256: 13da7f219f7cca9a86d8dcb31da57a887fe9c25694bae90aa9acb93967fc9a6f
+		Secure: false
+	Object:
+		Variable: r7
+		Type: javax.net.ssl.SSLContext
+		Statement: r7 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String)>($r64)
+		Method: <org.apache.spark.SecurityManager: void <init>(org.apache.spark.SparkConf,scala.Option)>
+		SHA-256: dc7b2281d9bdcb8eecdec300d0638ac12699418939af13dd6e96559979f2bc9a
+		Secure: false
+	Object:
+		Variable: r14
+		Type: java.security.KeyStore
+		Statement: r14 = staticinvoke <java.security.KeyStore: java.security.KeyStore getInstance(java.lang.String)>(r1)
+		Method: <org.spark_project.jetty.util.security.CertificateUtils: java.security.KeyStore getKeyStore(org.spark_project.jetty.util.resource.Resource,java.lang.String,java.lang.String,java.lang.String)>
+		SHA-256: 59b122ad4201a8f20baa621a3afd5559731330f9ef61837a1b54b2652d4270f8
+		Secure: false
+	Object:
+		Variable: r14
+		Type: javax.net.ssl.TrustManager[]
+		Statement: r14 = virtualinvoke r3.<javax.net.ssl.TrustManagerFactory: javax.net.ssl.TrustManager[] getTrustManagers()>()
+		Method: <org.spark_project.jetty.util.ssl.SslContextFactory: javax.net.ssl.TrustManager[] getTrustManagers(java.security.KeyStore,java.util.Collection)>
+		SHA-256: a4579f85ee1df526786461b286547f28c9cd41989e23375617c9165f2923ed78
+		Secure: false
+	Object:
+		Variable: r24
+		Type: java.security.SecureRandom
+		Statement: specialinvoke r24.<java.security.SecureRandom: void <init>()>()
+		Method: <org.apache.spark.TestUtils$: int httpResponseCode(java.net.URL,java.lang.String,scala.collection.Seq)>
+		SHA-256: 15451bc7fb809ba60773579442b21cc0a1057a5b5ca26302446feabcb166f15e
+		Secure: true
+	Object:
+		Variable: r18
+		Type: javax.crypto.spec.IvParameterSpec
+		Statement: specialinvoke r18.<javax.crypto.spec.IvParameterSpec: void <init>(byte[])>(r5)
+		Method: <org.apache.spark.security.CryptoStreamUtils$: java.nio.channels.WritableByteChannel createWritableChannel(java.nio.channels.WritableByteChannel,org.apache.spark.SparkConf,byte[])>
+		SHA-256: 280a2e0f3a5f0ffeeb2436d324f1bc8c259fc82e12c27184f32e001c2176b973
+		Secure: false
+	Object:
+		Variable: $r103
+		Type: byte[]
+		Statement: $r104 = virtualinvoke r2.<java.security.MessageDigest: byte[] digest(byte[])>($r103)
+		Method: <org.spark_project.jetty.client.util.DigestAuthentication$DigestResult: void apply(org.spark_project.jetty.client.api.Request)>
+		SHA-256: 86961ad9c89c8b1b51a78cde99612de58715182180e986396c29f2ec3d31f412
+		Secure: false
+	Object:
+		Variable: $r81
+		Type: javax.net.ssl.SSLContext
+		Statement: $r81 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String)>($r21)
+		Method: <org.spark_project.jetty.util.ssl.SslContextFactory: void load()>
+		SHA-256: 54b93b367063e94417963c955747c133e5cc866e0bf20ab4797334bb176d56e5
+		Secure: false
+	Object:
+		Variable: $r20
+		Type: javax.net.ssl.TrustManager[]
+		Statement: $r20 = virtualinvoke r5.<javax.net.ssl.TrustManagerFactory: javax.net.ssl.TrustManager[] getTrustManagers()>()
+		Method: <org.apache.spark.SecurityManager$$anonfun$2: javax.net.ssl.TrustManager[] apply(java.io.File)>
+		SHA-256: 818b09f411420e0cd54a538942147eb1e027b66cede704c027b06f33fa1f2f4d
+		Secure: false
+	Object:
+		Variable: r23
+		Type: java.lang.Object[]
+		Statement: r23 = virtualinvoke r2.<javax.net.ssl.KeyManagerFactory: javax.net.ssl.KeyManager[] getKeyManagers()>()
+		Method: <org.spark_project.jetty.util.ssl.SslContextFactory: javax.net.ssl.KeyManager[] getKeyManagers(java.security.KeyStore)>
+		SHA-256: bc8bc520e2345d3cf12f0890405423a9a96f2cd7c34a080853fd44ea01548967
+		Secure: false
+	Object:
+		Variable: r5
+		Type: javax.net.ssl.TrustManagerFactory
+		Statement: r5 = staticinvoke <javax.net.ssl.TrustManagerFactory: javax.net.ssl.TrustManagerFactory getInstance(java.lang.String)>($r19)
+		Method: <org.apache.spark.SecurityManager$$anonfun$2: javax.net.ssl.TrustManager[] apply(java.io.File)>
+		SHA-256: 3962881d51baea1ec4648b4e74be9c803ede0f0eb4d27114e19afecd3ccb51ee
+		Secure: false
+	Object:
+		Variable: r3
+		Type: byte[]
+		Statement: r3 = virtualinvoke r48.<java.security.MessageDigest: byte[] digest()>()
+		Method: <org.spark_project.jetty.security.authentication.DigestAuthenticator$Digest: boolean check(java.lang.Object)>
+		SHA-256: 523f406be5a050bb337017c1dfd81beba4c6607be44df32030193778af1423e1
+		Secure: false
+	Object:
+		Variable: $r32
+		Type: byte[]
+		Statement: $r32 = virtualinvoke r2.<java.security.MessageDigest: byte[] digest(byte[])>($r31)
+		Method: <org.spark_project.jetty.client.util.DigestAuthentication$DigestResult: void apply(org.spark_project.jetty.client.api.Request)>
+		SHA-256: fb054a4185ae41daf65a575547329adcf0fb0bdaa7a6a092bad40e792985bead
+		Secure: false
+	Object:
+		Variable: $r79
+		Type: java.security.SecureRandom
+		Statement: $r79 = staticinvoke <java.security.SecureRandom: java.security.SecureRandom getInstance(java.lang.String)>($r17)
+		Method: <org.spark_project.jetty.util.ssl.SslContextFactory: void load()>
+		SHA-256: 58e0b0522a1e93754776bd1bf851a5a059076e64882cbbdc4d0d84dd1f6ab146
+		Secure: true
+	Object:
+		Variable: r13
+		Type: javax.crypto.spec.IvParameterSpec
+		Statement: specialinvoke r13.<javax.crypto.spec.IvParameterSpec: void <init>(byte[])>(r4)
+		Method: <org.apache.spark.security.CryptoStreamUtils$: java.io.InputStream createCryptoInputStream(java.io.InputStream,org.apache.spark.SparkConf,byte[])>
+		SHA-256: d2de6c9437c4891cd02faabb075d01076a0306cd2c1130aec254454ff25d4f06
+		Secure: false
+	Object:
+		Variable: $r6
+		Type: javax.net.ssl.SSLContext
+		Statement: $r6 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String)>($r5)
+		Method: <org.apache.spark.SSLOptions: void liftedTree1$1(scala.runtime.ObjectRef)>
+		SHA-256: d402c878e13d71b4344908638050329b077cf3b863c19988bcad5e4a4c25c598
+		Secure: false
+	Object:
+		Variable: r14
+		Type: javax.crypto.spec.IvParameterSpec
+		Statement: specialinvoke r14.<javax.crypto.spec.IvParameterSpec: void <init>(byte[])>(r5)
+		Method: <org.apache.spark.security.CryptoStreamUtils$: java.io.OutputStream createCryptoOutputStream(java.io.OutputStream,org.apache.spark.SparkConf,byte[])>
+		SHA-256: a5d4a2e0b48d0f1dfb29f23eb6c5744c95ff97f65cfaa8637b8f16c5d4acbbbe
+		Secure: false
+	Object:
+		Variable: $r16
+		Type: java.security.MessageDigest
+		Statement: $r16 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer16384)
+		Method: <org.spark_project.jetty.util.security.Credential$MD5: java.lang.String digest(java.lang.String)>
+		SHA-256: 75d2798eeda7cbbfc3dfafdd6f879a94c2729e84bc0fa07729362dbc1865e5f2
+		Secure: false
+	Object:
+		Variable: r18
+		Type: javax.net.ssl.TrustManagerFactory
+		Statement: r18 = staticinvoke <javax.net.ssl.TrustManagerFactory: javax.net.ssl.TrustManagerFactory getInstance(java.lang.String)>($r4)
+		Method: <org.spark_project.jetty.util.ssl.SslContextFactory: javax.net.ssl.TrustManager[] getTrustManagers(java.security.KeyStore,java.util.Collection)>
+		SHA-256: 35a016dbbc3d6390ebbba0ede1e7db7f6c68b2a28a0b0bd9122760fba761cd7e
+		Secure: false
+	Object:
+		Variable: r14
+		Type: javax.crypto.spec.IvParameterSpec
+		Statement: specialinvoke r14.<javax.crypto.spec.IvParameterSpec: void <init>(byte[])>(r4)
+		Method: <org.apache.spark.security.CryptoStreamUtils$: java.nio.channels.ReadableByteChannel createReadableChannel(java.nio.channels.ReadableByteChannel,org.apache.spark.SparkConf,byte[])>
+		SHA-256: fb7f966f2aa4c40cfc7e3289f72bd10a22b4a07870cf9ff94e654a1197b64ade
+		Secure: false
+	Object:
+		Variable: $r17
+		Type: javax.net.ssl.CertPathTrustManagerParameters
+		Statement: specialinvoke $r17.<javax.net.ssl.CertPathTrustManagerParameters: void <init>(java.security.cert.CertPathParameters)>(r15)
+		Method: <org.spark_project.jetty.util.ssl.SslContextFactory: javax.net.ssl.TrustManager[] getTrustManagers(java.security.KeyStore,java.util.Collection)>
+		SHA-256: 49ed65dd26bbbea326a86dc5362b6d3f3e9790ebd45f78ea1df42b373bb9564c
+		Secure: false
+	Object:
+		Variable: $r81
+		Type: javax.net.ssl.SSLContext
+		Statement: $r81 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String,java.lang.String)>($r20, $r19)
+		Method: <org.spark_project.jetty.util.ssl.SslContextFactory: void load()>
+		SHA-256: 48e5047b295e82c83774a28980aa39a5e307b7edf1ace8ca00c6c357601a2890
+		Secure: false
+	Object:
+		Variable: r3
+		Type: javax.net.ssl.TrustManagerFactory
+		Statement: r3 = staticinvoke <javax.net.ssl.TrustManagerFactory: javax.net.ssl.TrustManagerFactory getInstance(java.lang.String)>($r16)
+		Method: <org.spark_project.jetty.util.ssl.SslContextFactory: javax.net.ssl.TrustManager[] getTrustManagers(java.security.KeyStore,java.util.Collection)>
+		SHA-256: 1c4f56afadf046249d9c634ec921e3b5ae644f3dd6cfd82f085e72440575e832
+		Secure: false
+	Object:
+		Variable: r3
+		Type: byte[]
+		Statement: virtualinvoke r2.<java.security.SecureRandom: void nextBytes(byte[])>(r3)
+		Method: <org.apache.spark.SecurityManager: void initializeAuth()>
+		SHA-256: a167725367e3488087c9ee770469aa8dd592bc8a4bd2615acd4d6d25e676c916
+		Secure: true
+	Object:
+		Variable: $r43
+		Type: byte[]
+		Statement: $r43 = virtualinvoke r2.<java.security.MessageDigest: byte[] digest(byte[])>($r42)
+		Method: <org.spark_project.jetty.client.util.DigestAuthentication$DigestResult: void apply(org.spark_project.jetty.client.api.Request)>
+		SHA-256: 7d9750a127e6ec23fe1896010c5ab32ec07e3d94e74bc25bb6e0118f303ca505
+		Secure: false
+	Object:
+		Variable: $r65
+		Type: java.security.SecureRandom
+		Statement: $r65 = staticinvoke <java.security.SecureRandom: java.security.SecureRandom getInstance(java.lang.String)>(r64)
+		Method: <org.spark_project.jetty.util.ssl.SslContextFactory: void load()>
+		SHA-256: 6580539abfa108b2ac1e1c8a2f3e6474011cf0ee0e6547c143ac977365aaaf44
+		Secure: true
+	Object:
+		Variable: $r22
+		Type: byte[]
+		Statement: $r22 = virtualinvoke r2.<java.security.MessageDigest: byte[] digest(byte[])>($r21)
+		Method: <org.spark_project.jetty.client.util.DigestAuthentication$DigestResult: void apply(org.spark_project.jetty.client.api.Request)>
+		SHA-256: 4f35a377e43ce6d2b470781d8fd459ffba06f5ae98fb572e55977908c4043fa6
+		Secure: false
+	Object:
+		Variable: $r104
+		Type: byte[]
+		Statement: $r104 = virtualinvoke r2.<java.security.MessageDigest: byte[] digest(byte[])>($r103)
+		Method: <org.spark_project.jetty.client.util.DigestAuthentication$DigestResult: void apply(org.spark_project.jetty.client.api.Request)>
+		SHA-256: f2be7fc12f406ede2dfe1a4dd742f2242f4fcd527d8eafb8c5d226033370b9c4
+		Secure: false
+	Object:
+		Variable: r4
+		Type: java.security.KeyStore
+		Statement: r4 = staticinvoke <java.security.KeyStore: java.security.KeyStore getInstance(java.lang.String)>($r12)
+		Method: <org.apache.spark.SecurityManager$$anonfun$2: javax.net.ssl.TrustManager[] apply(java.io.File)>
+		SHA-256: 9ae9b7f05668faa7e697a4e514bf473c9d5d510c88e74fe0f7a0f4b0ac9d47de
+		Secure: false
+	Object:
+		Variable: $r7
+		Type: java.security.cert.PKIXBuilderParameters
+		Statement: specialinvoke $r7.<java.security.cert.PKIXBuilderParameters: void <init>(java.security.KeyStore,java.security.cert.CertSelector)>(r1, $r8)
+		Method: <org.spark_project.jetty.util.ssl.SslContextFactory: javax.net.ssl.TrustManager[] getTrustManagers(java.security.KeyStore,java.util.Collection)>
+		SHA-256: 7e750c516c5cbb775ad6a78412e8edd38eafec962f9f2de0a93f4f4e7a656b44
+		Secure: false
+
+Findings in Java Class: org.apache.spark.SSLOptions
+
+	 in Method: void liftedTree1$1(scala.runtime.ObjectRef)
+		ForbiddenMethodError violating CrySL rule for javax.net.ssl.SSLContext
+			Detected call to forbidden method javax.net.ssl.SSLContext getDefault() of class javax.net.ssl.SSLContext. Instead, call method <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String,java.security.Provider)>, <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String)>, <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String,java.lang.String)>.
+			at statement: $r11 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getDefault()>()
+
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext
+			First parameter was not properly generated as generated Key Manager
+			at statement: virtualinvoke $r8.<javax.net.ssl.SSLContext: void init(javax.net.ssl.KeyManager[],javax.net.ssl.TrustManager[],java.security.SecureRandom)>(varReplacer2239, varReplacer2239, varReplacer2239)
+
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext
+			Second parameter was not properly generated as generated Trust Manager
+			at statement: virtualinvoke $r8.<javax.net.ssl.SSLContext: void init(javax.net.ssl.KeyManager[],javax.net.ssl.TrustManager[],java.security.SecureRandom)>(varReplacer2239, varReplacer2239, varReplacer2239)
+
+
+	 in Method: void <init>(boolean,scala.Option,scala.Option,scala.Option,scala.Option,scala.Option,boolean,scala.Option,scala.Option,scala.Option,scala.Option,scala.collection.immutable.Set)
+		ForbiddenMethodError violating CrySL rule for javax.net.ssl.SSLContext
+			Detected call to forbidden method javax.net.ssl.SSLContext getDefault() of class javax.net.ssl.SSLContext. Instead, call method <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String,java.security.Provider)>, <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String)>, <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String,java.lang.String)>.
+			at statement: $r30 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getDefault()>()
+
+
+Findings in Java Class: org.spark_project.jetty.util.ssl.SslContextFactory
+
+	 in Method: void dump(java.lang.Appendable,java.lang.String)
+		ForbiddenMethodError violating CrySL rule for javax.net.ssl.SSLContext
+			Detected call to forbidden method javax.net.ssl.SSLContext getDefault() of class javax.net.ssl.SSLContext. Instead, call method <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String,java.security.Provider)>, <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String)>, <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String,java.lang.String)>.
+			at statement: $r11 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getDefault()>()
+
+
+	 in Method: javax.net.ssl.KeyManager[] getKeyManagers(java.security.KeyStore)
+		NeverTypeOfError violating CrySL rule for javax.net.ssl.KeyManagerFactory (on Object #ac6288f7d07c3c4bd8f37dc47c2e774a357a3dfd6ec09130c7514023e329c0df)
+			Second parameter should never be of type java.lang.String.
+			at statement: virtualinvoke r2.<javax.net.ssl.KeyManagerFactory: void init(java.security.KeyStore,char[])>(r1, $r26)
+
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.KeyManagerFactory
+			First parameter was not properly generated as generated Key Store
+			at statement: virtualinvoke r2.<javax.net.ssl.KeyManagerFactory: void init(java.security.KeyStore,char[])>(r1, $r26)
+
+		NeverTypeOfError violating CrySL rule for javax.net.ssl.KeyManagerFactory (on Object #ac6288f7d07c3c4bd8f37dc47c2e774a357a3dfd6ec09130c7514023e329c0df)
+			Second parameter should never be of type java.lang.String.
+			at statement: virtualinvoke r2.<javax.net.ssl.KeyManagerFactory: void init(java.security.KeyStore,char[])>(r1, $r26)
+
+
+	 in Method: void load()
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext
+			First parameter was not properly generated as generated Key Manager
+			at statement: virtualinvoke r60.<javax.net.ssl.SSLContext: void init(javax.net.ssl.KeyManager[],javax.net.ssl.TrustManager[],java.security.SecureRandom)>(r77, r78, r80)
+
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext
+			Second parameter was not properly generated as generated Trust Manager
+			at statement: virtualinvoke r60.<javax.net.ssl.SSLContext: void init(javax.net.ssl.KeyManager[],javax.net.ssl.TrustManager[],java.security.SecureRandom)>(r77, r78, r80)
+
+
+	 in Method: javax.net.ssl.TrustManager[] getTrustManagers(java.security.KeyStore,java.util.Collection)
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.TrustManagerFactory
+			First parameter was not properly generated as generated Manager Factory Parameters
+			at statement: virtualinvoke r3.<javax.net.ssl.TrustManagerFactory: void init(javax.net.ssl.ManagerFactoryParameters)>($r17)
+
+		RequiredPredicateError violating CrySL rule for java.security.cert.PKIXBuilderParameters
+			First parameter was not properly generated as generated Key Store
+			at statement: specialinvoke $r7.<java.security.cert.PKIXBuilderParameters: void <init>(java.security.KeyStore,java.security.cert.CertSelector)>(r1, $r8)
+
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.TrustManagerFactory
+			First parameter was not properly generated as generated Key Store
+			at statement: virtualinvoke r18.<javax.net.ssl.TrustManagerFactory: void init(java.security.KeyStore)>(r1)
+
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.CertPathTrustManagerParameters
+			First parameter was not properly generated as generated Cert Path Parameters
+			at statement: specialinvoke $r17.<javax.net.ssl.CertPathTrustManagerParameters: void <init>(java.security.cert.CertPathParameters)>(r15)
+
+
+Findings in Java Class: org.apache.spark.SecurityManager$$anonfun$2
+
+	 in Method: javax.net.ssl.TrustManager[] apply(java.io.File)
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.TrustManagerFactory
+			First parameter was not properly generated as generated Key Store
+			at statement: virtualinvoke r5.<javax.net.ssl.TrustManagerFactory: void init(java.security.KeyStore)>(r4)
+
+		NeverTypeOfError violating CrySL rule for java.security.KeyStore (on Object #9ae9b7f05668faa7e697a4e514bf473c9d5d510c88e74fe0f7a0f4b0ac9d47de)
+			Second parameter should never be of type java.lang.String.
+			at statement: virtualinvoke r4.<java.security.KeyStore: void load(java.io.InputStream,char[])>(r2, $r18)
+
+
+Findings in Java Class: org.apache.spark.TestUtils$
+
+	 in Method: int httpResponseCode(java.net.URL,java.lang.String,scala.collection.Seq)
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext
+			First parameter was not properly generated as generated Key Manager
+			at statement: virtualinvoke r5.<javax.net.ssl.SSLContext: void init(javax.net.ssl.KeyManager[],javax.net.ssl.TrustManager[],java.security.SecureRandom)>(varReplacer7472, $r16, r24)
+
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext
+			Second parameter was not properly generated as generated Trust Manager
+			at statement: virtualinvoke r5.<javax.net.ssl.SSLContext: void init(javax.net.ssl.KeyManager[],javax.net.ssl.TrustManager[],java.security.SecureRandom)>(varReplacer7472, $r16, r24)
+
+		ConstraintError violating CrySL rule for javax.net.ssl.SSLContext (on Object #d77c7de6307651f8337f2b4b353d107cbaf3aa984c00dd2360addb10773132e7)
+			First parameter (with value "SSL") should be any of {TLSv1.2}
+			at statement: r5 = staticinvoke <javax.net.ssl.SSLContext: javax.net.ssl.SSLContext getInstance(java.lang.String)>(varReplacer7471)
+
+
+Findings in Java Class: org.spark_project.jetty.security.authentication.DigestAuthenticator$Digest
+
+	 in Method: boolean check(java.lang.Object)
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #1e5c07807b73b797d91eb5e2bd125060d1953de879b819b09f7523134d2f819)
+			First parameter (with value "MD5") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: r48 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer16046)
+
+
+Findings in Java Class: org.spark_project.jetty.util.security.Credential$MD5
+
+	 in Method: boolean check(java.lang.Object)
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #f50edcc82be335a426c34dff461a35e0b51e85a5ed3c9a68ea4d6f009987abe4)
+			First parameter (with value "MD5") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r12 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer16380)
+
+		IncompleteOperationError violating CrySL rule for java.security.MessageDigest (on Object #f50edcc82be335a426c34dff461a35e0b51e85a5ed3c9a68ea4d6f009987abe4)
+			Operation on object of type java.security.MessageDigest object not completed. Expected call to digest
+			at statement: virtualinvoke $r6.<java.security.MessageDigest: void update(byte[])>($r9)
+
+
+	 in Method: java.lang.String digest(java.lang.String)
+		IncompleteOperationError violating CrySL rule for java.security.MessageDigest (on Object #75d2798eeda7cbbfc3dfafdd6f879a94c2729e84bc0fa07729362dbc1865e5f2)
+			Operation on object of type java.security.MessageDigest object not completed. Expected call to digest
+			at statement: virtualinvoke $r8.<java.security.MessageDigest: void update(byte[])>($r9)
+
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #75d2798eeda7cbbfc3dfafdd6f879a94c2729e84bc0fa07729362dbc1865e5f2)
+			First parameter (with value "MD5") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r16 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer16384)
+
+
+Findings in Java Class: org.spark_project.jetty.util.security.CertificateUtils
+
+	 in Method: java.security.KeyStore getKeyStore(org.spark_project.jetty.util.resource.Resource,java.lang.String,java.lang.String,java.lang.String)
+		NeverTypeOfError violating CrySL rule for java.security.KeyStore (on Object #28b034aa442210540cdaeb52ba378fee62ce6ac9477d5ea9886ed885dd72325f)
+			Second parameter should never be of type java.lang.String.
+			at statement: virtualinvoke $r8.<java.security.KeyStore: void load(java.io.InputStream,char[])>(r4, $r16)
+
+		IncompleteOperationError violating CrySL rule for java.security.KeyStore (on Object #28b034aa442210540cdaeb52ba378fee62ce6ac9477d5ea9886ed885dd72325f)
+			Operation on object of type java.security.KeyStore object not completed. Expected call to load
+			at statement: r14 = staticinvoke <java.security.KeyStore: java.security.KeyStore getInstance(java.lang.String)>(r1)
+
+		IncompleteOperationError violating CrySL rule for java.security.KeyStore (on Object #59b122ad4201a8f20baa621a3afd5559731330f9ef61837a1b54b2652d4270f8)
+			Operation on object of type java.security.KeyStore object not completed. Expected call to load
+			at statement: r14 = staticinvoke <java.security.KeyStore: java.security.KeyStore getInstance(java.lang.String)>(r1)
+
+		IncompleteOperationError violating CrySL rule for java.security.KeyStore (on Object #28b034aa442210540cdaeb52ba378fee62ce6ac9477d5ea9886ed885dd72325f)
+			Operation on object of type java.security.KeyStore object not completed. Expected call to load
+			at statement: r14 = staticinvoke <java.security.KeyStore: java.security.KeyStore getInstance(java.lang.String,java.lang.String)>(r1, r2)
+
+		IncompleteOperationError violating CrySL rule for java.security.KeyStore (on Object #59b122ad4201a8f20baa621a3afd5559731330f9ef61837a1b54b2652d4270f8)
+			Operation on object of type java.security.KeyStore object not completed. Expected call to load
+			at statement: r14 = staticinvoke <java.security.KeyStore: java.security.KeyStore getInstance(java.lang.String,java.lang.String)>(r1, r2)
+
+
+Findings in Java Class: org.spark_project.jetty.client.util.DigestAuthentication
+
+	 in Method: java.security.MessageDigest getMessageDigest(java.lang.String)
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #94a464b000a963018e8822d520e6388dbedb9f2ce9bba93e395dac9cc93c0746)
+			First parameter (with value "MD5") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: $r3 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(r1)
+
+
+	 in Method: org.spark_project.jetty.client.api.Authentication$Result authenticate(org.spark_project.jetty.client.api.Request,org.spark_project.jetty.client.api.ContentResponse,org.spark_project.jetty.client.api.Authentication$HeaderInfo,org.spark_project.jetty.util.Attributes)
+		IncompleteOperationError violating CrySL rule for java.security.MessageDigest (on Object #94a464b000a963018e8822d520e6388dbedb9f2ce9bba93e395dac9cc93c0746)
+			Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update
+			at statement: r8 = specialinvoke r0.<org.spark_project.jetty.client.util.DigestAuthentication: java.security.MessageDigest getMessageDigest(java.lang.String)>(r20)
+
+
+Findings in Java Class: org.spark_project.jetty.client.util.DigestAuthentication$DigestResult
+
+	 in Method: void apply(org.spark_project.jetty.client.api.Request)
+		IncompleteOperationError violating CrySL rule for java.security.MessageDigest (on Object #94a464b000a963018e8822d520e6388dbedb9f2ce9bba93e395dac9cc93c0746)
+			Operation on object of type java.security.MessageDigest object not completed. Expected call to digest, update
+			at statement: r2 = staticinvoke <org.spark_project.jetty.client.util.DigestAuthentication: java.security.MessageDigest access$000(org.spark_project.jetty.client.util.DigestAuthentication,java.lang.String)>($r10, $r9)
+
+
+Findings in Java Class: org.apache.spark.security.CryptoStreamUtils$
+
+	 in Method: java.io.InputStream createCryptoInputStream(java.io.InputStream,org.apache.spark.SparkConf,byte[])
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.IvParameterSpec
+			First parameter was not properly generated as randomized
+			at statement: specialinvoke r13.<javax.crypto.spec.IvParameterSpec: void <init>(byte[])>(r4)
+
+
+	 in Method: java.io.OutputStream createCryptoOutputStream(java.io.OutputStream,org.apache.spark.SparkConf,byte[])
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.IvParameterSpec
+			First parameter was not properly generated as randomized
+			at statement: specialinvoke r14.<javax.crypto.spec.IvParameterSpec: void <init>(byte[])>(r5)
+
+
+	 in Method: java.nio.channels.ReadableByteChannel createReadableChannel(java.nio.channels.ReadableByteChannel,org.apache.spark.SparkConf,byte[])
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.IvParameterSpec
+			First parameter was not properly generated as randomized
+			at statement: specialinvoke r14.<javax.crypto.spec.IvParameterSpec: void <init>(byte[])>(r4)
+
+
+	 in Method: java.nio.channels.WritableByteChannel createWritableChannel(java.nio.channels.WritableByteChannel,org.apache.spark.SparkConf,byte[])
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.IvParameterSpec
+			First parameter was not properly generated as randomized
+			at statement: specialinvoke r18.<javax.crypto.spec.IvParameterSpec: void <init>(byte[])>(r5)
+
+
+Findings in Java Class: org.apache.spark.security.CryptoStreamUtils$CryptoParams
+
+	 in Method: void <init>(byte[],org.apache.spark.SparkConf)
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec
+			First parameter was not properly generated as prepared Key Material
+			at statement: specialinvoke $r3.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>(r1, varReplacer10036)
+
+
+Findings in Java Class: org.spark_project.jetty.util.security.CertificateValidator
+
+	 in Method: void validate(java.security.cert.Certificate[])
+		RequiredPredicateError violating CrySL rule for java.security.cert.PKIXBuilderParameters
+			First parameter was not properly generated as generated Key Store
+			at statement: specialinvoke r42.<java.security.cert.PKIXBuilderParameters: void <init>(java.security.KeyStore,java.security.cert.CertSelector)>($r8, r34)
+
+
+Findings in Java Class: org.apache.spark.SecurityManager
+
+	 in Method: void <init>(org.apache.spark.SparkConf,scala.Option)
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext
+			First parameter was not properly generated as generated Key Manager
+			at statement: virtualinvoke r7.<javax.net.ssl.SSLContext: void init(javax.net.ssl.KeyManager[],javax.net.ssl.TrustManager[],java.security.SecureRandom)>(varReplacer12728, $r67, varReplacer12728)
+
+		RequiredPredicateError violating CrySL rule for javax.net.ssl.SSLContext
+			Second parameter was not properly generated as generated Trust Manager
+			at statement: virtualinvoke r7.<javax.net.ssl.SSLContext: void init(javax.net.ssl.KeyManager[],javax.net.ssl.TrustManager[],java.security.SecureRandom)>(varReplacer12728, $r67, varReplacer12728)
+
+
+======================= CogniCrypt Summary ==========================
+	Number of CrySL rules: 39
+	Number of Objects Analyzed: 51
+
+	CogniCrypt found the following violations. For details see description above.
+	ForbiddenMethodError: 3
+	IncompleteOperationError: 8
+	NeverTypeOfError: 4
+	ConstraintError: 5
+	RequiredPredicateError: 20
+=====================================================================
+[main] INFO crypto.analysis.CryptoScanner - Static Analysis took 59 seconds!
+[main] INFO crypto.HeadlessCryptoScanner - Analysis finished in 1.465 min
