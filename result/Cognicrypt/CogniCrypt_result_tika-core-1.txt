@@ -103,7 +103,7 @@ Analyzed Objects:
 		Secure: false
 	Object:
 		Variable: r3
-		Type: byte[]
+		Type: byte[]ƒƒ
 		Statement: r3 = virtualinvoke r4.<java.security.MessageDigest: byte[] digest()>()
 		Method: <org.apache.tika.parser.digest.InputStreamDigester: boolean digestStream(java.io.InputStream,org.apache.tika.metadata.Metadata)>
 		SHA-256: 69dd361e90a024baf5f0fe6c08ce1fc3f50a50a2203785f567c20d343bce250d
