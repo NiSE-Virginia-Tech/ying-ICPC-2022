@@ -1,0 +1,17 @@
+Analyzing JAR: /home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/taverna-perspective-myexperiment-3.1.0-incubating-SNAPSHOT.jar
+=======================================
+***Violated Rule 1: Found broken crypto schemes ***Constants: ["PBEWithMD5AndDES"]
+[UnitContainer{unit=$fakeLocal_105[0] = "PBEWithMD5AndDES", method='<org.apache.taverna.ui.perspectives.myexperiment.model.Util: byte[] doEncryption(java.lang.String,int)>'}]
+=======================================
+=======================================
+***Violated Rule 2: Found broken hash functions ***Constants: ["MD5"]
+[UnitContainer{unit=$fakeLocal_97[0] = "MD5", method='<org.apache.taverna.ui.perspectives.myexperiment.model.Util: byte[] doEncryption(java.lang.String,int)>'}]
+=======================================
+=======================================
+***Violated Rule 8: Used < 1000 iteration for PBE ***Constants: [20]
+[UnitContainer{unit=$fakeLocal_103[1] = 20, method='<org.apache.taverna.ui.perspectives.myexperiment.model.Util: byte[] doEncryption(java.lang.String,int)>'}]
+=======================================
+=======================================
+***Violated Rule 7: Used HTTP Protocol ***Constants: ["http://www.myexperiment.org"]
+[UnitContainer{unit=$fakeLocal_r0.<org.apache.taverna.ui.perspectives.myexperiment.model.MyExperimentClient: java.lang.String BASE_URL> = "http://www.myexperiment.org", method='<org.apache.taverna.ui.perspectives.myexperiment.model.MyExperimentClient: void <init>(org.apache.taverna.security.credentialmanager.CredentialManager,org.apache.taverna.configuration.app.ApplicationConfiguration)>'}]
+=======================================

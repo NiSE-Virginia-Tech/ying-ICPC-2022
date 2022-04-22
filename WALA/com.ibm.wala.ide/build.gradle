@@ -1,0 +1,34 @@
+plugins {
+	id 'com.diffplug.gradle.eclipse.mavencentral'
+	id 'eclipse'
+}
+
+eclipse.project.natures 'org.eclipse.pde.PluginNature'
+
+sourceSets.main.java.srcDirs = ['src']
+
+eclipseMavenCentral {
+	release eclipseVersion, {
+		api 'org.eclipse.pde.core'
+		[
+				'org.eclipse.core.commands',
+				'org.eclipse.core.jobs',
+				'org.eclipse.core.resources',
+				'org.eclipse.core.runtime',
+				'org.eclipse.equinox.common',
+				'org.eclipse.jdt.core',
+				'org.eclipse.jface',
+				'org.eclipse.osgi',
+				'org.eclipse.swt',
+				'org.eclipse.ui.workbench',
+		].each it.&implementation
+		useNativesForRunningPlatform()
+	}
+}
+
+dependencies {
+	implementation(
+			project(':com.ibm.wala.core'),
+			project(':com.ibm.wala.util'),
+	)
+}

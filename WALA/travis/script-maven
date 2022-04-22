@@ -1,0 +1,3 @@
+#!/bin/sh -ex
+
+xvfb-run mvn clean install -B -q

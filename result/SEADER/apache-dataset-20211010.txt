@@ -1,0 +1,1273 @@
+filename: /mnt/windows_share/BACKUP/code/experiment/CryptoBench-Dataset/apacheds-kerberos-codec-2.0.0-M25-SNAPSHOT.jar
+
+=====parameter Cipher getInstance=====
+------start analysis Lorg/apache/directory/server/kerberos/shared/crypto/encryption/ArcFourHmacMd5Encryption-------
+finish
+target parameter is : [ARCFOUR]
+------done analysis for Lorg/apache/directory/server/kerberos/shared/crypto/encryption/ArcFourHmacMd5Encryption--------
+------start analysis Lorg/apache/directory/server/kerberos/shared/crypto/encryption/Des3CbcSha1KdEncryption-------
+finish
+target parameter is : [DESede/CBC/NoPadding]
+------done analysis for Lorg/apache/directory/server/kerberos/shared/crypto/encryption/Des3CbcSha1KdEncryption--------
+------start analysis Lorg/apache/directory/server/kerberos/shared/crypto/encryption/DesStringToKey-------
+finish
+target parameter is : [DES/CBC/NoPadding]
+------done analysis for Lorg/apache/directory/server/kerberos/shared/crypto/encryption/DesStringToKey--------
+------start analysis Lorg/apache/directory/server/kerberos/shared/crypto/encryption/DesCbcMd5Encryption-------
+finish
+target parameter is : [DES/CBC/NoPadding]
+------done analysis for Lorg/apache/directory/server/kerberos/shared/crypto/encryption/DesCbcMd5Encryption--------
+------start analysis Lorg/apache/directory/server/kerberos/shared/crypto/encryption/AesCtsSha1Encryption-------
+finish
+target parameter is : [AES/CTS/NoPadding]
+------done analysis for Lorg/apache/directory/server/kerberos/shared/crypto/encryption/AesCtsSha1Encryption--------
+------start analysis Lorg/apache/directory/server/kerberos/shared/crypto/encryption/DesCbcCrcEncryption-------
+finish
+target parameter is : [DES/CBC/NoPadding]
+------done analysis for Lorg/apache/directory/server/kerberos/shared/crypto/encryption/DesCbcCrcEncryption--------
+Lorg/apache/directory/server/kerberos/shared/crypto/encryption/DesStringToKey
+Parameter 0: DES/CBC/NoPadding
+Suggest: [RSA/CBC/PKCS5Padding, AES/CFB/PKCS5Padding, AES/GCM/PKCS5Padding, RSA/ECB/OAEPWithSHA-1AndMGF1Padding]
+Lorg/apache/directory/server/kerberos/shared/crypto/encryption/AesCtsSha1Encryption
+Parameter 0: DES/CBC/NoPadding
+Suggest: [RSA/CBC/PKCS5Padding, AES/CFB/PKCS5Padding, AES/GCM/PKCS5Padding, RSA/ECB/OAEPWithSHA-1AndMGF1Padding]
+Lorg/apache/directory/server/kerberos/shared/crypto/encryption/DesCbcCrcEncryption
+Parameter 0: DES/CBC/NoPadding
+Suggest: [RSA/CBC/PKCS5Padding, AES/CFB/PKCS5Padding, AES/GCM/PKCS5Padding, RSA/ECB/OAEPWithSHA-1AndMGF1Padding]
+Lorg/apache/directory/server/kerberos/shared/crypto/encryption/Des3CbcSha1KdEncryption
+Parameter 0: DES/CBC/NoPadding
+Suggest: [RSA/CBC/PKCS5Padding, AES/CFB/PKCS5Padding, AES/GCM/PKCS5Padding, RSA/ECB/OAEPWithSHA-1AndMGF1Padding]
+Lorg/apache/directory/server/kerberos/shared/crypto/encryption/ArcFourHmacMd5Encryption
+Parameter 0: DES/CBC/NoPadding
+Suggest: [RSA/CBC/PKCS5Padding, AES/CFB/PKCS5Padding, AES/GCM/PKCS5Padding, RSA/ECB/OAEPWithSHA-1AndMGF1Padding]
+Lorg/apache/directory/server/kerberos/shared/crypto/encryption/DesCbcMd5Encryption
+Parameter 0: DES/CBC/NoPadding
+Suggest: [RSA/CBC/PKCS5Padding, AES/CFB/PKCS5Padding, AES/GCM/PKCS5Padding, RSA/ECB/OAEPWithSHA-1AndMGF1Padding]
+
+=====parameter MessageDigest getInstance=====
+------start analysis Lorg/apache/directory/server/kerberos/shared/crypto/encryption/DesCbcMd5Encryption-------
+------done analysis for Lorg/apache/directory/server/kerberos/shared/crypto/encryption/DesCbcMd5Encryption--------
+------start analysis Lorg/apache/directory/server/kerberos/shared/crypto/checksum/RsaMd5Checksum-------
+------done analysis for Lorg/apache/directory/server/kerberos/shared/crypto/checksum/RsaMd5Checksum--------
+Lorg/apache/directory/server/kerberos/shared/crypto/checksum/RsaMd5Checksum
+Lorg/apache/directory/server/kerberos/shared/crypto/encryption/DesCbcMd5Encryption
+
+=====parameter SSLContext getInstance=====
+
+=====number KeyPairGenerator initialize=====
+
+=====parameter SecretKeyFactory getInstance=====
+
+=====parameter SecretKeySpec <init>=====
+------start analysis Lorg/apache/directory/server/kerberos/shared/crypto/checksum/HmacMd5Checksum-------
+target parameter is : null
+------done analysis for Lorg/apache/directory/server/kerberos/shared/crypto/checksum/HmacMd5Checksum--------
+------start analysis Lorg/apache/directory/server/kerberos/shared/crypto/encryption/DesStringToKey-------
+target parameter is : [no value assigned, 8]
+target parameter is : [DES]
+------done analysis for Lorg/apache/directory/server/kerberos/shared/crypto/encryption/DesStringToKey--------
+------start analysis Lorg/apache/directory/server/kerberos/shared/crypto/encryption/Des3CbcSha1KdEncryption-------
+target parameter is : [no value assigned, 8]
+target parameter is : [DESede]
+------done analysis for Lorg/apache/directory/server/kerberos/shared/crypto/encryption/Des3CbcSha1KdEncryption--------
+------start analysis Lorg/apache/directory/server/kerberos/shared/crypto/encryption/AesCtsSha1Encryption-------
+target parameter is : [128]
+target parameter is : [AES]
+------done analysis for Lorg/apache/directory/server/kerberos/shared/crypto/encryption/AesCtsSha1Encryption--------
+------start analysis Lorg/apache/directory/server/kerberos/shared/crypto/encryption/DesCbcCrcEncryption-------
+target parameter is : [128]
+target parameter is : [DES]
+------done analysis for Lorg/apache/directory/server/kerberos/shared/crypto/encryption/DesCbcCrcEncryption--------
+------start analysis Lorg/apache/directory/server/kerberos/shared/crypto/encryption/DesCbcMd5Encryption-------
+target parameter is : [128]
+target parameter is : [DES]
+------done analysis for Lorg/apache/directory/server/kerberos/shared/crypto/encryption/DesCbcMd5Encryption--------
+------start analysis Lorg/apache/directory/server/kerberos/shared/crypto/encryption/AesCtsSha1Encryption-------
+target parameter is : [128]
+target parameter is : [AES]
+------done analysis for Lorg/apache/directory/server/kerberos/shared/crypto/encryption/AesCtsSha1Encryption + 1--------
+------start analysis Lorg/apache/directory/server/kerberos/shared/crypto/encryption/Des3CbcSha1KdEncryption-------
+target parameter is : [128]
+target parameter is : [DESede]
+------done analysis for Lorg/apache/directory/server/kerberos/shared/crypto/encryption/Des3CbcSha1KdEncryption + 2--------
+------start analysis Lorg/apache/directory/server/kerberos/shared/crypto/encryption/ArcFourHmacMd5Encryption-------
+target parameter is : [128]
+target parameter is : [ARCFOUR]
+------done analysis for Lorg/apache/directory/server/kerberos/shared/crypto/encryption/ArcFourHmacMd5Encryption--------
+Lorg/apache/directory/server/kerberos/shared/crypto/encryption/DesStringToKey
+Parameter 0 [128]
+Suggest: [Parameter should not be a fixed value]
+
+=====parameter SecretKeySpec <init>=====
+------start analysis Lorg/apache/directory/server/kerberos/shared/crypto/checksum/HmacMd5Checksum-------
+target parameter is : null
+------done analysis for Lorg/apache/directory/server/kerberos/shared/crypto/checksum/HmacMd5Checksum--------
+------start analysis Lorg/apache/directory/server/kerberos/shared/crypto/encryption/DesStringToKey-------
+target parameter is : [no value assigned, 8]
+target parameter is : [DES]
+------done analysis for Lorg/apache/directory/server/kerberos/shared/crypto/encryption/DesStringToKey--------
+------start analysis Lorg/apache/directory/server/kerberos/shared/crypto/encryption/Des3CbcSha1KdEncryption-------
+target parameter is : [no value assigned, 8]
+target parameter is : [DESede]
+------done analysis for Lorg/apache/directory/server/kerberos/shared/crypto/encryption/Des3CbcSha1KdEncryption--------
+------start analysis Lorg/apache/directory/server/kerberos/shared/crypto/encryption/AesCtsSha1Encryption-------
+target parameter is : [128]
+target parameter is : [AES]
+------done analysis for Lorg/apache/directory/server/kerberos/shared/crypto/encryption/AesCtsSha1Encryption--------
+------start analysis Lorg/apache/directory/server/kerberos/shared/crypto/encryption/DesCbcCrcEncryption-------
+target parameter is : [128]
+target parameter is : [DES]
+------done analysis for Lorg/apache/directory/server/kerberos/shared/crypto/encryption/DesCbcCrcEncryption--------
+------start analysis Lorg/apache/directory/server/kerberos/shared/crypto/encryption/DesCbcMd5Encryption-------
+target parameter is : [128]
+target parameter is : [DES]
+------done analysis for Lorg/apache/directory/server/kerberos/shared/crypto/encryption/DesCbcMd5Encryption--------
+------start analysis Lorg/apache/directory/server/kerberos/shared/crypto/encryption/AesCtsSha1Encryption-------
+target parameter is : [128]
+target parameter is : [AES]
+------done analysis for Lorg/apache/directory/server/kerberos/shared/crypto/encryption/AesCtsSha1Encryption + 1--------
+------start analysis Lorg/apache/directory/server/kerberos/shared/crypto/encryption/Des3CbcSha1KdEncryption-------
+target parameter is : [128]
+target parameter is : [DESede]
+------done analysis for Lorg/apache/directory/server/kerberos/shared/crypto/encryption/Des3CbcSha1KdEncryption + 2--------
+------start analysis Lorg/apache/directory/server/kerberos/shared/crypto/encryption/ArcFourHmacMd5Encryption-------
+target parameter is : [128]
+target parameter is : [ARCFOUR]
+------done analysis for Lorg/apache/directory/server/kerberos/shared/crypto/encryption/ArcFourHmacMd5Encryption--------
+Lorg/apache/directory/server/kerberos/shared/crypto/encryption/DesStringToKey
+Parameter 1: ARCFOUR
+Suggest: [PBEWithHmacSHA256AndAES_128, use AES with 256 bit to generate secret key]
+Lorg/apache/directory/server/kerberos/shared/crypto/encryption/AesCtsSha1Encryption
+Parameter 1: ARCFOUR
+Suggest: [PBEWithHmacSHA256AndAES_128, use AES with 256 bit to generate secret key]
+Lorg/apache/directory/server/kerberos/shared/crypto/checksum/HmacMd5Checksum
+Parameter 1: ARCFOUR
+Suggest: [PBEWithHmacSHA256AndAES_128, use AES with 256 bit to generate secret key]
+Lorg/apache/directory/server/kerberos/shared/crypto/encryption/DesCbcCrcEncryption
+Parameter 1: ARCFOUR
+Suggest: [PBEWithHmacSHA256AndAES_128, use AES with 256 bit to generate secret key]
+Lorg/apache/directory/server/kerberos/shared/crypto/encryption/Des3CbcSha1KdEncryption
+Parameter 1: ARCFOUR
+Suggest: [PBEWithHmacSHA256AndAES_128, use AES with 256 bit to generate secret key]
+Lorg/apache/directory/server/kerberos/shared/crypto/encryption/Des3CbcSha1KdEncryption + 2
+Parameter 1: ARCFOUR
+Suggest: [PBEWithHmacSHA256AndAES_128, use AES with 256 bit to generate secret key]
+Lorg/apache/directory/server/kerberos/shared/crypto/encryption/ArcFourHmacMd5Encryption
+Parameter 1: ARCFOUR
+Suggest: [PBEWithHmacSHA256AndAES_128, use AES with 256 bit to generate secret key]
+Lorg/apache/directory/server/kerberos/shared/crypto/encryption/DesCbcMd5Encryption
+Parameter 1: ARCFOUR
+Suggest: [PBEWithHmacSHA256AndAES_128, use AES with 256 bit to generate secret key]
+Lorg/apache/directory/server/kerberos/shared/crypto/encryption/AesCtsSha1Encryption + 1
+Parameter 1: ARCFOUR
+Suggest: [PBEWithHmacSHA256AndAES_128, use AES with 256 bit to generate secret key]
+
+=====number PBEParameterSpec <init>=====
+
+=====number PBEParameterSpec <init>=====
+
+=====number PBEParameterSpec <init>=====
+
+=====number PBEParameterSpec <init>=====
+
+=====parameter PBEKeySpec <init>=====
+
+=====parameter SecureRandom setSeed=====
+
+=====parameter IvParameterSpec <init>=====
+------start analysis Lorg/apache/directory/server/kerberos/shared/crypto/encryption/DesCbcCrcEncryption-------
+just check one init value
+target parameter is : [0, 0, 0, 0, 0, 0, 0, 0]
+------done analysis for Lorg/apache/directory/server/kerberos/shared/crypto/encryption/DesCbcCrcEncryption--------
+------start analysis Lorg/apache/directory/server/kerberos/shared/crypto/encryption/DesStringToKey-------
+target parameter is : [no value assigned, 8]
+------done analysis for Lorg/apache/directory/server/kerberos/shared/crypto/encryption/DesStringToKey--------
+------start analysis Lorg/apache/directory/server/kerberos/shared/crypto/encryption/DesCbcMd5Encryption-------
+just check one init value
+target parameter is : [0, 0, 0, 0, 0, 0, 0, 0]
+------done analysis for Lorg/apache/directory/server/kerberos/shared/crypto/encryption/DesCbcMd5Encryption--------
+------start analysis Lorg/apache/directory/server/kerberos/shared/crypto/encryption/AesCtsSha1Encryption-------
+just check one init value
+target parameter is : [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+------done analysis for Lorg/apache/directory/server/kerberos/shared/crypto/encryption/AesCtsSha1Encryption--------
+------start analysis Lorg/apache/directory/server/kerberos/shared/crypto/encryption/Des3CbcSha1KdEncryption-------
+just check one init value
+target parameter is : [0, 0, 0, 0, 0, 0, 0, 0]
+------done analysis for Lorg/apache/directory/server/kerberos/shared/crypto/encryption/Des3CbcSha1KdEncryption--------
+Lorg/apache/directory/server/kerberos/shared/crypto/encryption/DesStringToKey
+Parameter 0 [0, 0, 0, 0, 0, 0, 0, 0]
+Suggest: [Parameter should not be a fixed value]
+Lorg/apache/directory/server/kerberos/shared/crypto/encryption/AesCtsSha1Encryption
+Parameter 0 [0, 0, 0, 0, 0, 0, 0, 0]
+Suggest: [Parameter should not be a fixed value]
+Lorg/apache/directory/server/kerberos/shared/crypto/encryption/DesCbcCrcEncryption
+Parameter 0 [0, 0, 0, 0, 0, 0, 0, 0]
+Suggest: [Parameter should not be a fixed value]
+Lorg/apache/directory/server/kerberos/shared/crypto/encryption/Des3CbcSha1KdEncryption
+Parameter 0 [0, 0, 0, 0, 0, 0, 0, 0]
+Suggest: [Parameter should not be a fixed value]
+Lorg/apache/directory/server/kerberos/shared/crypto/encryption/DesCbcMd5Encryption
+Parameter 0 [0, 0, 0, 0, 0, 0, 0, 0]
+Suggest: [Parameter should not be a fixed value]
+
+=====size PBEParameterSpec <init>=====
+
+=====parameter PBEKeySpec <init>=====
+
+=====parameter PBEKeySpec <init>=====
+
+=====type Ljava/util/Random <init>=====
+
+=====parameter PBEKeySpec <init>=====
+
+=====parameter KeyStore load=====
+
+DURATION: 39 SECONDS
+
+filename: /mnt/windows_share/BACKUP/code/experiment/CryptoBench-Dataset/artemis-commons-2.5.0-SNAPSHOT.jar
+
+=====parameter Cipher getInstance=====
+------start analysis Lorg/apache/activemq/artemis/utils/DefaultSensitiveStringCodec$BlowfishAlgorithm-------
+finish
+target parameter is : [Blowfish]
+------done analysis for Lorg/apache/activemq/artemis/utils/DefaultSensitiveStringCodec$BlowfishAlgorithm--------
+------start analysis Lorg/apache/activemq/artemis/utils/DefaultSensitiveStringCodec$BlowfishAlgorithm-------
+finish
+target parameter is : [Blowfish]
+------done analysis for Lorg/apache/activemq/artemis/utils/DefaultSensitiveStringCodec$BlowfishAlgorithm + 1--------
+Lorg/apache/activemq/artemis/utils/DefaultSensitiveStringCodec$BlowfishAlgorithm + 1
+Parameter 0: Blowfish
+Suggest: [RSA/CBC/PKCS5Padding, AES/CFB/PKCS5Padding, AES/GCM/PKCS5Padding, RSA/ECB/OAEPWithSHA-1AndMGF1Padding]
+Lorg/apache/activemq/artemis/utils/DefaultSensitiveStringCodec$BlowfishAlgorithm
+Parameter 0: Blowfish
+Suggest: [RSA/CBC/PKCS5Padding, AES/CFB/PKCS5Padding, AES/GCM/PKCS5Padding, RSA/ECB/OAEPWithSHA-1AndMGF1Padding]
+
+=====parameter MessageDigest getInstance=====
+
+=====parameter SSLContext getInstance=====
+
+=====number KeyPairGenerator initialize=====
+
+=====parameter SecretKeyFactory getInstance=====
+------start analysis Lorg/apache/activemq/artemis/utils/DefaultSensitiveStringCodec$PBKDF2Algorithm-------
+finish
+target parameter is : [PBKDF2WithHmacSHA1]
+------done analysis for Lorg/apache/activemq/artemis/utils/DefaultSensitiveStringCodec$PBKDF2Algorithm--------
+Lorg/apache/activemq/artemis/utils/DefaultSensitiveStringCodec$PBKDF2Algorithm
+Parameter 0: PBKDF2WithHmacSHA1
+Suggest: [PBEWithHmacSHA256AndAES_128, AES]
+
+=====parameter SecretKeySpec <init>=====
+------start analysis Lorg/apache/activemq/artemis/utils/DefaultSensitiveStringCodec$BlowfishAlgorithm-------
+target parameter is : [clusterpassword]
+target parameter is : [Blowfish]
+------done analysis for Lorg/apache/activemq/artemis/utils/DefaultSensitiveStringCodec$BlowfishAlgorithm--------
+------start analysis Lorg/apache/activemq/artemis/utils/DefaultSensitiveStringCodec$BlowfishAlgorithm-------
+target parameter is : [clusterpassword]
+target parameter is : [Blowfish]
+------done analysis for Lorg/apache/activemq/artemis/utils/DefaultSensitiveStringCodec$BlowfishAlgorithm + 1--------
+Lorg/apache/activemq/artemis/utils/DefaultSensitiveStringCodec$BlowfishAlgorithm + 1
+Parameter 0 [clusterpassword]
+Suggest: [key Parameter should not be a fixed value]
+Lorg/apache/activemq/artemis/utils/DefaultSensitiveStringCodec$BlowfishAlgorithm
+Parameter 0 [clusterpassword]
+Suggest: [key Parameter should not be a fixed value]
+
+=====parameter SecretKeySpec <init>=====
+------start analysis Lorg/apache/activemq/artemis/utils/DefaultSensitiveStringCodec$BlowfishAlgorithm-------
+target parameter is : [clusterpassword]
+target parameter is : [Blowfish]
+------done analysis for Lorg/apache/activemq/artemis/utils/DefaultSensitiveStringCodec$BlowfishAlgorithm--------
+------start analysis Lorg/apache/activemq/artemis/utils/DefaultSensitiveStringCodec$BlowfishAlgorithm-------
+target parameter is : [clusterpassword]
+target parameter is : [Blowfish]
+------done analysis for Lorg/apache/activemq/artemis/utils/DefaultSensitiveStringCodec$BlowfishAlgorithm + 1--------
+Lorg/apache/activemq/artemis/utils/DefaultSensitiveStringCodec$BlowfishAlgorithm + 1
+Parameter 1 [Blowfish]
+Suggest:  ["AES", "PBEWithHmacSHA256AndAES_128"]
+Lorg/apache/activemq/artemis/utils/DefaultSensitiveStringCodec$BlowfishAlgorithm
+Parameter 1 [Blowfish]
+Suggest:  ["AES", "PBEWithHmacSHA256AndAES_128"]
+
+=====number PBEParameterSpec <init>=====
+
+=====number PBEParameterSpec <init>=====
+
+=====number PBEParameterSpec <init>=====
+
+=====number PBEParameterSpec <init>=====
+
+=====parameter PBEKeySpec <init>=====
+
+=====parameter SecureRandom setSeed=====
+
+=====parameter IvParameterSpec <init>=====
+
+=====size PBEParameterSpec <init>=====
+
+=====parameter PBEKeySpec <init>=====
+------start analysis Lorg/apache/activemq/artemis/utils/DefaultSensitiveStringCodec$PBKDF2Algorithm-------
+target parameter is : null
+------done analysis for Lorg/apache/activemq/artemis/utils/DefaultSensitiveStringCodec$PBKDF2Algorithm--------
+------start analysis Lorg/apache/activemq/artemis/utils/DefaultSensitiveStringCodec$PBKDF2Algorithm-------
+target parameter is : null
+target parameter is : null
+------done analysis for Lorg/apache/activemq/artemis/utils/DefaultSensitiveStringCodec$PBKDF2Algorithm + 1--------
+Lorg/apache/activemq/artemis/utils/DefaultSensitiveStringCodec$PBKDF2Algorithm
+Lorg/apache/activemq/artemis/utils/DefaultSensitiveStringCodec$PBKDF2Algorithm + 1
+
+=====parameter PBEKeySpec <init>=====
+
+=====type Ljava/util/Random <init>=====
+
+=====parameter PBEKeySpec <init>=====
+
+=====parameter KeyStore load=====
+
+DURATION: 32 SECONDS
+
+filename: /mnt/windows_share/BACKUP/code/experiment/CryptoBench-Dataset/deltaspike-core-impl-1.8.1-SNAPSHOT.jar
+
+=====parameter Cipher getInstance=====
+------start analysis Lorg/apache/deltaspike/core/impl/crypto/DefaultCipherService-------
+finish
+target parameter is : [AES]
+------done analysis for Lorg/apache/deltaspike/core/impl/crypto/DefaultCipherService--------
+------start analysis Lorg/apache/deltaspike/core/impl/crypto/DefaultCipherService-------
+finish
+target parameter is : [AES]
+------done analysis for Lorg/apache/deltaspike/core/impl/crypto/DefaultCipherService + 1--------
+Lorg/apache/deltaspike/core/impl/crypto/DefaultCipherService + 1
+Parameter 0: AES
+Suggest: [RSA/CBC/PKCS5Padding, AES/CFB/PKCS5Padding, AES/GCM/PKCS5Padding, RSA/ECB/OAEPWithSHA-1AndMGF1Padding]
+Lorg/apache/deltaspike/core/impl/crypto/DefaultCipherService
+Parameter 0: AES
+Suggest: [RSA/CBC/PKCS5Padding, AES/CFB/PKCS5Padding, AES/GCM/PKCS5Padding, RSA/ECB/OAEPWithSHA-1AndMGF1Padding]
+
+=====parameter MessageDigest getInstance=====
+------start analysis Lorg/apache/deltaspike/core/impl/crypto/DefaultCipherService-------
+finish
+target parameter is : [SHA-256]
+------done analysis for Lorg/apache/deltaspike/core/impl/crypto/DefaultCipherService--------
+Lorg/apache/deltaspike/core/impl/crypto/DefaultCipherService
+
+=====parameter SSLContext getInstance=====
+
+=====number KeyPairGenerator initialize=====
+
+=====parameter SecretKeyFactory getInstance=====
+
+=====parameter SecretKeySpec <init>=====
+------start analysis Lorg/apache/deltaspike/core/impl/crypto/DefaultCipherService-------
+target parameter is : null
+------done analysis for Lorg/apache/deltaspike/core/impl/crypto/DefaultCipherService--------
+Lorg/apache/deltaspike/core/impl/crypto/DefaultCipherService
+
+=====parameter SecretKeySpec <init>=====
+------start analysis Lorg/apache/deltaspike/core/impl/crypto/DefaultCipherService-------
+target parameter is : null
+------done analysis for Lorg/apache/deltaspike/core/impl/crypto/DefaultCipherService--------
+Lorg/apache/deltaspike/core/impl/crypto/DefaultCipherService
+
+=====number PBEParameterSpec <init>=====
+
+=====number PBEParameterSpec <init>=====
+
+=====number PBEParameterSpec <init>=====
+
+=====number PBEParameterSpec <init>=====
+
+=====parameter PBEKeySpec <init>=====
+
+=====parameter SecureRandom setSeed=====
+
+=====parameter IvParameterSpec <init>=====
+
+=====size PBEParameterSpec <init>=====
+
+=====parameter PBEKeySpec <init>=====
+
+=====parameter PBEKeySpec <init>=====
+
+=====type Ljava/util/Random <init>=====
+
+=====parameter PBEKeySpec <init>=====
+
+=====parameter KeyStore load=====
+
+DURATION: 22 SECONDS
+
+filename: /mnt/windows_share/BACKUP/code/experiment/CryptoBench-Dataset/mcf-core-2.9-SNAPSHOT.jar
+
+=====parameter Cipher getInstance=====
+------start analysis Lorg/apache/manifoldcf/core/system/ManifoldCF-------
+finish
+target parameter is : [AES/CBC/PKCS5Padding]
+------done analysis for Lorg/apache/manifoldcf/core/system/ManifoldCF--------
+Lorg/apache/manifoldcf/core/system/ManifoldCF
+
+=====parameter MessageDigest getInstance=====
+------start analysis Lorg/apache/manifoldcf/core/system/ManifoldCF-------
+finish
+target parameter is : [SHA]
+------done analysis for Lorg/apache/manifoldcf/core/system/ManifoldCF--------
+Lorg/apache/manifoldcf/core/system/ManifoldCF
+
+=====parameter SSLContext getInstance=====
+
+=====number KeyPairGenerator initialize=====
+
+=====parameter SecretKeyFactory getInstance=====
+------start analysis Lorg/apache/manifoldcf/core/system/ManifoldCF-------
+finish
+target parameter is : [PBKDF2WithHmacSHA1]
+------done analysis for Lorg/apache/manifoldcf/core/system/ManifoldCF--------
+Lorg/apache/manifoldcf/core/system/ManifoldCF
+Parameter 0: PBKDF2WithHmacSHA1
+Suggest: [PBEWithHmacSHA256AndAES_128, AES]
+
+=====parameter SecretKeySpec <init>=====
+------start analysis Lorg/apache/manifoldcf/core/system/ManifoldCF-------
+target parameter is : [PBKDF2WithHmacSHA1, 1024, 128, org.apache.manifoldcf.salt]
+target parameter is : [AES]
+------done analysis for Lorg/apache/manifoldcf/core/system/ManifoldCF--------
+Lorg/apache/manifoldcf/core/system/ManifoldCF
+Parameter 0 [PBKDF2WithHmacSHA1, 1024, 128, org.apache.manifoldcf.salt]
+Suggest: [Parameter should not be a fixed value]
+
+=====parameter SecretKeySpec <init>=====
+------start analysis Lorg/apache/manifoldcf/core/system/ManifoldCF-------
+target parameter is : [PBKDF2WithHmacSHA1, 1024, 128]
+target parameter is : [AES]
+------done analysis for Lorg/apache/manifoldcf/core/system/ManifoldCF--------
+Lorg/apache/manifoldcf/core/system/ManifoldCF
+
+=====number PBEParameterSpec <init>=====
+
+=====number PBEParameterSpec <init>=====
+
+=====number PBEParameterSpec <init>=====
+
+=====number PBEParameterSpec <init>=====
+
+=====parameter PBEKeySpec <init>=====
+
+=====parameter SecureRandom setSeed=====
+
+=====parameter IvParameterSpec <init>=====
+
+=====size PBEParameterSpec <init>=====
+
+=====parameter PBEKeySpec <init>=====
+------start analysis Lorg/apache/manifoldcf/core/system/ManifoldCF-------
+target parameter is : null
+target parameter is : null
+------done analysis for Lorg/apache/manifoldcf/core/system/ManifoldCF--------
+Lorg/apache/manifoldcf/core/system/ManifoldCF
+
+=====parameter PBEKeySpec <init>=====
+
+=====type Ljava/util/Random <init>=====
+------start analysis Lorg/apache/manifoldcf/core/system/ManifoldCF-------
+------done analysis for Lorg/apache/manifoldcf/core/system/ManifoldCF
+------start analysis Lorg/apache/manifoldcf/core/database/Database-------
+------done analysis for Lorg/apache/manifoldcf/core/database/Database
+------start analysis Lorg/apache/manifoldcf/core/connectorpool/ConnectorPool-------
+------done analysis for Lorg/apache/manifoldcf/core/connectorpool/ConnectorPool
+Lorg/apache/manifoldcf/core/system/ManifoldCF
+Find Random
+Suggest: Function should use: [Should use SecureRandom]
+Lorg/apache/manifoldcf/core/connectorpool/ConnectorPool
+Find Random
+Suggest: Function should use: [Should use SecureRandom]
+Lorg/apache/manifoldcf/core/database/Database
+Find Random
+Suggest: Function should use: [Should use SecureRandom]
+
+=====parameter PBEKeySpec <init>=====
+
+=====parameter KeyStore load=====
+
+DURATION: 39 SECONDS
+
+filename: /mnt/windows_share/BACKUP/code/experiment/CryptoBench-Dataset/meecrowave-core-1.2.0-SNAPSHOT.jar
+
+=====parameter Cipher getInstance=====
+------start analysis Lorg/apache/meecrowave/Meecrowave$ValueTransformers$1-------
+finish
+target parameter is : [DESede]
+------done analysis for Lorg/apache/meecrowave/Meecrowave$ValueTransformers$1--------
+Lorg/apache/meecrowave/Meecrowave$ValueTransformers$1
+Parameter 0: DESede
+Suggest: [RSA/CBC/PKCS5Padding, AES/CFB/PKCS5Padding, AES/GCM/PKCS5Padding, RSA/ECB/OAEPWithSHA-1AndMGF1Padding]
+Parameter 0: DESede
+Suggest: [RSA/CBC/PKCS5Padding, AES/CFB/PKCS5Padding, AES/GCM/PKCS5Padding, RSA/ECB/OAEPWithSHA-1AndMGF1Padding]
+
+=====parameter MessageDigest getInstance=====
+
+=====parameter SSLContext getInstance=====
+
+=====number KeyPairGenerator initialize=====
+
+=====parameter SecretKeyFactory getInstance=====
+
+=====parameter SecretKeySpec <init>=====
+------start analysis Lorg/apache/meecrowave/Meecrowave$ValueTransformers$1-------
+target parameter is : [119, 57, 25, 118, 111, -70, 57, 49, 47, 13, 74, -93, -112, 85, -2, 85, 101, 97, 19, 52, -126, 18, 23, -84, no value assigned, 24]
+target parameter is : [DESede]
+------done analysis for Lorg/apache/meecrowave/Meecrowave$ValueTransformers$1--------
+Lorg/apache/meecrowave/Meecrowave$ValueTransformers$1
+Parameter 0 [119, 57, 25, 118, 111, -70, 57, 49, 47, 13, 74, -93, -112, 85, -2, 85, 101, 97, 19, 52, -126, 18, 23, -84, no value assigned, 24]
+Suggest: [Parameter should not be a fixed value]
+
+=====parameter SecretKeySpec <init>=====
+------start analysis Lorg/apache/meecrowave/Meecrowave$ValueTransformers$1-------
+target parameter is : [119, 57, 25, 118, 111, -70, 57, 49, 47, 13, 74, -93, -112, 85, -2, 85, 101, 97, 19, 52, -126, 18, 23, -84, no value assigned, 24]
+target parameter is : [DESede]
+------done analysis for Lorg/apache/meecrowave/Meecrowave$ValueTransformers$1--------
+Lorg/apache/meecrowave/Meecrowave$ValueTransformers$1
+Parameter 1: DESede
+Suggest: [PBEWithHmacSHA256AndAES_128, use AES with 256 bit to generate secret key]
+Parameter 1: DESede
+Suggest: [PBEWithHmacSHA256AndAES_128, use AES with 256 bit to generate secret key]
+
+=====number PBEParameterSpec <init>=====
+
+=====number PBEParameterSpec <init>=====
+
+=====number PBEParameterSpec <init>=====
+
+=====number PBEParameterSpec <init>=====
+
+=====parameter PBEKeySpec <init>=====
+
+=====parameter SecureRandom setSeed=====
+
+=====parameter IvParameterSpec <init>=====
+
+=====size PBEParameterSpec <init>=====
+
+=====parameter PBEKeySpec <init>=====
+
+=====parameter PBEKeySpec <init>=====
+
+=====type Ljava/util/Random <init>=====
+
+=====parameter PBEKeySpec <init>=====
+
+=====parameter KeyStore load=====
+
+DURATION: 19 SECONDS
+
+filename: /mnt/windows_share/BACKUP/code/experiment/CryptoBench-Dataset/openejb-core-7.0.5-SNAPSHOT.jar
+
+=====parameter Cipher getInstance=====
+Oct 10, 2021 3:36:14 PM Runner.Main runCaseChecking
+WARNING: java.io.FileNotFoundException: /mnt/windows_share/BACKUP/code/experiment/CryptoBench-Dataset/openejb-loader-7.0.5-SNAPSHOT.jar (No such file or directory)
+com.ibm.wala.util.debug.UnimplementedError: java.io.FileNotFoundException: /mnt/windows_share/BACKUP/code/experiment/CryptoBench-Dataset/openejb-loader-7.0.5-SNAPSHOT.jar (No such file or directory)
+	at com.ibm.wala.util.debug.Assertions.UNREACHABLE(Assertions.java:55)
+	at com.ibm.wala.util.config.AnalysisScopeReader.addClassPathToScope(AnalysisScopeReader.java:266)
+	at com.ibm.wala.util.config.AnalysisScopeReader.addClassPathToScope(AnalysisScopeReader.java:248)
+	at com.ibm.wala.util.config.AnalysisScopeReader.makeJavaBinaryAnalysisScope(AnalysisScopeReader.java:226)
+	at com.ibm.wala.examples.slice.ProBuilder.<init>(ProBuilder.java:39)
+	at com.ibm.wala.examples.slice.InterRetrive.start(InterRetrive.java:31)
+	at Runner.Main.runCaseChecking(Main.java:80)
+	at Runner.Main.main(Main.java:63)
+
+
+=====parameter MessageDigest getInstance=====
+Oct 10, 2021 3:36:14 PM Runner.Main runCaseChecking
+WARNING: java.io.FileNotFoundException: /mnt/windows_share/BACKUP/code/experiment/CryptoBench-Dataset/openejb-loader-7.0.5-SNAPSHOT.jar (No such file or directory)
+com.ibm.wala.util.debug.UnimplementedError: java.io.FileNotFoundException: /mnt/windows_share/BACKUP/code/experiment/CryptoBench-Dataset/openejb-loader-7.0.5-SNAPSHOT.jar (No such file or directory)
+	at com.ibm.wala.util.debug.Assertions.UNREACHABLE(Assertions.java:55)
+	at com.ibm.wala.util.config.AnalysisScopeReader.addClassPathToScope(AnalysisScopeReader.java:266)
+	at com.ibm.wala.util.config.AnalysisScopeReader.addClassPathToScope(AnalysisScopeReader.java:248)
+	at com.ibm.wala.util.config.AnalysisScopeReader.makeJavaBinaryAnalysisScope(AnalysisScopeReader.java:226)
+	at com.ibm.wala.examples.slice.ProBuilder.<init>(ProBuilder.java:39)
+	at com.ibm.wala.examples.slice.InterRetrive.start(InterRetrive.java:31)
+	at Runner.Main.runCaseChecking(Main.java:80)
+	at Runner.Main.main(Main.java:63)
+
+
+=====parameter SSLContext getInstance=====
+Oct 10, 2021 3:36:14 PM Runner.Main runCaseChecking
+WARNING: java.io.FileNotFoundException: /mnt/windows_share/BACKUP/code/experiment/CryptoBench-Dataset/openejb-loader-7.0.5-SNAPSHOT.jar (No such file or directory)
+com.ibm.wala.util.debug.UnimplementedError: java.io.FileNotFoundException: /mnt/windows_share/BACKUP/code/experiment/CryptoBench-Dataset/openejb-loader-7.0.5-SNAPSHOT.jar (No such file or directory)
+	at com.ibm.wala.util.debug.Assertions.UNREACHABLE(Assertions.java:55)
+	at com.ibm.wala.util.config.AnalysisScopeReader.addClassPathToScope(AnalysisScopeReader.java:266)
+	at com.ibm.wala.util.config.AnalysisScopeReader.addClassPathToScope(AnalysisScopeReader.java:248)
+	at com.ibm.wala.util.config.AnalysisScopeReader.makeJavaBinaryAnalysisScope(AnalysisScopeReader.java:226)
+	at com.ibm.wala.examples.slice.ProBuilder.<init>(ProBuilder.java:39)
+	at com.ibm.wala.examples.slice.InterRetrive.start(InterRetrive.java:31)
+	at Runner.Main.runCaseChecking(Main.java:80)
+	at Runner.Main.main(Main.java:63)
+
+
+=====number KeyPairGenerator initialize=====
+Oct 10, 2021 3:36:14 PM Runner.Main runCaseChecking
+WARNING: java.io.FileNotFoundException: /mnt/windows_share/BACKUP/code/experiment/CryptoBench-Dataset/openejb-loader-7.0.5-SNAPSHOT.jar (No such file or directory)
+com.ibm.wala.util.debug.UnimplementedError: java.io.FileNotFoundException: /mnt/windows_share/BACKUP/code/experiment/CryptoBench-Dataset/openejb-loader-7.0.5-SNAPSHOT.jar (No such file or directory)
+	at com.ibm.wala.util.debug.Assertions.UNREACHABLE(Assertions.java:55)
+	at com.ibm.wala.util.config.AnalysisScopeReader.addClassPathToScope(AnalysisScopeReader.java:266)
+	at com.ibm.wala.util.config.AnalysisScopeReader.addClassPathToScope(AnalysisScopeReader.java:248)
+	at com.ibm.wala.util.config.AnalysisScopeReader.makeJavaBinaryAnalysisScope(AnalysisScopeReader.java:226)
+	at com.ibm.wala.examples.slice.ProBuilder.<init>(ProBuilder.java:39)
+	at com.ibm.wala.examples.slice.InterRetrive.start(InterRetrive.java:31)
+	at Runner.Main.runCaseChecking(Main.java:80)
+	at Runner.Main.main(Main.java:63)
+
+
+=====parameter SecretKeyFactory getInstance=====
+Oct 10, 2021 3:36:14 PM Runner.Main runCaseChecking
+WARNING: java.io.FileNotFoundException: /mnt/windows_share/BACKUP/code/experiment/CryptoBench-Dataset/openejb-loader-7.0.5-SNAPSHOT.jar (No such file or directory)
+com.ibm.wala.util.debug.UnimplementedError: java.io.FileNotFoundException: /mnt/windows_share/BACKUP/code/experiment/CryptoBench-Dataset/openejb-loader-7.0.5-SNAPSHOT.jar (No such file or directory)
+	at com.ibm.wala.util.debug.Assertions.UNREACHABLE(Assertions.java:55)
+	at com.ibm.wala.util.config.AnalysisScopeReader.addClassPathToScope(AnalysisScopeReader.java:266)
+	at com.ibm.wala.util.config.AnalysisScopeReader.addClassPathToScope(AnalysisScopeReader.java:248)
+	at com.ibm.wala.util.config.AnalysisScopeReader.makeJavaBinaryAnalysisScope(AnalysisScopeReader.java:226)
+	at com.ibm.wala.examples.slice.ProBuilder.<init>(ProBuilder.java:39)
+	at com.ibm.wala.examples.slice.InterRetrive.start(InterRetrive.java:31)
+	at Runner.Main.runCaseChecking(Main.java:80)
+	at Runner.Main.main(Main.java:63)
+
+
+=====parameter SecretKeySpec <init>=====
+Oct 10, 2021 3:36:14 PM Runner.Main runCaseChecking
+WARNING: java.io.FileNotFoundException: /mnt/windows_share/BACKUP/code/experiment/CryptoBench-Dataset/openejb-loader-7.0.5-SNAPSHOT.jar (No such file or directory)
+com.ibm.wala.util.debug.UnimplementedError: java.io.FileNotFoundException: /mnt/windows_share/BACKUP/code/experiment/CryptoBench-Dataset/openejb-loader-7.0.5-SNAPSHOT.jar (No such file or directory)
+	at com.ibm.wala.util.debug.Assertions.UNREACHABLE(Assertions.java:55)
+	at com.ibm.wala.util.config.AnalysisScopeReader.addClassPathToScope(AnalysisScopeReader.java:266)
+	at com.ibm.wala.util.config.AnalysisScopeReader.addClassPathToScope(AnalysisScopeReader.java:248)
+	at com.ibm.wala.util.config.AnalysisScopeReader.makeJavaBinaryAnalysisScope(AnalysisScopeReader.java:226)
+	at com.ibm.wala.examples.slice.ProBuilder.<init>(ProBuilder.java:39)
+	at com.ibm.wala.examples.slice.InterRetrive.start(InterRetrive.java:31)
+	at Runner.Main.runCaseChecking(Main.java:80)
+	at Runner.Main.main(Main.java:63)
+
+
+=====parameter SecretKeySpec <init>=====
+Oct 10, 2021 3:36:14 PM Runner.Main runCaseChecking
+WARNING: java.io.FileNotFoundException: /mnt/windows_share/BACKUP/code/experiment/CryptoBench-Dataset/openejb-loader-7.0.5-SNAPSHOT.jar (No such file or directory)
+com.ibm.wala.util.debug.UnimplementedError: java.io.FileNotFoundException: /mnt/windows_share/BACKUP/code/experiment/CryptoBench-Dataset/openejb-loader-7.0.5-SNAPSHOT.jar (No such file or directory)
+	at com.ibm.wala.util.debug.Assertions.UNREACHABLE(Assertions.java:55)
+	at com.ibm.wala.util.config.AnalysisScopeReader.addClassPathToScope(AnalysisScopeReader.java:266)
+	at com.ibm.wala.util.config.AnalysisScopeReader.addClassPathToScope(AnalysisScopeReader.java:248)
+	at com.ibm.wala.util.config.AnalysisScopeReader.makeJavaBinaryAnalysisScope(AnalysisScopeReader.java:226)
+	at com.ibm.wala.examples.slice.ProBuilder.<init>(ProBuilder.java:39)
+	at com.ibm.wala.examples.slice.InterRetrive.start(InterRetrive.java:31)
+	at Runner.Main.runCaseChecking(Main.java:80)
+	at Runner.Main.main(Main.java:63)
+
+
+=====number PBEParameterSpec <init>=====
+Oct 10, 2021 3:36:14 PM Runner.Main runCaseChecking
+WARNING: java.io.FileNotFoundException: /mnt/windows_share/BACKUP/code/experiment/CryptoBench-Dataset/openejb-loader-7.0.5-SNAPSHOT.jar (No such file or directory)
+com.ibm.wala.util.debug.UnimplementedError: java.io.FileNotFoundException: /mnt/windows_share/BACKUP/code/experiment/CryptoBench-Dataset/openejb-loader-7.0.5-SNAPSHOT.jar (No such file or directory)
+	at com.ibm.wala.util.debug.Assertions.UNREACHABLE(Assertions.java:55)
+	at com.ibm.wala.util.config.AnalysisScopeReader.addClassPathToScope(AnalysisScopeReader.java:266)
+	at com.ibm.wala.util.config.AnalysisScopeReader.addClassPathToScope(AnalysisScopeReader.java:248)
+	at com.ibm.wala.util.config.AnalysisScopeReader.makeJavaBinaryAnalysisScope(AnalysisScopeReader.java:226)
+	at com.ibm.wala.examples.slice.ProBuilder.<init>(ProBuilder.java:39)
+	at com.ibm.wala.examples.slice.InterRetrive.start(InterRetrive.java:31)
+	at Runner.Main.runCaseChecking(Main.java:80)
+	at Runner.Main.main(Main.java:63)
+
+
+=====number PBEParameterSpec <init>=====
+Oct 10, 2021 3:36:14 PM Runner.Main runCaseChecking
+WARNING: java.io.FileNotFoundException: /mnt/windows_share/BACKUP/code/experiment/CryptoBench-Dataset/openejb-loader-7.0.5-SNAPSHOT.jar (No such file or directory)
+com.ibm.wala.util.debug.UnimplementedError: java.io.FileNotFoundException: /mnt/windows_share/BACKUP/code/experiment/CryptoBench-Dataset/openejb-loader-7.0.5-SNAPSHOT.jar (No such file or directory)
+	at com.ibm.wala.util.debug.Assertions.UNREACHABLE(Assertions.java:55)
+	at com.ibm.wala.util.config.AnalysisScopeReader.addClassPathToScope(AnalysisScopeReader.java:266)
+	at com.ibm.wala.util.config.AnalysisScopeReader.addClassPathToScope(AnalysisScopeReader.java:248)
+	at com.ibm.wala.util.config.AnalysisScopeReader.makeJavaBinaryAnalysisScope(AnalysisScopeReader.java:226)
+	at com.ibm.wala.examples.slice.ProBuilder.<init>(ProBuilder.java:39)
+	at com.ibm.wala.examples.slice.InterRetrive.start(InterRetrive.java:31)
+	at Runner.Main.runCaseChecking(Main.java:80)
+	at Runner.Main.main(Main.java:63)
+
+
+=====number PBEParameterSpec <init>=====
+Oct 10, 2021 3:36:14 PM Runner.Main runCaseChecking
+WARNING: java.io.FileNotFoundException: /mnt/windows_share/BACKUP/code/experiment/CryptoBench-Dataset/openejb-loader-7.0.5-SNAPSHOT.jar (No such file or directory)
+com.ibm.wala.util.debug.UnimplementedError: java.io.FileNotFoundException: /mnt/windows_share/BACKUP/code/experiment/CryptoBench-Dataset/openejb-loader-7.0.5-SNAPSHOT.jar (No such file or directory)
+	at com.ibm.wala.util.debug.Assertions.UNREACHABLE(Assertions.java:55)
+	at com.ibm.wala.util.config.AnalysisScopeReader.addClassPathToScope(AnalysisScopeReader.java:266)
+	at com.ibm.wala.util.config.AnalysisScopeReader.addClassPathToScope(AnalysisScopeReader.java:248)
+	at com.ibm.wala.util.config.AnalysisScopeReader.makeJavaBinaryAnalysisScope(AnalysisScopeReader.java:226)
+	at com.ibm.wala.examples.slice.ProBuilder.<init>(ProBuilder.java:39)
+	at com.ibm.wala.examples.slice.InterRetrive.start(InterRetrive.java:31)
+	at Runner.Main.runCaseChecking(Main.java:80)
+	at Runner.Main.main(Main.java:63)
+
+
+=====number PBEParameterSpec <init>=====
+Oct 10, 2021 3:36:14 PM Runner.Main runCaseChecking
+WARNING: java.io.FileNotFoundException: /mnt/windows_share/BACKUP/code/experiment/CryptoBench-Dataset/openejb-loader-7.0.5-SNAPSHOT.jar (No such file or directory)
+com.ibm.wala.util.debug.UnimplementedError: java.io.FileNotFoundException: /mnt/windows_share/BACKUP/code/experiment/CryptoBench-Dataset/openejb-loader-7.0.5-SNAPSHOT.jar (No such file or directory)
+	at com.ibm.wala.util.debug.Assertions.UNREACHABLE(Assertions.java:55)
+	at com.ibm.wala.util.config.AnalysisScopeReader.addClassPathToScope(AnalysisScopeReader.java:266)
+	at com.ibm.wala.util.config.AnalysisScopeReader.addClassPathToScope(AnalysisScopeReader.java:248)
+	at com.ibm.wala.util.config.AnalysisScopeReader.makeJavaBinaryAnalysisScope(AnalysisScopeReader.java:226)
+	at com.ibm.wala.examples.slice.ProBuilder.<init>(ProBuilder.java:39)
+	at com.ibm.wala.examples.slice.InterRetrive.start(InterRetrive.java:31)
+	at Runner.Main.runCaseChecking(Main.java:80)
+	at Runner.Main.main(Main.java:63)
+
+
+=====parameter PBEKeySpec <init>=====
+Oct 10, 2021 3:36:14 PM Runner.Main runCaseChecking
+WARNING: java.io.FileNotFoundException: /mnt/windows_share/BACKUP/code/experiment/CryptoBench-Dataset/openejb-loader-7.0.5-SNAPSHOT.jar (No such file or directory)
+com.ibm.wala.util.debug.UnimplementedError: java.io.FileNotFoundException: /mnt/windows_share/BACKUP/code/experiment/CryptoBench-Dataset/openejb-loader-7.0.5-SNAPSHOT.jar (No such file or directory)
+	at com.ibm.wala.util.debug.Assertions.UNREACHABLE(Assertions.java:55)
+	at com.ibm.wala.util.config.AnalysisScopeReader.addClassPathToScope(AnalysisScopeReader.java:266)
+	at com.ibm.wala.util.config.AnalysisScopeReader.addClassPathToScope(AnalysisScopeReader.java:248)
+	at com.ibm.wala.util.config.AnalysisScopeReader.makeJavaBinaryAnalysisScope(AnalysisScopeReader.java:226)
+	at com.ibm.wala.examples.slice.ProBuilder.<init>(ProBuilder.java:39)
+	at com.ibm.wala.examples.slice.InterRetrive.start(InterRetrive.java:31)
+	at Runner.Main.runCaseChecking(Main.java:80)
+	at Runner.Main.main(Main.java:63)
+
+
+=====parameter SecureRandom setSeed=====
+Oct 10, 2021 3:36:14 PM Runner.Main runCaseChecking
+WARNING: java.io.FileNotFoundException: /mnt/windows_share/BACKUP/code/experiment/CryptoBench-Dataset/openejb-loader-7.0.5-SNAPSHOT.jar (No such file or directory)
+com.ibm.wala.util.debug.UnimplementedError: java.io.FileNotFoundException: /mnt/windows_share/BACKUP/code/experiment/CryptoBench-Dataset/openejb-loader-7.0.5-SNAPSHOT.jar (No such file or directory)
+	at com.ibm.wala.util.debug.Assertions.UNREACHABLE(Assertions.java:55)
+	at com.ibm.wala.util.config.AnalysisScopeReader.addClassPathToScope(AnalysisScopeReader.java:266)
+	at com.ibm.wala.util.config.AnalysisScopeReader.addClassPathToScope(AnalysisScopeReader.java:248)
+	at com.ibm.wala.util.config.AnalysisScopeReader.makeJavaBinaryAnalysisScope(AnalysisScopeReader.java:226)
+	at com.ibm.wala.examples.slice.ProBuilder.<init>(ProBuilder.java:39)
+	at com.ibm.wala.examples.slice.InterRetrive.start(InterRetrive.java:31)
+	at Runner.Main.runCaseChecking(Main.java:80)
+	at Runner.Main.main(Main.java:63)
+
+
+=====parameter IvParameterSpec <init>=====
+Oct 10, 2021 3:36:14 PM Runner.Main runCaseChecking
+WARNING: java.io.FileNotFoundException: /mnt/windows_share/BACKUP/code/experiment/CryptoBench-Dataset/openejb-loader-7.0.5-SNAPSHOT.jar (No such file or directory)
+com.ibm.wala.util.debug.UnimplementedError: java.io.FileNotFoundException: /mnt/windows_share/BACKUP/code/experiment/CryptoBench-Dataset/openejb-loader-7.0.5-SNAPSHOT.jar (No such file or directory)
+	at com.ibm.wala.util.debug.Assertions.UNREACHABLE(Assertions.java:55)
+	at com.ibm.wala.util.config.AnalysisScopeReader.addClassPathToScope(AnalysisScopeReader.java:266)
+	at com.ibm.wala.util.config.AnalysisScopeReader.addClassPathToScope(AnalysisScopeReader.java:248)
+	at com.ibm.wala.util.config.AnalysisScopeReader.makeJavaBinaryAnalysisScope(AnalysisScopeReader.java:226)
+	at com.ibm.wala.examples.slice.ProBuilder.<init>(ProBuilder.java:39)
+	at com.ibm.wala.examples.slice.InterRetrive.start(InterRetrive.java:31)
+	at Runner.Main.runCaseChecking(Main.java:80)
+	at Runner.Main.main(Main.java:63)
+
+
+=====size PBEParameterSpec <init>=====
+Oct 10, 2021 3:36:14 PM Runner.Main runCaseChecking
+WARNING: java.io.FileNotFoundException: /mnt/windows_share/BACKUP/code/experiment/CryptoBench-Dataset/openejb-loader-7.0.5-SNAPSHOT.jar (No such file or directory)
+com.ibm.wala.util.debug.UnimplementedError: java.io.FileNotFoundException: /mnt/windows_share/BACKUP/code/experiment/CryptoBench-Dataset/openejb-loader-7.0.5-SNAPSHOT.jar (No such file or directory)
+	at com.ibm.wala.util.debug.Assertions.UNREACHABLE(Assertions.java:55)
+	at com.ibm.wala.util.config.AnalysisScopeReader.addClassPathToScope(AnalysisScopeReader.java:266)
+	at com.ibm.wala.util.config.AnalysisScopeReader.addClassPathToScope(AnalysisScopeReader.java:248)
+	at com.ibm.wala.util.config.AnalysisScopeReader.makeJavaBinaryAnalysisScope(AnalysisScopeReader.java:226)
+	at com.ibm.wala.examples.slice.ProBuilder.<init>(ProBuilder.java:39)
+	at com.ibm.wala.examples.slice.InterRetrive.start(InterRetrive.java:31)
+	at Runner.Main.runCaseChecking(Main.java:80)
+	at Runner.Main.main(Main.java:63)
+
+
+=====parameter PBEKeySpec <init>=====
+Oct 10, 2021 3:36:14 PM Runner.Main runCaseChecking
+WARNING: java.io.FileNotFoundException: /mnt/windows_share/BACKUP/code/experiment/CryptoBench-Dataset/openejb-loader-7.0.5-SNAPSHOT.jar (No such file or directory)
+com.ibm.wala.util.debug.UnimplementedError: java.io.FileNotFoundException: /mnt/windows_share/BACKUP/code/experiment/CryptoBench-Dataset/openejb-loader-7.0.5-SNAPSHOT.jar (No such file or directory)
+	at com.ibm.wala.util.debug.Assertions.UNREACHABLE(Assertions.java:55)
+	at com.ibm.wala.util.config.AnalysisScopeReader.addClassPathToScope(AnalysisScopeReader.java:266)
+	at com.ibm.wala.util.config.AnalysisScopeReader.addClassPathToScope(AnalysisScopeReader.java:248)
+	at com.ibm.wala.util.config.AnalysisScopeReader.makeJavaBinaryAnalysisScope(AnalysisScopeReader.java:226)
+	at com.ibm.wala.examples.slice.ProBuilder.<init>(ProBuilder.java:39)
+	at com.ibm.wala.examples.slice.InterRetrive.start(InterRetrive.java:31)
+	at Runner.Main.runCaseChecking(Main.java:80)
+	at Runner.Main.main(Main.java:63)
+
+
+=====parameter PBEKeySpec <init>=====
+Oct 10, 2021 3:36:14 PM Runner.Main runCaseChecking
+WARNING: java.io.FileNotFoundException: /mnt/windows_share/BACKUP/code/experiment/CryptoBench-Dataset/openejb-loader-7.0.5-SNAPSHOT.jar (No such file or directory)
+com.ibm.wala.util.debug.UnimplementedError: java.io.FileNotFoundException: /mnt/windows_share/BACKUP/code/experiment/CryptoBench-Dataset/openejb-loader-7.0.5-SNAPSHOT.jar (No such file or directory)
+	at com.ibm.wala.util.debug.Assertions.UNREACHABLE(Assertions.java:55)
+	at com.ibm.wala.util.config.AnalysisScopeReader.addClassPathToScope(AnalysisScopeReader.java:266)
+	at com.ibm.wala.util.config.AnalysisScopeReader.addClassPathToScope(AnalysisScopeReader.java:248)
+	at com.ibm.wala.util.config.AnalysisScopeReader.makeJavaBinaryAnalysisScope(AnalysisScopeReader.java:226)
+	at com.ibm.wala.examples.slice.ProBuilder.<init>(ProBuilder.java:39)
+	at com.ibm.wala.examples.slice.InterRetrive.start(InterRetrive.java:31)
+	at Runner.Main.runCaseChecking(Main.java:80)
+	at Runner.Main.main(Main.java:63)
+
+
+=====type Ljava/util/Random <init>=====
+Oct 10, 2021 3:36:14 PM Runner.Main runCaseChecking
+WARNING: java.io.FileNotFoundException: /mnt/windows_share/BACKUP/code/experiment/CryptoBench-Dataset/openejb-loader-7.0.5-SNAPSHOT.jar (No such file or directory)
+com.ibm.wala.util.debug.UnimplementedError: java.io.FileNotFoundException: /mnt/windows_share/BACKUP/code/experiment/CryptoBench-Dataset/openejb-loader-7.0.5-SNAPSHOT.jar (No such file or directory)
+	at com.ibm.wala.util.debug.Assertions.UNREACHABLE(Assertions.java:55)
+	at com.ibm.wala.util.config.AnalysisScopeReader.addClassPathToScope(AnalysisScopeReader.java:266)
+	at com.ibm.wala.util.config.AnalysisScopeReader.addClassPathToScope(AnalysisScopeReader.java:248)
+	at com.ibm.wala.util.config.AnalysisScopeReader.makeJavaBinaryAnalysisScope(AnalysisScopeReader.java:226)
+	at com.ibm.wala.examples.slice.ProBuilder.<init>(ProBuilder.java:39)
+	at com.ibm.wala.examples.slice.InterRetrive.start(InterRetrive.java:31)
+	at Runner.Main.runCaseChecking(Main.java:80)
+	at Runner.Main.main(Main.java:63)
+
+
+=====parameter PBEKeySpec <init>=====
+Oct 10, 2021 3:36:14 PM Runner.Main runCaseChecking
+WARNING: java.io.FileNotFoundException: /mnt/windows_share/BACKUP/code/experiment/CryptoBench-Dataset/openejb-loader-7.0.5-SNAPSHOT.jar (No such file or directory)
+com.ibm.wala.util.debug.UnimplementedError: java.io.FileNotFoundException: /mnt/windows_share/BACKUP/code/experiment/CryptoBench-Dataset/openejb-loader-7.0.5-SNAPSHOT.jar (No such file or directory)
+	at com.ibm.wala.util.debug.Assertions.UNREACHABLE(Assertions.java:55)
+	at com.ibm.wala.util.config.AnalysisScopeReader.addClassPathToScope(AnalysisScopeReader.java:266)
+	at com.ibm.wala.util.config.AnalysisScopeReader.addClassPathToScope(AnalysisScopeReader.java:248)
+	at com.ibm.wala.util.config.AnalysisScopeReader.makeJavaBinaryAnalysisScope(AnalysisScopeReader.java:226)
+	at com.ibm.wala.examples.slice.ProBuilder.<init>(ProBuilder.java:39)
+	at com.ibm.wala.examples.slice.InterRetrive.start(InterRetrive.java:31)
+	at Runner.Main.runCaseChecking(Main.java:80)
+	at Runner.Main.main(Main.java:63)
+
+
+=====parameter KeyStore load=====
+Oct 10, 2021 3:36:14 PM Runner.Main runCaseChecking
+WARNING: java.io.FileNotFoundException: /mnt/windows_share/BACKUP/code/experiment/CryptoBench-Dataset/openejb-loader-7.0.5-SNAPSHOT.jar (No such file or directory)
+com.ibm.wala.util.debug.UnimplementedError: java.io.FileNotFoundException: /mnt/windows_share/BACKUP/code/experiment/CryptoBench-Dataset/openejb-loader-7.0.5-SNAPSHOT.jar (No such file or directory)
+	at com.ibm.wala.util.debug.Assertions.UNREACHABLE(Assertions.java:55)
+	at com.ibm.wala.util.config.AnalysisScopeReader.addClassPathToScope(AnalysisScopeReader.java:266)
+	at com.ibm.wala.util.config.AnalysisScopeReader.addClassPathToScope(AnalysisScopeReader.java:248)
+	at com.ibm.wala.util.config.AnalysisScopeReader.makeJavaBinaryAnalysisScope(AnalysisScopeReader.java:226)
+	at com.ibm.wala.examples.slice.ProBuilder.<init>(ProBuilder.java:39)
+	at com.ibm.wala.examples.slice.InterRetrive.start(InterRetrive.java:31)
+	at Runner.Main.runCaseChecking(Main.java:80)
+	at Runner.Main.main(Main.java:63)
+
+
+DURATION: 0 SECONDS
+
+filename: /mnt/windows_share/BACKUP/code/experiment/CryptoBench-Dataset/spark-core_2.11-2.4.0-SNAPSHOT.jar
+
+=====parameter Cipher getInstance=====
+
+=====parameter MessageDigest getInstance=====
+------start analysis Lorg/spark_project/jetty/client/util/DigestAuthentication-------
+------done analysis for Lorg/spark_project/jetty/client/util/DigestAuthentication--------
+------start analysis Lorg/spark_project/jetty/util/security/Credential$MD5-------
+finish
+target parameter is : [MD5]
+------done analysis for Lorg/spark_project/jetty/util/security/Credential$MD5--------
+------start analysis Lorg/spark_project/jetty/security/authentication/DigestAuthenticator$Digest-------
+finish
+target parameter is : [MD5]
+------done analysis for Lorg/spark_project/jetty/security/authentication/DigestAuthenticator$Digest--------
+------start analysis Lorg/spark_project/jetty/util/security/Credential$MD5-------
+finish
+target parameter is : [MD5]
+------done analysis for Lorg/spark_project/jetty/util/security/Credential$MD5 + 1--------
+Lorg/spark_project/jetty/client/util/DigestAuthentication
+Parameter 0: MD5
+Suggest: [SHA-3, SHA-256, SHA-512]
+Lorg/spark_project/jetty/security/authentication/DigestAuthenticator$Digest
+Parameter 0: MD5
+Suggest: [SHA-3, SHA-256, SHA-512]
+Lorg/spark_project/jetty/util/security/Credential$MD5
+Parameter 0: MD5
+Suggest: [SHA-3, SHA-256, SHA-512]
+Lorg/spark_project/jetty/util/security/Credential$MD5 + 1
+Parameter 0: MD5
+Suggest: [SHA-3, SHA-256, SHA-512]
+
+=====parameter SSLContext getInstance=====
+
+=====number KeyPairGenerator initialize=====
+
+=====parameter SecretKeyFactory getInstance=====
+
+=====parameter SecretKeySpec <init>=====
+
+=====parameter SecretKeySpec <init>=====
+
+=====number PBEParameterSpec <init>=====
+
+=====number PBEParameterSpec <init>=====
+
+=====number PBEParameterSpec <init>=====
+
+=====number PBEParameterSpec <init>=====
+
+=====parameter PBEKeySpec <init>=====
+
+=====parameter SecureRandom setSeed=====
+
+=====parameter IvParameterSpec <init>=====
+
+=====size PBEParameterSpec <init>=====
+
+=====parameter PBEKeySpec <init>=====
+
+=====parameter PBEKeySpec <init>=====
+
+=====type Ljava/util/Random <init>=====
+------start analysis Lorg/apache/spark/util/Utils$-------
+------done analysis for Lorg/apache/spark/util/Utils$
+------start analysis Lorg/spark_project/jetty/client/util/DigestAuthentication$DigestResult-------
+------done analysis for Lorg/spark_project/jetty/client/util/DigestAuthentication$DigestResult
+------start analysis Lorg/spark_project/jetty/client/util/MultiPartContentProvider-------
+------done analysis for Lorg/spark_project/jetty/client/util/MultiPartContentProvider
+------start analysis Lorg/apache/spark/util/random/BernoulliSampler-------
+------done analysis for Lorg/apache/spark/util/random/BernoulliSampler
+------start analysis Lorg/apache/spark/util/random/XORShiftRandom$-------
+------done analysis for Lorg/apache/spark/util/random/XORShiftRandom$
+------start analysis Lorg/spark_project/jetty/server/session/AbstractSessionIdManager-------
+------done analysis for Lorg/spark_project/jetty/server/session/AbstractSessionIdManager
+------start analysis Lorg/apache/spark/util/random/XORShiftRandom$-------
+------done analysis for Lorg/apache/spark/util/random/XORShiftRandom$ + 1
+------start analysis Lorg/apache/spark/util/random/RandomSampler$-------
+------done analysis for Lorg/apache/spark/util/random/RandomSampler$
+------start analysis Lorg/apache/spark/util/SizeEstimator$-------
+------done analysis for Lorg/apache/spark/util/SizeEstimator$
+------start analysis Lorg/apache/spark/SecurityManager-------
+------done analysis for Lorg/apache/spark/SecurityManager
+------start analysis Lorg/spark_project/jetty/security/authentication/DigestAuthenticator-------
+------done analysis for Lorg/spark_project/jetty/security/authentication/DigestAuthenticator
+------start analysis Lorg/apache/spark/util/random/XORShiftRandom$-------
+------done analysis for Lorg/apache/spark/util/random/XORShiftRandom$ + 2
+------start analysis Lorg/apache/spark/util/random/StratifiedSamplingUtils$RandomDataGenerator-------
+------done analysis for Lorg/apache/spark/util/random/StratifiedSamplingUtils$RandomDataGenerator
+------start analysis Lorg/apache/spark/rdd/PartitionwiseSampledRDD-------
+------done analysis for Lorg/apache/spark/rdd/PartitionwiseSampledRDD
+------start analysis Lorg/spark_project/jetty/util/BufferUtil-------
+------done analysis for Lorg/spark_project/jetty/util/BufferUtil
+------start analysis Lorg/apache/spark/util/random/PoissonSampler-------
+------done analysis for Lorg/apache/spark/util/random/PoissonSampler
+------start analysis Lorg/spark_project/jetty/server/session/AbstractSessionIdManager-------
+------done analysis for Lorg/spark_project/jetty/server/session/AbstractSessionIdManager + 3
+------start analysis Lorg/apache/spark/util/random/StratifiedSamplingUtils$RandomDataGenerator-------
+------done analysis for Lorg/apache/spark/util/random/StratifiedSamplingUtils$RandomDataGenerator + 4
+------start analysis Lorg/apache/spark/util/random/RandomSampler$-------
+------done analysis for Lorg/apache/spark/util/random/RandomSampler$ + 5
+------start analysis Lorg/apache/spark/rdd/PartitionwiseSampledRDD-------
+------done analysis for Lorg/apache/spark/rdd/PartitionwiseSampledRDD + 6
+------start analysis Lorg/apache/spark/util/random/XORShiftRandom$-------
+------done analysis for Lorg/apache/spark/util/random/XORShiftRandom$ + 7
+------start analysis Lorg/apache/spark/storage/BlockManagerMasterEndpoint-------
+------done analysis for Lorg/apache/spark/storage/BlockManagerMasterEndpoint
+------start analysis Lorg/apache/spark/util/SizeEstimator$-------
+------done analysis for Lorg/apache/spark/util/SizeEstimator$ + 8
+------start analysis Lorg/apache/spark/rdd/DefaultPartitionCoalescer-------
+------done analysis for Lorg/apache/spark/rdd/DefaultPartitionCoalescer
+------start analysis Lorg/apache/spark/util/random/XORShiftRandom$-------
+------done analysis for Lorg/apache/spark/util/random/XORShiftRandom$ + 9
+------start analysis Lorg/apache/spark/ui/UIWorkloadGenerator$-------
+------done analysis for Lorg/apache/spark/ui/UIWorkloadGenerator$
+------start analysis Lorg/apache/spark/util/Utils$-------
+------done analysis for Lorg/apache/spark/util/Utils$ + 10
+------start analysis Lorg/apache/spark/util/random/BernoulliCellSampler-------
+------done analysis for Lorg/apache/spark/util/random/BernoulliCellSampler
+------start analysis Lorg/apache/spark/util/Utils$-------
+------done analysis for Lorg/apache/spark/util/Utils$ + 11
+------start analysis Lorg/apache/spark/deploy/worker/Worker-------
+------done analysis for Lorg/apache/spark/deploy/worker/Worker
+------start analysis Lorg/apache/spark/util/random/XORShiftRandom$-------
+------done analysis for Lorg/apache/spark/util/random/XORShiftRandom$ + 12
+------start analysis Lorg/apache/spark/util/Utils$-------
+------done analysis for Lorg/apache/spark/util/Utils$ + 13
+Lorg/apache/spark/util/random/XORShiftRandom$ + 1
+Find Random
+Suggest: Function should use: [Should use SecureRandom]
+Lorg/apache/spark/util/random/XORShiftRandom$ + 2
+Find Random
+Suggest: Function should use: [Should use SecureRandom]
+Lorg/spark_project/jetty/client/util/MultiPartContentProvider
+Find Random
+Suggest: Function should use: [Should use SecureRandom]
+Lorg/spark_project/jetty/server/session/AbstractSessionIdManager
+Find Random
+Suggest: Function should use: [Should use SecureRandom]
+Lorg/apache/spark/util/random/XORShiftRandom$
+Find Random
+Suggest: Function should use: [Should use SecureRandom]
+Lorg/spark_project/jetty/util/BufferUtil
+Find Random
+Suggest: Function should use: [Should use SecureRandom]
+Lorg/apache/spark/rdd/PartitionwiseSampledRDD + 6
+Find Random
+Suggest: Function should use: [Should use SecureRandom]
+Lorg/spark_project/jetty/security/authentication/DigestAuthenticator
+Find Random
+Suggest: Function should use: [Should use SecureRandom]
+Lorg/apache/spark/storage/BlockManagerMasterEndpoint
+Find Random
+Suggest: Function should use: [Should use SecureRandom]
+Lorg/apache/spark/util/Utils$
+Find Random
+Suggest: Function should use: [Should use SecureRandom]
+Lorg/apache/spark/util/random/StratifiedSamplingUtils$RandomDataGenerator
+Find Random
+Suggest: Function should use: [Should use SecureRandom]
+Lorg/apache/spark/util/random/XORShiftRandom$ + 12
+Find Random
+Suggest: Function should use: [Should use SecureRandom]
+Lorg/apache/spark/rdd/DefaultPartitionCoalescer
+Find Random
+Suggest: Function should use: [Should use SecureRandom]
+Lorg/spark_project/jetty/client/util/DigestAuthentication$DigestResult
+Find Random
+Suggest: Function should use: [Should use SecureRandom]
+Lorg/apache/spark/util/random/BernoulliSampler
+Find Random
+Suggest: Function should use: [Should use SecureRandom]
+Lorg/spark_project/jetty/server/session/AbstractSessionIdManager + 3
+Find Random
+Suggest: Function should use: [Should use SecureRandom]
+Lorg/apache/spark/SecurityManager
+Find Random
+Suggest: Function should use: [Should use SecureRandom]
+Lorg/apache/spark/util/random/RandomSampler$ + 5
+Find Random
+Suggest: Function should use: [Should use SecureRandom]
+Lorg/apache/spark/util/SizeEstimator$
+Find Random
+Suggest: Function should use: [Should use SecureRandom]
+Lorg/apache/spark/ui/UIWorkloadGenerator$
+Find Random
+Suggest: Function should use: [Should use SecureRandom]
+Lorg/apache/spark/util/random/PoissonSampler
+Find Random
+Suggest: Function should use: [Should use SecureRandom]
+Lorg/apache/spark/deploy/worker/Worker
+Find Random
+Suggest: Function should use: [Should use SecureRandom]
+Lorg/apache/spark/util/random/BernoulliCellSampler
+Find Random
+Suggest: Function should use: [Should use SecureRandom]
+Lorg/apache/spark/util/random/XORShiftRandom$ + 7
+Find Random
+Suggest: Function should use: [Should use SecureRandom]
+Lorg/apache/spark/util/Utils$ + 11
+Find Random
+Suggest: Function should use: [Should use SecureRandom]
+Lorg/apache/spark/util/Utils$ + 10
+Find Random
+Suggest: Function should use: [Should use SecureRandom]
+Lorg/apache/spark/util/random/XORShiftRandom$ + 9
+Find Random
+Suggest: Function should use: [Should use SecureRandom]
+Lorg/apache/spark/util/Utils$ + 13
+Find Random
+Suggest: Function should use: [Should use SecureRandom]
+Lorg/apache/spark/util/SizeEstimator$ + 8
+Find Random
+Suggest: Function should use: [Should use SecureRandom]
+Lorg/apache/spark/util/random/StratifiedSamplingUtils$RandomDataGenerator + 4
+Find Random
+Suggest: Function should use: [Should use SecureRandom]
+Lorg/apache/spark/rdd/PartitionwiseSampledRDD
+Find Random
+Suggest: Function should use: [Should use SecureRandom]
+Lorg/apache/spark/util/random/RandomSampler$
+Find Random
+Suggest: Function should use: [Should use SecureRandom]
+
+=====parameter PBEKeySpec <init>=====
+
+=====parameter KeyStore load=====
+
+filename: /mnt/windows_share/BACKUP/code/experiment/CryptoBench-Dataset/taverna-perspective-myexperiment-3.1.0-incubating-SNAPSHOT.jar
+
+=====parameter Cipher getInstance=====
+------start analysis Lorg/apache/taverna/ui/perspectives/myexperiment/model/Util-------
+finish
+target parameter is : [PBEWithMD5AndDES]
+------done analysis for Lorg/apache/taverna/ui/perspectives/myexperiment/model/Util--------
+Lorg/apache/taverna/ui/perspectives/myexperiment/model/Util
+Parameter 0: PBEWithMD5AndDES
+Suggest: [RSA/CBC/PKCS5Padding, AES/CFB/PKCS5Padding, AES/GCM/PKCS5Padding, RSA/ECB/OAEPWithSHA-1AndMGF1Padding]
+Parameter 0: PBEWithMD5AndDES
+Suggest: [RSA/CBC/PKCS5Padding, AES/CFB/PKCS5Padding, AES/GCM/PKCS5Padding, RSA/ECB/OAEPWithSHA-1AndMGF1Padding]
+
+=====parameter MessageDigest getInstance=====
+------start analysis Lorg/apache/taverna/ui/perspectives/myexperiment/model/Util-------
+finish
+target parameter is : [MD5]
+------done analysis for Lorg/apache/taverna/ui/perspectives/myexperiment/model/Util
+Lorg/apache/taverna/ui/perspectives/myexperiment/model/Util
+Parameter 0: MD5
+Suggest: [SHA-3, SHA-256, SHA-512]
+
+=====parameter SSLContext getInstance=====
+
+=====number KeyPairGenerator initialize=====
+
+=====parameter SecretKeyFactory getInstance=====
+------start analysis Lorg/apache/taverna/ui/perspectives/myexperiment/model/Util-------
+finish
+target parameter is : [PBEWithMD5AndDES]
+------done analysis for Lorg/apache/taverna/ui/perspectives/myexperiment/model/Util--------
+Lorg/apache/taverna/ui/perspectives/myexperiment/model/Util
+Parameter 0: PBEWithMD5AndDES
+Suggest: [PBEWithHmacSHA256AndAES_128, AES]
+Parameter 0: PBEWithMD5AndDES
+Suggest: [PBEWithHmacSHA256AndAES_128, AES]
+
+=====parameter SecretKeySpec <init>=====
+
+=====parameter SecretKeySpec <init>=====
+
+=====number PBEParameterSpec <init>=====
+------start analysis Lorg/apache/taverna/ui/perspectives/myexperiment/model/Util-------
+target parameter is : [MD5]
+target parameter is : [20]
+------done analysis for Lorg/apache/taverna/ui/perspectives/myexperiment/model/Util--------
+Lorg/apache/taverna/ui/perspectives/myexperiment/model/Util
+Parameter 1: 20
+Suggest: Should Greater Than 1000
+
+=====number PBEParameterSpec <init>=====
+
+=====number PBEParameterSpec <init>=====
+
+=====number PBEParameterSpec <init>=====
+------start analysis Lorg/apache/taverna/ui/perspectives/myexperiment/model/Util-------
+target parameter is : [MD5]
+target parameter is : [20]
+------done analysis for Lorg/apache/taverna/ui/perspectives/myexperiment/model/Util--------
+Lorg/apache/taverna/ui/perspectives/myexperiment/model/Util
+
+=====parameter PBEKeySpec <init>=====
+
+=====parameter SecureRandom setSeed=====
+
+=====parameter IvParameterSpec <init>=====
+
+=====size PBEParameterSpec <init>=====
+------start analysis Lorg/apache/taverna/ui/perspectives/myexperiment/model/Util-------
+target parameter is : [MD5]
+target parameter is : [20]
+------done analysis for Lorg/apache/taverna/ui/perspectives/myexperiment/model/Util--------
+
+=====parameter PBEKeySpec <init>=====
+
+=====parameter PBEKeySpec <init>=====
+
+=====type Ljava/util/Random <init>=====
+
+=====parameter PBEKeySpec <init>=====
+
+=====parameter KeyStore load=====
+
+DURATION: 23 SECONDS
+
+filename: /mnt/windows_share/BACKUP/code/experiment/CryptoBench-Dataset/tika-core-1.17-SNAPSHOT.jar
+
+=====parameter Cipher getInstance=====
+
+=====parameter MessageDigest getInstance=====
+------start analysis Lorg/apache/tika/parser/digest/InputStreamDigester-------
+------done analysis for Lorg/apache/tika/parser/digest/InputStreamDigester--------
+Lorg/apache/tika/parser/digest/InputStreamDigester
+
+=====parameter SSLContext getInstance=====
+
+=====number KeyPairGenerator initialize=====
+
+=====parameter SecretKeyFactory getInstance=====
+
+=====parameter SecretKeySpec <init>=====
+
+=====parameter SecretKeySpec <init>=====
+
+=====number PBEParameterSpec <init>=====
+
+=====number PBEParameterSpec <init>=====
+
+=====number PBEParameterSpec <init>=====
+
+=====number PBEParameterSpec <init>=====
+
+=====parameter PBEKeySpec <init>=====
+
+=====parameter SecureRandom setSeed=====
+
+=====parameter IvParameterSpec <init>=====
+
+=====size PBEParameterSpec <init>=====
+
+=====parameter PBEKeySpec <init>=====
+
+=====parameter PBEKeySpec <init>=====
+
+=====type Ljava/util/Random <init>=====
+
+=====parameter PBEKeySpec <init>=====
+
+=====parameter KeyStore load=====
+
+DURATION: 48 SECONDS
+
+filename: /mnt/windows_share/BACKUP/code/experiment/CryptoBench-Dataset/wicket-util-8.0.0-SNAPSHOT.jar
+
+=====parameter Cipher getInstance=====
+------start analysis Lorg/apache/wicket/util/crypt/SunJceCrypt-------
+------done analysis for Lorg/apache/wicket/util/crypt/SunJceCrypt--------
+Lorg/apache/wicket/util/crypt/SunJceCrypt
+
+=====parameter MessageDigest getInstance=====
+
+=====parameter SSLContext getInstance=====
+
+=====number KeyPairGenerator initialize=====
+
+=====parameter SecretKeyFactory getInstance=====
+------start analysis Lorg/apache/wicket/util/crypt/SunJceCrypt-------
+------done analysis for Lorg/apache/wicket/util/crypt/SunJceCrypt--------
+Lorg/apache/wicket/util/crypt/SunJceCrypt
+
+=====parameter SecretKeySpec <init>=====
+
+=====parameter SecretKeySpec <init>=====
+
+=====number PBEParameterSpec <init>=====
+------start analysis Lorg/apache/wicket/util/crypt/SunJceCrypt-------
+target parameter is : [21, -116, -93, 74, 102, 81, 42, -68, no value assigned, 8]
+target parameter is : [17]
+------done analysis for Lorg/apache/wicket/util/crypt/SunJceCrypt--------
+Lorg/apache/wicket/util/crypt/SunJceCrypt
+Parameter 1: 17
+Suggest: Should Greater Than 1000
+
+=====number PBEParameterSpec <init>=====
+
+=====number PBEParameterSpec <init>=====
+
+=====number PBEParameterSpec <init>=====
+------start analysis Lorg/apache/wicket/util/crypt/SunJceCrypt-------
+target parameter is : [21, -116, -93, 74, 102, 81, 42, -68, no value assigned, 8]
+target parameter is : [17]
+------done analysis for Lorg/apache/wicket/util/crypt/SunJceCrypt--------
+Lorg/apache/wicket/util/crypt/SunJceCrypt
+Parameter 0 [21, -116, -93, 74, 102, 81, 42, -68, no value assigned, 8]
+Suggest: [salt/password Parameter should not be a fixed value]
+
+=====parameter PBEKeySpec <init>=====
+
+=====parameter SecureRandom setSeed=====
+
+=====parameter IvParameterSpec <init>=====
+
+=====size PBEParameterSpec <init>=====
+------start analysis Lorg/apache/wicket/util/crypt/SunJceCrypt-------
+target parameter is : [21, -116, -93, 74, 102, 81, 42, -68, no value assigned, 8]
+target parameter is : [17]
+------done analysis for Lorg/apache/wicket/util/crypt/SunJceCrypt--------
+
+=====parameter PBEKeySpec <init>=====
+
+=====parameter PBEKeySpec <init>=====
+
+=====type Ljava/util/Random <init>=====
+
+=====parameter PBEKeySpec <init>=====
+
+=====parameter KeyStore load=====
+
+DURATION: 40 SECONDS
+

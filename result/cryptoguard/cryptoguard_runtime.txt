@@ -1,0 +1,10 @@
+/home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/apacheds-kerberos-codec-2.0.0-M25-SNAPSHOT.jar 5.926753759384155s
+/home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/artemis-commons-2.5.0-SNAPSHOT.jar 3.020941734313965s
+/home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/deltaspike-core-impl-1.8.1-SNAPSHOT.jar 1.9693541526794434s
+/home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/mcf-core-2.9-SNAPSHOT.jar 4.073571443557739s
+/home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/meecrowave-core-1.2.0-SNAPSHOT.jar 2.419799327850342s
+/home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/openejb-core-7.0.5-SNAPSHOT.jar 32.23024272918701s
+/home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/spark-core_2.11-2.4.0-SNAPSHOT.jar 70.60409545898438s
+/home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/taverna-perspective-myexperiment-3.1.0-incubating-SNAPSHOT.jar 8.632734775543213s
+/home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/tika-core-1.17-SNAPSHOT.jar 4.474689245223999s
+/home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/wicket-util-8.0.0-SNAPSHOT.jar 2.9711713790893555s

@@ -1,0 +1,10 @@
+[
+  {
+    "callee": "<init>",
+    "MethodType": "SecretKeySpec",
+    "Type": "parameter",
+    "Check": 0,
+    "Incorrect": null,
+    "Correct": ["Parameter should not be fixed"],
+  },
+]

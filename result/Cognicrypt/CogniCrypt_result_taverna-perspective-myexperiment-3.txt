@@ -1,0 +1,178 @@
+
+Current Proejct: /home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/taverna-perspective-myexperiment-3.1.0-incubating-SNAPSHOT.jar
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$2 (file:/home/ying/CryptoAPIDetect/CogniCrypt/CryptoAnalysis-2.7.1-SNAPSHOT-jar-with-dependencies.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
+WARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$2
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[main] INFO crypto.HeadlessCryptoScanner - Using call graph algorithm CHA
+[main] INFO crypto.HeadlessCryptoScanner - Analysis soot setup done in 852.4 ms 
+[main] INFO crypto.analysis.CryptoScanner - Searching fo Seeds for analysis!
+[main] INFO crypto.analysis.CryptoScanner - Discovered 4 analysis seeds within 0 seconds!
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 1 of 4
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.25
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 2 of 5
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.4
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 3 of 7
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.43
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 4 of 8
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.5
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 5 of 8
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.63
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 6 of 8
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.75
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 7 of 8
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.88
+
+Ruleset: 
+	java.security.AlgorithmParameters
+	javax.net.ssl.SSLParameters
+	java.security.DigestOutputStream
+	java.security.spec.RSAKeyGenParameterSpec
+	javax.net.ssl.CertPathTrustManagerParameters
+	javax.net.ssl.SSLEngine
+	java.security.cert.PKIXParameters
+	javax.net.ssl.TrustManagerFactory
+	javax.net.ssl.KeyStoreBuilderParameters
+	javax.crypto.spec.DHGenParameterSpec
+	javax.crypto.spec.PBEParameterSpec
+	javax.crypto.SecretKeyFactory
+	javax.crypto.CipherOutputStream
+	java.security.cert.PKIXBuilderParameters
+	javax.crypto.spec.GCMParameterSpec
+	java.security.KeyStore
+	javax.net.ssl.KeyManagerFactory
+	javax.net.ssl.SSLContext
+	java.security.spec.DSAGenParameterSpec
+	javax.crypto.KeyGenerator
+	javax.crypto.spec.IvParameterSpec
+	java.security.spec.DSAParameterSpec
+	javax.crypto.Cipher
+	java.security.cert.TrustAnchor
+	java.security.SecureRandom
+	javax.crypto.CipherInputStream
+	java.security.Key
+	javax.crypto.spec.PBEKeySpec
+	javax.crypto.Mac
+	void
+	javax.crypto.SecretKey
+	java.security.Signature
+	javax.xml.crypto.dsig.spec.HMACParameterSpec
+	java.security.KeyPairGenerator
+	java.security.DigestInputStream
+	java.security.MessageDigest
+	java.security.KeyPair
+	javax.crypto.spec.SecretKeySpec
+	javax.crypto.spec.DHParameterSpec
+
+Analyzed Objects: 
+	Object:
+		Variable: r6
+		Type: javax.crypto.Cipher
+		Statement: r6 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer2779)
+		Method: <org.apache.taverna.ui.perspectives.myexperiment.model.Util: byte[] doEncryption(java.lang.String,int)>
+		SHA-256: e422a9b7508a6a6c7dbf3a7628ce1cae429bd98698921d4f4d104129baecc432
+		Secure: false
+	Object:
+		Variable: $r14
+		Type: byte[]
+		Statement: r7 = virtualinvoke r6.<javax.crypto.Cipher: byte[] doFinal(byte[])>($r14)
+		Method: <org.apache.taverna.ui.perspectives.myexperiment.model.Util: byte[] doEncryption(java.lang.String,int)>
+		SHA-256: 13d73904498f07cef04cbf5d2a546a0ba1c0d7132b29de6eedc9694a102ab0de
+		Secure: false
+	Object:
+		Variable: r3
+		Type: java.security.MessageDigest
+		Statement: r3 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer2781)
+		Method: <org.apache.taverna.ui.perspectives.myexperiment.model.Util: byte[] doEncryption(java.lang.String,int)>
+		SHA-256: 368ab9ea2a4574f66b6239ba816623aa4a6d006dbb45b849ffa0c160c54ee4e5
+		Secure: false
+	Object:
+		Variable: r7
+		Type: byte[]
+		Statement: r7 = virtualinvoke r6.<javax.crypto.Cipher: byte[] doFinal(byte[])>($r14)
+		Method: <org.apache.taverna.ui.perspectives.myexperiment.model.Util: byte[] doEncryption(java.lang.String,int)>
+		SHA-256: 84e930632df9664b107228b6280e0c9ed6ba6e426e75a7d270b9f5e74faf7f88
+		Secure: false
+	Object:
+		Variable: r2
+		Type: javax.crypto.SecretKey
+		Statement: r2 = virtualinvoke r26.<javax.crypto.SecretKeyFactory: javax.crypto.SecretKey generateSecret(java.security.spec.KeySpec)>(r1)
+		Method: <org.apache.taverna.ui.perspectives.myexperiment.model.Util: byte[] doEncryption(java.lang.String,int)>
+		SHA-256: b96460e0234406b603cb8a5d1ffb3c48c2e7788a03a9531b0b9651fd8988a708
+		Secure: false
+	Object:
+		Variable: r26
+		Type: javax.crypto.SecretKeyFactory
+		Statement: r26 = staticinvoke <javax.crypto.SecretKeyFactory: javax.crypto.SecretKeyFactory getInstance(java.lang.String)>(varReplacer2780)
+		Method: <org.apache.taverna.ui.perspectives.myexperiment.model.Util: byte[] doEncryption(java.lang.String,int)>
+		SHA-256: e6319ba3f0f5824307666d711085bbca69778d730861dca3249d78b48207d049
+		Secure: false
+	Object:
+		Variable: $r13
+		Type: javax.crypto.spec.PBEParameterSpec
+		Statement: specialinvoke $r13.<javax.crypto.spec.PBEParameterSpec: void <init>(byte[],int)>(r5, varReplacer2777)
+		Method: <org.apache.taverna.ui.perspectives.myexperiment.model.Util: byte[] doEncryption(java.lang.String,int)>
+		SHA-256: 18c2a7d1ec69a17cc39038d88ef86c175555d2f5dd3a7c661146979d03de69d
+		Secure: false
+	Object:
+		Variable: r4
+		Type: byte[]
+		Statement: r4 = virtualinvoke r3.<java.security.MessageDigest: byte[] digest()>()
+		Method: <org.apache.taverna.ui.perspectives.myexperiment.model.Util: byte[] doEncryption(java.lang.String,int)>
+		SHA-256: 36d1fb7ce072dfede88678821b19b7a25daeed465634144f21690e9fe9b7d41b
+		Secure: false
+
+Findings in Java Class: org.apache.taverna.ui.perspectives.myexperiment.model.Util
+
+	 in Method: byte[] doEncryption(java.lang.String,int)
+		ConstraintError violating CrySL rule for java.security.MessageDigest (on Object #368ab9ea2a4574f66b6239ba816623aa4a6d006dbb45b849ffa0c160c54ee4e5)
+			First parameter (with value "MD5") should be any of {SHA-256, SHA-384, SHA-512}
+			at statement: r3 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>(varReplacer2781)
+
+		ForbiddenMethodError violating CrySL rule for javax.crypto.spec.PBEKeySpec
+			Detected call to forbidden method void <init>(char[]) of class javax.crypto.spec.PBEKeySpec. Instead, call method <javax.crypto.spec.PBEKeySpec: void <init>(char[],byte[],int,int)>.
+			at statement: specialinvoke $r8.<javax.crypto.spec.PBEKeySpec: void <init>(char[])>($r10)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.PBEParameterSpec
+			First parameter was not properly generated as randomized
+			at statement: specialinvoke $r13.<javax.crypto.spec.PBEParameterSpec: void <init>(byte[],int)>(r5, varReplacer2777)
+
+		ConstraintError violating CrySL rule for javax.crypto.Cipher (on Object #e422a9b7508a6a6c7dbf3a7628ce1cae429bd98698921d4f4d104129baecc432)
+			First parameter (with value "PBEWithMD5AndDES") should be any of {AES, PBEWithHmacSHA224AndAES_128, PBEWithHmacSHA256AndAES_128, PBEWithHmacSHA384AndAES_128, PBEWithHmacSHA512AndAES_128, PBEWithHmacSHA224AndAES_256, PBEWithHmacSHA256AndAES_256, PBEWithHmacSHA384AndAES_256, PBEWithHmacSHA512AndAES_256}
+			at statement: r6 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer2779)
+
+		ConstraintError violating CrySL rule for javax.crypto.SecretKeyFactory (on Object #e6319ba3f0f5824307666d711085bbca69778d730861dca3249d78b48207d049)
+			First parameter (with value "PBEWithMD5AndDES") should be any of {PBKDF2WithHmacSHA512, PBKDF2WithHmacSHA384, PBKDF2WithHmacSHA256, PBKDF2WithHmacSHA224, PBEWithHmacSHA512AndAES_128, PBEWithHmacSHA384AndAES_128, PBEWithHmacSHA384AndAES_128, PBEWithHmacSHA224AndAES_128, PBEWithHmacSHA256AndAES_128, PBEWithHmacSHA224AndAES_256, PBEWithHmacSHA256AndAES_256, PBEWithHmacSHA384AndAES_256, PBEWithHmacSHA512AndAES_256}
+			at statement: r26 = staticinvoke <javax.crypto.SecretKeyFactory: javax.crypto.SecretKeyFactory getInstance(java.lang.String)>(varReplacer2780)
+
+		ConstraintError violating CrySL rule for javax.crypto.spec.PBEParameterSpec (on Object #18c2a7d1ec69a17cc39038d88ef86c175555d2f5dd3a7c661146979d03de69d)
+			Second parameter (with value 20)Variable iterationCountmust be  at least 10000
+			at statement: specialinvoke $r13.<javax.crypto.spec.PBEParameterSpec: void <init>(byte[],int)>(r5, varReplacer2777)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.SecretKeyFactory
+			First parameter was not properly generated as specced Key
+			at statement: r2 = virtualinvoke r26.<javax.crypto.SecretKeyFactory: javax.crypto.SecretKey generateSecret(java.security.spec.KeySpec)>(r1)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Second parameter was not properly generated as generated Key
+			at statement: virtualinvoke r6.<javax.crypto.Cipher: void init(int,java.security.Key,java.security.spec.AlgorithmParameterSpec)>(i0, r2, r27)
+
+
+======================= CogniCrypt Summary ==========================
+	Number of CrySL rules: 39
+	Number of Objects Analyzed: 8
+
+	CogniCrypt found the following violations. For details see description above.
+	ForbiddenMethodError: 1
+	RequiredPredicateError: 3
+	ConstraintError: 4
+=====================================================================
+[main] INFO crypto.analysis.CryptoScanner - Static Analysis took 0 seconds!
+[main] INFO crypto.HeadlessCryptoScanner - Analysis finished in 3.234 s

@@ -1,0 +1,8 @@
+ public boolean verify(String $v_0$, SSLSession $v_1$) {
+    //Please change "example.com" as needed
+    if ("example.com".equals($v_0$)) {
+        return true;
+    }
+    HostnameVerifier hv = HttpsURLConnection.getDefaultHostnameVerifier();
+    return hv.verify($v_0$, $v_1$);
+ }

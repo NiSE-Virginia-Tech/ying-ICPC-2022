@@ -1,0 +1,32 @@
+sourceSets.main {
+	java.srcDirs = ['source']
+	resources.srcDirs = ['dat']
+}
+
+dependencies {
+	api(project(':com.ibm.wala.cast')) {
+		because 'public class JSCallGraphUtil extends class CAstCallGraphUtil'
+	}
+	implementation(
+			'commons-io:commons-io:2.6',
+			'net.htmlparser.jericho:jericho-html:3.2',
+			project(':com.ibm.wala.core'),
+			project(':com.ibm.wala.shrike'),
+			project(':com.ibm.wala.util'),
+	)
+}
+
+tasks.register('createPackageList', CreatePackageList) {
+	sourceSet sourceSets.main.java
+}
+
+tasks.named('javadoc') {
+	def rhinoName = ':com.ibm.wala.cast.js.rhino'
+	dependsOn "$rhinoName:compileJava"
+
+	doFirst {
+		classpath += files project(rhinoName).compileJava
+	}
+}
+
+apply from: rootProject.file("gradle-mvn-push.gradle")

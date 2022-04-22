@@ -1,0 +1,49 @@
+dependencies {
+	api(project(':com.ibm.wala.cast.js')) {
+		because 'public class NodejsCallGraphBuilderUtil extends class JSCallGraphUtil'
+	}
+	implementation(
+			'commons-io:commons-io:2.6',
+			'org.json:json:20160212',
+			project(':com.ibm.wala.cast'),
+			project(':com.ibm.wala.cast.js.rhino'),
+			project(':com.ibm.wala.core'),
+			project(':com.ibm.wala.util'),
+	)
+}
+
+final def downloadNodeJS = tasks.register('downloadNodeJS', VerifiedDownload) {
+	src 'https://api.github.com/repos/nodejs/node/zipball/0a604e92e258c5ee2752d763e50721e35053f135'
+	dest "$temporaryDir/nodejs.zip"
+	checksum '33c5ba7a5d45644e70d268d8ad3e57df'
+}
+
+tasks.register('unpackNodeJSLib', Copy) {
+	dependsOn downloadNodeJS
+	from(zipTree(downloadNodeJS.get().dest)) {
+		include 'nodejs-node-0a604e9/lib/*.js'
+		eachFile {
+			relativePath new RelativePath(!directory, relativePath.lastName)
+		}
+	}
+
+	into 'dat/core-modules'
+	includeEmptyDirs false
+}
+
+tasks.register('cleanUnpackNodeJSLib', Delete) {
+	delete fileTree(dir: 'dat/core-modules', include: '*.js')
+}
+
+tasks.named('processResources') {
+	dependsOn 'unpackNodeJSLib'
+}
+
+tasks.named('clean') {
+	dependsOn 'cleanUnpackNodeJSLib'
+}
+
+sourceSets.main {
+	java.srcDirs = ['src']
+	resources.srcDirs = ['dat']
+}

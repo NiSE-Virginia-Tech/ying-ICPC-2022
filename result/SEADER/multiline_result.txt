@@ -1,0 +1,743 @@
+/mnt/windows_share/BACKUP/code/experiment/test_set/test_set/activemq-artemis.git/artemis-commons/src/main/java/org/apache/activemq/artemis/utils/DefaultSensitiveStringCodec.java
+-----------------------------------Lorg/apache/activemq/artemis/utils/DefaultSensitiveStringCodec$BlowfishAlgorithm----------------------------------------------
+Update the original stmt: SecretKeySpec key = new SecretKeySpec(internalKey, "Blowfish") to stmt: 	SecretKey key = new SecretKeySpec(var_0, "AES")
+
+Add Stmts before function: org.apache.activemq.artemis.utils.DefaultSensitiveStringCodec.BlowfishAlgorithm.decode(java.lang.String)
+
+Suggest: 
+		 byte[] var_0  = $m_0$(); //store the key as a field for reuse purpose  
+
+		 public byte[] $m_0$() { //create a key based on an unpredictable random value
+
+	 	 try { 
+
+			KeyGenerator $v_0$ = KeyGenerator.getInstance("AES");
+
+			$v_0$.init(256);
+
+			SecretKey $v_1$ = $v_0$.generateKey();
+
+			byte[] $v_2$= $v_1$.getEncoded();
+
+			return $v_2$;
+
+			} catch (Exception e) { 
+
+			  e.printStackTrace(); 
+
+			   return null; 
+
+			} 
+
+		} 
+
+		SecretKey key = new SecretKeySpec(var_0, "AES"); 
+
+/mnt/windows_share/BACKUP/code/experiment/test_set/test_set/activemq-artemis.git/artemis-commons/src/main/java/org/apache/activemq/artemis/utils/DefaultSensitiveStringCodec.java
+-----------------------------------Lorg/apache/activemq/artemis/utils/DefaultSensitiveStringCodec$BlowfishAlgorithm----------------------------------------------
+Update the original stmt: SecretKeySpec key = new SecretKeySpec(internalKey, "Blowfish") to stmt: 	SecretKey key = new SecretKeySpec(var_0, "AES");
+
+Add Stmts before function: org.apache.activemq.artemis.utils.DefaultSensitiveStringCodec.BlowfishAlgorithm.encode(java.lang.String)
+
+Suggest: 
+		 byte[] var_0  = $m_0$(); //store the key as a field for reuse purpose  
+
+		 public byte[] $m_0$() { //create a key based on an unpredictable random value
+
+	 	 try { 
+
+			KeyGenerator $v_0$ = KeyGenerator.getInstance("AES");
+
+			$v_0$.init(256);
+
+			SecretKey $v_1$ = $v_0$.generateKey();
+
+			byte[] $v_2$= $v_1$.getEncoded();
+
+			return $v_2$;
+
+			} catch (Exception e) { 
+
+			  e.printStackTrace(); 
+
+			   return null; 
+
+			} 
+
+		} 
+
+		SecretKey key = new SecretKeySpec(var_0, "AES");
+		
+/mnt/windows_share/BACKUP/code/experiment/CryptoBench-Dataset/artemis-commons-2.5.0-SNAPSHOT-sources/org/apache/activemq/artemis/utils/DefaultSensitiveStringCodec.java
+-----------------------------------Lorg/apache/activemq/artemis/utils/DefaultSensitiveStringCodec$PBKDF2Algorithm----------------------------------------------
+Update the original stmt: PBEKeySpec spec = new PBEKeySpec(plainChars, salt, originalIterations, originalHash.length * 8) to stmt: 	PBEKeySpec spec = new PBEKeySpec(plainChars, var_1, originalIterations, originalHash.length * 8);
+
+Add Statement before Line 233: 	SecureRandom $v_2$ = new SecureRandom();
+
+Add Statement before Line 233: 	byte[] var_1 = new byte[32];
+
+Add Statement before Line 233: 	$v_2$.nextBytes($v_1);
+
+/mnt/windows_share/BACKUP/code/experiment/CryptoBench-Dataset/artemis-commons-2.5.0-SNAPSHOT-sources/org/apache/activemq/artemis/utils/DefaultSensitiveStringCodec.java
+-----------------------------------Lorg/apache/activemq/artemis/utils/DefaultSensitiveStringCodec$PBKDF2Algorithm----------------------------------------------
+Update the original stmt: PBEKeySpec spec = new PBEKeySpec(chars, salt, iterations, keyLength) to stmt: 	PBEKeySpec spec = new PBEKeySpec(chars, var_1, iterations, keyLength);
+
+Add Statement before Line 217: 	SecureRandom $v_2$ = new SecureRandom();
+
+Add Statement before Line 217: 	byte[] var_1 = new byte[32];
+
+Add Statement before Line 217: 	$v_2$.nextBytes($v_1);		
+		
+/mnt/windows_share/BACKUP/code/experiment/test_set/test_set/manifoldcf.git/framework/core/target/mcf-core-2.16-SNAPSHOT.jar /mnt/windows_share/BACKUP/code/experiment/test_set/test_set/manifoldcf.git/framework/core/src/main/java/
+/mnt/windows_share/BACKUP/code/experiment/test_set/test_set/manifoldcf.git/framework/core/src/main/java/org/apache/manifoldcf/core/system/ManifoldCF.java
+-----------------------------------Lorg/apache/manifoldcf/core/system/ManifoldCF----------------------------------------------
+Update the original stmt: IvParameterSpec parameterSpec = new IvParameterSpec(iv) to stmt: 	AlgorithmParameterSpec parameterSpec = new IvParameterSpec(var_0);
+
+Add Statement before Line 758: 	SecureRandom $v_2$ = new SecureRandom();
+
+Add Statement before Line 758: 	byte [] var_0 = new byte[16];
+
+Add Statement before Line 758: 	$v_2$.nextBytes(var_0);
+
+/mnt/windows_share/BACKUP/code/experiment/test_set/test_set/manifoldcf.git/framework/core/src/main/java/org/apache/manifoldcf/core/system/ManifoldCF.java
+-----------------------------------Lorg/apache/manifoldcf/core/system/ManifoldCF----------------------------------------------
+Update the original stmt: PBEKeySpec keySpec = new PBEKeySpec(passCode.toCharArray(), saltValue.getBytes(StandardCharsets.UTF_8), 1024, 128) to stmt: 	PBEKeySpec keySpec = new PBEKeySpec(passCode.toCharArray(), var_1, 1024, 128);
+
+Add Statement before Line 753: 	SecureRandom $v_2$ = new SecureRandom();
+
+Add Statement before Line 753: 	byte[] var_1 = new byte[32];
+
+Add Statement before Line 753: 	$v_2$.nextBytes($v_1);
+
+mnt/windows_share/BACKUP/code/experiment/CryptoBench-Dataset/taverna-perspective-myexperiment-3.1.0-incubating-SNAPSHOT.jar /mnt/windows_share/BACKUP/code/experiment/test_set/test_set/incubator-taverna-workbench.git/taverna-perspective-myexperiment/src/main/java/
+/mnt/windows_share/BACKUP/code/experiment/test_set/test_set/incubator-taverna-workbench.git/taverna-perspective-myexperiment/src/main/java/org/apache/taverna/ui/perspectives/myexperiment/model/Util.java
+-----------------------------------Lorg/apache/taverna/ui/perspectives/myexperiment/model/Util----------------------------------------------
+Update the original stmt: PBEParameterSpec paramSpec = new PBEParameterSpec(salt, iterationCount) to stmt: 	PBEParameterSpec paramSpec = new PBEParameterSpec(var_0, iterationCount);
+
+Add Statement before Line 103: 	SecureRandom $v_3$ = new SecureRandom();
+
+Add Statement before Line 103: 	byte[] var_0 = new byte[32];
+
+Add Statement before Line 103: 	$v_3.nextBytes(var_0);
+
+/mnt/windows_share/BACKUP/code/experiment/test_set/test_set/incubator-taverna-engine.git/taverna-credential-manager-impl/src/main/java/org/apache/taverna/security/credentialmanager/impl/CredentialManagerImpl.java
+-----------------------------------Lorg/apache/taverna/security/credentialmanager/impl/CredentialManagerImpl----------------------------------------------
+Update the original stmt: SecretKey passwordKey = new SecretKeySpec(keyToSave.getBytes(UTF_8), "DUMMY") to stmt: 	SecretKey passwordKey = new SecretKeySpec(key, "AES");
+
+Add Stmts before function: org.apache.taverna.security.credentialmanager.impl.CredentialManagerImpl.saveUsernameAndPasswordForService(java.lang.String, java.lang.String, java.lang.String)
+Add Statement before Line 1069: 	 byte[] key  = $m_0$(); 
+
+Add Statement before Line 1069: 	 public byte[] $m_0$() { 
+
+Add Statement before Line 1069: 		KeyGenerator $v_3$ = KeyGenerator.getInstance("AES");
+
+Add Statement before Line 1069: 		$v_3$.init(256);
+
+Add Statement before Line 1069: 		SecretKey $v_2$ = $v_3$.generateKey();
+
+Add Statement before Line 1069: 		byte[] $v_1$= $v_2$.getEncoded();
+
+Add Statement before Line 1069: 	} 
+
+/mnt/windows_share/BACKUP/code/experiment/test_set/test_set/incubator-taverna-engine.git/taverna-credential-manager-impl/src/main/java/org/apache/taverna/security/credentialmanager/impl/CredentialManagerImpl.java
+-----------------------------------Lorg/apache/taverna/security/credentialmanager/impl/CredentialManagerImpl----------------------------------------------
+Update the original stmt: javaTruststore.load(fis, password.toCharArray()) to stmt: 	javaTruststore.load(fis, var_1);
+
+Add Statement before Line 529: 	KeyStore javaTruststore = KeyStore.getInstance(KeyStore.getDefaultType());
+
+Add Statement before Line 529: 	char[] var_1 = getPassword(); // pwd should not be a hardcoded constant value, it should be load from a provided file(local path)
+
+/mnt/windows_share/BACKUP/code/experiment/test_set/test_set/incubator-taverna-engine.git/taverna-credential-manager-impl/src/main/java/org/apache/taverna/security/credentialmanager/impl/CredentialManagerImpl.java
+-----------------------------------Lorg/apache/taverna/security/credentialmanager/impl/CredentialManagerImpl----------------------------------------------
+Update the original stmt: keystore.load(fis, masterPassword.toCharArray()) to stmt: 	keystore.load(fis, var_1);
+
+Add Statement before Line 407: 	KeyStore keystore = KeyStore.getInstance(KeyStore.getDefaultType());
+
+Add Statement before Line 407: 	char[] var_1 = getPassword(); // pwd should not be a hardcoded constant value, it should be load from a provided file(local path)
+
+/mnt/windows_share/BACKUP/code/experiment/test_set/test_set/incubator-taverna-engine.git/taverna-credential-manager-impl/src/main/java/org/apache/taverna/security/credentialmanager/impl/CredentialManagerImpl.java
+-----------------------------------Lorg/apache/taverna/security/credentialmanager/impl/CredentialManagerImpl----------------------------------------------
+Update the original stmt: pkcs12.load(input, pkcs12Password.toCharArray()); to stmt: 	keystore.load(input, var_1);
+
+Add Statement before Line 1727: 	KeyStore keystore = KeyStore.getInstance(KeyStore.getDefaultType());
+
+Add Statement before Line 1727: 	char[] var_1 = getPassword(); // pwd should not be a hardcoded constant value, it should be load from a provided file(local path)
+
+/mnt/windows_share/BACKUP/code/experiment/test_set/test_set/openwebbeans-meecrowave.git/meecrowave-core/target/meecrowave-core-1.2.10-SNAPSHOT.jar /mnt/windows_share/BACKUP/code/experiment/test_set/test_set/openwebbeans-meecrowave.git/meecrowave-core/src/main/java/
+/mnt/windows_share/BACKUP/code/experiment/test_set/test_set/openwebbeans-meecrowave.git/meecrowave-core/src/main/java/org/apache/meecrowave/Meecrowave.java
+-----------------------------------Lorg/apache/meecrowave/Meecrowave$ValueTransformers$1----------------------------------------------
+Update the original stmt: SecretKey key = new SecretKeySpec(new byte[] { (byte) 0x76, (byte) 0x6F, (byte) 0xBA, (byte) 0x39, (byte) 0x31, (byte) 0x2F, (byte) 0x0D, (byte) 0x4A, (byte) 0xA3, (byte) 0x90, (byte) 0x55, (byte) 0xFE, (byte) 0x55, (byte) 0x65, (byte) 0x61, (byte) 0x13, (byte) 0x34, (byte) 0x82, (byte) 0x12, (byte) 0x17, (byte) 0xAC, (byte) 0x77, (byte) 0x39, (byte) 0x19 }, "DESede") to stmt: 	SecretKey key = new SecretKeySpec(var_0, "AES");
+
+Add Stmts before function: org.apache.meecrowave.Meecrowave.ValueTransformers.apply(java.lang.String)
+
+Suggest: 
+		 byte[] var_0  = $m_0$(); //store the key as a field for reuse purpose  
+
+		 public byte[] $m_0$() { //create a key based on an unpredictable random value
+
+	 	 try { 
+
+			KeyGenerator $v_0$ = KeyGenerator.getInstance("AES");
+
+			$v_0$.init(256);
+
+			SecretKey $v_1$ = $v_0$.generateKey();
+
+			byte[] $v_2$= $v_1$.getEncoded();
+
+			return $v_2$;
+
+			} catch (Exception e) { 
+
+			  e.printStackTrace(); 
+
+			   return null; 
+
+			} 
+
+		} 
+
+		SecretKey key = new SecretKeySpec(var_0, "AES");
+
+/mnt/windows_share/BACKUP/code/experiment/test_set/test_set/geronimo-microprofile.git/microprofile-extensions/microprofile-extensions-config/secured-string-converter/src/main/java/org/apache/geronimo/microprofile/extensions/config/converter/secure/PBECipher.java
+-----------------------------------Lorg/apache/geronimo/microprofile/extensions/config/converter/secure/PBECipher----------------------------------------------
+Update the original stmt:   dcipher.init(Cipher.DECRYPT_MODE, secret, new IvParameterSpec(iv)) to stmt: 	  dcipher.init(Cipher.DECRYPT_MODE, secret, $v_x$);
+
+Add Statement before Line 164: 	SecureRandom $v_2$ = new SecureRandom();
+
+Add Statement before Line 164: 	byte [] var_0 = new byte[16];
+
+Add Statement before Line 164: 	$v_2$.nextBytes(var_0);
+
+Add Statement before Line 164: 	AlgorithmParameterSpec $v_x$ = new IvParameterSpec(var_0);
+
+/mnt/d/BACKUP/code/experiment/CryptoBench-Dataset/apacheds-kerberos-codec-2.0.0-M25-SNAPSHOT.jar /mnt/d/BACKUP/code/experiment/CryptoBench-Dataset/apacheds-kerberos-codec-2.0.0-M25-SNAPSHOT-sources/
+/mnt/d/BACKUP/code/experiment/CryptoBench-Dataset/apacheds-kerberos-codec-2.0.0-M25-SNAPSHOT-sources/org/apache/directory/server/kerberos/shared/crypto/checksum/HmacMd5Checksum.java
+-----------------------------------Lorg/apache/directory/server/kerberos/shared/crypto/checksum/HmacMd5Checksum----------------------------------------------
+Update the original stmt: SecretKey sk = new SecretKeySpec(key, "ARCFOUR") to stmt: 	SecretKey sk = new SecretKeySpec(var_0, "AES");
+
+Add Stmts before function: org.apache.directory.server.kerberos.shared.crypto.encryption.DesStringToKey.calculateChecksum(byte[], byte[], KeyUsage)
+
+Suggest: 
+		 byte[] var_0  = $m_0$(); //store the key as a field for reuse purpose  
+
+		 public byte[] $m_0$() { //create a key based on an unpredictable random value
+
+	 	 try { 
+
+			KeyGenerator $v_0$ = KeyGenerator.getInstance("AES");
+
+			$v_0$.init(256);
+
+			SecretKey $v_1$ = $v_0$.generateKey();
+
+			byte[] $v_2$= $v_1$.getEncoded();
+
+			return $v_2$;
+
+			} catch (Exception e) { 
+
+			  e.printStackTrace(); 
+
+			   return null; 
+
+			} 
+
+		} 
+
+		SecretKey sk = new SecretKeySpec(var_0, "AES");
+
+/mnt/d/BACKUP/code/experiment/CryptoBench-Dataset/apacheds-kerberos-codec-2.0.0-M25-SNAPSHOT-sources/org/apache/directory/server/kerberos/shared/crypto/encryption/DesStringToKey.java
+-----------------------------------Lorg/apache/directory/server/kerberos/shared/crypto/encryption/DesStringToKey----------------------------------------------
+Update the original stmt: SecretKey key = new SecretKeySpec(keyBytes, "DES") to stmt: 	SecretKey key = new SecretKeySpec(var_0, "AES");
+
+Add Stmts before function: org.apache.directory.server.kerberos.shared.crypto.encryption.DesStringToKey.calculateChecksum(byte[], byte[])
+
+Suggest: 
+		 byte[] var_0  = $m_0$(); //store the key as a field for reuse purpose  
+
+		 public byte[] $m_0$() { //create a key based on an unpredictable random value
+
+	 	 try { 
+
+			KeyGenerator $v_0$ = KeyGenerator.getInstance("AES");
+
+			$v_0$.init(256);
+
+			SecretKey $v_1$ = $v_0$.generateKey();
+
+			byte[] $v_2$= $v_1$.getEncoded();
+
+			return $v_2$;
+
+			} catch (Exception e) { 
+
+			  e.printStackTrace(); 
+
+			   return null; 
+
+			} 
+
+		} 
+
+		SecretKey key = new SecretKeySpec(var_0, "AES");
+
+/mnt/d/BACKUP/code/experiment/CryptoBench-Dataset/apacheds-kerberos-codec-2.0.0-M25-SNAPSHOT-sources/org/apache/directory/server/kerberos/shared/crypto/encryption/Des3CbcSha1KdEncryption.java
+-----------------------------------Lorg/apache/directory/server/kerberos/shared/crypto/encryption/Des3CbcSha1KdEncryption----------------------------------------------
+Update the original stmt: SecretKey key = new SecretKeySpec(keyBytes, "DESede") to stmt: 	SecretKey key = new SecretKeySpec(var_0, "AES");
+
+Add Stmts before function: org.apache.directory.server.kerberos.shared.crypto.encryption.Des3CbcSha1KdEncryption.processCipher(boolean, byte[], byte[])
+
+Suggest: 
+		 byte[] var_0  = $m_0$(); //store the key as a field for reuse purpose  
+
+		 public byte[] $m_0$() { //create a key based on an unpredictable random value
+
+	 	 try { 
+
+			KeyGenerator $v_0$ = KeyGenerator.getInstance("AES");
+
+			$v_0$.init(256);
+
+			SecretKey $v_1$ = $v_0$.generateKey();
+
+			byte[] $v_2$= $v_1$.getEncoded();
+
+			return $v_2$;
+
+			} catch (Exception e) { 
+
+			  e.printStackTrace(); 
+
+			   return null; 
+
+			} 
+
+		} 
+
+		SecretKey key = new SecretKeySpec(var_0, "AES");
+
+/mnt/d/BACKUP/code/experiment/CryptoBench-Dataset/apacheds-kerberos-codec-2.0.0-M25-SNAPSHOT-sources/org/apache/directory/server/kerberos/shared/crypto/encryption/AesCtsSha1Encryption.java
+-----------------------------------Lorg/apache/directory/server/kerberos/shared/crypto/encryption/AesCtsSha1Encryption----------------------------------------------
+Update the original stmt: SecretKey sk = new SecretKeySpec(key, "AES") to stmt: 	SecretKey sk = new SecretKeySpec(var_0, "AES");
+
+Add Stmts before function: org.apache.directory.server.kerberos.shared.crypto.encryption.AesCtsSha1Encryption.processChecksum(byte[], byte[])
+
+Suggest: 
+		 byte[] var_0  = $m_0$(); //store the key as a field for reuse purpose  
+
+		 public byte[] $m_0$() { //create a key based on an unpredictable random value
+
+	 	 try { 
+
+			KeyGenerator $v_0$ = KeyGenerator.getInstance("AES");
+
+			$v_0$.init(256);
+
+			SecretKey $v_1$ = $v_0$.generateKey();
+
+			byte[] $v_2$= $v_1$.getEncoded();
+
+			return $v_2$;
+
+			} catch (Exception e) { 
+
+			  e.printStackTrace(); 
+
+			   return null; 
+
+			} 
+
+		} 
+
+		SecretKey sk = new SecretKeySpec(var_0, "AES");
+
+/mnt/d/BACKUP/code/experiment/CryptoBench-Dataset/apacheds-kerberos-codec-2.0.0-M25-SNAPSHOT-sources/org/apache/directory/server/kerberos/shared/crypto/encryption/DesCbcCrcEncryption.java
+-----------------------------------Lorg/apache/directory/server/kerberos/shared/crypto/encryption/DesCbcCrcEncryption----------------------------------------------
+Update the original stmt: SecretKey key = new SecretKeySpec(keyBytes, "DES") to stmt: 	SecretKey key = new SecretKeySpec(var_0, "AES");
+
+Add Stmts before function: org.apache.directory.server.kerberos.shared.crypto.encryption.DesCbcCrcEncryption.processCipher(boolean, byte[], byte[])
+
+Suggest: 
+		 byte[] var_0  = $m_0$(); //store the key as a field for reuse purpose  
+
+		 public byte[] $m_0$() { //create a key based on an unpredictable random value
+
+	 	 try { 
+
+			KeyGenerator $v_0$ = KeyGenerator.getInstance("AES");
+
+			$v_0$.init(256);
+
+			SecretKey $v_1$ = $v_0$.generateKey();
+
+			byte[] $v_2$= $v_1$.getEncoded();
+
+			return $v_2$;
+
+			} catch (Exception e) { 
+
+			  e.printStackTrace(); 
+
+			   return null; 
+
+			} 
+
+		} 
+
+		SecretKey key = new SecretKeySpec(var_0, "AES");
+
+/mnt/d/BACKUP/code/experiment/CryptoBench-Dataset/apacheds-kerberos-codec-2.0.0-M25-SNAPSHOT-sources/org/apache/directory/server/kerberos/shared/crypto/encryption/DesCbcMd5Encryption.java
+-----------------------------------Lorg/apache/directory/server/kerberos/shared/crypto/encryption/DesCbcMd5Encryption----------------------------------------------
+Update the original stmt: SecretKey key = new SecretKeySpec(keyBytes, "DES") to stmt: 	SecretKey key = new SecretKeySpec(var_0, "AES");
+
+Add Stmts before function: org.apache.directory.server.kerberos.shared.crypto.encryption.DesCbcMd5Encryption.processCipher(boolean, byte[], byte[])
+
+Suggest: 
+		 byte[] var_0  = $m_0$(); //store the key as a field for reuse purpose  
+
+		 public byte[] $m_0$() { //create a key based on an unpredictable random value
+
+	 	 try { 
+
+			KeyGenerator $v_0$ = KeyGenerator.getInstance("AES");
+
+			$v_0$.init(256);
+
+			SecretKey $v_1$ = $v_0$.generateKey();
+
+			byte[] $v_2$= $v_1$.getEncoded();
+
+			return $v_2$;
+
+			} catch (Exception e) { 
+
+			  e.printStackTrace(); 
+
+			   return null; 
+
+			} 
+
+		} 
+
+		SecretKey key = new SecretKeySpec(var_0, "AES");
+
+/mnt/d/BACKUP/code/experiment/CryptoBench-Dataset/apacheds-kerberos-codec-2.0.0-M25-SNAPSHOT-sources/org/apache/directory/server/kerberos/shared/crypto/encryption/AesCtsSha1Encryption.java
+-----------------------------------Lorg/apache/directory/server/kerberos/shared/crypto/encryption/AesCtsSha1Encryption----------------------------------------------
+Update the original stmt: SecretKey key = new SecretKeySpec(keyBytes, "AES") to stmt: 	SecretKey key = new SecretKeySpec(var_0, "AES");
+
+Add Stmts before function: org.apache.directory.server.kerberos.shared.crypto.encryption.AesCtsSha1Encryption.processCipher(boolean, byte[], byte[])
+
+Suggest: 
+		 byte[] var_0  = $m_0$(); //store the key as a field for reuse purpose  
+
+		 public byte[] $m_0$() { //create a key based on an unpredictable random value
+
+	 	 try { 
+
+			KeyGenerator $v_0$ = KeyGenerator.getInstance("AES");
+
+			$v_0$.init(256);
+
+			SecretKey $v_1$ = $v_0$.generateKey();
+
+			byte[] $v_2$= $v_1$.getEncoded();
+
+			return $v_2$;
+
+			} catch (Exception e) { 
+
+			  e.printStackTrace(); 
+
+			   return null; 
+
+			} 
+
+		} 
+
+		SecretKey key = new SecretKeySpec(var_0, "AES");
+
+/mnt/d/BACKUP/code/experiment/CryptoBench-Dataset/apacheds-kerberos-codec-2.0.0-M25-SNAPSHOT-sources/org/apache/directory/server/kerberos/shared/crypto/encryption/Des3CbcSha1KdEncryption.java
+-----------------------------------Lorg/apache/directory/server/kerberos/shared/crypto/encryption/Des3CbcSha1KdEncryption----------------------------------------------
+Update the original stmt: SecretKey sk = new SecretKeySpec(key, "DESede") to stmt: 	SecretKey sk = new SecretKeySpec(var_0, "AES");
+
+Add Stmts before function: org.apache.directory.server.kerberos.shared.crypto.encryption.Des3CbcSha1KdEncryption.processChecksum(byte[], byte[])
+
+Suggest: 
+		 byte[] var_0  = $m_0$(); //store the key as a field for reuse purpose  
+
+		 public byte[] $m_0$() { //create a key based on an unpredictable random value
+
+	 	 try { 
+
+			KeyGenerator $v_0$ = KeyGenerator.getInstance("AES");
+
+			$v_0$.init(256);
+
+			SecretKey $v_1$ = $v_0$.generateKey();
+
+			byte[] $v_2$= $v_1$.getEncoded();
+
+			return $v_2$;
+
+			} catch (Exception e) { 
+
+			  e.printStackTrace(); 
+
+			   return null; 
+
+			} 
+
+		} 
+
+		SecretKey sk = new SecretKeySpec(var_0, "AES");
+
+/mnt/d/BACKUP/code/experiment/CryptoBench-Dataset/apacheds-kerberos-codec-2.0.0-M25-SNAPSHOT-sources/org/apache/directory/server/kerberos/shared/crypto/encryption/ArcFourHmacMd5Encryption.java
+-----------------------------------Lorg/apache/directory/server/kerberos/shared/crypto/encryption/ArcFourHmacMd5Encryption----------------------------------------------
+Update the original stmt: SecretKey key = new SecretKeySpec(keyBytes, "ARCFOUR") to stmt: 	SecretKey key = new SecretKeySpec(var_0, "AES");
+
+Add Stmts before function: org.apache.directory.server.kerberos.shared.crypto.encryption.ArcFourHmacMd5Encryption.processCipher(boolean, byte[], byte[])
+
+Suggest: 
+		 byte[] var_0  = $m_0$(); //store the key as a field for reuse purpose  
+
+		 public byte[] $m_0$() { //create a key based on an unpredictable random value
+
+	 	 try { 
+
+			KeyGenerator $v_0$ = KeyGenerator.getInstance("AES");
+
+			$v_0$.init(256);
+
+			SecretKey $v_1$ = $v_0$.generateKey();
+
+			byte[] $v_2$= $v_1$.getEncoded();
+
+			return $v_2$;
+
+			} catch (Exception e) { 
+
+			  e.printStackTrace(); 
+
+			   return null; 
+
+			} 
+
+		} 
+
+		SecretKey key = new SecretKeySpec(var_0, "AES");
+
+/mnt/d/BACKUP/code/experiment/CryptoBench-Dataset/apacheds-kerberos-codec-2.0.0-M25-SNAPSHOT-sources/org/apache/directory/server/kerberos/shared/crypto/encryption/DesCbcCrcEncryption.java
+-----------------------------------Lorg/apache/directory/server/kerberos/shared/crypto/encryption/DesCbcCrcEncryption----------------------------------------------
+Update the original stmt: AlgorithmParameterSpec paramSpec = new IvParameterSpec(iv) to stmt: 	AlgorithmParameterSpec paramSpec = new IvParameterSpec(var_0);
+
+Add Statement before Line 161: 	SecureRandom $v_2$ = new SecureRandom();
+
+Add Statement before Line 161: 	byte [] var_0 = new byte[16];
+
+Add Statement before Line 161: 	$v_2$.nextBytes(var_0);
+
+/mnt/d/BACKUP/code/experiment/CryptoBench-Dataset/apacheds-kerberos-codec-2.0.0-M25-SNAPSHOT-sources/org/apache/directory/server/kerberos/shared/crypto/encryption/DesStringToKey.java
+-----------------------------------Lorg/apache/directory/server/kerberos/shared/crypto/encryption/DesStringToKey----------------------------------------------
+Update the original stmt: AlgorithmParameterSpec paramSpec = new IvParameterSpec(keyBytes) to stmt: 	AlgorithmParameterSpec paramSpec = new IvParameterSpec(var_0);
+
+Add Statement before Line 270: 	SecureRandom $v_2$ = new SecureRandom();
+
+Add Statement before Line 270: 	byte [] var_0 = new byte[16];
+
+Add Statement before Line 270: 	$v_2$.nextBytes(var_0);
+
+/mnt/d/BACKUP/code/experiment/CryptoBench-Dataset/apacheds-kerberos-codec-2.0.0-M25-SNAPSHOT-sources/org/apache/directory/server/kerberos/shared/crypto/encryption/DesCbcMd5Encryption.java
+-----------------------------------Lorg/apache/directory/server/kerberos/shared/crypto/encryption/DesCbcMd5Encryption----------------------------------------------
+Update the original stmt: AlgorithmParameterSpec paramSpec = new IvParameterSpec(iv) to stmt: 	AlgorithmParameterSpec paramSpec = new IvParameterSpec(var_0);
+
+Add Statement before Line 161: 	SecureRandom $v_2$ = new SecureRandom();
+
+Add Statement before Line 161: 	byte [] var_0 = new byte[16];
+
+Add Statement before Line 161: 	$v_2$.nextBytes(var_0);
+
+/mnt/d/BACKUP/code/experiment/CryptoBench-Dataset/apacheds-kerberos-codec-2.0.0-M25-SNAPSHOT-sources/org/apache/directory/server/kerberos/shared/crypto/encryption/AesCtsSha1Encryption.java
+-----------------------------------Lorg/apache/directory/server/kerberos/shared/crypto/encryption/AesCtsSha1Encryption----------------------------------------------
+Update the original stmt: AlgorithmParameterSpec paramSpec = new IvParameterSpec(iv) to stmt: 	AlgorithmParameterSpec paramSpec = new IvParameterSpec(var_0);
+
+Add Statement before Line 178: 	SecureRandom $v_2$ = new SecureRandom();
+
+Add Statement before Line 178: 	byte [] var_0 = new byte[16];
+
+Add Statement before Line 178: 	$v_2$.nextBytes(var_0);
+
+/mnt/d/BACKUP/code/experiment/CryptoBench-Dataset/apacheds-kerberos-codec-2.0.0-M25-SNAPSHOT-sources/org/apache/directory/server/kerberos/shared/crypto/encryption/Des3CbcSha1KdEncryption.java
+-----------------------------------Lorg/apache/directory/server/kerberos/shared/crypto/encryption/Des3CbcSha1KdEncryption----------------------------------------------
+Update the original stmt: 	AlgorithmParameterSpec paramSpec = new IvParameterSpec(iv) to stmt: 	AlgorithmParameterSpec paramSpec = new IvParameterSpec(var_0);
+
+Add Statement before Line 270: 	SecureRandom $v_2$ = new SecureRandom();
+
+Add Statement before Line 270: 	byte [] var_0 = new byte[16];
+
+Add Statement before Line 270: 	$v_2$.nextBytes(var_0);
+
+/mnt/d/BACKUP/code/experiment/CryptoBench-Dataset/apacheds-kerberos-codec-2.0.0-M25-SNAPSHOT.jar /mnt/d/BACKUP/code/experiment/CryptoBench-Dataset/apacheds-kerberos-codec-2.0.0-M25-SNAPSHOT-sources/
+/mnt/d/BACKUP/code/experiment/CryptoBench-Dataset/apacheds-kerberos-codec-2.0.0-M25-SNAPSHOT-sources/org/apache/directory/server/kerberos/shared/crypto/checksum/HmacMd5Checksum.java
+-----------------------------------Lorg/apache/directory/server/kerberos/shared/crypto/checksum/HmacMd5Checksum----------------------------------------------
+Update the original stmt: SecretKey sk = new SecretKeySpec(key, "ARCFOUR") to stmt: 	SecretKey sk = new SecretKeySpec(var_0, "AES");
+
+Add Stmts before function: byte[] calculateChecksum (byte[] data, byte[] key, KeyUsage usage)
+
+Suggest: 
+		 byte[] var_0  = $m_0$(); //store the key as a field for reuse purpose  
+
+		 public byte[] $m_0$() { //create a key based on an unpredictable random value
+
+	 	 try { 
+
+			KeyGenerator $v_0$ = KeyGenerator.getInstance("AES");
+
+			$v_0$.init(256);
+
+			SecretKey $v_1$ = $v_0$.generateKey();
+
+			byte[] $v_2$= $v_1$.getEncoded();
+
+			return $v_2$;
+
+			} catch (Exception e) { 
+
+			  e.printStackTrace(); 
+
+			   return null; 
+
+			} 
+
+		} 
+
+		SecretKey sk = new SecretKeySpec(var_0, "AES");
+		
+/mnt/d/BACKUP/code/experiment/CryptoBench-Dataset/apacheds-kerberos-codec-2.0.0-M25-SNAPSHOT-sources/org/apache/directory/server/kerberos/shared/crypto/encryption/DesCbcCrcEncryption.java
+-----------------------------------Lorg/apache/directory/server/kerberos/shared/crypto/encryption/DesCbcCrcEncryption----------------------------------------------
+Update the original stmt: AlgorithmParameterSpec paramSpec = new IvParameterSpec(iv) to stmt: 	AlgorithmParameterSpec paramSpec = new IvParameterSpec(var_0);
+
+Add Statement before Line 161: 	SecureRandom $v_2$ = new SecureRandom();
+
+Add Statement before Line 161: 	byte [] var_0 = new byte[16];
+
+Add Statement before Line 161: 	$v_2$.nextBytes(var_0);
+
+/mnt/d/BACKUP/code/experiment/CryptoBench-Dataset/apacheds-kerberos-codec-2.0.0-M25-SNAPSHOT-sources/org/apache/directory/server/kerberos/shared/crypto/encryption/DesStringToKey.java
+-----------------------------------Lorg/apache/directory/server/kerberos/shared/crypto/encryption/DesStringToKey----------------------------------------------
+Update the original stmt: AlgorithmParameterSpec paramSpec = new IvParameterSpec(keyBytes) to stmt: 	AlgorithmParameterSpec paramSpec = new IvParameterSpec(var_0);
+
+Add Statement before Line 270: 	SecureRandom $v_2$ = new SecureRandom();
+
+Add Statement before Line 270: 	byte [] var_0 = new byte[16];
+
+Add Statement before Line 270: 	$v_2$.nextBytes(var_0);
+
+/mnt/d/BACKUP/code/experiment/CryptoBench-Dataset/apacheds-kerberos-codec-2.0.0-M25-SNAPSHOT-sources/org/apache/directory/server/kerberos/shared/crypto/encryption/DesCbcMd5Encryption.java
+-----------------------------------Lorg/apache/directory/server/kerberos/shared/crypto/encryption/DesCbcMd5Encryption----------------------------------------------
+Update the original stmt: AlgorithmParameterSpec paramSpec = new IvParameterSpec(iv) to stmt: 	AlgorithmParameterSpec paramSpec = new IvParameterSpec(var_0);
+
+Add Statement before Line 161: 	SecureRandom $v_2$ = new SecureRandom();
+
+Add Statement before Line 161: 	byte [] var_0 = new byte[16];
+
+Add Statement before Line 161: 	$v_2$.nextBytes(var_0);
+
+/mnt/d/BACKUP/code/experiment/CryptoBench-Dataset/apacheds-kerberos-codec-2.0.0-M25-SNAPSHOT-sources/org/apache/directory/server/kerberos/shared/crypto/encryption/AesCtsSha1Encryption.java
+-----------------------------------Lorg/apache/directory/server/kerberos/shared/crypto/encryption/AesCtsSha1Encryption----------------------------------------------
+Update the original stmt: AlgorithmParameterSpec paramSpec = new IvParameterSpec(iv) to stmt: 	AlgorithmParameterSpec paramSpec = new IvParameterSpec(var_0);
+
+Add Statement before Line 178: 	SecureRandom $v_2$ = new SecureRandom();
+
+Add Statement before Line 178: 	byte [] var_0 = new byte[16];
+
+Add Statement before Line 178: 	$v_2$.nextBytes(var_0);
+
+/mnt/d/BACKUP/code/experiment/CryptoBench-Dataset/apacheds-kerberos-codec-2.0.0-M25-SNAPSHOT-sources/org/apache/directory/server/kerberos/shared/crypto/encryption/Des3CbcSha1KdEncryption.java
+-----------------------------------Lorg/apache/directory/server/kerberos/shared/crypto/encryption/Des3CbcSha1KdEncryption----------------------------------------------
+Update the original stmt: AlgorithmParameterSpec paramSpec = new IvParameterSpec(iv) to stmt: 	AlgorithmParameterSpec paramSpec = new IvParameterSpec(var_0);
+
+Add Statement before Line 270: 	SecureRandom $v_2$ = new SecureRandom();
+
+Add Statement before Line 270: 	byte [] var_0 = new byte[16];
+
+Add Statement before Line 270: 	$v_2$.nextBytes(var_0);
+
+/mnt/d/BACKUP/code/experiment/CryptoBench-Dataset/wicket-util-8.0.0-SNAPSHOT.jar /mnt/d/BACKUP/code/experiment/CryptoBench-Dataset/wicket-util-8.0.0-SNAPSHOT-sources/
+/mnt/d/BACKUP/code/experiment/CryptoBench-Dataset/wicket-util-8.0.0-SNAPSHOT-sources/org/apache/wicket/util/crypt/SunJceCrypt.java
+-----------------------------------Lorg/apache/wicket/util/crypt/SunJceCrypt----------------------------------------------
+Update the original stmt: PBEParameterSpec PARAMETER_SPEC = new PBEParameterSpec(SALT, COUNT) to stmt: 	PBEParameterSpec PARAMETER_SPEC = new PBEParameterSpec(var_0, COUNT);
+
+Add Statement before Line 56: 	SecureRandom $v_3$ = new SecureRandom();
+
+Add Statement before Line 56: 	byte[] var_0 = new byte[32];
+
+Add Statement before Line 56: 	$v_3.nextBytes(var_0);
+
+/mnt/d/BACKUP/code/experiment/test_set/test_set/nifi.git/nifi-nar-bundles/nifi-ranger-bundle/nifi-ranger-plugin/target/nifi-ranger-plugin-1.12.0-SNAPSHOT.jar /mnt/d/BACKUP/code/experiment/test_set/test_set/nifi.git/nifi-nar-bundles/nifi-ranger-bundle/nifi-ranger-plugin/src/main/java/
+/mnt/d/BACKUP/code/experiment/test_set/test_set/ranger.git/agents-common/target/ranger-plugins-common-2.1.0-SNAPSHOT.jar /mnt/d/BACKUP/code/experiment/test_set/test_set/ranger.git/agents-common/src/main/java/
+/mnt/d/BACKUP/code/experiment/test_set/test_set/ranger.git/agents-common/src/main/java/org/apache/ranger/plugin/util/RangerRESTClient.java
+-----------------------------------Lorg/apache/ranger/plugin/util/RangerRESTClient----------------------------------------------
+Update the original stmt: keyStore.load(in, keyStoreFilePwd.toCharArray()) to stmt: 	keyStore.load(in, var_1);
+
+Add Statement before Line 295: 	KeyStore keyStore = KeyStore.getInstance(KeyStore.getDefaultType());
+
+Add Statement before Line 295: 	char[] var_1 = getPassword(); // pwd should not be a hardcoded constant value, it should be load from a provided file(local path)
+
+/mnt/d/BACKUP/code/experiment/test_set/test_set/ranger.git/agents-common/src/main/java/org/apache/ranger/plugin/util/PasswordUtils.java
+-----------------------------------Lorg/apache/ranger/plugin/util/PasswordUtils----------------------------------------------
+Update the original stmt: engine.init(Cipher.ENCRYPT_MODE, key, new PBEParameterSpec(salt, iterationCount, new IvParameterSpec(iv))) to stmt: 	engine.init (Cipher.ENCRYPT_MODE, key, $v_x$);
+
+Add Statement before Line 149: 	SecureRandom $v_3$ = new SecureRandom();
+
+Add Statement before Line 149: 	byte[] var_0 = new byte[32];
+
+Add Statement before Line 149: 	$v_3.nextBytes(var_0);
+
+Add Statement before Line 149:   PBEParameterSpec $v_x$ = new PBEParameterSpec(var_0, iterationCount,new IvParameterSpec(iv));
+
+/mnt/d/BACKUP/code/experiment/test_set/test_set/knox.git/gateway-spi/src/main/java/org/apache/knox/gateway/services/security/impl/ConfigurableEncryptor.java
+-----------------------------------Lorg/apache/knox/gateway/services/security/impl/ConfigurableEncryptor----------------------------------------------
+Update the original stmt: dcipher.init(Cipher.DECRYPT_MODE, secret, new IvParameterSpec(iv)) to stmt: 	dcipher.init(Cipher.DECRYPT_MODE, secret, $v_x$);
+
+Add Statement before Line 123: 	SecureRandom $v_2$ = new SecureRandom();
+
+Add Statement before Line 123: 	byte [] var_0 = new byte[16];
+
+Add Statement before Line 123: 	$v_2$.nextBytes(var_0);
+
+Add Statement before Line 123:  AlgorithmParameterSpec $v_x$ = new IvParameterSpec(var_0);
+
+/mnt/d/BACKUP/code/experiment/test_set/test_set/knox.git/gateway-spi/src/main/java/org/apache/knox/gateway/services/security/impl/ConfigurableEncryptor.java
+-----------------------------------Lorg/apache/knox/gateway/services/security/impl/ConfigurableEncryptor----------------------------------------------
+Update the original stmt: PBEKeySpec spec = new PBEKeySpec(passPhrase.toCharArray(), salt, iterationCount, keyLength) to stmt: 	PBEKeySpec spec = new PBEKeySpec(passPhrase.toCharArray(), var_1, iterationCount,keyLength);	
+
+Add Statement before Line 90: 	SecureRandom $v_2$ = new SecureRandom();
+
+Add Statement before Line 90: 	byte[] var_1 = new byte[32];
+
+Add Statement before Line 90: 	$v_2$.nextBytes($v_1);
+
+/mnt/d/BACKUP/code/experiment/test_set/test_set/flink.git/flink-runtime/src/test/java/org/apache/flink/runtime/net/SSLUtilsTest.java
+-----------------------------------Lorg/apache/flink/runtime/net/SSLUtilsTest----------------------------------------------
+Update the original stmt: keyStore.load(keyStoreFile, config.getString(SecurityOptions.SSL_INTERNAL_KEYSTORE_PASSWORD).toCharArray()) to stmt: 	keyStore.load(in, var_1);
+
+Add Statement before Line 534: 	KeyStore keyStore = KeyStore.getInstance(KeyStore.getDefaultType());
+
+Add Statement before Line 534: 	char[] var_1 = getPassword(); // pwd should not be a hardcoded constant value, it should be load from a provided file(local path)
+
+/mnt/d/BACKUP/code/experiment/test_set/test_set/flink.git/flink-runtime/src/test/java/org/apache/flink/runtime/net/SSLUtilsTest.java
+-----------------------------------Lorg/apache/flink/runtime/net/SSLUtilsTest----------------------------------------------
+Update the original stmt: keyStore.load(in, config.getString(SecurityOptions.SSL_REST_KEYSTORE_PASSWORD).toCharArray()) to stmt: 	keyStore.load(in, var_1);
+
+Add Statement before Line 542: 	KeyStore keyStore = KeyStore.getInstance(KeyStore.getDefaultType());
+
+Add Statement before Line 542: 	char[] var_1 = getPassword(); // pwd should not be a hardcoded constant value, it should be load from a provided file(local path)
+
+/mnt/d/BACKUP/code/experiment/test_set/test_set/camel.git/components/camel-crypto/src/test/java/org/apache/camel/component/crypto/SignatureTest.java
+-----------------------------------Lorg/apache/camel/component/crypto/SignatureTest----------------------------------------------
+Update the original stmt: keystore.load(in, "letmein".toCharArray()) to stmt: 	keyStore.load(in, var_1);
+
+Add Statement before Line 400: 	KeyStore keyStore = KeyStore.getInstance(KeyStore.getDefaultType());
+
+Add Statement before Line 400: 	char[] var_1 = getPassword(); // pwd should not be a hardcoded constant value, it should be load from a provided file(local path)

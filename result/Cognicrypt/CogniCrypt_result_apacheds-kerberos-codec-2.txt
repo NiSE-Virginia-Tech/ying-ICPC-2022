@@ -1,0 +1,842 @@
+
+Current Proejct: /home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/apacheds-kerberos-codec-2.0.0-M25-SNAPSHOT.jar
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$2 (file:/home/ying/CryptoAPIDetect/CogniCrypt/CryptoAnalysis-2.7.1-SNAPSHOT-jar-with-dependencies.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
+WARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$2
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[main] INFO crypto.HeadlessCryptoScanner - Using call graph algorithm CHA
+[main] INFO crypto.HeadlessCryptoScanner - Analysis soot setup done in 1.001 s 
+[main] INFO crypto.analysis.CryptoScanner - Searching fo Seeds for analysis!
+[main] INFO crypto.analysis.CryptoScanner - Discovered 28 analysis seeds within 0 seconds!
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 1 of 30
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.03
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 2 of 31
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.06
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 3 of 33
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.09
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 4 of 35
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.11
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 5 of 36
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.14
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 6 of 36
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.17
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 7 of 38
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.18
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 8 of 39
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.21
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 9 of 39
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.23
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 10 of 41
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.24
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 11 of 42
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.26
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 12 of 42
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.29
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 13 of 44
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.3
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 14 of 45
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.31
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 15 of 47
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.32
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 16 of 48
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.33
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 17 of 48
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.35
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 18 of 50
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.36
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 19 of 51
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.37
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 20 of 53
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.38
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 21 of 53
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.4
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 22 of 55
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.4
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 23 of 56
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.41
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 24 of 56
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.43
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 25 of 58
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.43
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 26 of 59
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.44
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 27 of 59
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.46
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 28 of 60
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.47
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 29 of 60
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.48
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 30 of 60
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.5
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 31 of 60
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.52
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 32 of 60
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.53
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 33 of 60
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.55
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 34 of 60
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.57
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 35 of 60
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.58
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 36 of 60
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.6
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 37 of 60
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.62
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 38 of 60
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.63
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 39 of 60
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.65
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 40 of 60
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.67
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 41 of 60
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.68
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 42 of 60
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.7
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 43 of 60
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.72
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 44 of 60
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.73
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 45 of 60
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.75
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 46 of 60
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.77
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 47 of 60
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.78
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 48 of 60
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.8
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 49 of 60
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.82
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 50 of 60
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.83
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 51 of 60
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.85
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 52 of 60
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.87
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 53 of 60
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.88
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 54 of 60
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.9
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 55 of 60
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.92
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 56 of 60
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.93
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 57 of 60
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.95
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 58 of 60
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.97
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 59 of 60
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.98
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 60 of 61
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.98
+
+Ruleset: 
+	java.security.AlgorithmParameters
+	javax.net.ssl.SSLParameters
+	java.security.DigestOutputStream
+	java.security.spec.RSAKeyGenParameterSpec
+	javax.net.ssl.CertPathTrustManagerParameters
+	javax.net.ssl.SSLEngine
+	java.security.cert.PKIXParameters
+	javax.net.ssl.TrustManagerFactory
+	javax.net.ssl.KeyStoreBuilderParameters
+	javax.crypto.spec.DHGenParameterSpec
+	javax.crypto.spec.PBEParameterSpec
+	javax.crypto.SecretKeyFactory
+	javax.crypto.CipherOutputStream
+	java.security.cert.PKIXBuilderParameters
+	javax.crypto.spec.GCMParameterSpec
+	java.security.KeyStore
+	javax.net.ssl.KeyManagerFactory
+	javax.net.ssl.SSLContext
+	java.security.spec.DSAGenParameterSpec
+	javax.crypto.KeyGenerator
+	javax.crypto.spec.IvParameterSpec
+	java.security.spec.DSAParameterSpec
+	javax.crypto.Cipher
+	java.security.cert.TrustAnchor
+	java.security.SecureRandom
+	javax.crypto.CipherInputStream
+	java.security.Key
+	javax.crypto.spec.PBEKeySpec
+	javax.crypto.Mac
+	void
+	javax.crypto.SecretKey
+	java.security.Signature
+	javax.xml.crypto.dsig.spec.HMACParameterSpec
+	java.security.KeyPairGenerator
+	java.security.DigestInputStream
+	java.security.MessageDigest
+	java.security.KeyPair
+	javax.crypto.spec.SecretKeySpec
+	javax.crypto.spec.DHParameterSpec
+
+Analyzed Objects: 
+	Object:
+		Variable: $r5
+		Type: byte[]
+		Statement: $r5 = virtualinvoke r3.<javax.crypto.Mac: byte[] doFinal(byte[])>(r1)
+		Method: <org.apache.directory.server.kerberos.shared.crypto.encryption.AesCtsSha1Encryption: byte[] processChecksum(byte[],byte[])>
+		SHA-256: 795384eed70e039d3d2e29449b1ea539f0d2be02de6175c75477764777541fb7
+		Secure: true
+	Object:
+		Variable: r13
+		Type: javax.crypto.spec.IvParameterSpec
+		Statement: specialinvoke r13.<javax.crypto.spec.IvParameterSpec: void <init>(byte[])>($r7)
+		Method: <org.apache.directory.server.kerberos.shared.crypto.encryption.DesCbcCrcEncryption: byte[] processCipher(boolean,byte[],byte[])>
+		SHA-256: c4bb54c99e52455972de6b2633274c5d41ae709bd235b05464091b369e711ad5
+		Secure: false
+	Object:
+		Variable: $r5
+		Type: byte[]
+		Statement: $r5 = virtualinvoke r3.<javax.crypto.Mac: byte[] doFinal(byte[])>(r1)
+		Method: <org.apache.directory.server.kerberos.shared.crypto.encryption.Des3CbcSha1KdEncryption: byte[] processChecksum(byte[],byte[])>
+		SHA-256: 2f63de167029e09b00c0e3e1d25abdaecc2b81598b0982a6657bee104a36c9
+		Secure: true
+	Object:
+		Variable: r1
+		Type: byte[]
+		Statement: $r6 = virtualinvoke r8.<java.security.MessageDigest: byte[] digest(byte[])>(r1)
+		Method: <org.apache.directory.server.kerberos.shared.crypto.checksum.RsaMd5Checksum: byte[] calculateChecksum(byte[],byte[],org.apache.directory.server.kerberos.shared.crypto.encryption.KeyUsage)>
+		SHA-256: 5027024a21b95027321bcc5c40097794e6c7e1f663c709a544876705cb5a3662
+		Secure: true
+	Object:
+		Variable: r1
+		Type: byte[]
+		Statement: $r8 = virtualinvoke r10.<javax.crypto.Cipher: byte[] doFinal(byte[])>(r1)
+		Method: <org.apache.directory.server.kerberos.shared.crypto.encryption.DesCbcCrcEncryption: byte[] processCipher(boolean,byte[],byte[])>
+		SHA-256: 1c68a59e23dc01d625d27a4b52b66bef6d36edc2f9777e3f6095faa877fa06c9
+		Secure: false
+	Object:
+		Variable: varReplacer129
+		Type: java.lang.String
+		Statement: specialinvoke r12.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>(r2, varReplacer129)
+		Method: <org.apache.directory.server.kerberos.shared.crypto.encryption.DesCbcCrcEncryption: byte[] processCipher(boolean,byte[],byte[])>
+		SHA-256: d7896dca0f2dd7870f19789cb63faff9fd0fe476df102769686e304fb2f0604e
+		Secure: false
+	Object:
+		Variable: r4
+		Type: javax.crypto.Mac
+		Statement: r4 = staticinvoke <javax.crypto.Mac: javax.crypto.Mac getInstance(java.lang.String)>(varReplacer39)
+		Method: <org.apache.directory.server.kerberos.shared.crypto.checksum.HmacMd5Checksum: byte[] calculateChecksum(byte[],byte[],org.apache.directory.server.kerberos.shared.crypto.encryption.KeyUsage)>
+		SHA-256: 1e9a5e49e8485d0504887164b06534943a2677e3b5b7216a691aa602286332fc
+		Secure: true
+	Object:
+		Variable: varReplacer117
+		Type: java.lang.String
+		Statement: specialinvoke r9.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>(r2, varReplacer117)
+		Method: <org.apache.directory.server.kerberos.shared.crypto.encryption.Des3CbcSha1KdEncryption: byte[] processChecksum(byte[],byte[])>
+		SHA-256: 780f3902f3eb2ec9a2eddbf99f1c6a403625f71d9ef087a4895ee0e1a625640
+		Secure: false
+	Object:
+		Variable: r10
+		Type: javax.crypto.Cipher
+		Statement: r10 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer113)
+		Method: <org.apache.directory.server.kerberos.shared.crypto.encryption.Des3CbcSha1KdEncryption: byte[] processCipher(boolean,byte[],byte[])>
+		SHA-256: fec2cebd0d4b46177cbed7dea22e0c3149dca4a354ca3810674f21f319b1b611
+		Secure: false
+	Object:
+		Variable: $r8
+		Type: byte[]
+		Statement: $r8 = virtualinvoke r10.<javax.crypto.Cipher: byte[] doFinal(byte[])>(r1)
+		Method: <org.apache.directory.server.kerberos.shared.crypto.encryption.Des3CbcSha1KdEncryption: byte[] processCipher(boolean,byte[],byte[])>
+		SHA-256: b53a7e2658269806f91810d5558a4a8c7ac72eaf92461fbb29d3533e835186f4
+		Secure: false
+	Object:
+		Variable: r1
+		Type: byte[]
+		Statement: $r5 = virtualinvoke r3.<javax.crypto.Mac: byte[] doFinal(byte[])>(r1)
+		Method: <org.apache.directory.server.kerberos.shared.crypto.encryption.AesCtsSha1Encryption: byte[] processChecksum(byte[],byte[])>
+		SHA-256: c6d158c6b21a250f84f7aab7f6f8ba76c97b1ae11f1ef3185991ae9d2e9f3814
+		Secure: true
+	Object:
+		Variable: r1
+		Type: byte[]
+		Statement: $r5 = virtualinvoke r7.<javax.crypto.Cipher: byte[] doFinal(byte[])>(r1)
+		Method: <org.apache.directory.server.kerberos.shared.crypto.encryption.ArcFourHmacMd5Encryption: byte[] processCipher(boolean,byte[],byte[])>
+		SHA-256: 835f0dab1e95a312fe12093b00f18a7bf7711b3247823b274962c2e847aa26ab
+		Secure: false
+	Object:
+		Variable: r5
+		Type: byte[]
+		Statement: r5 = virtualinvoke r10.<javax.crypto.Cipher: byte[] doFinal(byte[])>(r1)
+		Method: <org.apache.directory.server.kerberos.shared.crypto.encryption.DesStringToKey: byte[] calculateChecksum(byte[],byte[])>
+		SHA-256: 1460a25375b65fe8956872a3a1171fee80a862957085509aadfb0c92367e43ce
+		Secure: false
+	Object:
+		Variable: r1
+		Type: byte[]
+		Statement: r5 = virtualinvoke r10.<javax.crypto.Cipher: byte[] doFinal(byte[])>(r1)
+		Method: <org.apache.directory.server.kerberos.shared.crypto.encryption.DesStringToKey: byte[] calculateChecksum(byte[],byte[])>
+		SHA-256: 1d3bb8bdab9c500421f13799e4d65ff6220589ad81b7620277d5bf5055eaedce
+		Secure: false
+	Object:
+		Variable: r8
+		Type: java.security.MessageDigest
+		Statement: r8 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>($r5)
+		Method: <org.apache.directory.server.kerberos.shared.crypto.encryption.DesCbcMd5Encryption: byte[] calculateIntegrity(byte[],byte[],org.apache.directory.server.kerberos.shared.crypto.encryption.KeyUsage)>
+		SHA-256: 11e637e7b7fcfc0c79edda5a875a4151acdf58104fab6fa57e5860d13b9c9ae4
+		Secure: true
+	Object:
+		Variable: r12
+		Type: javax.crypto.spec.SecretKeySpec
+		Statement: specialinvoke r12.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>(r2, varReplacer129)
+		Method: <org.apache.directory.server.kerberos.shared.crypto.encryption.DesCbcCrcEncryption: byte[] processCipher(boolean,byte[],byte[])>
+		SHA-256: 75b2b68fab8a627f4361fe012fac8790fc4789e79e994c1f1993414fd716be4a
+		Secure: false
+	Object:
+		Variable: $r0
+		Type: java.security.SecureRandom
+		Statement: specialinvoke $r0.<java.security.SecureRandom: void <init>()>()
+		Method: <org.apache.directory.server.kerberos.shared.crypto.encryption.EncryptionEngine: void <clinit>()>
+		SHA-256: ca7fce5ab181b1ea41de8aaf3ebfd1bd93ab8f4361775b855358b7e4ba38bec1
+		Secure: true
+	Object:
+		Variable: varReplacer149
+		Type: java.lang.String
+		Statement: specialinvoke r12.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>(r2, varReplacer149)
+		Method: <org.apache.directory.server.kerberos.shared.crypto.encryption.DesStringToKey: byte[] calculateChecksum(byte[],byte[])>
+		SHA-256: 79fd93d2aab7d2bc411dbeed8b353da07389907eae9685d6fb81c5fd6668e6c5
+		Secure: false
+	Object:
+		Variable: r2
+		Type: javax.crypto.SecretKey
+		Statement: r2 = virtualinvoke r18.<javax.crypto.KeyGenerator: javax.crypto.SecretKey generateKey()>()
+		Method: <org.apache.directory.server.kerberos.shared.crypto.encryption.RandomKeyFactory: org.apache.directory.shared.kerberos.components.EncryptionKey getRandomKey(org.apache.directory.shared.kerberos.codec.types.EncryptionType)>
+		SHA-256: 43f66e7202950a326b8df9d670c63aa3cc3f2292f3bfa939a254a6eff4a3ddaf
+		Secure: true
+	Object:
+		Variable: r3
+		Type: javax.crypto.Mac
+		Statement: r3 = staticinvoke <javax.crypto.Mac: javax.crypto.Mac getInstance(java.lang.String)>(varReplacer119)
+		Method: <org.apache.directory.server.kerberos.shared.crypto.encryption.Des3CbcSha1KdEncryption: byte[] processChecksum(byte[],byte[])>
+		SHA-256: a980401df669f32599c5b330ff650d2f49e1e6b04b11ab2c8ed23acf0e59d00c
+		Secure: true
+	Object:
+		Variable: r1
+		Type: byte[]
+		Statement: $r6 = virtualinvoke r4.<javax.crypto.Mac: byte[] doFinal(byte[])>(r1)
+		Method: <org.apache.directory.server.kerberos.shared.crypto.checksum.HmacMd5Checksum: byte[] calculateChecksum(byte[],byte[],org.apache.directory.server.kerberos.shared.crypto.encryption.KeyUsage)>
+		SHA-256: 7e1f6a6d8c0e3cc81b7da45ace6175726b8d99b95b82bf58694ed006c11ef0fe
+		Secure: true
+	Object:
+		Variable: r3
+		Type: javax.crypto.Mac
+		Statement: r3 = staticinvoke <javax.crypto.Mac: javax.crypto.Mac getInstance(java.lang.String)>(varReplacer60)
+		Method: <org.apache.directory.server.kerberos.shared.crypto.encryption.AesCtsSha1Encryption: byte[] processChecksum(byte[],byte[])>
+		SHA-256: 325eb8f5d1343bb1bd2c753e4fb258382fc2f0ea5eb74db26f705fcfc582f80b
+		Secure: true
+	Object:
+		Variable: r12
+		Type: javax.crypto.spec.SecretKeySpec
+		Statement: specialinvoke r12.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>(r2, varReplacer64)
+		Method: <org.apache.directory.server.kerberos.shared.crypto.encryption.AesCtsSha1Encryption: byte[] processCipher(boolean,byte[],byte[])>
+		SHA-256: b62e20877081797501723e46ed29842ca2d7ac9ca8c18c32601c97eebe78f9ae
+		Secure: false
+	Object:
+		Variable: varReplacer112
+		Type: java.lang.String
+		Statement: specialinvoke r12.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>(r2, varReplacer112)
+		Method: <org.apache.directory.server.kerberos.shared.crypto.encryption.Des3CbcSha1KdEncryption: byte[] processCipher(boolean,byte[],byte[])>
+		SHA-256: be771abfefaf4b4c1c10f38561c7441a63d2f9d0e68d4f32dd2973ef65841b53
+		Secure: false
+	Object:
+		Variable: r10
+		Type: javax.crypto.spec.SecretKeySpec
+		Statement: specialinvoke r10.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>(r2, varReplacer41)
+		Method: <org.apache.directory.server.kerberos.shared.crypto.checksum.HmacMd5Checksum: byte[] calculateChecksum(byte[],byte[],org.apache.directory.server.kerberos.shared.crypto.encryption.KeyUsage)>
+		SHA-256: 931ece8d16529d98a43deef74a835e0dfbbd499b48301a05c66209588662deb9
+		Secure: false
+	Object:
+		Variable: r10
+		Type: javax.crypto.Cipher
+		Statement: r10 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer127)
+		Method: <org.apache.directory.server.kerberos.shared.crypto.encryption.DesCbcCrcEncryption: byte[] processCipher(boolean,byte[],byte[])>
+		SHA-256: 2fa4eb71889c849ccc92d5da2977f29e0eff4b6d2497ac9fcf87d7974ecfe738
+		Secure: false
+	Object:
+		Variable: r13
+		Type: javax.crypto.spec.IvParameterSpec
+		Statement: specialinvoke r13.<javax.crypto.spec.IvParameterSpec: void <init>(byte[])>($r7)
+		Method: <org.apache.directory.server.kerberos.shared.crypto.encryption.DesCbcMd5Encryption: byte[] processCipher(boolean,byte[],byte[])>
+		SHA-256: da4c583fdc49be23798f8a5053bc7bfa70977ef99cfb996eb875b434952f4ba8
+		Secure: false
+	Object:
+		Variable: r12
+		Type: javax.crypto.spec.SecretKeySpec
+		Statement: specialinvoke r12.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>(r2, varReplacer139)
+		Method: <org.apache.directory.server.kerberos.shared.crypto.encryption.DesCbcMd5Encryption: byte[] processCipher(boolean,byte[],byte[])>
+		SHA-256: e02ebc0ff1b9db48a433a600e4e05ac5cc234b69f70a81aa896d197ad12f8a5a
+		Secure: false
+	Object:
+		Variable: r12
+		Type: javax.crypto.spec.SecretKeySpec
+		Statement: specialinvoke r12.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>(r2, varReplacer112)
+		Method: <org.apache.directory.server.kerberos.shared.crypto.encryption.Des3CbcSha1KdEncryption: byte[] processCipher(boolean,byte[],byte[])>
+		SHA-256: 182aa131d78b26bd66bfa7c5bd5769b585d1ec99397a795772e168c3311c08ad
+		Secure: false
+	Object:
+		Variable: r1
+		Type: byte[]
+		Statement: $r8 = virtualinvoke r10.<javax.crypto.Cipher: byte[] doFinal(byte[])>(r1)
+		Method: <org.apache.directory.server.kerberos.shared.crypto.encryption.Des3CbcSha1KdEncryption: byte[] processCipher(boolean,byte[],byte[])>
+		SHA-256: 72e90b92fb6a05450648cbf71457ec8eb4fd52b44ac9ca42120aa4ac2c905a48
+		Secure: false
+	Object:
+		Variable: varReplacer41
+		Type: java.lang.String
+		Statement: specialinvoke r10.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>(r2, varReplacer41)
+		Method: <org.apache.directory.server.kerberos.shared.crypto.checksum.HmacMd5Checksum: byte[] calculateChecksum(byte[],byte[],org.apache.directory.server.kerberos.shared.crypto.encryption.KeyUsage)>
+		SHA-256: 3b16f9e94e46739959d461181ebc96e389ec7c02275ddfedbec1ceb439b558d1
+		Secure: false
+	Object:
+		Variable: r13
+		Type: javax.crypto.spec.IvParameterSpec
+		Statement: specialinvoke r13.<javax.crypto.spec.IvParameterSpec: void <init>(byte[])>(r2)
+		Method: <org.apache.directory.server.kerberos.shared.crypto.encryption.DesStringToKey: byte[] calculateChecksum(byte[],byte[])>
+		SHA-256: 8c18290abe5d9844789bc7a828d5264beb4f654fe2e24a779a69a8323fb902cf
+		Secure: false
+	Object:
+		Variable: $r6
+		Type: byte[]
+		Statement: $r6 = virtualinvoke r4.<javax.crypto.Mac: byte[] doFinal(byte[])>(r1)
+		Method: <org.apache.directory.server.kerberos.shared.crypto.checksum.HmacMd5Checksum: byte[] calculateChecksum(byte[],byte[],org.apache.directory.server.kerberos.shared.crypto.encryption.KeyUsage)>
+		SHA-256: f511e2c513ae5b6b2d399e0040b9c6690ee958a9bff8ad205427b6d68b97f698
+		Secure: true
+	Object:
+		Variable: r3
+		Type: byte[]
+		Statement: r3 = interfaceinvoke r2.<javax.crypto.SecretKey: byte[] getEncoded()>()
+		Method: <org.apache.directory.server.kerberos.shared.crypto.encryption.RandomKeyFactory: org.apache.directory.shared.kerberos.components.EncryptionKey getRandomKey(org.apache.directory.shared.kerberos.codec.types.EncryptionType)>
+		SHA-256: c3a0593a06a11b72636ea68511168eac70a6d61227ce60af759413a4dee6fce
+		Secure: true
+	Object:
+		Variable: r10
+		Type: javax.crypto.Cipher
+		Statement: r10 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer142)
+		Method: <org.apache.directory.server.kerberos.shared.crypto.encryption.DesCbcMd5Encryption: byte[] processCipher(boolean,byte[],byte[])>
+		SHA-256: ee027715f8f7ba23a10c655a062268fbbeb787eeb635c3c4c956bf62f2dfa404
+		Secure: false
+	Object:
+		Variable: $r6
+		Type: byte[]
+		Statement: $r6 = virtualinvoke r8.<java.security.MessageDigest: byte[] digest(byte[])>(r1)
+		Method: <org.apache.directory.server.kerberos.shared.crypto.checksum.RsaMd5Checksum: byte[] calculateChecksum(byte[],byte[],org.apache.directory.server.kerberos.shared.crypto.encryption.KeyUsage)>
+		SHA-256: 9ef4e1ef117122c4fb82cc38aa4475e55af497d1817040466cca7c30c0245838
+		Secure: true
+	Object:
+		Variable: r1
+		Type: byte[]
+		Statement: $r8 = virtualinvoke r10.<javax.crypto.Cipher: byte[] doFinal(byte[])>(r1)
+		Method: <org.apache.directory.server.kerberos.shared.crypto.encryption.DesCbcMd5Encryption: byte[] processCipher(boolean,byte[],byte[])>
+		SHA-256: c76367f88fbef2956e135050d8314b4351f46e7f477b597fa7c36c5847f69630
+		Secure: false
+	Object:
+		Variable: r9
+		Type: javax.crypto.spec.SecretKeySpec
+		Statement: specialinvoke r9.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>(r2, varReplacer58)
+		Method: <org.apache.directory.server.kerberos.shared.crypto.encryption.AesCtsSha1Encryption: byte[] processChecksum(byte[],byte[])>
+		SHA-256: 6197e2d151b7afff1c0867d5df3e0c27653d4df0ed019032025f998b43b22956
+		Secure: false
+	Object:
+		Variable: r1
+		Type: byte[]
+		Statement: $r5 = virtualinvoke r3.<javax.crypto.Mac: byte[] doFinal(byte[])>(r1)
+		Method: <org.apache.directory.server.kerberos.shared.crypto.encryption.Des3CbcSha1KdEncryption: byte[] processChecksum(byte[],byte[])>
+		SHA-256: f406eb0bad89401d40f2bb72adc9362228cec95f24ddd672ac53312d5abb1b2
+		Secure: true
+	Object:
+		Variable: r10
+		Type: javax.crypto.Cipher
+		Statement: r10 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer150)
+		Method: <org.apache.directory.server.kerberos.shared.crypto.encryption.DesStringToKey: byte[] calculateChecksum(byte[],byte[])>
+		SHA-256: 393ceca002a025b1914b59a058f7d1c0394d3793adf4a71fb8b564d785380eab
+		Secure: false
+	Object:
+		Variable: $r5
+		Type: byte[]
+		Statement: $r5 = virtualinvoke r7.<javax.crypto.Cipher: byte[] doFinal(byte[])>(r1)
+		Method: <org.apache.directory.server.kerberos.shared.crypto.encryption.ArcFourHmacMd5Encryption: byte[] processCipher(boolean,byte[],byte[])>
+		SHA-256: 76a45a0c35e548617caa6c93ad9c1023769f0cfff94748c3bb9d92b87d128ff9
+		Secure: false
+	Object:
+		Variable: r13
+		Type: javax.crypto.spec.IvParameterSpec
+		Statement: specialinvoke r13.<javax.crypto.spec.IvParameterSpec: void <init>(byte[])>($r7)
+		Method: <org.apache.directory.server.kerberos.shared.crypto.encryption.AesCtsSha1Encryption: byte[] processCipher(boolean,byte[],byte[])>
+		SHA-256: a082eda1b07049b1989ac93a01bef16399fc0d4001185b06b68e40c8d544a56e
+		Secure: false
+	Object:
+		Variable: varReplacer139
+		Type: java.lang.String
+		Statement: specialinvoke r12.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>(r2, varReplacer139)
+		Method: <org.apache.directory.server.kerberos.shared.crypto.encryption.DesCbcMd5Encryption: byte[] processCipher(boolean,byte[],byte[])>
+		SHA-256: ebb2927e8ae6b1217e1e5c0bfe27d5ff07ce0146f912dd0de55098cf962c68e6
+		Secure: false
+	Object:
+		Variable: r6
+		Type: javax.crypto.Mac
+		Statement: r6 = staticinvoke <javax.crypto.Mac: javax.crypto.Mac getInstance(java.lang.String)>(varReplacer70)
+		Method: <org.apache.directory.server.kerberos.shared.crypto.encryption.ArcFourHmacMd5Encryption: byte[] calculateIntegrity(byte[],byte[],org.apache.directory.server.kerberos.shared.crypto.encryption.KeyUsage)>
+		SHA-256: cb4d5571ae1a91f5feb114f59652f94323ce41c14a7a0f160f17926cddb235fd
+		Secure: false
+	Object:
+		Variable: varReplacer75
+		Type: java.lang.String
+		Statement: specialinvoke r9.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>(r2, varReplacer75)
+		Method: <org.apache.directory.server.kerberos.shared.crypto.encryption.ArcFourHmacMd5Encryption: byte[] processCipher(boolean,byte[],byte[])>
+		SHA-256: eaad15f0041026bd7e4bb83968a033a9f6f4090af17cf9e85c872b8534d7e11e
+		Secure: false
+	Object:
+		Variable: r7
+		Type: javax.crypto.Cipher
+		Statement: r7 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer74)
+		Method: <org.apache.directory.server.kerberos.shared.crypto.encryption.ArcFourHmacMd5Encryption: byte[] processCipher(boolean,byte[],byte[])>
+		SHA-256: 5cf519c32f84b66da680c5fef2d5c754ac6e17c8f760bdafd218807ebef03bd1
+		Secure: false
+	Object:
+		Variable: r10
+		Type: javax.crypto.Cipher
+		Statement: r10 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer65)
+		Method: <org.apache.directory.server.kerberos.shared.crypto.encryption.AesCtsSha1Encryption: byte[] processCipher(boolean,byte[],byte[])>
+		SHA-256: eff705cc171482199f125deb4cdb5b129ea90bd411db03b739f66bcb9a1d3678
+		Secure: true
+	Object:
+		Variable: r1
+		Type: byte[]
+		Statement: $r6 = virtualinvoke r8.<java.security.MessageDigest: byte[] digest(byte[])>(r1)
+		Method: <org.apache.directory.server.kerberos.shared.crypto.encryption.DesCbcMd5Encryption: byte[] calculateIntegrity(byte[],byte[],org.apache.directory.server.kerberos.shared.crypto.encryption.KeyUsage)>
+		SHA-256: 843dfedeea198c0a432b8ce35603b42a49621495d576db098fe6be2a9d7c007b
+		Secure: true
+	Object:
+		Variable: varReplacer58
+		Type: java.lang.String
+		Statement: specialinvoke r9.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>(r2, varReplacer58)
+		Method: <org.apache.directory.server.kerberos.shared.crypto.encryption.AesCtsSha1Encryption: byte[] processChecksum(byte[],byte[])>
+		SHA-256: b18ef6e67c45f813413066c26271151989deccd89e43b72039bf9af0697b04c4
+		Secure: false
+	Object:
+		Variable: varReplacer64
+		Type: java.lang.String
+		Statement: specialinvoke r12.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>(r2, varReplacer64)
+		Method: <org.apache.directory.server.kerberos.shared.crypto.encryption.AesCtsSha1Encryption: byte[] processCipher(boolean,byte[],byte[])>
+		SHA-256: 75a419e2863bde8cdacd4b40ab1b8c04037ccf9e6d7644ede1eaa7425269d2f4
+		Secure: false
+	Object:
+		Variable: r1
+		Type: byte[]
+		Statement: $r8 = virtualinvoke r10.<javax.crypto.Cipher: byte[] doFinal(byte[])>(r1)
+		Method: <org.apache.directory.server.kerberos.shared.crypto.encryption.AesCtsSha1Encryption: byte[] processCipher(boolean,byte[],byte[])>
+		SHA-256: 5902201ba4a3abc76bd8b66520ca6eac06119edab63feebb7c4b7fb12b400b53
+		Secure: false
+	Object:
+		Variable: r9
+		Type: javax.crypto.spec.SecretKeySpec
+		Statement: specialinvoke r9.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>(r2, varReplacer75)
+		Method: <org.apache.directory.server.kerberos.shared.crypto.encryption.ArcFourHmacMd5Encryption: byte[] processCipher(boolean,byte[],byte[])>
+		SHA-256: a92cfded9c35c02de74c482b6c1f12e72769825b0f395c398fdfcb3d88781a76
+		Secure: false
+	Object:
+		Variable: r8
+		Type: java.security.MessageDigest
+		Statement: r8 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>($r5)
+		Method: <org.apache.directory.server.kerberos.shared.crypto.checksum.RsaMd5Checksum: byte[] calculateChecksum(byte[],byte[],org.apache.directory.server.kerberos.shared.crypto.encryption.KeyUsage)>
+		SHA-256: 9ef6a541c87c5d87387ff3b663677a1731956c669f8fdd2a96178461655397d3
+		Secure: true
+	Object:
+		Variable: r12
+		Type: javax.crypto.spec.SecretKeySpec
+		Statement: specialinvoke r12.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>(r2, varReplacer149)
+		Method: <org.apache.directory.server.kerberos.shared.crypto.encryption.DesStringToKey: byte[] calculateChecksum(byte[],byte[])>
+		SHA-256: 192e5da3e3d58e2575fb03bb23c6e7c22fef0a16cc17aefe55ccdf1a76d57e21
+		Secure: false
+	Object:
+		Variable: $r8
+		Type: byte[]
+		Statement: $r8 = virtualinvoke r10.<javax.crypto.Cipher: byte[] doFinal(byte[])>(r1)
+		Method: <org.apache.directory.server.kerberos.shared.crypto.encryption.AesCtsSha1Encryption: byte[] processCipher(boolean,byte[],byte[])>
+		SHA-256: 6cd0ae2e928014830ed60e77b43d2b6944626717362a899e99a604e0e63d37d3
+		Secure: false
+	Object:
+		Variable: $r8
+		Type: byte[]
+		Statement: $r8 = virtualinvoke r10.<javax.crypto.Cipher: byte[] doFinal(byte[])>(r1)
+		Method: <org.apache.directory.server.kerberos.shared.crypto.encryption.DesCbcMd5Encryption: byte[] processCipher(boolean,byte[],byte[])>
+		SHA-256: 8d96b39ec0997345268c5b7f533b2515d4bf70753e7144016a95cbc441343ace
+		Secure: false
+	Object:
+		Variable: r9
+		Type: javax.crypto.spec.SecretKeySpec
+		Statement: specialinvoke r9.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>(r2, varReplacer117)
+		Method: <org.apache.directory.server.kerberos.shared.crypto.encryption.Des3CbcSha1KdEncryption: byte[] processChecksum(byte[],byte[])>
+		SHA-256: 92f823695b464b5db0fa2e62da6e97b415a0dab55b480da82a0f95ac6c70fa24
+		Secure: false
+	Object:
+		Variable: $r8
+		Type: byte[]
+		Statement: $r8 = virtualinvoke r10.<javax.crypto.Cipher: byte[] doFinal(byte[])>(r1)
+		Method: <org.apache.directory.server.kerberos.shared.crypto.encryption.DesCbcCrcEncryption: byte[] processCipher(boolean,byte[],byte[])>
+		SHA-256: 26e82d3ab509d2a9b72f1cef1f0e21c53cf51983d6bab9071c56cd35a9155f7d
+		Secure: false
+	Object:
+		Variable: $r6
+		Type: byte[]
+		Statement: $r6 = virtualinvoke r8.<java.security.MessageDigest: byte[] digest(byte[])>(r1)
+		Method: <org.apache.directory.server.kerberos.shared.crypto.encryption.DesCbcMd5Encryption: byte[] calculateIntegrity(byte[],byte[],org.apache.directory.server.kerberos.shared.crypto.encryption.KeyUsage)>
+		SHA-256: aedeab6d5affb66efa361253db3245ed9741a0d82e4515e972c429897f0ac027
+		Secure: true
+	Object:
+		Variable: r13
+		Type: javax.crypto.spec.IvParameterSpec
+		Statement: specialinvoke r13.<javax.crypto.spec.IvParameterSpec: void <init>(byte[])>($r7)
+		Method: <org.apache.directory.server.kerberos.shared.crypto.encryption.Des3CbcSha1KdEncryption: byte[] processCipher(boolean,byte[],byte[])>
+		SHA-256: f245b3bfc8ff34ff0c9300ac9a5d26d8d32b7a07e50e836d8aa01823e1d88a5b
+		Secure: false
+	Object:
+		Variable: r18
+		Type: javax.crypto.KeyGenerator
+		Statement: r18 = staticinvoke <javax.crypto.KeyGenerator: javax.crypto.KeyGenerator getInstance(java.lang.String)>(r1)
+		Method: <org.apache.directory.server.kerberos.shared.crypto.encryption.RandomKeyFactory: org.apache.directory.shared.kerberos.components.EncryptionKey getRandomKey(org.apache.directory.shared.kerberos.codec.types.EncryptionType)>
+		SHA-256: 1d844d733bed116a3ff22cf52414f9e805de9e85c26d00041070cd73e0bf7dbc
+		Secure: false
+
+Findings in Java Class: org.apache.directory.server.kerberos.shared.crypto.checksum.HmacMd5Checksum
+
+	 in Method: byte[] calculateChecksum(byte[],byte[],org.apache.directory.server.kerberos.shared.crypto.encryption.KeyUsage)
+		ConstraintError violating CrySL rule for javax.crypto.spec.SecretKeySpec (on Object #931ece8d16529d98a43deef74a835e0dfbbd499b48301a05c66209588662deb9)
+			Second parameter (with value "ARCFOUR") should be any of {AES, HmacSHA224, HmacSHA256, HmacSHA384, HmacSHA512}
+			at statement: specialinvoke r10.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>(r2, varReplacer41)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec
+			First parameter was not properly generated as prepared Key Material
+			at statement: specialinvoke r10.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>(r2, varReplacer41)
+
+
+Findings in Java Class: org.apache.directory.server.kerberos.shared.crypto.encryption.ArcFourHmacMd5Encryption
+
+	 in Method: byte[] calculateIntegrity(byte[],byte[],org.apache.directory.server.kerberos.shared.crypto.encryption.KeyUsage)
+		TypestateError violating CrySL rule for javax.crypto.Mac (on Object #cb4d5571ae1a91f5feb114f59652f94323ce41c14a7a0f160f17926cddb235fd)
+			Unexpected call to method doFinal on object of type javax.crypto.Mac. Expect a call to one of the following methods init
+			at statement: $r4 = virtualinvoke r6.<javax.crypto.Mac: byte[] doFinal(byte[])>(r1)
+
+
+	 in Method: byte[] processCipher(boolean,byte[],byte[])
+		ConstraintError violating CrySL rule for javax.crypto.spec.SecretKeySpec (on Object #a92cfded9c35c02de74c482b6c1f12e72769825b0f395c398fdfcb3d88781a76)
+			Second parameter (with value "ARCFOUR") should be any of {AES, HmacSHA224, HmacSHA256, HmacSHA384, HmacSHA512}
+			at statement: specialinvoke r9.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>(r2, varReplacer75)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec
+			First parameter was not properly generated as prepared Key Material
+			at statement: specialinvoke r9.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>(r2, varReplacer75)
+
+		ConstraintError violating CrySL rule for javax.crypto.Cipher (on Object #5cf519c32f84b66da680c5fef2d5c754ac6e17c8f760bdafd218807ebef03bd1)
+			First parameter (with value "ARCFOUR") should be any of {AES, PBEWithHmacSHA224AndAES_128, PBEWithHmacSHA256AndAES_128, PBEWithHmacSHA384AndAES_128, PBEWithHmacSHA512AndAES_128, PBEWithHmacSHA224AndAES_256, PBEWithHmacSHA256AndAES_256, PBEWithHmacSHA384AndAES_256, PBEWithHmacSHA512AndAES_256}
+			at statement: r7 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer74)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Second parameter was not properly generated as generated Key
+			at statement: virtualinvoke r7.<javax.crypto.Cipher: void init(int,java.security.Key)>(varReplacer73, r3)
+
+
+Findings in Java Class: org.apache.directory.server.kerberos.shared.crypto.encryption.Des3CbcSha1KdEncryption
+
+	 in Method: byte[] processCipher(boolean,byte[],byte[])
+		ConstraintError violating CrySL rule for javax.crypto.spec.SecretKeySpec (on Object #182aa131d78b26bd66bfa7c5bd5769b585d1ec99397a795772e168c3311c08ad)
+			Second parameter (with value "DESede") should be any of {AES, HmacSHA224, HmacSHA256, HmacSHA384, HmacSHA512}
+			at statement: specialinvoke r12.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>(r2, varReplacer112)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec
+			First parameter was not properly generated as prepared Key Material
+			at statement: specialinvoke r12.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>(r2, varReplacer112)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.IvParameterSpec
+			First parameter was not properly generated as randomized
+			at statement: specialinvoke r13.<javax.crypto.spec.IvParameterSpec: void <init>(byte[])>($r7)
+
+		ConstraintError violating CrySL rule for javax.crypto.Cipher (on Object #fec2cebd0d4b46177cbed7dea22e0c3149dca4a354ca3810674f21f319b1b611)
+			First parameter (with value "DESede/CBC/NoPadding") should be any of {AES, PBEWithHmacSHA224AndAES_128, PBEWithHmacSHA256AndAES_128, PBEWithHmacSHA384AndAES_128, PBEWithHmacSHA512AndAES_128, PBEWithHmacSHA224AndAES_256, PBEWithHmacSHA256AndAES_256, PBEWithHmacSHA384AndAES_256, PBEWithHmacSHA512AndAES_256}
+			at statement: r10 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer113)
+
+
+	 in Method: byte[] processChecksum(byte[],byte[])
+		ConstraintError violating CrySL rule for javax.crypto.spec.SecretKeySpec (on Object #92f823695b464b5db0fa2e62da6e97b415a0dab55b480da82a0f95ac6c70fa24)
+			Second parameter (with value "DESede") should be any of {AES, HmacSHA224, HmacSHA256, HmacSHA384, HmacSHA512}
+			at statement: specialinvoke r9.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>(r2, varReplacer117)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec
+			First parameter was not properly generated as prepared Key Material
+			at statement: specialinvoke r9.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>(r2, varReplacer117)
+
+
+Findings in Java Class: org.apache.directory.server.kerberos.shared.crypto.encryption.DesCbcCrcEncryption
+
+	 in Method: byte[] processCipher(boolean,byte[],byte[])
+		ConstraintError violating CrySL rule for javax.crypto.Cipher (on Object #2fa4eb71889c849ccc92d5da2977f29e0eff4b6d2497ac9fcf87d7974ecfe738)
+			First parameter (with value "DES/CBC/NoPadding") should be any of {AES, PBEWithHmacSHA224AndAES_128, PBEWithHmacSHA256AndAES_128, PBEWithHmacSHA384AndAES_128, PBEWithHmacSHA512AndAES_128, PBEWithHmacSHA224AndAES_256, PBEWithHmacSHA256AndAES_256, PBEWithHmacSHA384AndAES_256, PBEWithHmacSHA512AndAES_256}
+			at statement: r10 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer127)
+
+		ConstraintError violating CrySL rule for javax.crypto.spec.SecretKeySpec (on Object #75b2b68fab8a627f4361fe012fac8790fc4789e79e994c1f1993414fd716be4a)
+			Second parameter (with value "DES") should be any of {AES, HmacSHA224, HmacSHA256, HmacSHA384, HmacSHA512}
+			at statement: specialinvoke r12.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>(r2, varReplacer129)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.IvParameterSpec
+			First parameter was not properly generated as randomized
+			at statement: specialinvoke r13.<javax.crypto.spec.IvParameterSpec: void <init>(byte[])>($r7)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec
+			First parameter was not properly generated as prepared Key Material
+			at statement: specialinvoke r12.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>(r2, varReplacer129)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Second parameter was not properly generated as generated Key
+			at statement: virtualinvoke r10.<javax.crypto.Cipher: void init(int,java.security.Key,java.security.spec.AlgorithmParameterSpec)>(varReplacer128, r3, r4)
+
+
+Findings in Java Class: org.apache.directory.server.kerberos.shared.crypto.encryption.DesCbcMd5Encryption
+
+	 in Method: byte[] processCipher(boolean,byte[],byte[])
+		ConstraintError violating CrySL rule for javax.crypto.spec.SecretKeySpec (on Object #e02ebc0ff1b9db48a433a600e4e05ac5cc234b69f70a81aa896d197ad12f8a5a)
+			Second parameter (with value "DES") should be any of {AES, HmacSHA224, HmacSHA256, HmacSHA384, HmacSHA512}
+			at statement: specialinvoke r12.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>(r2, varReplacer139)
+
+		ConstraintError violating CrySL rule for javax.crypto.Cipher (on Object #ee027715f8f7ba23a10c655a062268fbbeb787eeb635c3c4c956bf62f2dfa404)
+			First parameter (with value "DES/CBC/NoPadding") should be any of {AES, PBEWithHmacSHA224AndAES_128, PBEWithHmacSHA256AndAES_128, PBEWithHmacSHA384AndAES_128, PBEWithHmacSHA512AndAES_128, PBEWithHmacSHA224AndAES_256, PBEWithHmacSHA256AndAES_256, PBEWithHmacSHA384AndAES_256, PBEWithHmacSHA512AndAES_256}
+			at statement: r10 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer142)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec
+			First parameter was not properly generated as prepared Key Material
+			at statement: specialinvoke r12.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>(r2, varReplacer139)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Second parameter was not properly generated as generated Key
+			at statement: virtualinvoke r10.<javax.crypto.Cipher: void init(int,java.security.Key,java.security.spec.AlgorithmParameterSpec)>(varReplacer143, r3, r4)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.IvParameterSpec
+			First parameter was not properly generated as randomized
+			at statement: specialinvoke r13.<javax.crypto.spec.IvParameterSpec: void <init>(byte[])>($r7)
+
+
+Findings in Java Class: org.apache.directory.server.kerberos.shared.crypto.encryption.DesStringToKey
+
+	 in Method: byte[] calculateChecksum(byte[],byte[])
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.IvParameterSpec
+			First parameter was not properly generated as randomized
+			at statement: specialinvoke r13.<javax.crypto.spec.IvParameterSpec: void <init>(byte[])>(r2)
+
+		ConstraintError violating CrySL rule for javax.crypto.Cipher (on Object #393ceca002a025b1914b59a058f7d1c0394d3793adf4a71fb8b564d785380eab)
+			First parameter (with value "DES/CBC/NoPadding") should be any of {AES, PBEWithHmacSHA224AndAES_128, PBEWithHmacSHA256AndAES_128, PBEWithHmacSHA384AndAES_128, PBEWithHmacSHA512AndAES_128, PBEWithHmacSHA224AndAES_256, PBEWithHmacSHA256AndAES_256, PBEWithHmacSHA384AndAES_256, PBEWithHmacSHA512AndAES_256}
+			at statement: r10 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer150)
+
+		ConstraintError violating CrySL rule for javax.crypto.spec.SecretKeySpec (on Object #192e5da3e3d58e2575fb03bb23c6e7c22fef0a16cc17aefe55ccdf1a76d57e21)
+			Second parameter (with value "DES") should be any of {AES, HmacSHA224, HmacSHA256, HmacSHA384, HmacSHA512}
+			at statement: specialinvoke r12.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>(r2, varReplacer149)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Third parameter was not properly generated as prepared I V
+			at statement: virtualinvoke r10.<javax.crypto.Cipher: void init(int,java.security.Key,java.security.spec.AlgorithmParameterSpec)>(varReplacer151, r3, r4)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec
+			First parameter was not properly generated as prepared Key Material
+			at statement: specialinvoke r12.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>(r2, varReplacer149)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Second parameter was not properly generated as generated Key
+			at statement: virtualinvoke r10.<javax.crypto.Cipher: void init(int,java.security.Key,java.security.spec.AlgorithmParameterSpec)>(varReplacer151, r3, r4)
+
+
+Findings in Java Class: org.apache.directory.server.kerberos.shared.crypto.encryption.RandomKeyFactory
+
+	 in Method: org.apache.directory.shared.kerberos.components.EncryptionKey getRandomKey(org.apache.directory.shared.kerberos.codec.types.EncryptionType)
+		TypestateError violating CrySL rule for javax.crypto.KeyGenerator (on Object #1d844d733bed116a3ff22cf52414f9e805de9e85c26d00041070cd73e0bf7dbc)
+			Unexpected call to method init on object of type javax.crypto.KeyGenerator. Expect a call to one of the following methods generateKey
+			at statement: virtualinvoke r18.<javax.crypto.KeyGenerator: void init(int)>(varReplacer190)
+
+
+Findings in Java Class: org.apache.directory.server.kerberos.shared.crypto.encryption.AesCtsSha1Encryption
+
+	 in Method: byte[] processChecksum(byte[],byte[])
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec
+			First parameter was not properly generated as prepared Key Material
+			at statement: specialinvoke r9.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>(r2, varReplacer58)
+
+
+	 in Method: byte[] processCipher(boolean,byte[],byte[])
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec
+			First parameter was not properly generated as prepared Key Material
+			at statement: specialinvoke r12.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>(r2, varReplacer64)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.IvParameterSpec
+			First parameter was not properly generated as randomized
+			at statement: specialinvoke r13.<javax.crypto.spec.IvParameterSpec: void <init>(byte[])>($r7)
+
+
+======================= CogniCrypt Summary ==========================
+	Number of CrySL rules: 39
+	Number of Objects Analyzed: 61
+
+	CogniCrypt found the following violations. For details see description above.
+	ConstraintError: 12
+	RequiredPredicateError: 19
+	TypestateError: 2
+=====================================================================
+[main] INFO crypto.analysis.CryptoScanner - Static Analysis took 22 seconds!
+[main] INFO crypto.HeadlessCryptoScanner - Analysis finished in 25.83 s

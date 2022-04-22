@@ -1,0 +1,166 @@
+
+Current Proejct: /home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/tika-core-1.17-SNAPSHOT.jar
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$2 (file:/home/ying/CryptoAPIDetect/CogniCrypt/CryptoAnalysis-2.7.1-SNAPSHOT-jar-with-dependencies.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
+WARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$2
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[main] INFO crypto.HeadlessCryptoScanner - Using call graph algorithm CHA
+[main] INFO crypto.HeadlessCryptoScanner - Analysis soot setup done in 772.5 ms 
+[main] INFO crypto.analysis.CryptoScanner - Searching fo Seeds for analysis!
+[main] INFO crypto.analysis.CryptoScanner - Discovered 5 analysis seeds within 0 seconds!
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 1 of 5
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.2
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 2 of 5
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.4
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 3 of 5
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.6
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 4 of 6
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.67
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 5 of 6
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.83
+
+Ruleset: 
+	java.security.AlgorithmParameters
+	javax.net.ssl.SSLParameters
+	java.security.DigestOutputStream
+	java.security.spec.RSAKeyGenParameterSpec
+	javax.net.ssl.CertPathTrustManagerParameters
+	javax.net.ssl.SSLEngine
+	java.security.cert.PKIXParameters
+	javax.net.ssl.TrustManagerFactory
+	javax.net.ssl.KeyStoreBuilderParameters
+	javax.crypto.spec.DHGenParameterSpec
+	javax.crypto.spec.PBEParameterSpec
+	javax.crypto.SecretKeyFactory
+	javax.crypto.CipherOutputStream
+	java.security.cert.PKIXBuilderParameters
+	javax.crypto.spec.GCMParameterSpec
+	java.security.KeyStore
+	javax.net.ssl.KeyManagerFactory
+	javax.net.ssl.SSLContext
+	java.security.spec.DSAGenParameterSpec
+	javax.crypto.KeyGenerator
+	javax.crypto.spec.IvParameterSpec
+	java.security.spec.DSAParameterSpec
+	javax.crypto.Cipher
+	java.security.cert.TrustAnchor
+	java.security.SecureRandom
+	javax.crypto.CipherInputStream
+	java.security.Key
+	javax.crypto.spec.PBEKeySpec
+	javax.crypto.Mac
+	void
+	javax.crypto.SecretKey
+	java.security.Signature
+	javax.xml.crypto.dsig.spec.HMACParameterSpec
+	java.security.KeyPairGenerator
+	java.security.DigestInputStream
+	java.security.MessageDigest
+	java.security.KeyPair
+	javax.crypto.spec.SecretKeySpec
+	javax.crypto.spec.DHParameterSpec
+
+Analyzed Objects: 
+	Object:
+		Variable: $r4
+		Type: java.security.MessageDigest
+		Statement: $r4 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String)>($r3)
+		Method: <org.apache.tika.parser.digest.InputStreamDigester: java.security.MessageDigest newMessageDigest()>
+		SHA-256: b00569a64e6f512296f19f2748cbb95371e93e6e69b4bb3a4876bfba5cfb6d62
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: java.security.MessageDigest
+		Statement: $r2 = staticinvoke <java.security.MessageDigest: java.security.MessageDigest getInstance(java.lang.String,java.security.Provider)>($r1, r7)
+		Method: <org.apache.tika.parser.digest.InputStreamDigester: java.security.MessageDigest newMessageDigest()>
+		SHA-256: c42666987c6c24c6e832a184d167156e9523f4d084e6d546b09e948d3a6ac84b
+		Secure: false
+	Object:
+		Variable: r18
+		Type: javax.crypto.Cipher
+		Statement: r18 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String,java.security.Provider)>($r15, $r14)
+		Method: <org.apache.tika.parser.CryptoParser: void parse(java.io.InputStream,org.xml.sax.ContentHandler,org.apache.tika.metadata.Metadata,org.apache.tika.parser.ParseContext)>
+		SHA-256: ea5ccf3af4cfb3d6ae2f4c3bf5cbb73660a0356eeb13a9677dbe9e3927540a5b
+		Secure: false
+	Object:
+		Variable: $r19
+		Type: javax.crypto.CipherInputStream
+		Statement: specialinvoke $r19.<javax.crypto.CipherInputStream: void <init>(java.io.InputStream,javax.crypto.Cipher)>(r1, r18)
+		Method: <org.apache.tika.parser.CryptoParser: void parse(java.io.InputStream,org.xml.sax.ContentHandler,org.apache.tika.metadata.Metadata,org.apache.tika.parser.ParseContext)>
+		SHA-256: 6b2b301564c198cd8234e4ddf8d0817323003a7b0bb5d5e47306613f15a076c
+		Secure: true
+	Object:
+		Variable: r18
+		Type: javax.crypto.Cipher
+		Statement: r18 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>($r9)
+		Method: <org.apache.tika.parser.CryptoParser: void parse(java.io.InputStream,org.xml.sax.ContentHandler,org.apache.tika.metadata.Metadata,org.apache.tika.parser.ParseContext)>
+		SHA-256: a0c229120fab8a80e813b4955e1190f2cef4ba9186d15d686670ff27e7582eb4
+		Secure: false
+	Object:
+		Variable: r3
+		Type: byte[]ƒƒ
+		Statement: r3 = virtualinvoke r4.<java.security.MessageDigest: byte[] digest()>()
+		Method: <org.apache.tika.parser.digest.InputStreamDigester: boolean digestStream(java.io.InputStream,org.apache.tika.metadata.Metadata)>
+		SHA-256: 69dd361e90a024baf5f0fe6c08ce1fc3f50a50a2203785f567c20d343bce250d
+		Secure: true
+
+Findings in Java Class: org.apache.tika.parser.CryptoParser
+
+	 in Method: void parse(java.io.InputStream,org.xml.sax.ContentHandler,org.apache.tika.metadata.Metadata,org.apache.tika.parser.ParseContext)
+		IncompleteOperationError violating CrySL rule for javax.crypto.Cipher (on Object #ea5ccf3af4cfb3d6ae2f4c3bf5cbb73660a0356eeb13a9677dbe9e3927540a5b)
+			Operation on object of type javax.crypto.Cipher object not completed. Expected call to update, wrap, doFinal
+			at statement: specialinvoke $r19.<javax.crypto.CipherInputStream: void <init>(java.io.InputStream,javax.crypto.Cipher)>(r1, r18)
+
+		IncompleteOperationError violating CrySL rule for javax.crypto.Cipher (on Object #a0c229120fab8a80e813b4955e1190f2cef4ba9186d15d686670ff27e7582eb4)
+			Operation on object of type javax.crypto.Cipher object not completed. Expected call to update, wrap, doFinal
+			at statement: specialinvoke $r19.<javax.crypto.CipherInputStream: void <init>(java.io.InputStream,javax.crypto.Cipher)>(r1, r18)
+
+		IncompleteOperationError violating CrySL rule for javax.crypto.Cipher (on Object #ea5ccf3af4cfb3d6ae2f4c3bf5cbb73660a0356eeb13a9677dbe9e3927540a5b)
+			Operation on object of type javax.crypto.Cipher object not completed. Expected call to init
+			at statement: r18 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String,java.security.Provider)>($r15, $r14)
+
+		IncompleteOperationError violating CrySL rule for javax.crypto.Cipher (on Object #a0c229120fab8a80e813b4955e1190f2cef4ba9186d15d686670ff27e7582eb4)
+			Operation on object of type javax.crypto.Cipher object not completed. Expected call to init
+			at statement: r18 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String,java.security.Provider)>($r15, $r14)
+
+		ForbiddenMethodError violating CrySL rule for javax.crypto.Cipher
+			Detected call to forbidden method void init(int,java.security.Key) of class javax.crypto.Cipher. Instead, call method <javax.crypto.Cipher: void init(int,java.security.Key)>.
+			at statement: virtualinvoke r18.<javax.crypto.Cipher: void init(int,java.security.Key)>(varReplacer1495, r5)
+
+		IncompleteOperationError violating CrySL rule for javax.crypto.Cipher (on Object #ea5ccf3af4cfb3d6ae2f4c3bf5cbb73660a0356eeb13a9677dbe9e3927540a5b)
+			Operation on object of type javax.crypto.Cipher object not completed. Expected call to init
+			at statement: r18 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>($r9)
+
+		IncompleteOperationError violating CrySL rule for javax.crypto.Cipher (on Object #a0c229120fab8a80e813b4955e1190f2cef4ba9186d15d686670ff27e7582eb4)
+			Operation on object of type javax.crypto.Cipher object not completed. Expected call to init
+			at statement: r18 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>($r9)
+
+
+Findings in Java Class: org.apache.tika.parser.digest.InputStreamDigester
+
+	 in Method: boolean digestStream(java.io.InputStream,org.apache.tika.metadata.Metadata)
+		TypestateError violating CrySL rule for java.security.MessageDigest (on Object #c42666987c6c24c6e832a184d167156e9523f4d084e6d546b09e948d3a6ac84b)
+			Unexpected call to method <java.security.MessageDigest: byte[] digest()> on object of type java.security.MessageDigest. Expect a call to one of the following methods java.security.MessageDigest: void update(byte[],int,int),java.security.MessageDigest: void update(java.nio.ByteBuffer),java.security.MessageDigest: byte[] digest(byte[]),java.security.MessageDigest: void update(byte[]),java.security.MessageDigest: void update(byte)
+			at statement: r3 = virtualinvoke r4.<java.security.MessageDigest: byte[] digest()>()
+
+		TypestateError violating CrySL rule for java.security.MessageDigest (on Object #b00569a64e6f512296f19f2748cbb95371e93e6e69b4bb3a4876bfba5cfb6d62)
+			Unexpected call to method <java.security.MessageDigest: byte[] digest()> on object of type java.security.MessageDigest. Expect a call to one of the following methods java.security.MessageDigest: void update(byte[],int,int),java.security.MessageDigest: void update(java.nio.ByteBuffer),java.security.MessageDigest: byte[] digest(byte[]),java.security.MessageDigest: void update(byte[]),java.security.MessageDigest: void update(byte)
+			at statement: r3 = virtualinvoke r4.<java.security.MessageDigest: byte[] digest()>()
+
+
+======================= CogniCrypt Summary ==========================
+	Number of CrySL rules: 39
+	Number of Objects Analyzed: 6
+
+	CogniCrypt found the following violations. For details see description above.
+	IncompleteOperationError: 6
+	ForbiddenMethodError: 1
+	TypestateError: 2
+=====================================================================
+[main] INFO crypto.analysis.CryptoScanner - Static Analysis took 0 seconds!
+[main] INFO crypto.HeadlessCryptoScanner - Analysis finished in 3.237 s

@@ -1,0 +1,156 @@
+
+Current Proejct: /home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/wicket-util-8.0.0-SNAPSHOT.jar
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$2 (file:/home/ying/CryptoAPIDetect/CogniCrypt/CryptoAnalysis-2.7.1-SNAPSHOT-jar-with-dependencies.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
+WARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$2
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[main] INFO crypto.HeadlessCryptoScanner - Using call graph algorithm CHA
+[main] INFO crypto.HeadlessCryptoScanner - Analysis soot setup done in 1.015 s 
+[main] INFO crypto.analysis.CryptoScanner - Searching fo Seeds for analysis!
+[main] INFO crypto.analysis.CryptoScanner - Discovered 3 analysis seeds within 0 seconds!
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 1 of 5
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.2
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 2 of 6
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.33
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 3 of 6
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.5
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 4 of 6
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.67
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 5 of 6
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.83
+
+Ruleset: 
+	java.security.AlgorithmParameters
+	javax.net.ssl.SSLParameters
+	java.security.DigestOutputStream
+	java.security.spec.RSAKeyGenParameterSpec
+	javax.net.ssl.CertPathTrustManagerParameters
+	javax.net.ssl.SSLEngine
+	java.security.cert.PKIXParameters
+	javax.net.ssl.TrustManagerFactory
+	javax.net.ssl.KeyStoreBuilderParameters
+	javax.crypto.spec.DHGenParameterSpec
+	javax.crypto.spec.PBEParameterSpec
+	javax.crypto.SecretKeyFactory
+	javax.crypto.CipherOutputStream
+	java.security.cert.PKIXBuilderParameters
+	javax.crypto.spec.GCMParameterSpec
+	java.security.KeyStore
+	javax.net.ssl.KeyManagerFactory
+	javax.net.ssl.SSLContext
+	java.security.spec.DSAGenParameterSpec
+	javax.crypto.KeyGenerator
+	javax.crypto.spec.IvParameterSpec
+	java.security.spec.DSAParameterSpec
+	javax.crypto.Cipher
+	java.security.cert.TrustAnchor
+	java.security.SecureRandom
+	javax.crypto.CipherInputStream
+	java.security.Key
+	javax.crypto.spec.PBEKeySpec
+	javax.crypto.Mac
+	void
+	javax.crypto.SecretKey
+	java.security.Signature
+	javax.xml.crypto.dsig.spec.HMACParameterSpec
+	java.security.KeyPairGenerator
+	java.security.DigestInputStream
+	java.security.MessageDigest
+	java.security.KeyPair
+	javax.crypto.spec.SecretKeySpec
+	javax.crypto.spec.DHParameterSpec
+
+Analyzed Objects: 
+	Object:
+		Variable: $r1
+		Type: javax.crypto.spec.PBEParameterSpec
+		Statement: specialinvoke $r1.<javax.crypto.spec.PBEParameterSpec: void <init>(byte[],int)>($r2, varReplacer281)
+		Method: <org.apache.wicket.util.crypt.SunJceCrypt: void <clinit>()>
+		SHA-256: 3b00a7df65d58aabe4706b81563f0b7d4b9bff8d2c104af6c02d5dcd7ddc492e
+		Secure: false
+	Object:
+		Variable: $r4
+		Type: javax.crypto.SecretKey
+		Statement: $r4 = virtualinvoke r1.<javax.crypto.SecretKeyFactory: javax.crypto.SecretKey generateSecret(java.security.spec.KeySpec)>(r2)
+		Method: <org.apache.wicket.util.crypt.SunJceCrypt: javax.crypto.SecretKey generateSecretKey()>
+		SHA-256: 9e7d917f4999a811b1db556dbfbef881cfbdfac02865584e035b8301ab7b74a2
+		Secure: false
+	Object:
+		Variable: r1
+		Type: javax.crypto.SecretKeyFactory
+		Statement: r1 = staticinvoke <javax.crypto.SecretKeyFactory: javax.crypto.SecretKeyFactory getInstance(java.lang.String)>($r3)
+		Method: <org.apache.wicket.util.crypt.SunJceCrypt: javax.crypto.SecretKey generateSecretKey()>
+		SHA-256: f691523ec36da39e78acc1c9f1692168eac5b7b434210b69e276f91dd98991f7
+		Secure: false
+	Object:
+		Variable: r1
+		Type: byte[]
+		Statement: $r5 = virtualinvoke r4.<javax.crypto.Cipher: byte[] doFinal(byte[])>(r1)
+		Method: <org.apache.wicket.util.crypt.SunJceCrypt: byte[] crypt(byte[],int)>
+		SHA-256: e8655746c15155c631073c2ce5f338a86d7a200b83a5f2f6b96b2c0d42592e27
+		Secure: false
+	Object:
+		Variable: $r5
+		Type: byte[]
+		Statement: $r5 = virtualinvoke r4.<javax.crypto.Cipher: byte[] doFinal(byte[])>(r1)
+		Method: <org.apache.wicket.util.crypt.SunJceCrypt: byte[] crypt(byte[],int)>
+		SHA-256: 6f7181c9ec706795fa33ae5e5631d495a855084f0e5716d035275622d57a850
+		Secure: false
+	Object:
+		Variable: r3
+		Type: javax.crypto.Cipher
+		Statement: r3 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>($r4)
+		Method: <org.apache.wicket.util.crypt.SunJceCrypt: javax.crypto.Cipher createCipher(javax.crypto.SecretKey,java.security.spec.AlgorithmParameterSpec,int)>
+		SHA-256: 31290acc907506b24da0d8038b4d7cbd4ae189fa9ed45bd9220feb09edd9ec5d
+		Secure: false
+
+Findings in Java Class: org.apache.wicket.util.crypt.SunJceCrypt
+
+	 in Method: java.security.spec.KeySpec createKeySpec()
+		ForbiddenMethodError violating CrySL rule for javax.crypto.spec.PBEKeySpec
+			Detected call to forbidden method void <init>(char[]) of class javax.crypto.spec.PBEKeySpec. Instead, call method <javax.crypto.spec.PBEKeySpec: void <init>(char[],byte[],int,int)>.
+			at statement: specialinvoke $r1.<javax.crypto.spec.PBEKeySpec: void <init>(char[])>($r3)
+
+
+	 in Method: void <clinit>()
+		ConstraintError violating CrySL rule for javax.crypto.spec.PBEParameterSpec (on Object #3b00a7df65d58aabe4706b81563f0b7d4b9bff8d2c104af6c02d5dcd7ddc492e)
+			Second parameter (with value 17)Variable iterationCountmust be  at least 10000
+			at statement: specialinvoke $r1.<javax.crypto.spec.PBEParameterSpec: void <init>(byte[],int)>($r2, varReplacer281)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.PBEParameterSpec
+			First parameter was not properly generated as randomized
+			at statement: specialinvoke $r1.<javax.crypto.spec.PBEParameterSpec: void <init>(byte[],int)>($r2, varReplacer281)
+
+
+	 in Method: javax.crypto.SecretKey generateSecretKey()
+		RequiredPredicateError violating CrySL rule for javax.crypto.SecretKeyFactory
+			First parameter was not properly generated as specced Key
+			at statement: $r4 = virtualinvoke r1.<javax.crypto.SecretKeyFactory: javax.crypto.SecretKey generateSecret(java.security.spec.KeySpec)>(r2)
+
+
+	 in Method: javax.crypto.Cipher createCipher(javax.crypto.SecretKey,java.security.spec.AlgorithmParameterSpec,int)
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Third parameter was not properly generated as prepared G C M
+			at statement: virtualinvoke r3.<javax.crypto.Cipher: void init(int,java.security.Key,java.security.spec.AlgorithmParameterSpec)>(i0, r1, r2)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Second parameter was not properly generated as generated Key
+			at statement: virtualinvoke r3.<javax.crypto.Cipher: void init(int,java.security.Key,java.security.spec.AlgorithmParameterSpec)>(i0, r1, r2)
+
+
+======================= CogniCrypt Summary ==========================
+	Number of CrySL rules: 39
+	Number of Objects Analyzed: 6
+
+	CogniCrypt found the following violations. For details see description above.
+	ForbiddenMethodError: 1
+	ConstraintError: 1
+	RequiredPredicateError: 4
+=====================================================================
+[main] INFO crypto.analysis.CryptoScanner - Static Analysis took 13 seconds!
+[main] INFO crypto.HeadlessCryptoScanner - Analysis finished in 16.62 s

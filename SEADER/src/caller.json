@@ -1,0 +1,183 @@
+[
+  {"callee": "getInstance",
+    "MethodType": "Cipher",
+    "Type": "parameter",
+    "Check": 0,
+    "args": 1,
+    "Incorrect": ["(.)*DES(.)*", "(.)*DESede(.)*", "#AES", "AES/ECB(.)*", "(.)*DESedeWrap(.)*",
+      "(.)*RC2(.)*", "RC2", "RC4","(.)*RC4(.)*", "(.)*RC5(.)*", "(.)*Blowfish(.)*", "(.)IDEA(.)*", "PBEWithMD5AndDES",
+      "PBEWithMD5AndTripleDES", "PBEWithSHA1AndDESede", "PBEWithSHA1AndRC2_40", "AES/CTR/NoPadding", "ARCFOUR",
+      "AES/ECB/PKCS5Padding", "RSA/NONE/NoPadding","x-qpid-encryption-algorithm", "RSA/NONE/NoPadding", "x-qpid-encrypted-keys", "x-qpid-encrypted-keys", "x-qpid-encryption-algorithm"],
+    "Correct": ["AES/CFB/PKCS5Padding" ,"RSA/ECB/OAEPWithSHA-1AndMGF1Padding", "AES/GCM/PKCS5Padding", "RSA/CBC/PKCS5Padding"]
+  },
+
+  {
+    "callee": "getInstance",
+    "MethodType": "MessageDigest",
+    "Type": "parameter",
+    "Check": 0,
+    "args": 1,
+    "Incorrect": ["#MD2", "(.)*MD5", "SHA", "(.)*MD4","(.)*SHA-1","#RC2", "#RC4", "#SHA1", "#SHA-224", "#SHA-2", "#HmacSHA1"],
+    "Correct": ["SHA-512", "SHA-256", "SHA-3"]
+  },
+  {
+    "callee": "getInstance",
+    "MethodType": "SSLContext",
+    "Type": "parameter",
+    "Check": 0,
+    "args": 1,
+    "Incorrect": ["SSL", "TLS","TLSv1.0"],
+    "Correct": ["larger than TLSv1.1"]
+  },
+
+  {
+    "callee": "initialize",
+    "MethodType": "KeyPairGenerator",
+    "Type": "number",
+    "args": 1,
+    "Check": 0,
+    "MinNum": 1024,
+    "Correct": ["Value should greater than 1024"]
+  },
+
+  {
+    "callee": "getInstance",
+    "MethodType": "SecretKeyFactory",
+    "Type": "parameter",
+    "Check": 0,
+    "args": 1,
+    "Incorrect": ["(.)*DES(.)*", "(.)*DESede(.)*", "ARCFOUR","PBEWithMD5AndDES", "PBKDF2WithHmacSHA1"],
+    "Correct": ["AES", "PBEWithHmacSHA256AndAES_128"]
+  },
+
+  {
+    "callee": "<init>",
+    "MethodType": "SecretKeySpec",
+    "Type": "parameter",
+    "Check": 0,
+    "args": 2,
+    "Incorrect": null,
+    "Correct": ["Parameter should not be a fixed value"]
+  },
+
+  {
+    "callee": "<init>",
+    "MethodType": "SecretKeySpec",
+    "Type": "parameter",
+    "Check": 1,
+    "args": 2,
+    "Incorrect": ["(.)*DES(.)*", "(.)*DESede(.)*", "ARCFOUR", "PBE-WithMD5AndDES", "PBKDF2WithHmacSHA1"],
+    "Correct": ["AES", "PBEWithHmacSHA256AndAES_128"]
+  },
+
+  {
+    "callee": "<init>",
+    "MethodType": "PBEParameterSpec",
+    "Type": "number",
+    "Check": 1,
+    "args": 2,
+    "MinNum": 1000,
+    "Correct": ["Value should greater than 1000"]
+  },
+
+
+  {
+    "callee": "<init>",
+    "MethodType": "PBEParameterSpec",
+    "Type": "number",
+    "Check": 0,
+    "args": 3,
+    "Incorrect": null,
+    "Correct": ["Parameter should not be a fixed value"]
+  },
+
+  {
+    "callee": "<init>",
+    "MethodType": "PBEParameterSpec",
+    "Type": "number",
+    "Check": 0,
+    "args": 2,
+    "Incorrect": null,
+    "Correct": ["Parameter should not be a fixed value"]
+  },
+
+  {
+    "callee": "<init>",
+    "MethodType": "PBEKeySpec",
+    "Type": "parameter",
+    "Check": 2,
+    "args": 3,
+    "MinNum": 1000,
+    "Correct": ["Value should greater than 1000"]
+  },
+  {
+    "callee": "setSeed",
+    "MethodType": "SecureRandom",
+    "Type": "parameter",
+    "Check": 0,
+    "args": 1,
+    "Incorrect": null,
+    "Correct": ["Parameter should not be a fixed value"]
+  },
+
+  {
+    "callee": "<init>",
+    "MethodType": "IvParameterSpec",
+    "Type": "parameter",
+    "Check": 0,
+    "args": 1,
+    "Incorrect": null,
+    "Correct": ["Parameter should not be a fixed value"]
+  },
+
+  {
+    "callee": "<init>",
+    "MethodType": "PBEParameterSpec",
+    "Type": "size",
+    "Check": 0,
+    "args": 2,
+    "MinNum": 4,
+    "Correct": ["8"]
+  },
+
+
+  {
+    "callee": "<init>",
+    "MethodType": "PBEKeySpec",
+    "Type": "parameter",
+    "Check": 1,
+    "args": 3,
+    "Incorrect": null,
+    "Correct": ["Parameter should not be a fixed value"]
+  },
+  {
+    "callee": "<init>",
+    "MethodType": "Ljava/util/Random",
+    "Type": "type",
+    "args": 0,
+    "Check": 0,
+    "Incorrect": null,
+    "Correct": ["Should use SecureRandom"]
+
+  },
+
+  {
+    "callee": "<init>",
+    "MethodType": "PBEKeySpec",
+    "Type": "parameter",
+    "args": 3,
+    "Check": 0,
+    "Incorrect": null,
+    "Correct": ["Parameter should not be a fixed value"]
+  },
+
+  {
+    "callee": "load",
+    "MethodType": "KeyStore",
+    "Type": "parameter",
+    "args": 2,
+    "Check": 1,
+    "Incorrect": null,
+    "Correct": ["Parameter should not be a fixed value"]
+  }
+]

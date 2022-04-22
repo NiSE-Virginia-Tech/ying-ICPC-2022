@@ -1,0 +1,125 @@
+Analyzing JAR: /home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/spark-core_2.11-2.4.0-SNAPSHOT.jar
+***Multiple Base packages of /home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/spark-core_2.11-2.4.0-SNAPSHOT.jar : [org.apache.spark, org.spark_project.jetty]
+***Multiple Base packages of /home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/spark-core_2.11-2.4.0-SNAPSHOT.jar : [org.apache.spark, org.spark_project.jetty]
+***Multiple Base packages of /home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/spark-core_2.11-2.4.0-SNAPSHOT.jar : [org.apache.spark, org.spark_project.jetty]
+***Multiple Base packages of /home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/spark-core_2.11-2.4.0-SNAPSHOT.jar : [org.apache.spark, org.spark_project.jetty]
+***Multiple Base packages of /home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/spark-core_2.11-2.4.0-SNAPSHOT.jar : [org.apache.spark, org.spark_project.jetty]
+***Multiple Base packages of /home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/spark-core_2.11-2.4.0-SNAPSHOT.jar : [org.apache.spark, org.spark_project.jetty]
+***Multiple Base packages of /home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/spark-core_2.11-2.4.0-SNAPSHOT.jar : [org.apache.spark, org.spark_project.jetty]
+***Multiple Base packages of /home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/spark-core_2.11-2.4.0-SNAPSHOT.jar : [org.apache.spark, org.spark_project.jetty]
+***Multiple Base packages of /home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/spark-core_2.11-2.4.0-SNAPSHOT.jar : [org.apache.spark, org.spark_project.jetty]
+***Multiple Base packages of /home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/spark-core_2.11-2.4.0-SNAPSHOT.jar : [org.apache.spark, org.spark_project.jetty]
+***Multiple Base packages of /home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/spark-core_2.11-2.4.0-SNAPSHOT.jar : [org.apache.spark, org.spark_project.jetty]
+***Multiple Base packages of /home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/spark-core_2.11-2.4.0-SNAPSHOT.jar : [org.apache.spark, org.spark_project.jetty]
+***Multiple Base packages of /home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/spark-core_2.11-2.4.0-SNAPSHOT.jar : [org.apache.spark, org.spark_project.jetty]
+***Multiple Base packages of /home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/spark-core_2.11-2.4.0-SNAPSHOT.jar : [org.apache.spark, org.spark_project.jetty]
+***Multiple Base packages of /home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/spark-core_2.11-2.4.0-SNAPSHOT.jar : [org.apache.spark, org.spark_project.jetty]
+***Multiple Base packages of /home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/spark-core_2.11-2.4.0-SNAPSHOT.jar : [org.apache.spark, org.spark_project.jetty]
+***Multiple Base packages of /home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/spark-core_2.11-2.4.0-SNAPSHOT.jar : [org.apache.spark, org.spark_project.jetty]
+=============================================
+***Violated Rule 13: Untrused PRNG (java.util.Random) Found in <org.apache.spark.util.Utils$: java.util.Random randomizeInPlace$default$2()>
+=============================================
+=============================================
+***Violated Rule 13: Untrused PRNG (java.util.Random) Found in <org.apache.spark.util.random.XORShiftRandom$: scala.collection.immutable.Map benchmark(int)>
+=============================================
+=============================================
+***Violated Rule 13: Untrused PRNG (java.util.Random) Found in <org.spark_project.jetty.plus.webapp.PlusConfiguration: void lockCompEnv(org.spark_project.jetty.webapp.WebAppContext)>
+=============================================
+=============================================
+***Violated Rule 13: Untrused PRNG (java.util.Random) Found in <org.spark_project.jetty.client.util.DigestAuthentication$DigestResult: java.lang.String newClientNonce()>
+=============================================
+=============================================
+***Violated Rule 13: Untrused PRNG (java.util.Random) Found in <org.apache.spark.rdd.RDD$$anonfun$coalesce$1$$anonfun$8: scala.collection.Iterator apply(int,scala.collection.Iterator)>
+=============================================
+=============================================
+***Violated Rule 13: Untrused PRNG (java.util.Random) Found in <org.apache.spark.util.Utils$: void <init>()>
+=============================================
+=============================================
+***Violated Rule 13: Untrused PRNG (java.util.Random) Found in <org.apache.spark.util.random.XORShiftRandom: void <init>(long)>
+=============================================
+=============================================
+***Violated Rule 13: Untrused PRNG (java.util.Random) Found in <org.apache.spark.rdd.PartitionwiseSampledRDD: org.apache.spark.Partition[] getPartitions()>
+=============================================
+=============================================
+***Violated Rule 13: Untrused PRNG (java.util.Random) Found in <org.spark_project.jetty.server.session.AbstractSessionIdManager: void initRandom()>
+=============================================
+=============================================
+***Violated Rule 13: Untrused PRNG (java.util.Random) Found in <org.apache.spark.rdd.RDD$$anonfun$takeSample$1: java.lang.Object apply()>
+=============================================
+=============================================
+***Violated Rule 13: Untrused PRNG (java.util.Random) Found in <org.apache.spark.util.SizeEstimator$: void visitArray(java.lang.Object,java.lang.Class,org.apache.spark.util.SizeEstimator$SearchState)>
+=============================================
+=============================================
+***Violated Rule 13: Untrused PRNG (java.util.Random) Found in <org.spark_project.jetty.client.util.MultiPartContentProvider: java.lang.String makeBoundary()>
+=============================================
+=============================================
+***Violated Rule 13: Untrused PRNG (java.util.Random) Found in <org.spark_project.jetty.server.ShutdownMonitor: java.net.ServerSocket listen()>
+=============================================
+=======================================
+***Violated Rule 12: Does not manually verify the hostname
+***Cause: should have manually verify hostname in <org.spark_project.jetty.util.ssl.SslContextFactory: javax.net.ssl.SSLSocket newSslSocket()>
+=======================================
+=======================================
+***Violated Rule 4: Uses untrusted TrustManager ***Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of org.apache.spark.TestUtils$$anon$1
+=======================================
+=======================================
+***Violated Rule 4: Uses untrusted TrustManager ***Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of org.apache.spark.TestUtils$$anon$1
+=======================================
+=======================================
+***Violated Rule 4: Uses untrusted TrustManager ***Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of org.apache.spark.SecurityManager$$anon$1
+=======================================
+=======================================
+***Violated Rule 4: Uses untrusted TrustManager ***Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of org.apache.spark.SecurityManager$$anon$1
+=======================================
+=======================================
+***Violated Rule 4: Uses untrusted TrustManager ***Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of org.spark_project.jetty.util.ssl.SslContextFactory$1
+=======================================
+=======================================
+***Violated Rule 4: Uses untrusted TrustManager ***Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of org.spark_project.jetty.util.ssl.SslContextFactory$1
+=======================================
+=======================================
+***Violated Rule 6: Uses untrusted HostNameVerifier
+***Cause: Fixed [1] used in org.apache.spark.TestUtils$$anon$2
+=======================================
+=======================================
+***Violated Rule 6: Uses untrusted HostNameVerifier
+***Cause: Fixed [1] used in org.apache.spark.SecurityManager$$anon$2
+=======================================
+***Multiple Base packages of /home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/spark-core_2.11-2.4.0-SNAPSHOT.jar : [org.apache.spark, org.spark_project.jetty]
+***Multiple Base packages of /home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/spark-core_2.11-2.4.0-SNAPSHOT.jar : [org.apache.spark, org.spark_project.jetty]
+***Multiple Base packages of /home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/spark-core_2.11-2.4.0-SNAPSHOT.jar : [org.apache.spark, org.spark_project.jetty]
+=======================================
+***Violated Rule 2: Found broken hash functions ***Constants: ["MD5", "MD5", "MD5", "MD5"]
+[UnitContainer{unit=$fakeLocal_230[0] = "MD5", method='<org.spark_project.jetty.util.security.Credential$MD5: java.lang.String digest(java.lang.String)>'}, UnitContainer{unit=r20 = "MD5", method='<org.spark_project.jetty.client.util.DigestAuthentication: org.spark_project.jetty.client.api.Authentication$Result authenticate(org.spark_project.jetty.client.api.Request,org.spark_project.jetty.client.api.ContentResponse,org.spark_project.jetty.client.api.Authentication$HeaderInfo,org.spark_project.jetty.util.Attributes)>'}, UnitContainer{unit=$fakeLocal_193[0] = "MD5", method='<org.spark_project.jetty.util.security.Credential$MD5: boolean check(java.lang.Object)>'}, UnitContainer{unit=$fakeLocal_339[0] = "MD5", method='<org.spark_project.jetty.security.authentication.DigestAuthenticator$Digest: boolean check(java.lang.Object)>'}]
+=======================================
+***Multiple Base packages of /home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/spark-core_2.11-2.4.0-SNAPSHOT.jar : [org.apache.spark, org.spark_project.jetty]
+***Multiple Base packages of /home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/spark-core_2.11-2.4.0-SNAPSHOT.jar : [org.apache.spark, org.spark_project.jetty]
+***Multiple Base packages of /home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/spark-core_2.11-2.4.0-SNAPSHOT.jar : [org.apache.spark, org.spark_project.jetty]
+***Multiple Base packages of /home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/spark-core_2.11-2.4.0-SNAPSHOT.jar : [org.apache.spark, org.spark_project.jetty]
+***Multiple Base packages of /home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/spark-core_2.11-2.4.0-SNAPSHOT.jar : [org.apache.spark, org.spark_project.jetty]
+***Multiple Base packages of /home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/spark-core_2.11-2.4.0-SNAPSHOT.jar : [org.apache.spark, org.spark_project.jetty]
+***Multiple Base packages of /home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/spark-core_2.11-2.4.0-SNAPSHOT.jar : [org.apache.spark, org.spark_project.jetty]
+***Multiple Base packages of /home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/spark-core_2.11-2.4.0-SNAPSHOT.jar : [org.apache.spark, org.spark_project.jetty]
+***Multiple Base packages of /home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/spark-core_2.11-2.4.0-SNAPSHOT.jar : [org.apache.spark, org.spark_project.jetty]
+***Multiple Base packages of /home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/spark-core_2.11-2.4.0-SNAPSHOT.jar : [org.apache.spark, org.spark_project.jetty]
+***Multiple Base packages of /home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/spark-core_2.11-2.4.0-SNAPSHOT.jar : [org.apache.spark, org.spark_project.jetty]
+***Multiple Base packages of /home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/spark-core_2.11-2.4.0-SNAPSHOT.jar : [org.apache.spark, org.spark_project.jetty]
+***Multiple Base packages of /home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/spark-core_2.11-2.4.0-SNAPSHOT.jar : [org.apache.spark, org.spark_project.jetty]
+***Multiple Base packages of /home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/spark-core_2.11-2.4.0-SNAPSHOT.jar : [org.apache.spark, org.spark_project.jetty]
+***Multiple Base packages of /home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/spark-core_2.11-2.4.0-SNAPSHOT.jar : [org.apache.spark, org.spark_project.jetty]
+***Multiple Base packages of /home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/spark-core_2.11-2.4.0-SNAPSHOT.jar : [org.apache.spark, org.spark_project.jetty]
+***Multiple Base packages of /home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/spark-core_2.11-2.4.0-SNAPSHOT.jar : [org.apache.spark, org.spark_project.jetty]
+***Multiple Base packages of /home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/spark-core_2.11-2.4.0-SNAPSHOT.jar : [org.apache.spark, org.spark_project.jetty]
+***Multiple Base packages of /home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/spark-core_2.11-2.4.0-SNAPSHOT.jar : [org.apache.spark, org.spark_project.jetty]
+***Multiple Base packages of /home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/spark-core_2.11-2.4.0-SNAPSHOT.jar : [org.apache.spark, org.spark_project.jetty]
+***Multiple Base packages of /home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/spark-core_2.11-2.4.0-SNAPSHOT.jar : [org.apache.spark, org.spark_project.jetty]
+***Multiple Base packages of /home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/spark-core_2.11-2.4.0-SNAPSHOT.jar : [org.apache.spark, org.spark_project.jetty]
+***Multiple Base packages of /home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/spark-core_2.11-2.4.0-SNAPSHOT.jar : [org.apache.spark, org.spark_project.jetty]
+***Multiple Base packages of /home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/spark-core_2.11-2.4.0-SNAPSHOT.jar : [org.apache.spark, org.spark_project.jetty]
+***Multiple Base packages of /home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/spark-core_2.11-2.4.0-SNAPSHOT.jar : [org.apache.spark, org.spark_project.jetty]
+***Multiple Base packages of /home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/spark-core_2.11-2.4.0-SNAPSHOT.jar : [org.apache.spark, org.spark_project.jetty]
+***Multiple Base packages of /home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/spark-core_2.11-2.4.0-SNAPSHOT.jar : [org.apache.spark, org.spark_project.jetty]
+=======================================
+***Violated Rule 7: Used HTTP Protocol ***Constants: ["http://localhost:", "http://localhost"]
+[UnitContainer{unit=$r5 = virtualinvoke $r4.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("http://localhost:"), method='<org.spark_project.jetty.server.handler.ShutdownHandler: java.lang.String getServerUrl()>'}, UnitContainer{unit=return "http://localhost", method='<org.spark_project.jetty.server.handler.ShutdownHandler: java.lang.String getServerUrl()>'}]
+=======================================

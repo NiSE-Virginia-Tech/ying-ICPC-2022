@@ -1,0 +1,7 @@
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'de.undercouch:gradle-download-task:4.0.0'
+}

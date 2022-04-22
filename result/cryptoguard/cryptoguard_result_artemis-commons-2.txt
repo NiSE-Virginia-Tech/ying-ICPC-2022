@@ -1,0 +1,15 @@
+Analyzing JAR: /home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/artemis-commons-2.5.0-SNAPSHOT.jar
+=======================================
+***Violated Rule 1: Found broken crypto schemes ***Constants: ["Blowfish", "Blowfish"]
+[UnitContainer{unit=$fakeLocal_166[0] = "Blowfish", method='<org.apache.activemq.artemis.utils.DefaultSensitiveStringCodec$BlowfishAlgorithm: java.lang.String decode(java.lang.String)>'}, UnitContainer{unit=$fakeLocal_177[0] = "Blowfish", method='<org.apache.activemq.artemis.utils.DefaultSensitiveStringCodec$BlowfishAlgorithm: java.lang.String encode(java.lang.String)>'}]
+=======================================
+=============================================
+***Violated Rule 13: Untrused PRNG (java.util.Random) Found in <org.apache.activemq.artemis.utils.RandomUtil: void <clinit>()>
+=============================================
+=======================================
+***Violated Rule 3: Used constant keys in code ***Constants: ["clusterpassword"]
+[UnitContainer{unit=$r4 = "clusterpassword", method='<org.apache.activemq.artemis.utils.DefaultSensitiveStringCodec$BlowfishAlgorithm: void <init>(org.apache.activemq.artemis.utils.DefaultSensitiveStringCodec,java.util.Map)>'}]
+=======================================
+=======================================
+***Violated Rule 8a: Used < 1000 iteration for PBE ***Constants: [1024, r0.<org.apache.activemq.artemis.utils.DefaultSensitiveStringCodec$PBKDF2Algorithm: int iterations>, $i2, i0, $i0, staticinvoke <java.lang.Integer: int parseInt(java.lang.String,int)>(r0, 10)]
+=======================================

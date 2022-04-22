@@ -1,0 +1,333 @@
+
+Current Proejct: /home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/artemis-commons-2.5.0-SNAPSHOT.jar
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$2 (file:/home/ying/CryptoAPIDetect/CogniCrypt/CryptoAnalysis-2.7.1-SNAPSHOT-jar-with-dependencies.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
+WARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$2
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[main] INFO crypto.HeadlessCryptoScanner - Using call graph algorithm CHA
+[main] INFO crypto.HeadlessCryptoScanner - Analysis soot setup done in 748.3 ms 
+[main] INFO crypto.analysis.CryptoScanner - Searching fo Seeds for analysis!
+[main] INFO crypto.analysis.CryptoScanner - Discovered 8 analysis seeds within 0 seconds!
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 1 of 10
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.1
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 2 of 11
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.18
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 3 of 12
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.25
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 4 of 13
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.31
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 5 of 15
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.33
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 6 of 16
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.38
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 7 of 18
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.39
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 8 of 19
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.42
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 9 of 19
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.47
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 10 of 19
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.53
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 11 of 19
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.58
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 12 of 19
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.63
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 13 of 19
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.68
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 14 of 19
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.74
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 15 of 19
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.79
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 16 of 19
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.84
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 17 of 19
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.89
+
+[main] INFO crypto.analysis.CryptoScanner - Analyzed Objects: 18 of 19
+[main] INFO crypto.analysis.CryptoScanner - Percentage Completed: 0.95
+
+Ruleset: 
+	java.security.AlgorithmParameters
+	javax.net.ssl.SSLParameters
+	java.security.DigestOutputStream
+	java.security.spec.RSAKeyGenParameterSpec
+	javax.net.ssl.CertPathTrustManagerParameters
+	javax.net.ssl.SSLEngine
+	java.security.cert.PKIXParameters
+	javax.net.ssl.TrustManagerFactory
+	javax.net.ssl.KeyStoreBuilderParameters
+	javax.crypto.spec.DHGenParameterSpec
+	javax.crypto.spec.PBEParameterSpec
+	javax.crypto.SecretKeyFactory
+	javax.crypto.CipherOutputStream
+	java.security.cert.PKIXBuilderParameters
+	javax.crypto.spec.GCMParameterSpec
+	java.security.KeyStore
+	javax.net.ssl.KeyManagerFactory
+	javax.net.ssl.SSLContext
+	java.security.spec.DSAGenParameterSpec
+	javax.crypto.KeyGenerator
+	javax.crypto.spec.IvParameterSpec
+	java.security.spec.DSAParameterSpec
+	javax.crypto.Cipher
+	java.security.cert.TrustAnchor
+	java.security.SecureRandom
+	javax.crypto.CipherInputStream
+	java.security.Key
+	javax.crypto.spec.PBEKeySpec
+	javax.crypto.Mac
+	void
+	javax.crypto.SecretKey
+	java.security.Signature
+	javax.xml.crypto.dsig.spec.HMACParameterSpec
+	java.security.KeyPairGenerator
+	java.security.DigestInputStream
+	java.security.MessageDigest
+	java.security.KeyPair
+	javax.crypto.spec.SecretKeySpec
+	javax.crypto.spec.DHParameterSpec
+
+Analyzed Objects: 
+	Object:
+		Variable: $i2
+		Type: int
+		Statement: specialinvoke $r12.<javax.crypto.spec.PBEKeySpec: void <init>(char[],byte[],int,int)>(r1, r4, i0, $i2)
+		Method: <org.apache.activemq.artemis.utils.DefaultSensitiveStringCodec$PBKDF2Algorithm: boolean verify(char[],java.lang.String)>
+		SHA-256: 636d7c27d7c82f3a4de8710fcf27caf00de1f9551e562f915ef9cc50c0d12cc6
+		Secure: false
+	Object:
+		Variable: $i1
+		Type: int
+		Statement: specialinvoke $r14.<javax.crypto.spec.PBEKeySpec: void <init>(char[],byte[],int,int)>(r2, r3, $i2, $i1)
+		Method: <org.apache.activemq.artemis.utils.DefaultSensitiveStringCodec$PBKDF2Algorithm: java.lang.String encode(java.lang.String)>
+		SHA-256: ae00436cb64f476d4e5d2c3eac189477314d38d002830d7c33f6dc6428a70e26
+		Secure: false
+	Object:
+		Variable: $r16
+		Type: javax.crypto.SecretKey
+		Statement: $r16 = virtualinvoke $r15.<javax.crypto.SecretKeyFactory: javax.crypto.SecretKey generateSecret(java.security.spec.KeySpec)>(r5)
+		Method: <org.apache.activemq.artemis.utils.DefaultSensitiveStringCodec$PBKDF2Algorithm: java.lang.String encode(java.lang.String)>
+		SHA-256: 7a3915fa8b7d629b96ade1abf4be96891c594adb1e916d6310ff750d6e003985
+		Secure: false
+	Object:
+		Variable: $r12
+		Type: javax.crypto.spec.PBEKeySpec
+		Statement: specialinvoke $r12.<javax.crypto.spec.PBEKeySpec: void <init>(char[],byte[],int,int)>(r1, r4, i0, $i2)
+		Method: <org.apache.activemq.artemis.utils.DefaultSensitiveStringCodec$PBKDF2Algorithm: boolean verify(char[],java.lang.String)>
+		SHA-256: 844f42935ec47d5a6415b9d49a5725d10ec4bf6edd0fcd0febaee8903611a0b6
+		Secure: false
+	Object:
+		Variable: r2
+		Type: byte[]
+		Statement: virtualinvoke r1.<java.util.Random: void nextBytes(byte[])>(r2)
+		Method: <org.apache.activemq.artemis.utils.UUIDGenerator: byte[] generateDummyAddress()>
+		SHA-256: fdff877c898b4adeb37f92308a6670c4fa063336110002f6fbee67467b1706c2
+		Secure: true
+	Object:
+		Variable: $r8
+		Type: byte[]
+		Statement: r4 = virtualinvoke r3.<javax.crypto.Cipher: byte[] doFinal(byte[])>($r8)
+		Method: <org.apache.activemq.artemis.utils.DefaultSensitiveStringCodec$BlowfishAlgorithm: java.lang.String encode(java.lang.String)>
+		SHA-256: 5e580e2079473a7b003c28e625846fb4551a551883030e94f4b95cce0b56b0ec
+		Secure: false
+	Object:
+		Variable: r16
+		Type: byte[]
+		Statement: r16 = virtualinvoke r15.<javax.crypto.Cipher: byte[] doFinal(byte[])>(r13)
+		Method: <org.apache.activemq.artemis.utils.DefaultSensitiveStringCodec$BlowfishAlgorithm: java.lang.String decode(java.lang.String)>
+		SHA-256: 7f8e74800f138a477a5f97ea94766fd193445fb206965c551380b80300eacfc7
+		Secure: false
+	Object:
+		Variable: varReplacer404
+		Type: java.lang.String
+		Statement: specialinvoke $r4.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r5, varReplacer404)
+		Method: <org.apache.activemq.artemis.utils.DefaultSensitiveStringCodec$BlowfishAlgorithm: java.lang.String decode(java.lang.String)>
+		SHA-256: 281599ea70af3812983f6fe3712bae5b1cacdb651a588c006311f93d99403199
+		Secure: false
+	Object:
+		Variable: $r14
+		Type: javax.crypto.spec.PBEKeySpec
+		Statement: specialinvoke $r14.<javax.crypto.spec.PBEKeySpec: void <init>(char[],byte[],int,int)>(r2, r3, $i2, $i1)
+		Method: <org.apache.activemq.artemis.utils.DefaultSensitiveStringCodec$PBKDF2Algorithm: java.lang.String encode(java.lang.String)>
+		SHA-256: 3d25aaecd1811105d67f3c29c1dbc9127f6629052c2bc201d6aba3c2c42ef261
+		Secure: false
+	Object:
+		Variable: $r4
+		Type: javax.crypto.SecretKeyFactory
+		Statement: $r4 = staticinvoke <javax.crypto.SecretKeyFactory: javax.crypto.SecretKeyFactory getInstance(java.lang.String)>($r3)
+		Method: <org.apache.activemq.artemis.utils.DefaultSensitiveStringCodec$PBKDF2Algorithm: void <init>(org.apache.activemq.artemis.utils.DefaultSensitiveStringCodec,java.util.Map)>
+		SHA-256: a05e6632752ee56312cabe6c156999bd1e68389362c19b9aed78d4f577ade1f8
+		Secure: false
+	Object:
+		Variable: $r4
+		Type: javax.crypto.spec.SecretKeySpec
+		Statement: specialinvoke $r4.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r5, varReplacer404)
+		Method: <org.apache.activemq.artemis.utils.DefaultSensitiveStringCodec$BlowfishAlgorithm: java.lang.String decode(java.lang.String)>
+		SHA-256: ae0f1aba8585632d82c4cb9872d0b9d5d5fc6345a02665e9cee4653895527dce
+		Secure: false
+	Object:
+		Variable: $r2
+		Type: byte[]
+		Statement: virtualinvoke r1.<java.util.Random: void nextBytes(byte[])>($r2)
+		Method: <org.apache.activemq.artemis.utils.UUIDTimer: void initCounters(java.util.Random)>
+		SHA-256: 356c010e8921192cf182001ec2f8c9d15859a5870b442e9620ac5033da738a5
+		Secure: true
+	Object:
+		Variable: $r3
+		Type: java.security.SecureRandom
+		Statement: specialinvoke $r3.<java.security.SecureRandom: void <init>()>()
+		Method: <org.apache.activemq.artemis.utils.UUIDGenerator: java.util.Random getRandomNumberGenerator()>
+		SHA-256: 2631ff7b237de37c327b0a40386d9c385843e1602ac8c6b1ed33f6f9ef2c116b
+		Secure: true
+	Object:
+		Variable: r13
+		Type: byte[]
+		Statement: r16 = virtualinvoke r15.<javax.crypto.Cipher: byte[] doFinal(byte[])>(r13)
+		Method: <org.apache.activemq.artemis.utils.DefaultSensitiveStringCodec$BlowfishAlgorithm: java.lang.String decode(java.lang.String)>
+		SHA-256: 1af4bbc2808ea6c76eaad5f41cdc9fae52ad3e7492a2c8723630ae4f2a3b4525
+		Secure: false
+	Object:
+		Variable: r4
+		Type: byte[]
+		Statement: r4 = virtualinvoke r3.<javax.crypto.Cipher: byte[] doFinal(byte[])>($r8)
+		Method: <org.apache.activemq.artemis.utils.DefaultSensitiveStringCodec$BlowfishAlgorithm: java.lang.String encode(java.lang.String)>
+		SHA-256: 56c8570b9f93445d93200127591ef2e1741251f4545972adea2f053dca7251a5
+		Secure: false
+	Object:
+		Variable: $r6
+		Type: javax.crypto.spec.SecretKeySpec
+		Statement: specialinvoke $r6.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r7, varReplacer410)
+		Method: <org.apache.activemq.artemis.utils.DefaultSensitiveStringCodec$BlowfishAlgorithm: java.lang.String encode(java.lang.String)>
+		SHA-256: 83d0682fa7b91256198b370402c6caca56f4605ea56ba3388bd5e8648d7790de
+		Secure: false
+	Object:
+		Variable: varReplacer410
+		Type: java.lang.String
+		Statement: specialinvoke $r6.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r7, varReplacer410)
+		Method: <org.apache.activemq.artemis.utils.DefaultSensitiveStringCodec$BlowfishAlgorithm: java.lang.String encode(java.lang.String)>
+		SHA-256: 122bec38b4423e755c2fef3ff4318451ccff8e74f5ba727878bb4ae27207b905
+		Secure: false
+	Object:
+		Variable: r15
+		Type: javax.crypto.Cipher
+		Statement: r15 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer403)
+		Method: <org.apache.activemq.artemis.utils.DefaultSensitiveStringCodec$BlowfishAlgorithm: java.lang.String decode(java.lang.String)>
+		SHA-256: 741af0aa32696dc542a7a254573b79a6a35194f0643297e36e4c290c01be7254
+		Secure: false
+	Object:
+		Variable: r3
+		Type: javax.crypto.Cipher
+		Statement: r3 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer409)
+		Method: <org.apache.activemq.artemis.utils.DefaultSensitiveStringCodec$BlowfishAlgorithm: java.lang.String encode(java.lang.String)>
+		SHA-256: 7161399951829c65284d584f4112aee8dc421f750e9d2ae436c8e3fc555a9454
+		Secure: false
+
+Findings in Java Class: org.apache.activemq.artemis.utils.DefaultSensitiveStringCodec
+
+	 in Method: void main(java.lang.String[])
+		IncompleteOperationError violating CrySL rule for javax.crypto.SecretKeyFactory (on Object #a05e6632752ee56312cabe6c156999bd1e68389362c19b9aed78d4f577ade1f8)
+			Operation on object of type javax.crypto.SecretKeyFactory object not completed. Expected call to translateKey, generateSecret
+			at statement: r25 = virtualinvoke r1.<org.apache.activemq.artemis.utils.DefaultSensitiveStringCodec: java.lang.String encode(java.lang.Object)>($r11)
+
+
+Findings in Java Class: org.apache.activemq.artemis.utils.DefaultSensitiveStringCodec$PBKDF2Algorithm
+
+	 in Method: java.lang.String encode(java.lang.String)
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.PBEKeySpec
+			Second parameter was not properly generated as randomized
+			at statement: specialinvoke $r14.<javax.crypto.spec.PBEKeySpec: void <init>(char[],byte[],int,int)>(r2, r3, $i2, $i1)
+
+		NeverTypeOfError violating CrySL rule for javax.crypto.spec.PBEKeySpec (on Object #3d25aaecd1811105d67f3c29c1dbc9127f6629052c2bc201d6aba3c2c42ef261)
+			First parameter should never be of type java.lang.String.
+			at statement: specialinvoke $r14.<javax.crypto.spec.PBEKeySpec: void <init>(char[],byte[],int,int)>(r2, r3, $i2, $i1)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.SecretKeyFactory
+			First parameter was not properly generated as specced Key
+			at statement: $r16 = virtualinvoke $r15.<javax.crypto.SecretKeyFactory: javax.crypto.SecretKey generateSecret(java.security.spec.KeySpec)>(r5)
+
+		IncompleteOperationError violating CrySL rule for javax.crypto.spec.PBEKeySpec (on Object #3d25aaecd1811105d67f3c29c1dbc9127f6629052c2bc201d6aba3c2c42ef261)
+			Operation on object of type javax.crypto.spec.PBEKeySpec object not completed. Expected call to clearPassword
+			at statement: $r16 = virtualinvoke $r15.<javax.crypto.SecretKeyFactory: javax.crypto.SecretKey generateSecret(java.security.spec.KeySpec)>(r5)
+
+
+	 in Method: boolean verify(char[],java.lang.String)
+		ConstraintError violating CrySL rule for javax.crypto.spec.PBEKeySpec (on Object #844f42935ec47d5a6415b9d49a5725d10ec4bf6edd0fcd0febaee8903611a0b6)
+			Third parameter (with value 0)Variable iterationCountmust be  at least 10000
+			at statement: specialinvoke $r12.<javax.crypto.spec.PBEKeySpec: void <init>(char[],byte[],int,int)>(r1, r4, i0, $i2)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.PBEKeySpec
+			Second parameter was not properly generated as randomized
+			at statement: specialinvoke $r12.<javax.crypto.spec.PBEKeySpec: void <init>(char[],byte[],int,int)>(r1, r4, i0, $i2)
+
+		IncompleteOperationError violating CrySL rule for javax.crypto.spec.PBEKeySpec (on Object #844f42935ec47d5a6415b9d49a5725d10ec4bf6edd0fcd0febaee8903611a0b6)
+			Operation on object of type javax.crypto.spec.PBEKeySpec object not completed. Expected call to clearPassword
+			at statement: $r14 = virtualinvoke $r13.<javax.crypto.SecretKeyFactory: javax.crypto.SecretKey generateSecret(java.security.spec.KeySpec)>(r6)
+
+
+Findings in Java Class: org.apache.activemq.artemis.utils.DefaultSensitiveStringCodec$BlowfishAlgorithm
+
+	 in Method: java.lang.String decode(java.lang.String)
+		ConstraintError violating CrySL rule for javax.crypto.spec.SecretKeySpec (on Object #ae0f1aba8585632d82c4cb9872d0b9d5d5fc6345a02665e9cee4653895527dce)
+			Second parameter (with value "Blowfish") should be any of {AES, HmacSHA224, HmacSHA256, HmacSHA384, HmacSHA512}
+			at statement: specialinvoke $r4.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r5, varReplacer404)
+
+		ConstraintError violating CrySL rule for javax.crypto.Cipher (on Object #741af0aa32696dc542a7a254573b79a6a35194f0643297e36e4c290c01be7254)
+			First parameter (with value "Blowfish") should be any of {AES, PBEWithHmacSHA224AndAES_128, PBEWithHmacSHA256AndAES_128, PBEWithHmacSHA384AndAES_128, PBEWithHmacSHA512AndAES_128, PBEWithHmacSHA224AndAES_256, PBEWithHmacSHA256AndAES_256, PBEWithHmacSHA384AndAES_256, PBEWithHmacSHA512AndAES_256}
+			at statement: r15 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer403)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Second parameter was not properly generated as generated Key
+			at statement: virtualinvoke r15.<javax.crypto.Cipher: void init(int,java.security.Key)>(varReplacer401, r2)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec
+			First parameter was not properly generated as prepared Key Material
+			at statement: specialinvoke $r4.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r5, varReplacer404)
+
+
+	 in Method: java.lang.String encode(java.lang.String)
+		RequiredPredicateError violating CrySL rule for javax.crypto.spec.SecretKeySpec
+			First parameter was not properly generated as prepared Key Material
+			at statement: specialinvoke $r6.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r7, varReplacer410)
+
+		ConstraintError violating CrySL rule for javax.crypto.Cipher (on Object #7161399951829c65284d584f4112aee8dc421f750e9d2ae436c8e3fc555a9454)
+			First parameter (with value "Blowfish") should be any of {AES, PBEWithHmacSHA224AndAES_128, PBEWithHmacSHA256AndAES_128, PBEWithHmacSHA384AndAES_128, PBEWithHmacSHA512AndAES_128, PBEWithHmacSHA224AndAES_256, PBEWithHmacSHA256AndAES_256, PBEWithHmacSHA384AndAES_256, PBEWithHmacSHA512AndAES_256}
+			at statement: r3 = staticinvoke <javax.crypto.Cipher: javax.crypto.Cipher getInstance(java.lang.String)>(varReplacer409)
+
+		RequiredPredicateError violating CrySL rule for javax.crypto.Cipher
+			Second parameter was not properly generated as generated Key
+			at statement: virtualinvoke r3.<javax.crypto.Cipher: void init(int,java.security.Key)>(varReplacer408, r2)
+
+		ConstraintError violating CrySL rule for javax.crypto.spec.SecretKeySpec (on Object #83d0682fa7b91256198b370402c6caca56f4605ea56ba3388bd5e8648d7790de)
+			Second parameter (with value "Blowfish") should be any of {AES, HmacSHA224, HmacSHA256, HmacSHA384, HmacSHA512}
+			at statement: specialinvoke $r6.<javax.crypto.spec.SecretKeySpec: void <init>(byte[],java.lang.String)>($r7, varReplacer410)
+
+
+======================= CogniCrypt Summary ==========================
+	Number of CrySL rules: 39
+	Number of Objects Analyzed: 19
+
+	CogniCrypt found the following violations. For details see description above.
+	NeverTypeOfError: 1
+	RequiredPredicateError: 7
+	IncompleteOperationError: 3
+	ConstraintError: 5
+=====================================================================
+[main] INFO crypto.analysis.CryptoScanner - Static Analysis took 30 seconds!
+[main] INFO crypto.HeadlessCryptoScanner - Analysis finished in 33.33 s

@@ -1,0 +1,3 @@
+#!/bin/sh -eux
+
+./gradlew --continue --no-build-cache downloads

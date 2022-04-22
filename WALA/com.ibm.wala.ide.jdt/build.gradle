@@ -1,0 +1,34 @@
+plugins {
+	id 'com.diffplug.gradle.eclipse.mavencentral'
+}
+
+sourceSets.main.java.srcDirs = ['source']
+
+eclipseMavenCentral {
+	release eclipseVersion, {
+		api 'org.eclipse.equinox.common'
+		[
+				'org.eclipse.core.jobs',
+				'org.eclipse.core.resources',
+				'org.eclipse.core.runtime',
+				'org.eclipse.equinox.app',
+				'org.eclipse.jdt.core',
+				'org.eclipse.jface',
+				'org.eclipse.osgi',
+				'org.eclipse.ui.workbench',
+		].each it.&implementation
+		useNativesForRunningPlatform()
+	}
+}
+
+dependencies {
+	implementation(
+			'org.osgi:org.osgi.core:4.2.0',
+			project(':com.ibm.wala.cast'),
+			project(':com.ibm.wala.cast.java'),
+			project(':com.ibm.wala.cast.java.ecj'),
+			project(':com.ibm.wala.core'),
+			project(':com.ibm.wala.ide'),
+			project(':com.ibm.wala.util'),
+	)
+}

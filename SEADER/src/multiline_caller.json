@@ -1,0 +1,83 @@
+[
+  {
+    "callee": "load",
+    "MethodType": "KeyStore",
+    "Type": "parameter",
+    "Check": 1,
+    "args": 2,
+    "Incorrect": null,
+    "Correct": ["\tKeyStore $v_2$ = KeyStore.getInstance(KeyStore.getDefaultType());\n",
+      "\tchar[] $v_1$ = getPassword(); // pwd should not be a hardcoded constant value, it should be load from a provided file(local path)\n",
+      "\t$v_2$.load($v_0$, $v_1$);\n"]
+  },
+  {
+    "callee": "<init>",
+    "MethodType": "SecretKeySpec",
+    "Type": "parameter",
+    "Check": 0,
+    "args": 2,
+    "Incorrect": null,
+    "Correct": [
+      "\t byte[] $v_4$  = $m_0$(); //store the key as a field for reuse purpose  \n",
+      "\t public byte[] $m_0$() { //create a key based on an unpredictable random value\n",
+      " \t try { \n",
+      "\t\tKeyGenerator $v_0$ = KeyGenerator.getInstance(\"AES\");\n",
+      "\t\t$v_0$.init(256);\n",
+      "\t\tSecretKey $v_1$ = $v_0$.generateKey();\n",
+      "\t\tbyte[] $v_2$= $v_1$.getEncoded();\n",
+      "\t\treturn $v_2$;\n",
+      "\t\t} catch (Exception e) { \n",
+      "\t\t  e.printStackTrace(); \n",
+      "\t\t   return null; \n",
+      "\t\t} \n",
+      "\t} \n",
+      "\tSecretKey $v_3$ = new SecretKeySpec($v_4$, \"AES\");\n"]
+  },
+  {
+    "callee": "setSeed",
+    "MethodType": "SecureRandom",
+    "Type": "parameter",
+    "Check": 0,
+    "args": 1,
+    "Incorrect": null,
+    "Correct": ["\tSecureRandom $v_1$ = new SecureRandom();\n",
+      "\tbyte[] $v_0$ = $v_1$.getSeed(20);\n",
+      "\t$v_1$.setSeed($v_0);\n"]
+  },
+  {
+    "callee": "<init>",
+    "MethodType": "IvParameterSpec",
+    "Type": "parameter",
+    "Check": 0,
+    "args": 1,
+    "Incorrect": null,
+    "Correct": ["\tSecureRandom $v_2$ = new SecureRandom();\n",
+      "\tbyte [] $v_1$ = new byte[16];\n",
+      "\t$v_2$.nextBytes($v_1$);\n",
+      "\tAlgorithmParameterSpec $v_0$ = new IvParameterSpec($v_1$);\n"]
+  },
+  {
+    "callee": "<init>",
+    "MethodType": "PBEParameterSpec",
+    "Type": "parameter",
+    "Check": 0,
+    "args": 2,
+    "Incorrect": null,
+    "Correct": ["\tSecureRandom $v_3$ = new SecureRandom();\n",
+      "\tbyte[] $v_1$ = new byte[32];\n",
+      "\t$v_3.nextBytes($v_1$);\n",
+      "\tPBEParameterSpec $v_0$ = new PBEParameterSpec($v_1$, $v_2$);\n"]
+  },
+  {
+    "callee": "<init>",
+    "MethodType": "PBEKeySpec",
+    "Type": "parameter",
+    "Check": 1,
+    "args": 3,
+    "Incorrect": null,
+    "Correct": ["\tSecureRandom $v_2$ = new SecureRandom();\n",
+      "\tbyte[] $v_1$ = new byte[32];\n",
+      "\t$v_2$.nextBytes($v_1);\n",
+      "\tPBEKeySpec $v_0$ = new PBEKeySpec($v_3$, $v_1$, $v_4$);\t\n"]
+  }
+]

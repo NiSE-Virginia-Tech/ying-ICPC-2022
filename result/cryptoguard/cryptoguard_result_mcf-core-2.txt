@@ -1,0 +1,18 @@
+Analyzing JAR: /home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/mcf-core-2.9-SNAPSHOT.jar
+=============================================
+***Violated Rule 13: Untrused PRNG (java.util.Random) Found in <org.apache.manifoldcf.core.connectorpool.ConnectorPool: void <clinit>()>
+=============================================
+=============================================
+***Violated Rule 13: Untrused PRNG (java.util.Random) Found in <org.apache.manifoldcf.core.database.Database: void <clinit>()>
+=============================================
+=======================================
+***Violated Rule 2: Found broken hash functions ***Constants: ["SHA"]
+[UnitContainer{unit=$fakeLocal_658[0] = "SHA", method='<org.apache.manifoldcf.core.system.ManifoldCF: java.security.MessageDigest startHash()>'}]
+=======================================
+=======================================
+***Violated Rule 3: Used constant keys in code ***Constants: ["NowIsTheTime"]
+[UnitContainer{unit=$fakeLocal_<org.apache.manifoldcf.core.system.ManifoldCF: java.lang.String OBFUSCATION_PASSCODE> = "NowIsTheTime", method='<org.apache.manifoldcf.core.system.ManifoldCF: void <clinit>()>'}]
+=======================================
+=======================================
+***Violated Rule 8a: Used < 1000 iteration for PBE ***Constants: [1024]
+=======================================

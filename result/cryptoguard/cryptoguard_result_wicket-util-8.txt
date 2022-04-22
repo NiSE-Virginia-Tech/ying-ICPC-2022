@@ -1,0 +1,19 @@
+Analyzing JAR: /home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/wicket-util-8.0.0-SNAPSHOT.jar
+=======================================
+***Violated Rule 1: Found broken crypto schemes ***Constants: ["PBEWithMD5AndDES"]
+[UnitContainer{unit=$fakeLocal_66[0] = "PBEWithMD5AndDES", method='<org.apache.wicket.util.crypt.SunJceCrypt: void <init>()>'}]
+=======================================
+=============================================
+***Violated Rule 13: Untrused PRNG (java.util.Random) Found in <org.apache.wicket.util.diff.Diff: java.lang.Object[] randomEdit(java.lang.Object[],long)>
+=============================================
+=============================================
+***Violated Rule 13: Untrused PRNG (java.util.Random) Found in <org.apache.wicket.util.diff.Diff: java.lang.Object[] randomSequence(int,long)>
+=============================================
+=======================================
+***Violated Rule 9: Found constant salts in code ***Constants: [102, 42, 21, 81, 74, -93, -68, -116]
+[UnitContainer{unit=$r0[4] = 102, method='<org.apache.wicket.util.crypt.SunJceCrypt: void <clinit>()>'}, UnitContainer{unit=$r0[6] = 42, method='<org.apache.wicket.util.crypt.SunJceCrypt: void <clinit>()>'}, UnitContainer{unit=$r0[0] = 21, method='<org.apache.wicket.util.crypt.SunJceCrypt: void <clinit>()>'}, UnitContainer{unit=$r0[5] = 81, method='<org.apache.wicket.util.crypt.SunJceCrypt: void <clinit>()>'}, UnitContainer{unit=$r0[3] = 74, method='<org.apache.wicket.util.crypt.SunJceCrypt: void <clinit>()>'}, UnitContainer{unit=$r0[2] = -93, method='<org.apache.wicket.util.crypt.SunJceCrypt: void <clinit>()>'}, UnitContainer{unit=$r0[7] = -68, method='<org.apache.wicket.util.crypt.SunJceCrypt: void <clinit>()>'}, UnitContainer{unit=$r0[1] = -116, method='<org.apache.wicket.util.crypt.SunJceCrypt: void <clinit>()>'}]
+=======================================
+=======================================
+***Violated Rule 8: Used < 1000 iteration for PBE ***Constants: [17]
+[UnitContainer{unit=$fakeLocal_56[1] = 17, method='<org.apache.wicket.util.crypt.SunJceCrypt: void <clinit>()>'}]
+=======================================

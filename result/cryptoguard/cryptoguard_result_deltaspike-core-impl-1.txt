@@ -1,0 +1,5 @@
+Analyzing JAR: /home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/deltaspike-core-impl-1.8.1-SNAPSHOT.jar
+=======================================
+***Violated Rule 1: Found broken crypto schemes ***Constants: ["AES", "AES"]
+[UnitContainer{unit=$fakeLocal_173[0] = "AES", method='<org.apache.deltaspike.core.impl.crypto.DefaultCipherService: java.lang.String aesDecrypt(byte[],java.lang.String)>'}, UnitContainer{unit=$fakeLocal_154[0] = "AES", method='<org.apache.deltaspike.core.impl.crypto.DefaultCipherService: byte[] aesEncrypt(java.lang.String,java.lang.String)>'}]
+=======================================
