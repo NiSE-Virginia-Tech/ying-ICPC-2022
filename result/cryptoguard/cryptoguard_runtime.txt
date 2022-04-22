@@ -18,3 +18,5 @@
 /xxx/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/meecrowave-core-1.2.0-SNAPSHOT.jar 3.0248208045959473s
 /xxx/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/taverna-perspective-myexperiment-3.1.0-incubating-SNAPSHOT.jar 8.031390190124512s
 /xxx/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/mcf-core-2.9-SNAPSHOT.jar 4.778232097625732s
+/xxx/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/spark-core_2.11-2.4.0-SNAPSHOT.jar 67.75048494338989s
+

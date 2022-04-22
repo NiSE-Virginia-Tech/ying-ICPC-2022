@@ -1,0 +1,311 @@
+{
+  "projectName": "CryptoGuard",
+  "ProjectVersion": "04.05.03_2020-11-25-02-42",
+  "Target": {
+    "RawCommand": "-in jar -o /home/ying/PycharmProjects/CryptoDataset/cryptoguard/results/cryptoguard_20220421/spark-core_2.json -s /home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/spark-core_2.11-2.4.0-SNAPSHOT.jar",
+    "FullPath": "spark-core_2.11-2.4.0-SNAPSHOT.jar/",
+    "Type": "JAR",
+    "TargetSources": [
+      "/home/ying/CryptoAPIDetect/dataset/ApacheCryptoAPI-Bench/apache_codes/jarfile/spark-core_2.11-2.4.0-SNAPSHOT.jar"
+    ],
+    "_PropertiesFilePath": "gradle.properties",
+    "_ComputerOS": "Linux_5.4.0-107-generic",
+    "_JVMVersion": "1.8.0_312-8u312-b07-0ubuntu1~20.04-b07",
+    "_ProjectName": "spark-core_2"
+  },
+  "Issues": [
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "spark-core_2.11-2.4.0-SNAPSHOT.jar/org/apache/spark/util/Utils$.class",
+      "_Id": "0"
+    },
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "spark-core_2.11-2.4.0-SNAPSHOT.jar/org/apache/spark/util/random/XORShiftRandom$.class",
+      "_Id": "1"
+    },
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "spark-core_2.11-2.4.0-SNAPSHOT.jar/org/spark_project/jetty/plus/webapp/PlusConfiguration.class",
+      "_Id": "2"
+    },
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "spark-core_2.11-2.4.0-SNAPSHOT.jar/org/spark_project/jetty/client/util/DigestAuthentication$DigestResult.class",
+      "_Id": "3"
+    },
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "spark-core_2.11-2.4.0-SNAPSHOT.jar/org/apache/spark/rdd/RDD$$anonfun$coalesce$1$$anonfun$8.class",
+      "_Id": "4"
+    },
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "spark-core_2.11-2.4.0-SNAPSHOT.jar/org/apache/spark/util/Utils$.class",
+      "_Id": "5"
+    },
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "spark-core_2.11-2.4.0-SNAPSHOT.jar/org/apache/spark/util/random/XORShiftRandom.class",
+      "_Id": "6"
+    },
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "spark-core_2.11-2.4.0-SNAPSHOT.jar/org/apache/spark/rdd/PartitionwiseSampledRDD.class",
+      "_Id": "7"
+    },
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "spark-core_2.11-2.4.0-SNAPSHOT.jar/org/spark_project/jetty/server/session/AbstractSessionIdManager.class",
+      "_Id": "8"
+    },
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "spark-core_2.11-2.4.0-SNAPSHOT.jar/org/apache/spark/rdd/RDD$$anonfun$takeSample$1.class",
+      "_Id": "9"
+    },
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "spark-core_2.11-2.4.0-SNAPSHOT.jar/org/apache/spark/util/SizeEstimator$.class",
+      "_Id": "10"
+    },
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "spark-core_2.11-2.4.0-SNAPSHOT.jar/org/spark_project/jetty/client/util/MultiPartContentProvider.class",
+      "_Id": "11"
+    },
+    {
+      "Message": "Found: Untrused PRNG (java.util.Random)",
+      "Description": "Used untrusted PRNG",
+      "RuleNumber": 13,
+      "RuleDesc": "Used untrusted PRNG",
+      "CWEId": 338,
+      "Severity": "1",
+      "_FullPath": "spark-core_2.11-2.4.0-SNAPSHOT.jar/org/spark_project/jetty/server/ShutdownMonitor.class",
+      "_Id": "12"
+    },
+    {
+      "Message": "Didn't manually verify hostname in newSslSocket",
+      "Description": "Should check HostnameVerification manually",
+      "RuleNumber": 12,
+      "RuleDesc": "Should check HostnameVerification manually",
+      "CWEId": 297,
+      "Severity": "1",
+      "_FullPath": "spark-core_2.11-2.4.0-SNAPSHOT.jar/org/spark_project/jetty/util/ssl/SslContextFactory.class",
+      "_Id": "13"
+    },
+    {
+      "Message": "Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of UNKNOWN",
+      "Description": "Uses untrusted TrustManager",
+      "RuleNumber": 4,
+      "RuleDesc": "Uses untrusted TrustManager",
+      "CWEId": 349,
+      "Severity": "1",
+      "_FullPath": "spark-core_2.11-2.4.0-SNAPSHOT.jar/UNKNOWN.class",
+      "_Id": "14"
+    },
+    {
+      "Message": "Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of UNKNOWN",
+      "Description": "Uses untrusted TrustManager",
+      "RuleNumber": 4,
+      "RuleDesc": "Uses untrusted TrustManager",
+      "CWEId": 349,
+      "Severity": "1",
+      "_FullPath": "spark-core_2.11-2.4.0-SNAPSHOT.jar/UNKNOWN.class",
+      "_Id": "15"
+    },
+    {
+      "Message": "Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of UNKNOWN",
+      "Description": "Uses untrusted TrustManager",
+      "RuleNumber": 4,
+      "RuleDesc": "Uses untrusted TrustManager",
+      "CWEId": 349,
+      "Severity": "1",
+      "_FullPath": "spark-core_2.11-2.4.0-SNAPSHOT.jar/UNKNOWN.class",
+      "_Id": "16"
+    },
+    {
+      "Message": "Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of UNKNOWN",
+      "Description": "Uses untrusted TrustManager",
+      "RuleNumber": 4,
+      "RuleDesc": "Uses untrusted TrustManager",
+      "CWEId": 349,
+      "Severity": "1",
+      "_FullPath": "spark-core_2.11-2.4.0-SNAPSHOT.jar/UNKNOWN.class",
+      "_Id": "17"
+    },
+    {
+      "Message": "Should at least get One accepted Issuer from Other Sources in getAcceptedIssuers method of ssl.SslContextFactory",
+      "Description": "Uses untrusted TrustManager",
+      "RuleNumber": 4,
+      "RuleDesc": "Uses untrusted TrustManager",
+      "CWEId": 349,
+      "Severity": "1",
+      "_FullPath": "spark-core_2.11-2.4.0-SNAPSHOT.jar/ssl/SslContextFactory.class",
+      "_Id": "18"
+    },
+    {
+      "Message": "Should throw java.security.cert.CertificateException in check(Client|Server)Trusted method of ssl.SslContextFactory",
+      "Description": "Uses untrusted TrustManager",
+      "RuleNumber": 4,
+      "RuleDesc": "Uses untrusted TrustManager",
+      "CWEId": 349,
+      "Severity": "1",
+      "_FullPath": "spark-core_2.11-2.4.0-SNAPSHOT.jar/ssl/SslContextFactory.class",
+      "_Id": "19"
+    },
+    {
+      "Message": "Cause: Fixed \"[1]\"",
+      "Description": "Used untrusted HostNameVerifier",
+      "RuleNumber": 6,
+      "RuleDesc": "Used untrusted HostNameVerifier",
+      "CWEId": 601,
+      "Severity": "1",
+      "_FullPath": "spark-core_2.11-2.4.0-SNAPSHOT.jar/UNKNOWN.class",
+      "_Id": "20"
+    },
+    {
+      "Message": "Cause: Fixed \"[1]\"",
+      "Description": "Used untrusted HostNameVerifier",
+      "RuleNumber": 6,
+      "RuleDesc": "Used untrusted HostNameVerifier",
+      "CWEId": 601,
+      "Severity": "1",
+      "_FullPath": "spark-core_2.11-2.4.0-SNAPSHOT.jar/UNKNOWN.class",
+      "_Id": "21"
+    },
+    {
+      "Message": "Found: \"MD5\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "spark-core_2.11-2.4.0-SNAPSHOT.jar/org/spark_project/jetty/util/security/Credential$MD5.class",
+      "_Id": "22"
+    },
+    {
+      "Message": "Found: \"MD5\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "spark-core_2.11-2.4.0-SNAPSHOT.jar/org/spark_project/jetty/client/util/DigestAuthentication.class",
+      "_Id": "23"
+    },
+    {
+      "Message": "Found: \"MD5\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "spark-core_2.11-2.4.0-SNAPSHOT.jar/org/spark_project/jetty/util/security/Credential$MD5.class",
+      "_Id": "24"
+    },
+    {
+      "Message": "Found: \"MD5\"",
+      "Description": "Found broken hash functions",
+      "RuleNumber": 2,
+      "RuleDesc": "Found broken hash functions",
+      "CWEId": 759,
+      "Severity": "1",
+      "_FullPath": "spark-core_2.11-2.4.0-SNAPSHOT.jar/org/spark_project/jetty/security/authentication/DigestAuthenticator$Digest.class",
+      "_Id": "25"
+    },
+    {
+      "Message": "Found: \"AES\"",
+      "Description": "Found constant IV in code",
+      "RuleNumber": 10,
+      "RuleDesc": "Found constant IV in code",
+      "CWEId": 547,
+      "Severity": "1",
+      "_FullPath": "spark-core_2.11-2.4.0-SNAPSHOT.jar/org/apache/spark/security/CryptoStreamUtils$CryptoParams.class",
+      "_Id": "26"
+    },
+    {
+      "Message": "Found: \"http://localhost:\"",
+      "Description": "Used HTTP Protocol",
+      "RuleNumber": 7,
+      "RuleDesc": "Used HTTP Protocol",
+      "CWEId": 650,
+      "Severity": "1",
+      "_FullPath": "spark-core_2.11-2.4.0-SNAPSHOT.jar/org/spark_project/jetty/server/handler/ShutdownHandler.class",
+      "_Id": "27"
+    },
+    {
+      "Message": "Found: \"http://localhost\"",
+      "Description": "Used HTTP Protocol",
+      "RuleNumber": 7,
+      "RuleDesc": "Used HTTP Protocol",
+      "CWEId": 650,
+      "Severity": "1",
+      "_FullPath": "spark-core_2.11-2.4.0-SNAPSHOT.jar/org/spark_project/jetty/server/handler/ShutdownHandler.class",
+      "_Id": "28"
+    }
+  ],
+  "_SchemaVersion": 3,
+  "_DateTime": "2021-05-17_21:21:37",
+  "_UUID": "bac8f686-c2a2-48df-bbd6-0ce4663ab783"
+}
