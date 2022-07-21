@@ -1,0 +1,372 @@
+,Insecure,Secure,categorization of pairs based on the complexity ,categorization of pairs based on the specification methods,
+rule 1: cipher.getInstance($sl) ,"StringLiterals literals = new StringLiterals(""AES"", ""RC2"", ""RC4"", ""RC5"", ""DES"", ""blowfish"", ""DESede"",  ""ARCFOUR"", ""RSA/NONE/NoPadding"");
+Cipher.getInstance(literals.getAString());","StringLiterals literals = new StringLiterals(”AES/GCM/NoPadding"", ""RSA/ECB/OAEPWithSHA-1AndMGF1Padding"", ""AES/GCM/PKCS5Padding"", ""AES/CFB/PKCS5Padding"",""RSA/CBC/PKCS5Padding""); 
+Cipher.getInstance(literals.getAString());","multiple statements, identical","special (multiple alternatives, scenario 2)",
+rule 1," Cipher.getInstance(""AES/ECB/PKCS5Padding""); ","Cipher.getInstance(""AES/GCM/NoPadding""); ","single statement, identical",plain,
+rule 1,"StringLiterals literals = new StringLiterals(""AES/ECB/PKCS5Padding"");
+ Cipher.getInstance(literals.getAString());","StringLiterals literals = new StringLiterals(""AES/GCM/NoPadding"", ""AES/CBC/PKCS5Padding"", ""AES/CFB/PKCS5Padding"", ""AES/GCM/PKCS5Padding"" );
+Cipher.getInstance(literals.getAString())","multiple statements, identical","special (multiple alternatives, scenario 2)",
+rule 17,"SSLContext.getInstance(""TLSv1.0"");","SSLContext.getInstance(""TLSv1.3"");","single statement, identical",plain,
+rule 17:SSLContext.getInstance($sl); ,"StringLiterals literals = new StringLiterals(""SSL"", ""TLSv1.0"", ""TLSv1.1"");
+SSLContext.getInstance(literals.getAString());","StringLiterals literals = new StringLiterals( ""TLSv1.3"",""TLSv1.2"");
+SSLContext.getInstance(literals.getAString());","multiple statements, identical","special (multiple alternatives, scenario 2)",
+rule 2: SecretKeyFactory.getInstance($sl);,"SecretKeyFactory.getInstance(""DES"");   ","SecretKeyFactory.getInstance(""AES"");        ","single statement, identical",plain,
+rule 2,"StringLiterals literals = new StringLiterals(""DES"", ""DESede"", ""ARCFOUR"", ""PBEWithMD5AndDES "", ""PBKDF2WithHmacSHA1"" );
+SecretKeyFactory.getInstance(literals.getAString());","StringLiterals literals = new StringLiterals(""AES"", ""PBEWithHmacSHA256AndAES_256"");
+SecretKeyFactory.getInstance(literals.getAString());","multiple statements, identical","special (multiple alternatives, scenario 2)",
+rule 3," MessageDigest.getInstance(""MD5"");     ","MessageDigest.getInstance(""SHA-512""); ","single statement, identical",plain,
+rule 3: MessageDigest.getInstance($sl),"StringLiterals literals = new StringLiterals(""#MD2"", ""(.)*MD5"", ""(.)*SHA-1"",""#SHA-1"",""SHA-224"");
+MessageDigest.getInstance(literals.getAString());","StringLiterals literals = new StringLiterals(""SHA-512"", ""SHA-256"", ""SHA-3"");
+MessageDigest.getInstance(literals.getAString());","multiple statements, identical","special (multiple alternatives, scenario 2)",
+"
+rule 4: PBEParameterSpec($sl, Iteration) check salt size ","
+ void test(int iterations) {
+byte[] salt = new byte[4];
+AlgorithmParameterSpec paramSpec = new PBEParameterSpec(salt, iterations);}
+","void test(int iterations) {
+byte[] salt = new byte[8];
+AlgorithmParameterSpec paramSpec = new PBEParameterSpec(salt, iterations);}
+","multiple statements, abstract","special (value range, scenario 3)",
+"rule 5: PBEParameterSpec(salt, $nl)  $nl>1000","
+void test(byte[] salt){
+    AlgorithmParameterSpec paramSpec = new PBEParameterSpec(salt, 20);
+}
+","void test(byte[] salt){
+    AlgorithmParameterSpec paramSpec = new PBEParameterSpec(salt, 1000);
+}","multiple statements, abstract","special (value range, scenario 3)",
+"rule5.1 : PBEParameterSpec(salt, $nl, paramSpec)  $nl>1000","void test(byte[] salt, AlgorithmParameterSpec paramSpec){
+PBEParameterSpec  pbeParamSpec = new PBEParameterSpec(salt, 20, paramSpec);
+} ","void test(byte[] salt, AlgorithmParameterSpec paramSpec){
+ PBEParameterSpec  pbeParamSpec = new PBEParameterSpec(salt, 1000, paramSpec);
+} ","multiple statements, abstract","special (value range, scenario 3)",
+"rule 6: KeyPairGenerator keyPairGenerator = KeyPairGenerator.getInstance(""RSA""); 
+keyPairGenerator.initialize($nl); $nl> 2048","KeyPairGenerator keyPairGenerator = KeyPairGenerator.getInstance(""RSA""); 
+keyPairGenerator.initialize(1024);","KeyPairGenerator keyPairGenerator = KeyPairGenerator.getInstance(""RSA""); 
+keyPairGenerator.initialize(2048);","multiple statements, abstract","special (value range, scenario 3)",
+"rule7: KeyPairGenerator keyPairGenerator = KeyPairGenerator.getInstance(""ECC"");
+keyPairGenerator.initialize($nl); $nl> 244","KeyPairGenerator keyPairGenerator = KeyPairGenerator.getInstance(""ECC"");
+keyPairGenerator.initialize(64);","KeyPairGenerator keyPairGenerator = KeyPairGenerator.getInstance(""ECC"");
+keyPairGenerator.initialize(224);","multiple statements, abstract","special (value range, scenario 3)",
+rule 8: random.setSeed(ByteLiterals.CONSTANT_ARRAY),"SecureRandom rand = new SecureRandom();
+ rand.setSeed(ByteLiterals.CONSTANT_ARRAY); ","SecureRandom rand = new SecureRandom();
+byte[] seeds = rand.getSeed(20);
+ rand.setSeed(seeds);","multiple statements, abstract","special (arbitrary constant, scenario 1)",
+"
+rule 10: SecretKey key = new SecretKeySpec(ByteLiterals.CONSTANT_ARRAY, alg);
+","void test(String alg) {
+      SecretKey sekey= new SecretKeySpec(ByteLiterals.CONSTANT_ARRAY, alg);
+}
+
+
+"," byte[] key = keyInit(); //store the key as a field for reuse purpose   
+ public byte[] keyInit() { //create a key based on an unpredictable random value
+                try {
+                        KeyGenerator keyGen = KeyGenerator.getInstance(""AES"");
+                        keyGen.init(256);
+                        SecretKey secretKey = keyGen.generateKey();
+                        byte[] keyBytes= secretKey.getEncoded();
+                        return keyBytes;
+                } catch (Exception e) {
+                        e.printStackTrace();
+                        return null;
+                }
+        }
+ void test(String alg) {
+   SecretKey sekey= new SecretKeySpec(key, ""AES"");
+ }
+","multiple statements, abstract","special (arbitrary constant, scenario 1)",
+"rule 19: SecretKey key = new SecretKeySpec(key, $sl);
+
+yes, it should be new pattern, for misuse algorithm ","void test(byte[] key){
+        SecretKey seKey = new SecretKeySpec(key, ""DESede"");
+ }","
+void test(byte[] key ){
+        SecretKey seKey = new SecretKeySpec(key, ""AES"");
+    }","multiple statements, abstract",plain,
+"rule 19: SecretKey key = new SecretKeySpec(key, $sl);
+","void test(byte[] key ){
+      StringLiterals literals = new StringLiterals(""DES"", ""DESede"", ""Blowfish"",""HmacSHA1"", ""ARCFOUR"", ""PBEWithMD5AndDES"", ""PBKDF2WithHmacSHA1"");
+      SecretKey seKey = new SecretKeySpec(key, literals.getAString());
+} ","void test(byte[] key ){
+      StringLiterals literals = new StringLiterals(""AES"", ""PBEWithHmacSHA256AndAES_128"");
+      SecretKey seKey = new SecretKeySpec(key, literals.getAString());
+} ","multiple statements, abstract","special (multiple alternatives, scenario 2)",
+"rule 11: Random(), -should invoke SecureRandom()",Random rand = new Random();,SecureRandom rand = new SecureRandom(),"single statement, abstract",plain,
+rule 12: AlgorithmParameterSpec ivSpec = new IvParameterSpec(ByteLiterals.CONSTANT_ARRAY);,AlgorithmParameterSpec ivSpec = new IvParameterSpec(ByteLiterals.CONSTANT_ARRAY);,"SecureRandom sr = new SecureRandom();
+byte [] bytes = new byte[16];
+sr.nextBytes(bytes);
+AlgorithmParameterSpec ivSpec = new IvParameterSpec(bytes);","multiple statements, abstract","special (arbitrary constant, scenario 1)",
+"rule 13:  
+HostnameVerifier
+ public boolean verify(String s, SSLSession sslSession) {
+        return true;
+    }","public class HostVerifier implements HostnameVerifier {
+    @Override
+    public boolean verify(String hostname, SSLSession sslSession) {
+        return true;
+    }
+}","public class HostVerifier implements HostnameVerifier {
+    @Override
+    public boolean verify(String hostname, SSLSession sslSession) {
+               //Please change ""example.com"" as needed
+                if (""example.com"".equals(hostname)) {
+                        return true;
+                }
+        HostnameVerifier hv = HttpsURLConnection.getDefaultHostnameVerifier(); 
+        return hv.verify(hostname, sslSession);  
+    }
+}","multiple statements, abstract",plain,
+"
+rule 1 ","StringLiterals literals = new StringLiterals(""(.)*DES(.)*"", ""(.)*DESede(.)*"", ""#AES"", ""AES/ECB(.)*"", ""(.)*DESedeWrap(.)*"", ""(.)*RC2(.)*"", ""(.)*RC4(.)*"", ""(.)*RC5(.)*"", ""(.)*Blowfish(.)*"", ""(.)IDEA(.)*"", ""PBEWithMD5AndDES"", ""PBEWithMD5AndTripleDES"", ""PBEWithSHA1AndDESede"", ""PBEWithSHA1AndRC2_40"", ""#Blowfish"", ""DES"", ""RSA/(.)*/PKCS5Padding"", ""RSA/(.)*/NoPadding"");
+Cipher cipher = Cipher.getInstance(literals.getAString());","StringLiterals literals = new StringLiterals(""AES/CFB/PKCS5Padding"" ,""AES/GCM/NoPadding"",""RSA/ECB/OAEPWithSHA-1AndMGF1Padding"", ""RSA/ECB/OAEPWithSHA-256AndMGF1Padding"", ""AES/CTR/NoPadding"", ""AES/CBC/PKCS5Padding"", ""ECIES"");
+Cipher cipher = Cipher.getInstance(literals.getAString());","multiple statements, abstract","special (arbitrary constant, scenario 1)",
+"
+rule 14: PBEParameterSpec  pbeParamSpec = new PBEParameterSpec(ByteLiterals.CONSTANT_ARRAY, count);
+","void test(int count ){
+PBEParameterSpec  pbeParamSpec = new PBEParameterSpec(ByteLiterals.CONSTANT_ARRAY, count);
+} 
+
+  ","void test(int count){
+SecureRandom random = new SecureRandom();
+byte[] salt = new byte[32];
+random.nextBytes(salt);
+PBEParameterSpec pbeParamSpec = new PBEParameterSpec(salt, count); //""123"", ""a.getbyte()""
+}
+
+","multiple statements, abstract","special (arbitrary constant, scenario 1)",
+"rule 14.1: PBEParameterSpec  pbeParamSpec = new PBEParameterSpec(ByteLiterals.CONSTANT_ARRAY, count, paramSpec);
+","void test(int count, AlgorithmParameterSpec paramSpec){
+PBEParameterSpec  pbeParamSpec = new PBEParameterSpec(ByteLiterals.CONSTANT_ARRAY, count, paramSpec);
+} 
+
+  ","void test(int count, AlgorithmParameterSpec paramSpec){
+SecureRandom random = new SecureRandom();
+byte[] salt = new byte[32];
+random.nextBytes(salt);
+PBEParameterSpec  pbeParamSpec = new PBEParameterSpec(salt, count, paramSpec);
+} ","multiple statements, abstract","special (arbitrary constant, scenario 1)",
+"comment could be added 
+after the template generated
+rule 15: public void checkClientTrusted(X509Certificate[] chain, String authType)
+throws CertificateException {
+// do nothing
+} empty body
+X509TrusrManager","new X509TrustManager() {
+@Override
+public void checkClientTrusted(X509Certificate[] chain, String authType)
+throws CertificateException {
+// do nothing
+}
+@Override
+public X509Certificate[] getAcceptedIssuers() {
+return new X509Certificate[0];
+}
+@Override
+public void (X509Certificate[] chain, String authType) throws CertificateException{
+                                if (chain == null) {
+                                        throw new IllegalArgumentException(""checkServerTrusted:x509Certificate array isnull"");
+                                }
+
+                                if (!(chain.length > 0)) {
+                                        throw new IllegalArgumentException(""checkServerTrusted: X509Certificate is empty"");
+                                }
+
+                                if (!(null != authType && authType.equalsIgnoreCase(""RSA""))) {
+                                        throw new CertificateException(""checkServerTrusted: AuthType is not RSA"");
+                                }
+
+
+                                try {
+                                        TrustManagerFactory tmf = TrustManagerFactory.getInstance(""X509""); // choose algorithm to match your code
+                                        tmf.init((KeyStore) null);
+                                        for (TrustManager trustManager : tmf.getTrustManagers()) {
+                                                ((X509TrustManager) trustManager).checkServerTrusted(chain, authType);
+                                        }
+                                } catch (Exception e) {
+                                        throw new CertificateException(e);
+                                }
+
+
+                                RSAPublicKey pubkey = (RSAPublicKey) chain[0].getPublicKey();
+                                String encoded = new BigInteger(1 , pubkey.getEncoded()).toString(16);
+                                final boolean expected = PUB_KEY.equalsIgnoreCase(encoded);
+
+                                if (!expected) {
+                                        throw new CertificateException(""checkServerTrusted: Expected public key: ""
+                                                        + PUB_KEY + "", got public key:"" + encoded);
+                                }
+                        }
+};","new X509TrustManager() {
+@Override
+public void checkClientTrusted(X509Certificate[] chain, String authType) throws CertificateException {
+                KeyStore ts = KeyStore.getInstance(""JKS""); 
+                ts.load(new FileInputStream(path), password); // load your local cert path and specify your password
+                TrustManagerFactory tmf = TrustManagerFactory.getInstance(""SunX509""); // choose the algrithm to match your cert
+                tmf.init(ts);
+                TrustManager[] trustManagers = tmf.getTrustManagers(); // refer to https://lightbend.github.io/ssl-config/WSQuickStart.html for detailed steps
+                for (final X509TrustManager trustManager : trustManagers) {
+                        try {
+                                trustManager.checkClientTrusted(chain, authType);
+                                return;
+                        } catch (final CertificateException e) {
+                                //LOGGER.debug(e.getMessage(), e);
+                        }
+                }
+                throw new CertificateException(""None of the TrustManagers trust this certificate chain"");
+
+        }
+@Override
+public X509Certificate[] getAcceptedIssuers() {
+return new X509Certificate[0];
+}
+@Override
+public void checkServerTrusted(X509Certificate[] chain, String authType) throws CertificateException{
+                                if (chain == null) {
+                                        throw new IllegalArgumentException(""checkServerTrusted:x509Certificate array isnull"");
+                                }
+
+                                if (!(chain.length > 0)) {
+                                        throw new IllegalArgumentException(""checkServerTrusted: X509Certificate is empty"");
+                                }
+
+                                if (!(null != authType && authType.equalsIgnoreCase(""RSA""))) {
+                                        throw new CertificateException(""checkServerTrusted: AuthType is not RSA"");
+                                }
+
+
+                                try {
+                                        TrustManagerFactory tmf = TrustManagerFactory.getInstance(""X509""); // choose algorithm to match your code
+                                        tmf.init((KeyStore) null);
+                                        for (TrustManager trustManager : tmf.getTrustManagers()) {
+                                                ((X509TrustManager) trustManager).checkServerTrusted(chain, authType);
+                                        }
+                                } catch (Exception e) {
+                                        throw new CertificateException(e);
+                                }
+
+
+                                RSAPublicKey pubkey = (RSAPublicKey) chain[0].getPublicKey();
+                                String encoded = new BigInteger(1 , pubkey.getEncoded()).toString(16);
+                                final boolean expected = PUB_KEY.equalsIgnoreCase(encoded);
+
+                                if (!expected) {
+                                        throw new CertificateException(""checkServerTrusted: Expected public key: ""
+                                                        + PUB_KEY + "", got public key:"" + encoded);
+                                }
+                        }
+        
+};","multiple statements, abstract",plain,finish
+"check client 
+@Override
+rule 16: public void checkServerTrusted(X509Certificate[] x509CertificateArr, String
+str) throws CertificateException {
+// do nothing
+}
+X509TrustManager","new X509TrustManager() {
+@Override
+public void checkClientTrusted(X509Certificate[] chain, String authType) throws CertificateException {
+                KeyStore ts = KeyStore.getInstance(""JKS""); 
+                ts.load(new FileInputStream(path), password); // load your local cert path and specify your password
+                TrustManagerFactory tmf = TrustManagerFactory.getInstance(""SunX509""); // choose the algrithm to match your cert
+                tmf.init(ts);
+                TrustManager[] trustManagers = tmf.getTrustManagers(); // refer to https://lightbend.github.io/ssl-config/WSQuickStart.html for detailed steps
+                for (final X509TrustManager trustManager : trustManagers) {
+                        try {
+                                trustManager.checkClientTrusted(chain, authType);
+                                return;
+                        } catch (final CertificateException e) {
+                                //LOGGER.debug(e.getMessage(), e);
+                        }
+                }
+                throw new CertificateException(""None of the TrustManagers trust this certificate chain"");
+
+        }
+@Override
+public X509Certificate[] getAcceptedIssuers() {
+return new X509Certificate[0];
+}
+@Override
+public void checkServerTrusted(X509Certificate[] x509CertificateArr, String
+str) throws CertificateException {
+// do nothing
+}
+};","new X509TrustManager() {
+@Override
+public void checkClientTrusted(X509Certificate[] chain, String authType) throws CertificateException {
+                KeyStore ts = KeyStore.getInstance(""JKS""); 
+                ts.load(new FileInputStream(path), password); // load your local cert path and specify your password
+                TrustManagerFactory tmf = TrustManagerFactory.getInstance(""SunX509""); // choose the algrithm to match your cert
+                tmf.init(ts);
+                TrustManager[] trustManagers = tmf.getTrustManagers(); // refer to https://lightbend.github.io/ssl-config/WSQuickStart.html for detailed steps
+                for (final X509TrustManager trustManager : trustManagers) {
+                        try {
+                                trustManager.checkClientTrusted(chain, authType);
+                                return;
+                        } catch (final CertificateException e) {
+                                //LOGGER.debug(e.getMessage(), e);
+                        }
+                }
+                throw new CertificateException(""None of the TrustManagers trust this certificate chain"");
+
+        }
+@Override
+public X509Certificate[] getAcceptedIssuers() {
+return new X509Certificate[0];
+}
+@Override
+public void checkServerTrusted(X509Certificate[] chain, String authType) throws CertificateException{
+                                if (chain == null) {
+                                        throw new IllegalArgumentException(""checkServerTrusted:x509Certificate array isnull"");
+                                }
+
+                                if (!(chain.length > 0)) {
+                                        throw new IllegalArgumentException(""checkServerTrusted: X509Certificate is empty"");
+                                }
+
+                                if (!(null != authType && authType.equalsIgnoreCase(""RSA""))) {
+                                        throw new CertificateException(""checkServerTrusted: AuthType is not RSA"");
+                                }
+
+
+                                try {
+                                        TrustManagerFactory tmf = TrustManagerFactory.getInstance(""X509""); // choose algorithm to match your code
+                                        tmf.init((KeyStore) null);
+                                        for (TrustManager trustManager : tmf.getTrustManagers()) {
+                                                ((X509TrustManager) trustManager).checkServerTrusted(chain, authType);
+                                        }
+                                } catch (Exception e) {
+                                        throw new CertificateException(e);
+                                }
+
+
+                                RSAPublicKey pubkey = (RSAPublicKey) chain[0].getPublicKey();
+                                String encoded = new BigInteger(1 , pubkey.getEncoded()).toString(16);
+                                final boolean expected = PUB_KEY.equalsIgnoreCase(encoded);
+
+                                if (!expected) {
+                                        throw new CertificateException(""checkServerTrusted: Expected public key: ""
+                                                        + PUB_KEY + "", got public key:"" + encoded);
+                                }
+                        }
+         
+};","multiple statements, abstract",plain,
+"rule 18:  ks.load(in, CharLiterals.CONSTANT_ARRAY); "," public static void createTrustManagerFactory(InputStream in)
+            throws KeyStoreException, IOException, CertificateException, NoSuchAlgorithmException {
+        KeyStore ks = KeyStore.getInstance(KeyStore.getDefaultType());
+        ks.load(in, CharLiterals.CONSTANT_ARRAY);
+    }"," public static void createTrustManagerFactory(InputStream in)
+            throws KeyStoreException, IOException, CertificateException, NoSuchAlgorithmException {
+        KeyStore ks = KeyStore.getInstance(KeyStore.getDefaultType());
+       char[] pwd = getPassword(); // pwd should not be a hardcoded constant; it should be load from a provided file(local path)
+        ks.load(in, pwd);
+    }","multiple statements, abstract","special (arbitrary constant, scenario 1)",
+"rule 9:  PBEKeySpec(password, ByteLiterals.CONSTANT_ARRAY, Count ) ","void test(char[] password, int Count ){
+PBEKeySpec spec = new PBEKeySpec(password, ByteLiterals.CONSTANT_ARRAY, Count );
+} 
+
+  ","void test(char[] password, int Count ){
+SecureRandom random = new SecureRandom();
+byte[] salt = new byte[32];
+random.nextBytes(salt);
+PBEKeySpec spec = new PBEKeySpec(password,salt, Count );
+} ","multiple statements, abstract","special (arbitrary constant, scenario 1)",
